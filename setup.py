@@ -76,7 +76,7 @@ if __name__ == "__main__":
     else:
         # Check for version in 'major_version' file
         with open("major_version") as f:
-            __version__ = f.read().strip() + os.getenv("BUILD_NUMBER", '.3')
+            __version__ = f.read().strip() + os.getenv("BUILD_NUMBER", '.0')
     assert __version__ is not None, "Version not found in _version.py nor major_version"
     """ END: DO NOT MODIFY """
 

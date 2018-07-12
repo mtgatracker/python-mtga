@@ -27,6 +27,9 @@ class Pool(object):
         if cards is None:
             cards = []
         self.cards = cards
+        self.lookup = {}
+        for card in cards:
+            self.lookup[card.mtga_id] = card
 
     def __repr__(self):
         return "<Pool {}: {} cards>".format(self.pool_name, len(self.cards))
@@ -104,6 +107,9 @@ class Pool(object):
                 keyword_as_int = None
         except (ValueError, TypeError):
             pass
+        if keyword_as_int and keyword_as_int in self.lookup.keys():
+            # we can skip the loop and return in O(1)
+            return [self.lookup[keyword_as_int]]
         results = []
         for card in self.cards:
             if keyword_as_int == card.mtga_id or keyword_as_int == card.set_number:
