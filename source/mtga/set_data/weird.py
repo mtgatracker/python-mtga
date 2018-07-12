@@ -1,5 +1,5 @@
-from  .models.card import Card
-from .models.card_set import Set
+from mtga.models.card import Card
+from mtga.models.card_set import Set
 
 import rix
 import xln

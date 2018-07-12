@@ -1,6 +1,6 @@
 import logging
 import re
-from .card import GameCard
+from .card import GameCard, Card
 
 class Set(object):
 
@@ -74,7 +74,7 @@ class Pool(object):
     def transfer_card_to(self, card, other_pool):
         # TODO: make this atomic, somehow?
         res = card
-        if not isinstance(card, mcard.Card):  # allow you to pass in cards or ids or searches
+        if not isinstance(card, Card):  # allow you to pass in cards or ids or searches
             res = self.find_one(card)
         self.cards.remove(res)
         other_pool.cards.append(res)
@@ -133,7 +133,7 @@ class Zone(Pool):
             elif card.mtga_id == card_id:
                 # only allowed to set it if it's still -1 (should probably never hit this!)
                 if card.game_id == -1:
-                    logging.getLogger("mtga_set_data").error("What the hell?! How'd we get a card ID without an instance ID?")
+                    logging.getLogger("mtga").error("What the hell?! How'd we get a card ID without an instance ID?")
                     card.game_id = instance_id
 
 
@@ -146,7 +146,7 @@ class Deck(Pool):
     def generate_library(self, owner_id=-1):
         library = Library(self.pool_name, self.deck_id, owner_id, -1)
         for card in self.cards:
-            game_card = mcard.GameCard(card.name, card.pretty_name, card.cost, card.color_identity, card.card_type,
+            game_card = GameCard(card.name, card.pretty_name, card.cost, card.color_identity, card.card_type,
                                        card.sub_types, card.set, card.set_number, card.mtga_id, owner_id, -1)
             library.cards.append(game_card)
         return library
@@ -181,7 +181,7 @@ class Deck(Pool):
     def from_dict(cls, obj):
         deck = Deck(obj["pool_name"], obj["deck_id"])
         for card in obj["cards"]:
-            deck.cards.append(mcard.Card.from_dict(card))
+            deck.cards.append(Card.from_dict(card))
         return deck
 
 

@@ -16,7 +16,7 @@ __author__ = "shawkins"
 __email__ = "devs.mtgatracker@gmail.com"
 
 
-PACKAGE_NAME = "mtga_set_data"
+PACKAGE_NAME = "mtga"
 INSTALL_REQUIRES = []
 DEPENDENCY_LINKS = []
 TESTS_REQUIRE = []
@@ -60,7 +60,7 @@ if __name__ == "__main__":
 
     
     """
-    VERSION_FILE = os.path.join("source", "mtga_set_data", "_version.py")
+    VERSION_FILE = os.path.join("source", "mtga", "_version.py")
     __version__ = None
     # Check first for version in VERSION_FILE
     if os.path.isfile(VERSION_FILE):
@@ -103,7 +103,7 @@ if __name__ == "__main__":
         # https://packaging.python.org/en/latest/single_source_version.html
         version=__version__,
 
-        description="mtga_set_data: a python-accessible interface for MTGA cards",
+        description="python-mtga: a python-accessible interface for MTGA cards",
         long_description=LONG_DESCRIPTION,
 
         # The project's main homepage.
@@ -144,7 +144,7 @@ if __name__ == "__main__":
         # But if you want any packages to be installed here, use the following example as a guide:
         # packages=find_packages(exclude=['contrib', 'docs', 'tests*']),
         package_dir={'': 'source'},
-        packages=["mtga_set_data", "mtga_set_data.models"],
+        packages=["mtga", "mtga.models", "mtga.set_data"],
 
         # List any additional sources that should be included when searching for dependencies
         # https://pythonhosted.org/setuptools/setuptools.html#declaring-extras-optional-features-with-their-own-dependencies

@@ -14,7 +14,7 @@ or
 ## Usage
 
 ```python
-import mtga_set_data
-print(mtga_set_data.all_mtga_cards.find_one("63773"))
+from mtga.set_data import all_mtga_cards
+print(all_mtga_cards.find_one("63773"))
 # <Card: 'Torrential Gearhulk' ['Blue'] KLD 63773>
 ```
