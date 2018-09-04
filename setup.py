@@ -16,7 +16,7 @@ __author__ = "shawkins"
 __email__ = "devs.mtgatracker@gmail.com"
 
 
-PACKAGE_NAME = "mtga"
+PACKAGE_NAME = "MTGA"
 INSTALL_REQUIRES = []
 DEPENDENCY_LINKS = []
 TESTS_REQUIRE = []
@@ -24,42 +24,17 @@ LONG_DESCRIPTION = ''
 
 
 def read_requirements_file(path):
-    """
-    reads requirements.txt file and handles PyPI index URLs
-    :param path: (str) path to requirements.txt file
-    :return: (tuple of lists)
-    """
-    last_pypi_url = None
+    """ reads requirements.txt file """
     with open(path) as f:
         requires = []
-        pypi_urls = []
         for line in f.readlines():
             if not line:
                 continue
-            if '--' in line:
-                match = re.match(r'--index-url\s+([\w\d:/.-]+)\s', line)
-                if match:
-                    last_pypi_url = match.group(1)
-                    if not last_pypi_url.endswith("/"):
-                        last_pypi_url += "/"
-            else:
-                if last_pypi_url:
-                    package = line.split("=")[0].split(">")[0].split("<")[0]
-                    pypi_urls.append(last_pypi_url + package.strip().lower())
-                requires.append(line)
-    return requires, pypi_urls
+            requires.append(line.strip())
+    return requires
 
 
 if __name__ == "__main__":
-    """
-    BEGIN: DO NOT MODIFY
-    The following lines allow for automatic versioning by Jenkins. Do not modify them!
-
-    The third number in the version triple of all jenkins-managed modules will always be the jenkins build number.
-    The first two numbers can be modified by changing the variable "major_version" of the "update_version.py" file.
-
-    
-    """
     VERSION_FILE = os.path.join("source", "mtga", "_version.py")
     __version__ = None
     # Check first for version in VERSION_FILE
@@ -73,21 +48,14 @@ if __name__ == "__main__":
         else:
             if os.environ.get('JENKINS_HOME'):
                 raise RuntimeError("Unable to find version string in %s." % (VERSION_FILE,))
-    else:
-        # Check for version in 'major_version' file
-        with open("major_version") as f:
-            __version__ = f.read().strip() + os.getenv("BUILD_NUMBER", '.3')
     assert __version__ is not None, "Version not found in _version.py nor major_version"
-    """ END: DO NOT MODIFY """
 
-    _install_requires, _pypi_urls = read_requirements_file('requirements.txt')
+    _install_requires = read_requirements_file('requirements.txt')
     INSTALL_REQUIRES.extend(_install_requires)
-    DEPENDENCY_LINKS.extend(_pypi_urls)
 
     if os.path.isfile('tests/requirements.txt'):
-        _tests_require, _pypi_urls = read_requirements_file('tests/requirements.txt')
+        _tests_require = read_requirements_file('tests/requirements.txt')
         TESTS_REQUIRE.extend(_tests_require)
-        DEPENDENCY_LINKS.extend(_pypi_urls)
 
     # Get the long description from the relevant file
     if os.path.isfile('README.md'):
@@ -128,14 +96,15 @@ if __name__ == "__main__":
 
             # Specify the Python versions you support here. In particular, ensure
             # that you indicate whether you support Python 2, Python 3 or both.
-            'Programming Language :: Python :: 2',
-            'Programming Language :: Python :: 2.7',
-            #'Programming Language :: Python :: 3',
-            #'Programming Language :: Python :: 3.5',
+            # 'Programming Language :: Python :: 2',
+            # 'Programming Language :: Python :: 2.7',
+            'Programming Language :: Python :: 3',
+            'Programming Language :: Python :: 3.5',
+            'Programming Language :: Python :: 3.6',
         ],
 
         # What does your project relate to?
-        keywords="pip artifactory installer",
+        keywords="mtga mtg magic arena grpid mtgjson",
 
         # You can just specify the packages manually here if your project is
         # simple. Or you can use find_packages().
