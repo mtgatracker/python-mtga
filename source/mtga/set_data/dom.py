@@ -212,6 +212,7 @@ ShannaSisaysLegacy = Card("shanna_sisays_legacy", "Shanna, Sisay's Legacy", ['G'
 SlimefoottheStowaway = Card("slimefoot_the_stowaway", "Slimefoot, the Stowaway", ['1', 'B', 'G'], ['B', 'G'], "Legendary Creature", "Fungus", "DOM", "Uncommon", 205, 67514)
 TatyovaBenthicDruid = Card("tatyova_benthic_druid", "Tatyova, Benthic Druid", ['3', 'G', 'U'], ['U', 'G'], "Legendary Creature", "Merfolk Druid", "DOM", "Uncommon", 206, 67516)
 TeferiHeroofDominaria = Card("teferi_hero_of_dominaria", "Teferi, Hero of Dominaria", ['3', 'W', 'U'], ['W', 'U'], "Legendary Planeswalker", "Teferi", "DOM", "Mythic Rare", 207, 67518)
+TeferiHeroofDominaria_Masterpiece = Card("teferi_hero_of_dominaria", "Teferi, Hero of Dominaria", ['3', 'W', 'U'], ['W', 'U'], "Legendary Planeswalker", "Teferi", "DOM", "Mythic Rare", 6000, 69451)
 TianaShipsCaretaker = Card("tiana_ships_caretaker", "Tiana, Ship's Caretaker", ['3', 'R', 'W'], ['W', 'R'], "Legendary Creature", "Angel Artificer", "DOM", "Uncommon", 208, 67520)
 AesthirGlider = Card("aesthir_glider", "Aesthir Glider", ['3'], [], "Artifact Creature", "Bird Construct", "DOM", "Common", 209, 67522)
 AmaranthineWall = Card("amaranthine_wall", "Amaranthine Wall", ['4'], [], "Artifact Creature", "Wall", "DOM", "Uncommon", 210, 67524)
