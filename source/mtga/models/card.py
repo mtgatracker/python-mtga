@@ -42,6 +42,19 @@ class Card(object):
                 colors = ["Colorless"]
         return colors
 
+    @property
+    def cmc(self):
+        'gets converted mana cost for a card'
+        cmc = 0
+        for symbol in self.cost:
+            if symbol.isdigit():
+                cmc += int(symbol)
+            elif symbol == "X":
+                continue
+            else:
+                cmc += 1
+        return cmc
+
     def to_serializable(self):
         return {
             "name": self.name,
