@@ -61,7 +61,7 @@ if __name__ == "__main__":
     if os.path.isfile('README.md'):
         with codecs.open('README.md', encoding='utf-8') as f:
             LONG_DESCRIPTION = f.read()
-    
+
     setuptools.setup(
         name=PACKAGE_NAME,
 
@@ -90,7 +90,7 @@ if __name__ == "__main__":
             'Development Status :: 3 - Alpha',
 
             # Indicate who your project is intended for
-            'Intended Audience :: Testers',
+            'Intended Audience :: Developers',
             'Topic :: Software Development :: Testing',
             'Topic :: Software Development :: Quality Assurance',
 
