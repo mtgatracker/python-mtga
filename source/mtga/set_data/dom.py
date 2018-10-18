@@ -285,7 +285,7 @@ ChandrasOutburst = Card("chandras_outburst", "Chandra's Outburst", ['3', 'R', 'R
 KarplusanHound = Card("karplusan_hound", "Karplusan Hound", ['3', 'R'], ['R'], "Creature", "Hound", "DOM", "Uncommon", 277, 67658)
 PyromanticPilgrim = Card("pyromantic_pilgrim", "Pyromantic Pilgrim", ['2', 'R'], ['R'], "Creature", "Human Wizard", "DOM", "Common", 278, 67660)
 TimberGorge = Card("timber_gorge", "Timber Gorge", [], ['R', 'G'], "Land", "", "DOM", "Common", 279, 67662)
-FiresongandSunspeaker = Card("firesong_and_sunspeaker", "Firesong and Sunspeaker", ['4', 'R', 'W'], ['W', 'R'], "Legendary Creature", "Minotaur Cleric", "DOM", "Rare", 280, 67664)
+FiresongandSunspeaker = Card("firesong_and_sunspeaker", "Firesong and Sunspeaker", ['4', 'R', 'W'], ['W', 'R'], "Legendary Creature", "Minotaur Cleric", "DOM", "Rare", 280, 68369)
 
 clsmembers = [card for name, card in inspect.getmembers(sys.modules[__name__]) if isinstance(card, Card)]
 Dominaria = Set("dominaria", cards=clsmembers)
