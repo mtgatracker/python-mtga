@@ -1,3 +1,6 @@
+""" WARNING! These cards are no longer in MTGA! This file is likely incorrect, and is left only for reference.
+
+"""
 from mtga.models.card import Card
 from mtga.models.card_set import Set
 
