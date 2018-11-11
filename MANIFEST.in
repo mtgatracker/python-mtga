@@ -1,0 +1,4 @@
+include *.txt
+include LICENSE
+include major_version
+recursive-include *.py
