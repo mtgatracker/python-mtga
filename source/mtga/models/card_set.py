@@ -2,6 +2,7 @@ import logging
 import re
 from .card import GameCard, Card
 
+
 class Set(object):
 
     def __init__(self, set_name, cards=None):
@@ -22,12 +23,15 @@ class Set(object):
 
 class Pool(object):
 
-    def __init__(self, pool_name, cards=None):
+    def __init__(self, pool_name, cards=None, abilities=None):
         self.pool_name = pool_name
         if cards is None:
             cards = []
+        if abilities is None:
+            abilities = {}
+        self.abilities = abilities
         self.cards = cards
-        self.lookup = {}
+        self.lookup = {**abilities}
         for card in cards:
             self.lookup[card.mtga_id] = card
 
@@ -83,12 +87,14 @@ class Pool(object):
         other_pool.cards.append(res)
 
     @classmethod
-    def from_sets(cls, pool_name, sets):
+    def from_sets(cls, pool_name, sets, abilities=None):
+        if abilities is None:
+            abilities = {}
         cards = []
         for set in sets:
             for card in set.cards_in_set:
                 cards.append(card)
-        return Pool(pool_name, cards)
+        return Pool(pool_name, cards, abilities)
 
     def find_one(self, id_or_keyword):
         result = set(self.search(id_or_keyword))
@@ -103,7 +109,8 @@ class Pool(object):
         keyword_as_str = str(id_or_keyword)
         try:
             keyword_as_int = int(id_or_keyword)
-            if keyword_as_int < 10000:
+            # why is this check here??
+            if keyword_as_int < 10000 and keyword_as_int not in self.lookup.keys():
                 keyword_as_int = None
         except (ValueError, TypeError):
             pass
