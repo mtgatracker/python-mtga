@@ -9,6 +9,9 @@ loc.json can also be obtained with minor modifications: data_loc_ instead of dat
 import argparse
 import json
 import re
+import pprint
+import string
+printable = set(string.printable)
 
 
 COLOR_ID_MAP = {1: "W", 2: "U", 3: "B", 4: "R", 5: "G"}
@@ -24,6 +27,8 @@ def generate_set_map(loc, cards, enums, set_name):
     used_classnames = []
     set_name_class_cased = re.sub('[^0-9a-zA-Z_]', '', set_name)
     set_name_snake_cased = re.sub('[^0-9a-zA-Z_]', '', set_name.lower().replace(" ", "_"))
+    all_abilities = {}
+
     loc_map = {}
     for obj in loc[0]["keys"]:
         if obj["id"] in loc_map.keys():
@@ -67,11 +72,23 @@ def generate_set_map(loc, cards, enums, set_name):
             set_number = int(card["CollectorNumber"])
 
             grp_id = card["grpid"]
+            abilities = []
 
+            abilities_raw = card["abilities"]
+            for ability in abilities_raw:
+                aid = ability["abilityId"]
+                textid = ability["textId"]
+                text = loc_map[textid].encode("ascii", errors="ignore").decode()
+                abilities.append(aid)
+                all_abilities[aid] = text
+            indentation_length = len("{} = Card(".format(card_name_class_cased_suffixed))
             # params: name,    pretty_name, cost,            color_identity, card_type,  sub_types, set_id, rarity,        set_number, mtga_id
             # ex:     "a_b_c", "A B C",     ['3', 'W', 'W'], ['W'],          "Creature", "Angel",  "AKH",   "Mythic Rare", 1,          64801
-
-            new_card_str = '{} = Card("{}", "{}", {}, {}, "{}", "{}", "{}", "{}", {}, {})'.format(
+            # name, pretty_name, cost, color_identity, card_type, sub_types, set_id, rarity, set_number, mtga_id
+            new_card_str = '{} = Card(name="{}", pretty_name="{}", cost={},\n' \
+                           '{{}}color_identity={}, card_type="{}", sub_types="{}",\n' \
+                           '{{}}abilities={}, set_id="{}", rarity="{}", set_number={},\n' \
+                           '{{}}mtga_id={})'.format(
                 card_name_class_cased_suffixed,
                 card_name_snake_cased,
                 card_title,
@@ -79,11 +96,12 @@ def generate_set_map(loc, cards, enums, set_name):
                 color_identity,
                 card_types,
                 sub_types,
+                abilities,
                 set_id,
                 rarity,
                 set_number,
                 grp_id
-            )
+            ).format(" "*indentation_length, " "*indentation_length, " "*indentation_length)
             output_lines.append(new_card_str)
 
         except Exception:
@@ -98,9 +116,12 @@ import inspect
     footer = """
 clsmembers = [card for name, card in inspect.getmembers(sys.modules[__name__]) if isinstance(card, Card)]
 {} = Set("{}", cards=clsmembers)
-""".format(set_name_class_cased, set_name_snake_cased)
+
+set_ability_map = {}
+""".format(set_name_class_cased, set_name_snake_cased, pprint.pformat(all_abilities))
     with open("{}.py".format(set_name.lower()), "w") as set_file:
         set_file.write("{}\n\n{}\n\n{}".format(header, "\n".join(output_lines), footer))
+
 
 if __name__ == '__main__':
     arg_parser = argparse.ArgumentParser()
@@ -118,5 +139,10 @@ if __name__ == '__main__':
 
     with open(args.enums_file, "r", encoding="utf-8") as enums_in:
         enums = json.load(enums_in)
-
-    generate_set_map(loc, cards, enums, args.set)
+    if args.set:
+        generate_set_map(loc, cards, enums, args.set)
+    else:
+        print("generating all sets!")
+        known_sets = ["ana", "dar", "grn", "m19", "rix", "xln"]
+        for card_set in known_sets:
+            generate_set_map(loc, cards, enums, card_set)

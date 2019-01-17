@@ -8,17 +8,31 @@ COLORMAP = {
 
 class Card(object):
 
-    def __init__(self, name, pretty_name, cost, color_identity, card_type, sub_types, set_id, rarity, set_number, mtga_id):
+    def __init__(self, name="", pretty_name="", cost=None, color_identity=None, card_type="", sub_types="",
+                 abilities=None, set_id="", rarity="", set_number=-1, mtga_id=-1):
         self.name = name
         self.set = set_id
         self.pretty_name = pretty_name
+        if cost is None:
+            cost = []
         self.cost = cost
+        if color_identity is None:
+            color_identity = []
         self.color_identity = color_identity
         self.card_type = card_type
         self.sub_types = sub_types
         self.set_number = set_number
         self.mtga_id = mtga_id
         self.rarity = rarity
+        if abilities is None:
+            abilities = []
+        self.abilities = abilities
+
+    @property
+    def abilities_decoded(self):
+        from ..set_data import all_mtga_abilities
+        return {ability_id: all_mtga_abilities[ability_id] for ability_id in self.abilities}
+
 
     @property
     def colors(self):
@@ -42,6 +56,19 @@ class Card(object):
                 colors = ["Colorless"]
         return colors
 
+    @property
+    def cmc(self):
+        'gets converted mana cost for a card'
+        cmc = 0
+        for symbol in self.cost:
+            if symbol.isdigit():
+                cmc += int(symbol)
+            elif symbol == "X":
+                continue
+            else:
+                cmc += 1
+        return cmc
+
     def to_serializable(self):
         return {
             "name": self.name,
@@ -59,6 +86,7 @@ class Card(object):
 
     @classmethod
     def from_dict(cls, obj):
+        from ..set_data import all_mtga_cards
         try:
             return all_mtga_cards.find_one(obj["mtga_id"])
         except ValueError:
@@ -94,7 +122,7 @@ class GameCard(Card):
             return "<UnknownCard: iid={}>".format(self.game_id)
 
     def transform_to(self, card_id):
-        from .card_set import all_mtga_cards
+        from ..set_data import all_mtga_cards
         new_card = all_mtga_cards.find_one(card_id)
         self.name = new_card.name
         self.pretty_name = new_card.pretty_name
