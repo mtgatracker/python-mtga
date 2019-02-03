@@ -51,6 +51,8 @@ def generate_set_map(loc, cards, enums, set_name):
     set_cards = [card for card in cards if card["set"].upper() == set_name.upper()]
     assert set_cards, "No cards found in set {}. Double check your nomenclature, and ensure the input files contain your set!"
 
+    token_count = 1
+
     print("translating {} cards from set {}".format(len(set_cards), set_name))
     output_lines = []
     for card in set_cards:
@@ -70,6 +72,7 @@ def generate_set_map(loc, cards, enums, set_name):
             # cc's look like: o2o(U/B)o(U/B)o3oUoB, want to turn it into ["2", "(U/B)"] etc
             cost = [cost_part for cost_part in cc_raw.split("o")[1:] if cost_part != "0"]
             color_identity = [COLOR_ID_MAP[color_id] for color_id in card["colorIdentity"]]
+            collectible = card["isCollectible"]
 
             card_type_ids = [enum_map["CardType"][card_type] for card_type in card["types"]]
             card_types = " ".join([loc_map[loc_id] for loc_id in card_type_ids])
@@ -81,7 +84,14 @@ def generate_set_map(loc, cards, enums, set_name):
 
             rarity = RARITY_ID_MAP[card["rarity"]]
 
-            set_number = int(card["CollectorNumber"])
+            if card["isToken"]:
+                set_number = token_count + 10000
+                token_count += 1
+            else:
+                if card["CollectorNumber"].startswith("GR"):
+                    set_number = int(card["CollectorNumber"][2]) * 1000
+                else:
+                    set_number = int(card["CollectorNumber"])
 
             grp_id = card["grpid"]
             abilities = []
@@ -99,7 +109,7 @@ def generate_set_map(loc, cards, enums, set_name):
             # name, pretty_name, cost, color_identity, card_type, sub_types, set_id, rarity, set_number, mtga_id
             new_card_str = '{} = Card(name="{}", pretty_name="{}", cost={},\n' \
                            '{{}}color_identity={}, card_type="{}", sub_types="{}",\n' \
-                           '{{}}abilities={}, set_id="{}", rarity="{}", set_number={},\n' \
+                           '{{}}abilities={}, set_id="{}", rarity="{}", collectible={}, set_number={},\n' \
                            '{{}}mtga_id={})'.format(
                 card_name_class_cased_suffixed,
                 card_name_snake_cased,
@@ -111,6 +121,7 @@ def generate_set_map(loc, cards, enums, set_name):
                 abilities,
                 set_id,
                 rarity,
+                collectible,
                 set_number,
                 grp_id
             ).format(" "*indentation_length, " "*indentation_length, " "*indentation_length)
@@ -156,6 +167,6 @@ if __name__ == '__main__':
         generate_set_map(loc, cards, enums, args.set)
     else:
         print("generating all sets!")
-        known_sets = ["ana", "dar", "grn", "m19", "rix", "xln"]
+        known_sets = ["ana", "dar", "grn", "m19", "rix", "xln", "rna"]
         for card_set in known_sets:
             generate_set_map(loc, cards, enums, card_set)

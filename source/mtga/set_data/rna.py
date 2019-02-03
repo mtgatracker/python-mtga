@@ -7,1223 +7,1223 @@ import inspect
 
 AngelofGrace = Card(name="angel_of_grace", pretty_name="Angel of Grace", cost=['3', 'W', 'W'],
                     color_identity=['W'], card_type="Creature", sub_types="Angel",
-                    abilities=[7, 8, 122094, 122095], set_id="RNA", rarity="Mythic Rare", set_number=1,
+                    abilities=[7, 8, 122094, 122095], set_id="RNA", rarity="Mythic Rare", collectible=True, set_number=1,
                     mtga_id=69129)
 AngelicExaltation = Card(name="angelic_exaltation", pretty_name="Angelic Exaltation", cost=['3', 'W'],
                          color_identity=['W'], card_type="Enchantment", sub_types="",
-                         abilities=[122096], set_id="RNA", rarity="Uncommon", set_number=2,
+                         abilities=[122096], set_id="RNA", rarity="Uncommon", collectible=True, set_number=2,
                          mtga_id=69130)
 ArchwayAngel = Card(name="archway_angel", pretty_name="Archway Angel", cost=['5', 'W'],
                     color_identity=['W'], card_type="Creature", sub_types="Angel",
-                    abilities=[8, 122085], set_id="RNA", rarity="Uncommon", set_number=3,
+                    abilities=[8, 122085], set_id="RNA", rarity="Uncommon", collectible=True, set_number=3,
                     mtga_id=69131)
 ArrestersZeal = Card(name="arresters_zeal", pretty_name="Arrester's Zeal", cost=['W'],
                      color_identity=['W'], card_type="Instant", sub_types="",
-                     abilities=[122098], set_id="RNA", rarity="Common", set_number=4,
+                     abilities=[122098], set_id="RNA", rarity="Common", collectible=True, set_number=4,
                      mtga_id=69132)
 BringtoTrial = Card(name="bring_to_trial", pretty_name="Bring to Trial", cost=['2', 'W'],
                     color_identity=['W'], card_type="Sorcery", sub_types="",
-                    abilities=[122099], set_id="RNA", rarity="Common", set_number=5,
+                    abilities=[122099], set_id="RNA", rarity="Common", collectible=True, set_number=5,
                     mtga_id=69133)
 CivicStalwart = Card(name="civic_stalwart", pretty_name="Civic Stalwart", cost=['3', 'W'],
                      color_identity=['W'], card_type="Creature", sub_types="Elephant Soldier",
-                     abilities=[63634], set_id="RNA", rarity="Common", set_number=6,
+                     abilities=[63634], set_id="RNA", rarity="Common", collectible=True, set_number=6,
                      mtga_id=69134)
 ConcordiaPegasus = Card(name="concordia_pegasus", pretty_name="Concordia Pegasus", cost=['1', 'W'],
                         color_identity=['W'], card_type="Creature", sub_types="Pegasus",
-                        abilities=[8], set_id="RNA", rarity="Common", set_number=7,
+                        abilities=[8], set_id="RNA", rarity="Common", collectible=True, set_number=7,
                         mtga_id=69135)
 ExposetoDaylight = Card(name="expose_to_daylight", pretty_name="Expose to Daylight", cost=['2', 'W'],
                         color_identity=['W'], card_type="Instant", sub_types="",
-                        abilities=[122100], set_id="RNA", rarity="Common", set_number=8,
+                        abilities=[122100], set_id="RNA", rarity="Common", collectible=True, set_number=8,
                         mtga_id=69136)
 ForbiddingSpirit = Card(name="forbidding_spirit", pretty_name="Forbidding Spirit", cost=['1', 'W', 'W'],
                         color_identity=['W'], card_type="Creature", sub_types="Spirit Cleric",
-                        abilities=[122101], set_id="RNA", rarity="Uncommon", set_number=9,
+                        abilities=[122101], set_id="RNA", rarity="Uncommon", collectible=True, set_number=9,
                         mtga_id=69137)
 HaazdaOfficer = Card(name="haazda_officer", pretty_name="Haazda Officer", cost=['2', 'W'],
                      color_identity=['W'], card_type="Creature", sub_types="Human Soldier",
-                     abilities=[103263], set_id="RNA", rarity="Common", set_number=10,
+                     abilities=[103263], set_id="RNA", rarity="Common", collectible=True, set_number=10,
                      mtga_id=69138)
 HeroofPrecinctOne = Card(name="hero_of_precinct_one", pretty_name="Hero of Precinct One", cost=['1', 'W'],
                          color_identity=['W'], card_type="Creature", sub_types="Human Warrior",
-                         abilities=[122103], set_id="RNA", rarity="Rare", set_number=11,
+                         abilities=[122103], set_id="RNA", rarity="Rare", collectible=True, set_number=11,
                          mtga_id=69139)
 ImpassionedOrator = Card(name="impassioned_orator", pretty_name="Impassioned Orator", cost=['1', 'W'],
                          color_identity=['W'], card_type="Creature", sub_types="Human Cleric",
-                         abilities=[122104], set_id="RNA", rarity="Common", set_number=12,
+                         abilities=[122104], set_id="RNA", rarity="Common", collectible=True, set_number=12,
                          mtga_id=69140)
 JusticiarsPortal = Card(name="justiciars_portal", pretty_name="Justiciar's Portal", cost=['1', 'W'],
                         color_identity=['W'], card_type="Instant", sub_types="",
-                        abilities=[122105], set_id="RNA", rarity="Common", set_number=13,
+                        abilities=[122105], set_id="RNA", rarity="Common", collectible=True, set_number=13,
                         mtga_id=69141)
 KnightofSorrows = Card(name="knight_of_sorrows", pretty_name="Knight of Sorrows", cost=['4', 'W'],
                        color_identity=['W'], card_type="Creature", sub_types="Human Knight",
-                       abilities=[76869, 122106], set_id="RNA", rarity="Common", set_number=14,
+                       abilities=[76869, 122106], set_id="RNA", rarity="Common", collectible=True, set_number=14,
                        mtga_id=69142)
 LumberingBattlement = Card(name="lumbering_battlement", pretty_name="Lumbering Battlement", cost=['4', 'W'],
                            color_identity=['W'], card_type="Creature", sub_types="Beast",
-                           abilities=[15, 122063, 122108], set_id="RNA", rarity="Rare", set_number=15,
+                           abilities=[15, 122063, 122108], set_id="RNA", rarity="Rare", collectible=True, set_number=15,
                            mtga_id=69143)
 MinistrantofObligation = Card(name="ministrant_of_obligation", pretty_name="Ministrant of Obligation", cost=['2', 'W'],
                               color_identity=['W'], card_type="Creature", sub_types="Human Cleric",
-                              abilities=[122109], set_id="RNA", rarity="Uncommon", set_number=16,
+                              abilities=[122109], set_id="RNA", rarity="Uncommon", collectible=True, set_number=16,
                               mtga_id=69144)
 ProwlingCaracal = Card(name="prowling_caracal", pretty_name="Prowling Caracal", cost=['1', 'W'],
                        color_identity=['W'], card_type="Creature", sub_types="Cat",
-                       abilities=[], set_id="RNA", rarity="Common", set_number=17,
+                       abilities=[], set_id="RNA", rarity="Common", collectible=True, set_number=17,
                        mtga_id=69145)
 RallytoBattle = Card(name="rally_to_battle", pretty_name="Rally to Battle", cost=['3', 'W'],
                      color_identity=['W'], card_type="Instant", sub_types="",
-                     abilities=[121856], set_id="RNA", rarity="Uncommon", set_number=18,
+                     abilities=[121856], set_id="RNA", rarity="Uncommon", collectible=True, set_number=18,
                      mtga_id=69146)
 ResoluteWatchdog = Card(name="resolute_watchdog", pretty_name="Resolute Watchdog", cost=['W'],
                         color_identity=['W'], card_type="Creature", sub_types="Hound",
-                        abilities=[2, 122002], set_id="RNA", rarity="Uncommon", set_number=19,
+                        abilities=[2, 122002], set_id="RNA", rarity="Uncommon", collectible=True, set_number=19,
                         mtga_id=69147)
 SentinelsMark = Card(name="sentinels_mark", pretty_name="Sentinel's Mark", cost=['1', 'W'],
                      color_identity=['W'], card_type="Enchantment", sub_types="Aura",
-                     abilities=[7, 1027, 17633, 121879], set_id="RNA", rarity="Uncommon", set_number=20,
+                     abilities=[7, 1027, 17633, 121879], set_id="RNA", rarity="Uncommon", collectible=True, set_number=20,
                      mtga_id=69148)
 SkyTether = Card(name="sky_tether", pretty_name="Sky Tether", cost=['W'],
                  color_identity=['W'], card_type="Enchantment", sub_types="Aura",
-                 abilities=[1027, 121895], set_id="RNA", rarity="Uncommon", set_number=21,
+                 abilities=[1027, 121895], set_id="RNA", rarity="Uncommon", collectible=True, set_number=21,
                  mtga_id=69149)
 SmotheringTithe = Card(name="smothering_tithe", pretty_name="Smothering Tithe", cost=['3', 'W'],
                        color_identity=['W'], card_type="Enchantment", sub_types="",
-                       abilities=[121936], set_id="RNA", rarity="Rare", set_number=22,
+                       abilities=[121936], set_id="RNA", rarity="Rare", collectible=True, set_number=22,
                        mtga_id=69150)
 SpiritoftheSpires = Card(name="spirit_of_the_spires", pretty_name="Spirit of the Spires", cost=['3', 'W'],
                          color_identity=['W'], card_type="Creature", sub_types="Spirit",
-                         abilities=[8, 12891], set_id="RNA", rarity="Uncommon", set_number=23,
+                         abilities=[8, 12891], set_id="RNA", rarity="Uncommon", collectible=True, set_number=23,
                          mtga_id=69151)
 SummaryJudgment = Card(name="summary_judgment", pretty_name="Summary Judgment", cost=['1', 'W'],
                        color_identity=['W'], card_type="Instant", sub_types="",
-                       abilities=[121981], set_id="RNA", rarity="Common", set_number=24,
+                       abilities=[121981], set_id="RNA", rarity="Common", collectible=True, set_number=24,
                        mtga_id=69152)
 SyndicateMessenger = Card(name="syndicate_messenger", pretty_name="Syndicate Messenger", cost=['3', 'W'],
                           color_identity=['W'], card_type="Creature", sub_types="Bird",
-                          abilities=[8, 122106], set_id="RNA", rarity="Common", set_number=25,
+                          abilities=[8, 122106], set_id="RNA", rarity="Common", collectible=True, set_number=25,
                           mtga_id=69153)
 TenthDistrictVeteran = Card(name="tenth_district_veteran", pretty_name="Tenth District Veteran", cost=['2', 'W'],
                             color_identity=['W'], card_type="Creature", sub_types="Human Soldier",
-                            abilities=[15, 122001], set_id="RNA", rarity="Common", set_number=26,
+                            abilities=[15, 122001], set_id="RNA", rarity="Common", collectible=True, set_number=26,
                             mtga_id=69154)
 TitheTaker = Card(name="tithe_taker", pretty_name="Tithe Taker", cost=['1', 'W'],
                   color_identity=['W'], card_type="Creature", sub_types="Human Soldier",
-                  abilities=[122007, 122106], set_id="RNA", rarity="Rare", set_number=27,
+                  abilities=[122007, 122106], set_id="RNA", rarity="Rare", collectible=True, set_number=27,
                   mtga_id=69155)
 TwilightPanther = Card(name="twilight_panther", pretty_name="Twilight Panther", cost=['W'],
                        color_identity=['B', 'W'], card_type="Creature", sub_types="Cat Spirit",
-                       abilities=[94573], set_id="RNA", rarity="Common", set_number=28,
+                       abilities=[94573], set_id="RNA", rarity="Common", collectible=True, set_number=28,
                        mtga_id=69156)
 UnbreakableFormation = Card(name="unbreakable_formation", pretty_name="Unbreakable Formation", cost=['2', 'W'],
                             color_identity=['W'], card_type="Instant", sub_types="",
-                            abilities=[122018], set_id="RNA", rarity="Rare", set_number=29,
+                            abilities=[122018], set_id="RNA", rarity="Rare", collectible=True, set_number=29,
                             mtga_id=69157)
 WatchfulGiant = Card(name="watchful_giant", pretty_name="Watchful Giant", cost=['5', 'W'],
                      color_identity=['W'], card_type="Creature", sub_types="Giant Soldier",
-                     abilities=[99786], set_id="RNA", rarity="Common", set_number=30,
+                     abilities=[99786], set_id="RNA", rarity="Common", collectible=True, set_number=30,
                      mtga_id=69158)
 ArrestersAdmonition = Card(name="arresters_admonition", pretty_name="Arrester's Admonition", cost=['2', 'U'],
                            color_identity=['U'], card_type="Instant", sub_types="",
-                           abilities=[122028], set_id="RNA", rarity="Common", set_number=31,
+                           abilities=[122028], set_id="RNA", rarity="Common", collectible=True, set_number=31,
                            mtga_id=69159)
 BenthicBiomancer = Card(name="benthic_biomancer", pretty_name="Benthic Biomancer", cost=['U'],
                         color_identity=['U'], card_type="Creature", sub_types="Merfolk Wizard Mutant",
-                        abilities=[122034, 121857], set_id="RNA", rarity="Rare", set_number=32,
+                        abilities=[122034, 121857], set_id="RNA", rarity="Rare", collectible=True, set_number=32,
                         mtga_id=69160)
 Chillbringer = Card(name="chillbringer", pretty_name="Chillbringer", cost=['4', 'U'],
                     color_identity=['U'], card_type="Creature", sub_types="Elemental",
-                    abilities=[8, 121858], set_id="RNA", rarity="Common", set_number=33,
+                    abilities=[8, 121858], set_id="RNA", rarity="Common", collectible=True, set_number=33,
                     mtga_id=69161)
 CleartheMind = Card(name="clear_the_mind", pretty_name="Clear the Mind", cost=['2', 'U'],
                     color_identity=['U'], card_type="Sorcery", sub_types="",
-                    abilities=[25851, 25848], set_id="RNA", rarity="Common", set_number=34,
+                    abilities=[25851, 25848], set_id="RNA", rarity="Common", collectible=True, set_number=34,
                     mtga_id=69162)
 CodeofConstraint = Card(name="code_of_constraint", pretty_name="Code of Constraint", cost=['2', 'U'],
                         color_identity=['U'], card_type="Instant", sub_types="",
-                        abilities=[122115], set_id="RNA", rarity="Uncommon", set_number=35,
+                        abilities=[122115], set_id="RNA", rarity="Uncommon", collectible=True, set_number=35,
                         mtga_id=69163)
 CoralCommando = Card(name="coral_commando", pretty_name="Coral Commando", cost=['2', 'U'],
                      color_identity=['U'], card_type="Creature", sub_types="Merfolk Warrior",
-                     abilities=[], set_id="RNA", rarity="Common", set_number=36,
+                     abilities=[], set_id="RNA", rarity="Common", collectible=True, set_number=36,
                      mtga_id=69164)
 EssenceCapture = Card(name="essence_capture", pretty_name="Essence Capture", cost=['U', 'U'],
                       color_identity=['U'], card_type="Instant", sub_types="",
-                      abilities=[121874], set_id="RNA", rarity="Uncommon", set_number=37,
+                      abilities=[121874], set_id="RNA", rarity="Uncommon", collectible=True, set_number=37,
                       mtga_id=69165)
 EyesEverywhere = Card(name="eyes_everywhere", pretty_name="Eyes Everywhere", cost=['2', 'U'],
                       color_identity=['U'], card_type="Enchantment", sub_types="",
-                      abilities=[20495, 122067], set_id="RNA", rarity="Uncommon", set_number=38,
+                      abilities=[20495, 122067], set_id="RNA", rarity="Uncommon", collectible=True, set_number=38,
                       mtga_id=69166)
 FaerieDuelist = Card(name="faerie_duelist", pretty_name="Faerie Duelist", cost=['1', 'U'],
                      color_identity=['U'], card_type="Creature", sub_types="Faerie Rogue",
-                     abilities=[7, 8, 122072], set_id="RNA", rarity="Common", set_number=39,
+                     abilities=[7, 8, 122072], set_id="RNA", rarity="Common", collectible=True, set_number=39,
                      mtga_id=69167)
 GatewaySneak = Card(name="gateway_sneak", pretty_name="Gateway Sneak", cost=['2', 'U'],
                     color_identity=['U'], card_type="Creature", sub_types="Vedalken Rogue",
-                    abilities=[122075, 92932], set_id="RNA", rarity="Uncommon", set_number=40,
+                    abilities=[122075, 92932], set_id="RNA", rarity="Uncommon", collectible=True, set_number=40,
                     mtga_id=69168)
 Humongulus = Card(name="humongulus", pretty_name="Humongulus", cost=['4', 'U'],
                   color_identity=['U'], card_type="Creature", sub_types="Homunculus",
-                  abilities=[10], set_id="RNA", rarity="Common", set_number=41,
+                  abilities=[10], set_id="RNA", rarity="Common", collectible=True, set_number=41,
                   mtga_id=69169)
 MassManipulation = Card(name="mass_manipulation", pretty_name="Mass Manipulation", cost=['X', 'X', 'U', 'U', 'U', 'U'],
                         color_identity=['U'], card_type="Sorcery", sub_types="",
-                        abilities=[121882], set_id="RNA", rarity="Rare", set_number=42,
+                        abilities=[121882], set_id="RNA", rarity="Rare", collectible=True, set_number=42,
                         mtga_id=69170)
 MesmerizingBenthid = Card(name="mesmerizing_benthid", pretty_name="Mesmerizing Benthid", cost=['3', 'U', 'U'],
                           color_identity=['U'], card_type="Creature", sub_types="Octopus",
-                          abilities=[121894, 121899], set_id="RNA", rarity="Mythic Rare", set_number=43,
+                          abilities=[121894, 121899], set_id="RNA", rarity="Mythic Rare", collectible=True, set_number=43,
                           mtga_id=69171)
 PersistentPetitioners = Card(name="persistent_petitioners", pretty_name="Persistent Petitioners", cost=['1', 'U'],
                              color_identity=['U'], card_type="Creature", sub_types="Human Advisor",
-                             abilities=[121904, 121909, 88192], set_id="RNA", rarity="Common", set_number=44,
+                             abilities=[121904, 121909, 88192], set_id="RNA", rarity="Common", collectible=True, set_number=44,
                              mtga_id=69172)
 PrecognitivePerception = Card(name="precognitive_perception", pretty_name="Precognitive Perception", cost=['3', 'U', 'U'],
                               color_identity=['U'], card_type="Instant", sub_types="",
-                              abilities=[121918], set_id="RNA", rarity="Rare", set_number=45,
+                              abilities=[121918], set_id="RNA", rarity="Rare", collectible=True, set_number=45,
                               mtga_id=69173)
 PryingEyes = Card(name="prying_eyes", pretty_name="Prying Eyes", cost=['4', 'U', 'U'],
                   color_identity=['U'], card_type="Instant", sub_types="",
-                  abilities=[19615], set_id="RNA", rarity="Common", set_number=46,
+                  abilities=[19615], set_id="RNA", rarity="Common", collectible=True, set_number=46,
                   mtga_id=69174)
 Pteramander = Card(name="pteramander", pretty_name="Pteramander", cost=['U'],
                    color_identity=['U'], card_type="Creature", sub_types="Salamander Drake",
-                   abilities=[8, 121923], set_id="RNA", rarity="Uncommon", set_number=47,
+                   abilities=[8, 121923], set_id="RNA", rarity="Uncommon", collectible=True, set_number=47,
                    mtga_id=69175)
 Quench = Card(name="quench", pretty_name="Quench", cost=['1', 'U'],
               color_identity=['U'], card_type="Instant", sub_types="",
-              abilities=[6374], set_id="RNA", rarity="Common", set_number=48,
+              abilities=[6374], set_id="RNA", rarity="Common", collectible=True, set_number=48,
               mtga_id=69176)
 SagesRowSavant = Card(name="sages_row_savant", pretty_name="Sage's Row Savant", cost=['1', 'U'],
                       color_identity=['U'], card_type="Creature", sub_types="Vedalken Wizard",
-                      abilities=[100685], set_id="RNA", rarity="Common", set_number=49,
+                      abilities=[100685], set_id="RNA", rarity="Common", collectible=True, set_number=49,
                       mtga_id=69177)
 SenateCourier = Card(name="senate_courier", pretty_name="Senate Courier", cost=['2', 'U'],
                      color_identity=['W', 'U'], card_type="Creature", sub_types="Bird",
-                     abilities=[8, 88910], set_id="RNA", rarity="Common", set_number=50,
+                     abilities=[8, 88910], set_id="RNA", rarity="Common", collectible=True, set_number=50,
                      mtga_id=69178)
 ShimmerofPossibility = Card(name="shimmer_of_possibility", pretty_name="Shimmer of Possibility", cost=['1', 'U'],
                             color_identity=['U'], card_type="Sorcery", sub_types="",
-                            abilities=[121940], set_id="RNA", rarity="Common", set_number=51,
+                            abilities=[121940], set_id="RNA", rarity="Common", collectible=True, set_number=51,
                             mtga_id=69179)
 SkatewingSpy = Card(name="skatewing_spy", pretty_name="Skatewing Spy", cost=['3', 'U'],
                     color_identity=['U'], card_type="Creature", sub_types="Vedalken Rogue Mutant",
-                    abilities=[121946, 19694], set_id="RNA", rarity="Uncommon", set_number=52,
+                    abilities=[121946, 19694], set_id="RNA", rarity="Uncommon", collectible=True, set_number=52,
                     mtga_id=69180)
 SkitterEel = Card(name="skitter_eel", pretty_name="Skitter Eel", cost=['3', 'U'],
                   color_identity=['U'], card_type="Creature", sub_types="Fish Crab",
-                  abilities=[121954], set_id="RNA", rarity="Common", set_number=53,
+                  abilities=[121954], set_id="RNA", rarity="Common", collectible=True, set_number=53,
                   mtga_id=69181)
 Slimebind = Card(name="slimebind", pretty_name="Slimebind", cost=['1', 'U'],
                  color_identity=['U'], card_type="Enchantment", sub_types="Aura",
-                 abilities=[7, 1027, 121959], set_id="RNA", rarity="Common", set_number=54,
+                 abilities=[7, 1027, 121959], set_id="RNA", rarity="Common", collectible=True, set_number=54,
                  mtga_id=69182)
 SphinxofForesight = Card(name="sphinx_of_foresight", pretty_name="Sphinx of Foresight", cost=['2', 'U', 'U'],
                          color_identity=['U'], card_type="Creature", sub_types="Sphinx",
-                         abilities=[121964, 8, 20495], set_id="RNA", rarity="Rare", set_number=55,
+                         abilities=[121964, 8, 20495], set_id="RNA", rarity="Rare", collectible=True, set_number=55,
                          mtga_id=69183)
 SwirlingTorrent = Card(name="swirling_torrent", pretty_name="Swirling Torrent", cost=['5', 'U'],
                        color_identity=['U'], card_type="Sorcery", sub_types="",
-                       abilities=[121975], set_id="RNA", rarity="Uncommon", set_number=56,
+                       abilities=[121975], set_id="RNA", rarity="Uncommon", collectible=True, set_number=56,
                        mtga_id=69184)
 ThoughtCollapse = Card(name="thought_collapse", pretty_name="Thought Collapse", cost=['1', 'U', 'U'],
                        color_identity=['U'], card_type="Instant", sub_types="",
-                       abilities=[121980], set_id="RNA", rarity="Common", set_number=57,
+                       abilities=[121980], set_id="RNA", rarity="Common", collectible=True, set_number=57,
                        mtga_id=69185)
 VerityCircle = Card(name="verity_circle", pretty_name="Verity Circle", cost=['2', 'U'],
                     color_identity=['U'], card_type="Enchantment", sub_types="",
-                    abilities=[121984, 121990], set_id="RNA", rarity="Rare", set_number=58,
+                    abilities=[121984, 121990], set_id="RNA", rarity="Rare", collectible=True, set_number=58,
                     mtga_id=69186)
 WallofLostThoughts = Card(name="wall_of_lost_thoughts", pretty_name="Wall of Lost Thoughts", cost=['1', 'U'],
                           color_identity=['U'], card_type="Creature", sub_types="Wall",
-                          abilities=[2, 100740], set_id="RNA", rarity="Uncommon", set_number=59,
+                          abilities=[2, 100740], set_id="RNA", rarity="Uncommon", collectible=True, set_number=59,
                           mtga_id=69187)
 WindstormDrake = Card(name="windstorm_drake", pretty_name="Windstorm Drake", cost=['4', 'U'],
                       color_identity=['U'], card_type="Creature", sub_types="Drake",
-                      abilities=[8, 121999], set_id="RNA", rarity="Uncommon", set_number=60,
+                      abilities=[8, 121999], set_id="RNA", rarity="Uncommon", collectible=True, set_number=60,
                       mtga_id=69188)
 AwakentheErstwhile = Card(name="awaken_the_erstwhile", pretty_name="Awaken the Erstwhile", cost=['3', 'B', 'B'],
                           color_identity=['B'], card_type="Sorcery", sub_types="",
-                          abilities=[122000], set_id="RNA", rarity="Rare", set_number=61,
+                          abilities=[122000], set_id="RNA", rarity="Rare", collectible=True, set_number=61,
                           mtga_id=69189)
 BankruptinBlood = Card(name="bankrupt_in_blood", pretty_name="Bankrupt in Blood", cost=['1', 'B'],
                        color_identity=['B'], card_type="Sorcery", sub_types="",
-                       abilities=[94180, 1746], set_id="RNA", rarity="Uncommon", set_number=62,
+                       abilities=[94180, 1746], set_id="RNA", rarity="Uncommon", collectible=True, set_number=62,
                        mtga_id=69190)
 BladeJuggler = Card(name="blade_juggler", pretty_name="Blade Juggler", cost=['4', 'B'],
                     color_identity=['B'], card_type="Creature", sub_types="Human Rogue",
-                    abilities=[122005, 122006], set_id="RNA", rarity="Common", set_number=63,
+                    abilities=[122005, 122006], set_id="RNA", rarity="Common", collectible=True, set_number=63,
                     mtga_id=69191)
 Bladebrand = Card(name="bladebrand", pretty_name="Bladebrand", cost=['1', 'B'],
                   color_identity=['B'], card_type="Instant", sub_types="",
-                  abilities=[4294, 25848], set_id="RNA", rarity="Common", set_number=64,
+                  abilities=[4294, 25848], set_id="RNA", rarity="Common", collectible=True, set_number=64,
                   mtga_id=69192)
 BloodmistInfiltrator = Card(name="bloodmist_infiltrator", pretty_name="Bloodmist Infiltrator", cost=['2', 'B'],
                             color_identity=['B'], card_type="Creature", sub_types="Vampire",
-                            abilities=[122008], set_id="RNA", rarity="Uncommon", set_number=65,
+                            abilities=[122008], set_id="RNA", rarity="Uncommon", collectible=True, set_number=65,
                             mtga_id=69193)
 CarrionImp = Card(name="carrion_imp", pretty_name="Carrion Imp", cost=['3', 'B'],
                   color_identity=['B'], card_type="Creature", sub_types="Imp",
-                  abilities=[8, 122009], set_id="RNA", rarity="Common", set_number=66,
+                  abilities=[8, 122009], set_id="RNA", rarity="Common", collectible=True, set_number=66,
                   mtga_id=69194)
 CatacombCrocodile = Card(name="catacomb_crocodile", pretty_name="Catacomb Crocodile", cost=['4', 'B'],
                          color_identity=['B'], card_type="Creature", sub_types="Crocodile",
-                         abilities=[], set_id="RNA", rarity="Common", set_number=67,
+                         abilities=[], set_id="RNA", rarity="Common", collectible=True, set_number=67,
                          mtga_id=69195)
 CleartheStage = Card(name="clear_the_stage", pretty_name="Clear the Stage", cost=['4', 'B'],
                      color_identity=['B'], card_type="Instant", sub_types="",
-                     abilities=[122010], set_id="RNA", rarity="Uncommon", set_number=68,
+                     abilities=[122010], set_id="RNA", rarity="Uncommon", collectible=True, set_number=68,
                      mtga_id=69196)
 ConsigntothePit = Card(name="consign_to_the_pit", pretty_name="Consign to the Pit", cost=['5', 'B'],
                        color_identity=['B'], card_type="Sorcery", sub_types="",
-                       abilities=[122012], set_id="RNA", rarity="Common", set_number=69,
+                       abilities=[122012], set_id="RNA", rarity="Common", collectible=True, set_number=69,
                        mtga_id=69197)
 CryoftheCarnarium = Card(name="cry_of_the_carnarium", pretty_name="Cry of the Carnarium", cost=['1', 'B', 'B'],
                          color_identity=['B'], card_type="Sorcery", sub_types="",
-                         abilities=[122013], set_id="RNA", rarity="Uncommon", set_number=70,
+                         abilities=[122013], set_id="RNA", rarity="Uncommon", collectible=True, set_number=70,
                          mtga_id=69198)
 DeadRevels = Card(name="dead_revels", pretty_name="Dead Revels", cost=['3', 'B'],
                   color_identity=['B'], card_type="Sorcery", sub_types="",
-                  abilities=[122014, 1923], set_id="RNA", rarity="Common", set_number=71,
+                  abilities=[122014, 1923], set_id="RNA", rarity="Common", collectible=True, set_number=71,
                   mtga_id=69199)
 DebtorsTransport = Card(name="debtors_transport", pretty_name="Debtors' Transport", cost=['5', 'B'],
                         color_identity=['B'], card_type="Creature", sub_types="Thrull",
-                        abilities=[122109], set_id="RNA", rarity="Common", set_number=72,
+                        abilities=[122109], set_id="RNA", rarity="Common", collectible=True, set_number=72,
                         mtga_id=69200)
 DrillBit = Card(name="drill_bit", pretty_name="Drill Bit", cost=['2', 'B'],
                 color_identity=['B'], card_type="Sorcery", sub_types="",
-                abilities=[122015, 1074], set_id="RNA", rarity="Uncommon", set_number=73,
+                abilities=[122015, 1074], set_id="RNA", rarity="Uncommon", collectible=True, set_number=73,
                 mtga_id=69201)
 FontofAgonies = Card(name="font_of_agonies", pretty_name="Font of Agonies", cost=['B'],
                      color_identity=['B'], card_type="Enchantment", sub_types="",
-                     abilities=[122017, 122019], set_id="RNA", rarity="Rare", set_number=74,
+                     abilities=[122017, 122019], set_id="RNA", rarity="Rare", collectible=True, set_number=74,
                      mtga_id=69202)
 GrotesqueDemise = Card(name="grotesque_demise", pretty_name="Grotesque Demise", cost=['2', 'B'],
                        color_identity=['B'], card_type="Instant", sub_types="",
-                       abilities=[62243], set_id="RNA", rarity="Common", set_number=75,
+                       abilities=[62243], set_id="RNA", rarity="Common", collectible=True, set_number=75,
                        mtga_id=69203)
 Gutterbones = Card(name="gutterbones", pretty_name="Gutterbones", cost=['B'],
                    color_identity=['B'], card_type="Creature", sub_types="Skeleton Warrior",
-                   abilities=[76735, 122021], set_id="RNA", rarity="Rare", set_number=76,
+                   abilities=[76735, 122021], set_id="RNA", rarity="Rare", collectible=True, set_number=76,
                    mtga_id=69204)
 IllGottenInheritance = Card(name="illgotten_inheritance", pretty_name="Ill-Gotten Inheritance", cost=['3', 'B'],
                             color_identity=['B'], card_type="Enchantment", sub_types="",
-                            abilities=[122022, 122024], set_id="RNA", rarity="Common", set_number=77,
+                            abilities=[122022, 122024], set_id="RNA", rarity="Common", collectible=True, set_number=77,
                             mtga_id=69205)
 NoxiousGroodion = Card(name="noxious_groodion", pretty_name="Noxious Groodion", cost=['2', 'B'],
                        color_identity=['B'], card_type="Creature", sub_types="Beast",
-                       abilities=[1], set_id="RNA", rarity="Common", set_number=78,
+                       abilities=[1], set_id="RNA", rarity="Common", collectible=True, set_number=78,
                        mtga_id=69206)
 OrzhovEnforcer = Card(name="orzhov_enforcer", pretty_name="Orzhov Enforcer", cost=['1', 'B'],
                       color_identity=['B'], card_type="Creature", sub_types="Human Rogue",
-                      abilities=[1, 122106], set_id="RNA", rarity="Uncommon", set_number=79,
+                      abilities=[1, 122106], set_id="RNA", rarity="Uncommon", collectible=True, set_number=79,
                       mtga_id=69207)
 OrzhovRacketeers = Card(name="orzhov_racketeers", pretty_name="Orzhov Racketeers", cost=['4', 'B'],
                         color_identity=['B'], card_type="Creature", sub_types="Human Rogue",
-                        abilities=[88861, 122109], set_id="RNA", rarity="Uncommon", set_number=80,
+                        abilities=[88861, 122109], set_id="RNA", rarity="Uncommon", collectible=True, set_number=80,
                         mtga_id=69208)
 PestilentSpirit = Card(name="pestilent_spirit", pretty_name="Pestilent Spirit", cost=['2', 'B'],
                        color_identity=['B'], card_type="Creature", sub_types="Spirit",
-                       abilities=[142, 1, 122025], set_id="RNA", rarity="Rare", set_number=81,
+                       abilities=[142, 1, 122025], set_id="RNA", rarity="Rare", collectible=True, set_number=81,
                        mtga_id=69209)
 PlagueWight = Card(name="plague_wight", pretty_name="Plague Wight", cost=['1', 'B'],
                    color_identity=['B'], card_type="Creature", sub_types="Zombie",
-                   abilities=[122026], set_id="RNA", rarity="Common", set_number=82,
+                   abilities=[122026], set_id="RNA", rarity="Common", collectible=True, set_number=82,
                    mtga_id=69210)
 PriestofForgottenGods = Card(name="priest_of_forgotten_gods", pretty_name="Priest of Forgotten Gods", cost=['1', 'B'],
                              color_identity=['B'], card_type="Creature", sub_types="Human Cleric",
-                             abilities=[122027], set_id="RNA", rarity="Rare", set_number=83,
+                             abilities=[122027], set_id="RNA", rarity="Rare", collectible=True, set_number=83,
                              mtga_id=69211)
 RakdosTrumpeter = Card(name="rakdos_trumpeter", pretty_name="Rakdos Trumpeter", cost=['1', 'B'],
                        color_identity=['R', 'B'], card_type="Creature", sub_types="Human Shaman",
-                       abilities=[142, 122029], set_id="RNA", rarity="Common", set_number=84,
+                       abilities=[142, 122029], set_id="RNA", rarity="Common", collectible=True, set_number=84,
                        mtga_id=69212)
 SpawnofMayhem = Card(name="spawn_of_mayhem", pretty_name="Spawn of Mayhem", cost=['2', 'B', 'B'],
                      color_identity=['B'], card_type="Creature", sub_types="Demon",
-                     abilities=[122031, 8, 14, 122032], set_id="RNA", rarity="Mythic Rare", set_number=85,
+                     abilities=[122031, 8, 14, 122032], set_id="RNA", rarity="Mythic Rare", collectible=True, set_number=85,
                      mtga_id=69213)
 SpireMangler = Card(name="spire_mangler", pretty_name="Spire Mangler", cost=['2', 'B'],
                     color_identity=['B'], card_type="Creature", sub_types="Insect",
-                    abilities=[7, 8, 122033], set_id="RNA", rarity="Uncommon", set_number=86,
+                    abilities=[7, 8, 122033], set_id="RNA", rarity="Uncommon", collectible=True, set_number=86,
                     mtga_id=69214)
 ThirstingShade = Card(name="thirsting_shade", pretty_name="Thirsting Shade", cost=['B'],
                       color_identity=['B'], card_type="Creature", sub_types="Shade",
-                      abilities=[12, 93172], set_id="RNA", rarity="Common", set_number=87,
+                      abilities=[12, 93172], set_id="RNA", rarity="Common", collectible=True, set_number=87,
                       mtga_id=69215)
 UndercityScavenger = Card(name="undercity_scavenger", pretty_name="Undercity Scavenger", cost=['3', 'B'],
                           color_identity=['B'], card_type="Creature", sub_types="Ogre Warrior",
-                          abilities=[122035], set_id="RNA", rarity="Common", set_number=88,
+                          abilities=[122035], set_id="RNA", rarity="Common", collectible=True, set_number=88,
                           mtga_id=69216)
 UndercitysEmbrace = Card(name="undercitys_embrace", pretty_name="Undercity's Embrace", cost=['2', 'B'],
                          color_identity=['B'], card_type="Instant", sub_types="",
-                         abilities=[122036], set_id="RNA", rarity="Common", set_number=89,
+                         abilities=[122036], set_id="RNA", rarity="Common", collectible=True, set_number=89,
                          mtga_id=69217)
 VindictiveVampire = Card(name="vindictive_vampire", pretty_name="Vindictive Vampire", cost=['3', 'B'],
                          color_identity=['B'], card_type="Creature", sub_types="Vampire",
-                         abilities=[122039], set_id="RNA", rarity="Uncommon", set_number=90,
+                         abilities=[122039], set_id="RNA", rarity="Uncommon", collectible=True, set_number=90,
                          mtga_id=69218)
 ActofTreason = Card(name="act_of_treason", pretty_name="Act of Treason", cost=['2', 'R'],
                     color_identity=['R'], card_type="Sorcery", sub_types="",
-                    abilities=[1278], set_id="RNA", rarity="Common", set_number=91,
+                    abilities=[1278], set_id="RNA", rarity="Common", collectible=True, set_number=91,
                     mtga_id=69219)
 Amplifire = Card(name="amplifire", pretty_name="Amplifire", cost=['2', 'R', 'R'],
                  color_identity=['R'], card_type="Creature", sub_types="Elemental",
-                 abilities=[122040], set_id="RNA", rarity="Rare", set_number=92,
+                 abilities=[122040], set_id="RNA", rarity="Rare", collectible=True, set_number=92,
                  mtga_id=69220)
 BurnBright = Card(name="burn_bright", pretty_name="Burn Bright", cost=['2', 'R'],
                   color_identity=['R'], card_type="Instant", sub_types="",
-                  abilities=[23611], set_id="RNA", rarity="Common", set_number=93,
+                  abilities=[23611], set_id="RNA", rarity="Common", collectible=True, set_number=93,
                   mtga_id=69221)
 BurningTreeVandal = Card(name="burningtree_vandal", pretty_name="Burning-Tree Vandal", cost=['2', 'R'],
                          color_identity=['R'], card_type="Creature", sub_types="Human Rogue",
-                         abilities=[175, 101881], set_id="RNA", rarity="Common", set_number=94,
+                         abilities=[175, 101881], set_id="RNA", rarity="Common", collectible=True, set_number=94,
                          mtga_id=69222)
 CavalcadeofCalamity = Card(name="cavalcade_of_calamity", pretty_name="Cavalcade of Calamity", cost=['1', 'R'],
                            color_identity=['R'], card_type="Enchantment", sub_types="",
-                           abilities=[122044], set_id="RNA", rarity="Uncommon", set_number=95,
+                           abilities=[122044], set_id="RNA", rarity="Uncommon", collectible=True, set_number=95,
                            mtga_id=69223)
 ClamorShaman = Card(name="clamor_shaman", pretty_name="Clamor Shaman", cost=['2', 'R'],
                     color_identity=['R'], card_type="Creature", sub_types="Goblin Shaman",
-                    abilities=[175, 122045], set_id="RNA", rarity="Uncommon", set_number=96,
+                    abilities=[175, 122045], set_id="RNA", rarity="Uncommon", collectible=True, set_number=96,
                     mtga_id=69224)
 DaggerCaster = Card(name="dagger_caster", pretty_name="Dagger Caster", cost=['3', 'R'],
                     color_identity=['R'], card_type="Creature", sub_types="Viashino Rogue",
-                    abilities=[122047], set_id="RNA", rarity="Uncommon", set_number=97,
+                    abilities=[122047], set_id="RNA", rarity="Uncommon", collectible=True, set_number=97,
                     mtga_id=69225)
 Deface = Card(name="deface", pretty_name="Deface", cost=['R'],
               color_identity=['R'], card_type="Sorcery", sub_types="",
-              abilities=[122048], set_id="RNA", rarity="Common", set_number=98,
+              abilities=[122048], set_id="RNA", rarity="Common", collectible=True, set_number=98,
               mtga_id=69226)
 Electrodominance = Card(name="electrodominance", pretty_name="Electrodominance", cost=['X', 'R', 'R'],
                         color_identity=['R'], card_type="Instant", sub_types="",
-                        abilities=[122049], set_id="RNA", rarity="Rare", set_number=99,
+                        abilities=[122049], set_id="RNA", rarity="Rare", collectible=True, set_number=99,
                         mtga_id=69227)
 FeralMaaka = Card(name="feral_maaka", pretty_name="Feral Maaka", cost=['1', 'R'],
                   color_identity=['R'], card_type="Creature", sub_types="Cat",
-                  abilities=[], set_id="RNA", rarity="Common", set_number=100,
+                  abilities=[], set_id="RNA", rarity="Common", collectible=True, set_number=100,
                   mtga_id=69228)
 FlamesoftheRazeBoar = Card(name="flames_of_the_razeboar", pretty_name="Flames of the Raze-Boar", cost=['5', 'R'],
                            color_identity=['R'], card_type="Instant", sub_types="",
-                           abilities=[122050], set_id="RNA", rarity="Uncommon", set_number=101,
+                           abilities=[122050], set_id="RNA", rarity="Uncommon", collectible=True, set_number=101,
                            mtga_id=69229)
 GatesAblaze = Card(name="gates_ablaze", pretty_name="Gates Ablaze", cost=['2', 'R'],
                    color_identity=['R'], card_type="Sorcery", sub_types="",
-                   abilities=[122051], set_id="RNA", rarity="Uncommon", set_number=102,
+                   abilities=[122051], set_id="RNA", rarity="Uncommon", collectible=True, set_number=102,
                    mtga_id=69230)
 GhorClanWrecker = Card(name="ghorclan_wrecker", pretty_name="Ghor-Clan Wrecker", cost=['3', 'R'],
                        color_identity=['R'], card_type="Creature", sub_types="Human Warrior",
-                       abilities=[175, 142], set_id="RNA", rarity="Common", set_number=103,
+                       abilities=[175, 142], set_id="RNA", rarity="Common", collectible=True, set_number=103,
                        mtga_id=69231)
 GoblinGathering = Card(name="goblin_gathering", pretty_name="Goblin Gathering", cost=['2', 'R'],
                        color_identity=['R'], card_type="Sorcery", sub_types="",
-                       abilities=[122052], set_id="RNA", rarity="Common", set_number=104,
+                       abilities=[122052], set_id="RNA", rarity="Common", collectible=True, set_number=104,
                        mtga_id=69232)
 GravelHideGoblin = Card(name="gravelhide_goblin", pretty_name="Gravel-Hide Goblin", cost=['1', 'R'],
                         color_identity=['G', 'R'], card_type="Creature", sub_types="Goblin Shaman",
-                        abilities=[122053], set_id="RNA", rarity="Common", set_number=105,
+                        abilities=[122053], set_id="RNA", rarity="Common", collectible=True, set_number=105,
                         mtga_id=69233)
 ImmolationShaman = Card(name="immolation_shaman", pretty_name="Immolation Shaman", cost=['1', 'R'],
                         color_identity=['R'], card_type="Creature", sub_types="Viashino Shaman",
-                        abilities=[121859, 121860], set_id="RNA", rarity="Rare", set_number=106,
+                        abilities=[121859, 121860], set_id="RNA", rarity="Rare", collectible=True, set_number=106,
                         mtga_id=69234)
 LightUptheStage = Card(name="light_up_the_stage", pretty_name="Light Up the Stage", cost=['2', 'R'],
                        color_identity=['R'], card_type="Sorcery", sub_types="",
-                       abilities=[121861, 121862], set_id="RNA", rarity="Uncommon", set_number=107,
+                       abilities=[121861, 121862], set_id="RNA", rarity="Uncommon", collectible=True, set_number=107,
                        mtga_id=69235)
 MirrorMarch = Card(name="mirror_march", pretty_name="Mirror March", cost=['5', 'R'],
                    color_identity=['R'], card_type="Enchantment", sub_types="",
-                   abilities=[121863], set_id="RNA", rarity="Rare", set_number=108,
+                   abilities=[121863], set_id="RNA", rarity="Rare", collectible=True, set_number=108,
                    mtga_id=69236)
 RixMaadiReveler = Card(name="rix_maadi_reveler", pretty_name="Rix Maadi Reveler", cost=['1', 'R'],
                        color_identity=['B', 'R'], card_type="Creature", sub_types="Human Shaman",
-                       abilities=[121864, 121865], set_id="RNA", rarity="Rare", set_number=109,
+                       abilities=[121864, 121865], set_id="RNA", rarity="Rare", collectible=True, set_number=109,
                        mtga_id=69237)
 RubbleReading = Card(name="rubble_reading", pretty_name="Rubble Reading", cost=['3', 'R'],
                      color_identity=['R'], card_type="Sorcery", sub_types="",
-                     abilities=[121866], set_id="RNA", rarity="Common", set_number=110,
+                     abilities=[121866], set_id="RNA", rarity="Common", collectible=True, set_number=110,
                      mtga_id=69238)
 RubblebeltRecluse = Card(name="rubblebelt_recluse", pretty_name="Rubblebelt Recluse", cost=['4', 'R'],
                          color_identity=['R'], card_type="Creature", sub_types="Ogre Berserker",
-                         abilities=[76824], set_id="RNA", rarity="Common", set_number=111,
+                         abilities=[76824], set_id="RNA", rarity="Common", collectible=True, set_number=111,
                          mtga_id=69239)
 RumblingRuin = Card(name="rumbling_ruin", pretty_name="Rumbling Ruin", cost=['5', 'R'],
                     color_identity=['R'], card_type="Creature", sub_types="Elemental",
-                    abilities=[122054], set_id="RNA", rarity="Uncommon", set_number=112,
+                    abilities=[122054], set_id="RNA", rarity="Uncommon", collectible=True, set_number=112,
                     mtga_id=69240)
 Scorchmark = Card(name="scorchmark", pretty_name="Scorchmark", cost=['1', 'R'],
                   color_identity=['R'], card_type="Instant", sub_types="",
-                  abilities=[7344], set_id="RNA", rarity="Common", set_number=113,
+                  abilities=[7344], set_id="RNA", rarity="Common", collectible=True, set_number=113,
                   mtga_id=69241)
 SkarrganHellkite = Card(name="skarrgan_hellkite", pretty_name="Skarrgan Hellkite", cost=['3', 'R', 'R'],
                         color_identity=['R'], card_type="Creature", sub_types="Dragon",
-                        abilities=[175, 8, 121867], set_id="RNA", rarity="Mythic Rare", set_number=114,
+                        abilities=[175, 8, 121867], set_id="RNA", rarity="Mythic Rare", collectible=True, set_number=114,
                         mtga_id=69242)
 SkewertheCritics = Card(name="skewer_the_critics", pretty_name="Skewer the Critics", cost=['2', 'R'],
                         color_identity=['R'], card_type="Sorcery", sub_types="",
-                        abilities=[121861, 70361], set_id="RNA", rarity="Common", set_number=115,
+                        abilities=[121861, 70361], set_id="RNA", rarity="Common", collectible=True, set_number=115,
                         mtga_id=69243)
 SmeltWardIgnus = Card(name="smeltward_ignus", pretty_name="Smelt-Ward Ignus", cost=['1', 'R'],
                       color_identity=['R'], card_type="Creature", sub_types="Elemental",
-                      abilities=[121868], set_id="RNA", rarity="Uncommon", set_number=116,
+                      abilities=[121868], set_id="RNA", rarity="Uncommon", collectible=True, set_number=116,
                       mtga_id=69244)
 SpearSpewer = Card(name="spear_spewer", pretty_name="Spear Spewer", cost=['R'],
                    color_identity=['R'], card_type="Creature", sub_types="Goblin Warrior",
-                   abilities=[2, 121869], set_id="RNA", rarity="Common", set_number=117,
+                   abilities=[2, 121869], set_id="RNA", rarity="Common", collectible=True, set_number=117,
                    mtga_id=69245)
 SpikewheelAcrobat = Card(name="spikewheel_acrobat", pretty_name="Spikewheel Acrobat", cost=['3', 'R'],
                          color_identity=['R'], card_type="Creature", sub_types="Human Rogue",
-                         abilities=[121870], set_id="RNA", rarity="Common", set_number=118,
+                         abilities=[121870], set_id="RNA", rarity="Common", collectible=True, set_number=118,
                          mtga_id=69246)
 StormStrike = Card(name="storm_strike", pretty_name="Storm Strike", cost=['R'],
                    color_identity=['R'], card_type="Instant", sub_types="",
-                   abilities=[122058], set_id="RNA", rarity="Common", set_number=119,
+                   abilities=[122058], set_id="RNA", rarity="Common", collectible=True, set_number=119,
                    mtga_id=69247)
 TinStreetDodger = Card(name="tin_street_dodger", pretty_name="Tin Street Dodger", cost=['R'],
                        color_identity=['R'], card_type="Creature", sub_types="Goblin Rogue",
-                       abilities=[9, 122059], set_id="RNA", rarity="Uncommon", set_number=120,
+                       abilities=[9, 122059], set_id="RNA", rarity="Uncommon", collectible=True, set_number=120,
                        mtga_id=69248)
 AxebaneBeast = Card(name="axebane_beast", pretty_name="Axebane Beast", cost=['3', 'G'],
                     color_identity=['G'], card_type="Creature", sub_types="Beast",
-                    abilities=[], set_id="RNA", rarity="Common", set_number=121,
+                    abilities=[], set_id="RNA", rarity="Common", collectible=True, set_number=121,
                     mtga_id=69249)
 BiogenicOoze = Card(name="biogenic_ooze", pretty_name="Biogenic Ooze", cost=['3', 'G', 'G'],
                     color_identity=['G'], card_type="Creature", sub_types="Ooze",
-                    abilities=[122060, 122061, 122062], set_id="RNA", rarity="Mythic Rare", set_number=122,
+                    abilities=[122060, 122061, 122062], set_id="RNA", rarity="Mythic Rare", collectible=True, set_number=122,
                     mtga_id=69250)
 BiogenicUpgrade = Card(name="biogenic_upgrade", pretty_name="Biogenic Upgrade", cost=['4', 'G', 'G'],
                        color_identity=['G'], card_type="Sorcery", sub_types="",
-                       abilities=[122064], set_id="RNA", rarity="Uncommon", set_number=123,
+                       abilities=[122064], set_id="RNA", rarity="Uncommon", collectible=True, set_number=123,
                        mtga_id=69251)
 EndRazeForerunners = Card(name="endraze_forerunners", pretty_name="End-Raze Forerunners", cost=['5', 'G', 'G', 'G'],
                           color_identity=['G'], card_type="Creature", sub_types="Boar",
-                          abilities=[15, 14, 9, 122065], set_id="RNA", rarity="Rare", set_number=124,
+                          abilities=[15, 14, 9, 122065], set_id="RNA", rarity="Rare", collectible=True, set_number=124,
                           mtga_id=69252)
 EnragedCeratok = Card(name="enraged_ceratok", pretty_name="Enraged Ceratok", cost=['2', 'G', 'G'],
                       color_identity=['G'], card_type="Creature", sub_types="Rhino",
-                      abilities=[87941], set_id="RNA", rarity="Uncommon", set_number=125,
+                      abilities=[87941], set_id="RNA", rarity="Uncommon", collectible=True, set_number=125,
                       mtga_id=69253)
 GatebreakerRam = Card(name="gatebreaker_ram", pretty_name="Gatebreaker Ram", cost=['2', 'G'],
                       color_identity=['G'], card_type="Creature", sub_types="Sheep",
-                      abilities=[122066, 121871], set_id="RNA", rarity="Uncommon", set_number=126,
+                      abilities=[122066, 121871], set_id="RNA", rarity="Uncommon", collectible=True, set_number=126,
                       mtga_id=69254)
 GiftofStrength = Card(name="gift_of_strength", pretty_name="Gift of Strength", cost=['1', 'G'],
                       color_identity=['G'], card_type="Instant", sub_types="",
-                      abilities=[103821], set_id="RNA", rarity="Common", set_number=127,
+                      abilities=[103821], set_id="RNA", rarity="Common", collectible=True, set_number=127,
                       mtga_id=69255)
 GrowthChamberGuardian = Card(name="growthchamber_guardian", pretty_name="Growth-Chamber Guardian", cost=['1', 'G'],
                              color_identity=['G'], card_type="Creature", sub_types="Elf Crab Warrior",
-                             abilities=[122068, 122069], set_id="RNA", rarity="Rare", set_number=128,
+                             abilities=[122068, 122069], set_id="RNA", rarity="Rare", collectible=True, set_number=128,
                              mtga_id=69256)
 GruulBeastmaster = Card(name="gruul_beastmaster", pretty_name="Gruul Beastmaster", cost=['3', 'G'],
                         color_identity=['G'], card_type="Creature", sub_types="Human Shaman",
-                        abilities=[175, 122070], set_id="RNA", rarity="Uncommon", set_number=129,
+                        abilities=[175, 122070], set_id="RNA", rarity="Uncommon", collectible=True, set_number=129,
                         mtga_id=69257)
 GuardianProject = Card(name="guardian_project", pretty_name="Guardian Project", cost=['3', 'G'],
                        color_identity=['G'], card_type="Enchantment", sub_types="",
-                       abilities=[122071], set_id="RNA", rarity="Rare", set_number=130,
+                       abilities=[122071], set_id="RNA", rarity="Rare", collectible=True, set_number=130,
                        mtga_id=69258)
 IncubationDruid = Card(name="incubation_druid", pretty_name="Incubation Druid", cost=['1', 'G'],
                        color_identity=['G'], card_type="Creature", sub_types="Elf Druid",
-                       abilities=[122073, 121873], set_id="RNA", rarity="Rare", set_number=131,
+                       abilities=[122073, 121873], set_id="RNA", rarity="Rare", collectible=True, set_number=131,
                        mtga_id=69259)
 MammothSpider = Card(name="mammoth_spider", pretty_name="Mammoth Spider", cost=['4', 'G'],
                      color_identity=['G'], card_type="Creature", sub_types="Spider",
-                     abilities=[13], set_id="RNA", rarity="Common", set_number=132,
+                     abilities=[13], set_id="RNA", rarity="Common", collectible=True, set_number=132,
                      mtga_id=69260)
 OpentheGates = Card(name="open_the_gates", pretty_name="Open the Gates", cost=['G'],
                     color_identity=['G'], card_type="Sorcery", sub_types="",
-                    abilities=[122074], set_id="RNA", rarity="Common", set_number=133,
+                    abilities=[122074], set_id="RNA", rarity="Common", collectible=True, set_number=133,
                     mtga_id=69261)
 RampageoftheClans = Card(name="rampage_of_the_clans", pretty_name="Rampage of the Clans", cost=['3', 'G'],
                          color_identity=['G'], card_type="Instant", sub_types="",
-                         abilities=[121875], set_id="RNA", rarity="Rare", set_number=134,
+                         abilities=[121875], set_id="RNA", rarity="Rare", collectible=True, set_number=134,
                          mtga_id=69262)
 RampagingRendhorn = Card(name="rampaging_rendhorn", pretty_name="Rampaging Rendhorn", cost=['4', 'G'],
                          color_identity=['G'], card_type="Creature", sub_types="Beast",
-                         abilities=[175], set_id="RNA", rarity="Common", set_number=135,
+                         abilities=[175], set_id="RNA", rarity="Common", collectible=True, set_number=135,
                          mtga_id=69263)
 Regenesis = Card(name="regenesis", pretty_name="Regenesis", cost=['3', 'G', 'G'],
                  color_identity=['G'], card_type="Instant", sub_types="",
-                 abilities=[121876], set_id="RNA", rarity="Uncommon", set_number=136,
+                 abilities=[121876], set_id="RNA", rarity="Uncommon", collectible=True, set_number=136,
                  mtga_id=69264)
 RootSnare = Card(name="root_snare", pretty_name="Root Snare", cost=['1', 'G'],
                  color_identity=['G'], card_type="Instant", sub_types="",
-                 abilities=[27746], set_id="RNA", rarity="Common", set_number=137,
+                 abilities=[27746], set_id="RNA", rarity="Common", collectible=True, set_number=137,
                  mtga_id=69265)
 SagittarsVolley = Card(name="sagittars_volley", pretty_name="Sagittars' Volley", cost=['2', 'G'],
                        color_identity=['G'], card_type="Instant", sub_types="",
-                       abilities=[122077], set_id="RNA", rarity="Common", set_number=138,
+                       abilities=[122077], set_id="RNA", rarity="Common", collectible=True, set_number=138,
                        mtga_id=69266)
 SaruliCaretaker = Card(name="saruli_caretaker", pretty_name="Saruli Caretaker", cost=['G'],
                        color_identity=['G'], card_type="Creature", sub_types="Dryad",
-                       abilities=[2, 4441], set_id="RNA", rarity="Common", set_number=139,
+                       abilities=[2, 4441], set_id="RNA", rarity="Common", collectible=True, set_number=139,
                        mtga_id=69267)
 SauroformHybrid = Card(name="sauroform_hybrid", pretty_name="Sauroform Hybrid", cost=['1', 'G'],
                        color_identity=['G'], card_type="Creature", sub_types="Human Lizard Warrior",
-                       abilities=[122079], set_id="RNA", rarity="Common", set_number=140,
+                       abilities=[122079], set_id="RNA", rarity="Common", collectible=True, set_number=140,
                        mtga_id=69268)
 SilhanaWayfinder = Card(name="silhana_wayfinder", pretty_name="Silhana Wayfinder", cost=['1', 'G'],
                         color_identity=['G'], card_type="Creature", sub_types="Elf Scout",
-                        abilities=[121877], set_id="RNA", rarity="Uncommon", set_number=141,
+                        abilities=[121877], set_id="RNA", rarity="Uncommon", collectible=True, set_number=141,
                         mtga_id=69269)
 SteepleCreeper = Card(name="steeple_creeper", pretty_name="Steeple Creeper", cost=['2', 'G'],
                       color_identity=['U', 'G'], card_type="Creature", sub_types="Frog Snake",
-                      abilities=[1840], set_id="RNA", rarity="Common", set_number=142,
+                      abilities=[1840], set_id="RNA", rarity="Common", collectible=True, set_number=142,
                       mtga_id=69270)
 StonyStrength = Card(name="stony_strength", pretty_name="Stony Strength", cost=['G'],
                      color_identity=['G'], card_type="Instant", sub_types="",
-                     abilities=[122080], set_id="RNA", rarity="Common", set_number=143,
+                     abilities=[122080], set_id="RNA", rarity="Common", collectible=True, set_number=143,
                      mtga_id=69271)
 SylvanBrushstrider = Card(name="sylvan_brushstrider", pretty_name="Sylvan Brushstrider", cost=['2', 'G'],
                           color_identity=['G'], card_type="Creature", sub_types="Beast",
-                          abilities=[88132], set_id="RNA", rarity="Common", set_number=144,
+                          abilities=[88132], set_id="RNA", rarity="Common", collectible=True, set_number=144,
                           mtga_id=69272)
 TerritorialBoar = Card(name="territorial_boar", pretty_name="Territorial Boar", cost=['1', 'G'],
                        color_identity=['G'], card_type="Creature", sub_types="Boar",
-                       abilities=[122020], set_id="RNA", rarity="Common", set_number=145,
+                       abilities=[122020], set_id="RNA", rarity="Common", collectible=True, set_number=145,
                        mtga_id=69273)
 TitanicBrawl = Card(name="titanic_brawl", pretty_name="Titanic Brawl", cost=['1', 'G'],
                     color_identity=['G'], card_type="Instant", sub_types="",
-                    abilities=[122083, 99356], set_id="RNA", rarity="Common", set_number=146,
+                    abilities=[122083, 99356], set_id="RNA", rarity="Common", collectible=True, set_number=146,
                     mtga_id=69274)
 TowerDefense = Card(name="tower_defense", pretty_name="Tower Defense", cost=['1', 'G'],
                     color_identity=['G'], card_type="Instant", sub_types="",
-                    abilities=[19748], set_id="RNA", rarity="Uncommon", set_number=147,
+                    abilities=[19748], set_id="RNA", rarity="Uncommon", collectible=True, set_number=147,
                     mtga_id=69275)
 TrollbredGuardian = Card(name="trollbred_guardian", pretty_name="Trollbred Guardian", cost=['4', 'G'],
                          color_identity=['G'], card_type="Creature", sub_types="Troll Frog Warrior",
-                         abilities=[122068, 2683], set_id="RNA", rarity="Uncommon", set_number=148,
+                         abilities=[122068, 2683], set_id="RNA", rarity="Uncommon", collectible=True, set_number=148,
                          mtga_id=69276)
 WildernessReclamation = Card(name="wilderness_reclamation", pretty_name="Wilderness Reclamation", cost=['3', 'G'],
                              color_identity=['G'], card_type="Enchantment", sub_types="",
-                             abilities=[121878], set_id="RNA", rarity="Uncommon", set_number=149,
+                             abilities=[121878], set_id="RNA", rarity="Uncommon", collectible=True, set_number=149,
                              mtga_id=69277)
 WreckingBeast = Card(name="wrecking_beast", pretty_name="Wrecking Beast", cost=['5', 'G', 'G'],
                      color_identity=['G'], card_type="Creature", sub_types="Beast",
-                     abilities=[175, 14], set_id="RNA", rarity="Common", set_number=150,
+                     abilities=[175, 14], set_id="RNA", rarity="Common", collectible=True, set_number=150,
                      mtga_id=69278)
 Absorb = Card(name="absorb", pretty_name="Absorb", cost=['W', 'U', 'U'],
               color_identity=['W', 'U'], card_type="Instant", sub_types="",
-              abilities=[2821], set_id="RNA", rarity="Rare", set_number=151,
+              abilities=[2821], set_id="RNA", rarity="Rare", collectible=True, set_number=151,
               mtga_id=69279)
 Aeromunculus = Card(name="aeromunculus", pretty_name="Aeromunculus", cost=['1', 'G', 'U'],
                     color_identity=['G', 'U'], card_type="Creature", sub_types="Homunculus Mutant",
-                    abilities=[8, 122086], set_id="RNA", rarity="Common", set_number=152,
+                    abilities=[8, 122086], set_id="RNA", rarity="Common", collectible=True, set_number=152,
                     mtga_id=69280)
 AppliedBiomancy = Card(name="applied_biomancy", pretty_name="Applied Biomancy", cost=['G', 'U'],
                        color_identity=['G', 'U'], card_type="Instant", sub_types="",
-                       abilities=[122087], set_id="RNA", rarity="Common", set_number=153,
+                       abilities=[122087], set_id="RNA", rarity="Common", collectible=True, set_number=153,
                        mtga_id=69281)
 AzoriusKnightArbiter = Card(name="azorius_knightarbiter", pretty_name="Azorius Knight-Arbiter", cost=['3', 'W', 'U'],
                             color_identity=['W', 'U'], card_type="Creature", sub_types="Human Knight",
-                            abilities=[15, 62969], set_id="RNA", rarity="Common", set_number=154,
+                            abilities=[15, 62969], set_id="RNA", rarity="Common", collectible=True, set_number=154,
                             mtga_id=69282)
 AzoriusSkyguard = Card(name="azorius_skyguard", pretty_name="Azorius Skyguard", cost=['4', 'W', 'U'],
                        color_identity=['W', 'U'], card_type="Creature", sub_types="Human Knight",
-                       abilities=[8, 6, 8808], set_id="RNA", rarity="Uncommon", set_number=155,
+                       abilities=[8, 6, 8808], set_id="RNA", rarity="Uncommon", collectible=True, set_number=155,
                        mtga_id=69283)
 BasilicaBellHaunt = Card(name="basilica_bellhaunt", pretty_name="Basilica Bell-Haunt", cost=['W', 'W', 'B', 'B'],
                          color_identity=['W', 'B'], card_type="Creature", sub_types="Spirit",
-                         abilities=[122088], set_id="RNA", rarity="Uncommon", set_number=156,
+                         abilities=[122088], set_id="RNA", rarity="Uncommon", collectible=True, set_number=156,
                          mtga_id=69284)
 Bedevil = Card(name="bedevil", pretty_name="Bedevil", cost=['B', 'B', 'R'],
                color_identity=['B', 'R'], card_type="Instant", sub_types="",
-               abilities=[122089], set_id="RNA", rarity="Rare", set_number=157,
+               abilities=[122089], set_id="RNA", rarity="Rare", collectible=True, set_number=157,
                mtga_id=69285)
 BiomancersFamiliar = Card(name="biomancers_familiar", pretty_name="Biomancer's Familiar", cost=['G', 'U'],
                           color_identity=['G', 'U'], card_type="Creature", sub_types="Mutant",
-                          abilities=[122090, 122091], set_id="RNA", rarity="Rare", set_number=158,
+                          abilities=[122090, 122091], set_id="RNA", rarity="Rare", collectible=True, set_number=158,
                           mtga_id=69286)
 BolracClanCrusher = Card(name="bolracclan_crusher", pretty_name="Bolrac-Clan Crusher", cost=['3', 'R', 'G'],
                          color_identity=['R', 'G'], card_type="Creature", sub_types="Ogre Warrior",
-                         abilities=[122092], set_id="RNA", rarity="Uncommon", set_number=159,
+                         abilities=[122092], set_id="RNA", rarity="Uncommon", collectible=True, set_number=159,
                          mtga_id=69287)
 CaptiveAudience = Card(name="captive_audience", pretty_name="Captive Audience", cost=['5', 'B', 'R'],
                        color_identity=['B', 'R'], card_type="Enchantment", sub_types="",
-                       abilities=[122093, 121951], set_id="RNA", rarity="Mythic Rare", set_number=160,
+                       abilities=[122093, 121951], set_id="RNA", rarity="Mythic Rare", collectible=True, set_number=160,
                        mtga_id=69288)
 Cindervines = Card(name="cindervines", pretty_name="Cindervines", cost=['R', 'G'],
                    color_identity=['R', 'G'], card_type="Enchantment", sub_types="",
-                   abilities=[122016, 122043], set_id="RNA", rarity="Rare", set_number=161,
+                   abilities=[122016, 122043], set_id="RNA", rarity="Rare", collectible=True, set_number=161,
                    mtga_id=69289)
 ClanGuildmage = Card(name="clan_guildmage", pretty_name="Clan Guildmage", cost=['R', 'G'],
                      color_identity=['R', 'G'], card_type="Creature", sub_types="Human Shaman",
-                     abilities=[121881, 121880], set_id="RNA", rarity="Uncommon", set_number=162,
+                     abilities=[121881, 121880], set_id="RNA", rarity="Uncommon", collectible=True, set_number=162,
                      mtga_id=69290)
 CombineGuildmage = Card(name="combine_guildmage", pretty_name="Combine Guildmage", cost=['G', 'U'],
                         color_identity=['G', 'U'], card_type="Creature", sub_types="Merfolk Wizard",
-                        abilities=[121883, 121884], set_id="RNA", rarity="Uncommon", set_number=163,
+                        abilities=[121883, 121884], set_id="RNA", rarity="Uncommon", collectible=True, set_number=163,
                         mtga_id=69291)
 CultGuildmage = Card(name="cult_guildmage", pretty_name="Cult Guildmage", cost=['B', 'R'],
                      color_identity=['B', 'R'], card_type="Creature", sub_types="Human Shaman",
-                     abilities=[121885, 121886], set_id="RNA", rarity="Uncommon", set_number=164,
+                     abilities=[121885, 121886], set_id="RNA", rarity="Uncommon", collectible=True, set_number=164,
                      mtga_id=69292)
 DeputyofDetention = Card(name="deputy_of_detention", pretty_name="Deputy of Detention", cost=['1', 'W', 'U'],
                          color_identity=['W', 'U'], card_type="Creature", sub_types="Vedalken Wizard",
-                         abilities=[121887], set_id="RNA", rarity="Rare", set_number=165,
+                         abilities=[121887], set_id="RNA", rarity="Rare", collectible=True, set_number=165,
                          mtga_id=69293)
 DomriChaosBringer = Card(name="domri_chaos_bringer", pretty_name="Domri, Chaos Bringer", cost=['2', 'R', 'G'],
                          color_identity=['R', 'G'], card_type="Planeswalker", sub_types="Domri",
-                         abilities=[122004, 121889, 121891], set_id="RNA", rarity="Mythic Rare", set_number=166,
+                         abilities=[122004, 121889, 121891], set_id="RNA", rarity="Mythic Rare", collectible=True, set_number=166,
                          mtga_id=69294)
 DovinGrandArbiter = Card(name="dovin_grand_arbiter", pretty_name="Dovin, Grand Arbiter", cost=['1', 'W', 'U'],
                          color_identity=['W', 'U'], card_type="Planeswalker", sub_types="Dovin",
-                         abilities=[121892, 121893, 122038], set_id="RNA", rarity="Mythic Rare", set_number=167,
+                         abilities=[121892, 121893, 122038], set_id="RNA", rarity="Mythic Rare", collectible=True, set_number=167,
                          mtga_id=69295)
 DovinsAcuity = Card(name="dovins_acuity", pretty_name="Dovin's Acuity", cost=['1', 'W', 'U'],
                     color_identity=['W', 'U'], card_type="Enchantment", sub_types="",
-                    abilities=[122042, 121896], set_id="RNA", rarity="Uncommon", set_number=168,
+                    abilities=[122042, 121896], set_id="RNA", rarity="Uncommon", collectible=True, set_number=168,
                     mtga_id=69296)
 EmergencyPowers = Card(name="emergency_powers", pretty_name="Emergency Powers", cost=['5', 'W', 'U'],
                        color_identity=['W', 'U'], card_type="Instant", sub_types="",
-                       abilities=[121897], set_id="RNA", rarity="Mythic Rare", set_number=169,
+                       abilities=[121897], set_id="RNA", rarity="Mythic Rare", collectible=True, set_number=169,
                        mtga_id=69297)
 EtherealAbsolution = Card(name="ethereal_absolution", pretty_name="Ethereal Absolution", cost=['4', 'W', 'B'],
                           color_identity=['W', 'B'], card_type="Enchantment", sub_types="",
-                          abilities=[1456, 121898, 122056], set_id="RNA", rarity="Rare", set_number=170,
+                          abilities=[1456, 121898, 122056], set_id="RNA", rarity="Rare", collectible=True, set_number=170,
                           mtga_id=69298)
 FinalPayment = Card(name="final_payment", pretty_name="Final Payment", cost=['W', 'B'],
                     color_identity=['W', 'B'], card_type="Instant", sub_types="",
-                    abilities=[121900, 26818], set_id="RNA", rarity="Common", set_number=171,
+                    abilities=[121900, 26818], set_id="RNA", rarity="Common", collectible=True, set_number=171,
                     mtga_id=69299)
 FirebladeArtist = Card(name="fireblade_artist", pretty_name="Fireblade Artist", cost=['B', 'R'],
                        color_identity=['B', 'R'], card_type="Creature", sub_types="Human Shaman",
-                       abilities=[9, 121901], set_id="RNA", rarity="Uncommon", set_number=172,
+                       abilities=[9, 121901], set_id="RNA", rarity="Uncommon", collectible=True, set_number=172,
                        mtga_id=69300)
 FrenziedArynx = Card(name="frenzied_arynx", pretty_name="Frenzied Arynx", cost=['2', 'R', 'G'],
                      color_identity=['R', 'G'], card_type="Creature", sub_types="Cat Beast",
-                     abilities=[175, 14, 121902], set_id="RNA", rarity="Common", set_number=173,
+                     abilities=[175, 14, 121902], set_id="RNA", rarity="Common", collectible=True, set_number=173,
                      mtga_id=69301)
 FrilledMystic = Card(name="frilled_mystic", pretty_name="Frilled Mystic", cost=['G', 'G', 'U', 'U'],
                      color_identity=['G', 'U'], card_type="Creature", sub_types="Elf Lizard Wizard",
-                     abilities=[7, 121903], set_id="RNA", rarity="Uncommon", set_number=174,
+                     abilities=[7, 121903], set_id="RNA", rarity="Uncommon", collectible=True, set_number=174,
                      mtga_id=69302)
 GallopingLizrog = Card(name="galloping_lizrog", pretty_name="Galloping Lizrog", cost=['3', 'G', 'U'],
                        color_identity=['G', 'U'], card_type="Creature", sub_types="Frog Lizard",
-                       abilities=[14, 122082], set_id="RNA", rarity="Uncommon", set_number=175,
+                       abilities=[14, 122082], set_id="RNA", rarity="Uncommon", collectible=True, set_number=175,
                        mtga_id=69303)
 GetthePoint = Card(name="get_the_point", pretty_name="Get the Point", cost=['3', 'B', 'R'],
                    color_identity=['B', 'R'], card_type="Instant", sub_types="",
-                   abilities=[121905], set_id="RNA", rarity="Common", set_number=176,
+                   abilities=[121905], set_id="RNA", rarity="Common", collectible=True, set_number=176,
                    mtga_id=69304)
 GraspingThrull = Card(name="grasping_thrull", pretty_name="Grasping Thrull", cost=['3', 'W', 'B'],
                       color_identity=['W', 'B'], card_type="Creature", sub_types="Thrull",
-                      abilities=[8, 121906], set_id="RNA", rarity="Common", set_number=177,
+                      abilities=[8, 121906], set_id="RNA", rarity="Common", collectible=True, set_number=177,
                       mtga_id=69305)
 GrowthSpiral = Card(name="growth_spiral", pretty_name="Growth Spiral", cost=['G', 'U'],
                     color_identity=['G', 'U'], card_type="Instant", sub_types="",
-                    abilities=[121907], set_id="RNA", rarity="Common", set_number=178,
+                    abilities=[121907], set_id="RNA", rarity="Common", collectible=True, set_number=178,
                     mtga_id=69306)
 GruulSpellbreaker = Card(name="gruul_spellbreaker", pretty_name="Gruul Spellbreaker", cost=['1', 'R', 'G'],
                          color_identity=['R', 'G'], card_type="Creature", sub_types="Ogre Warrior",
-                         abilities=[175, 14, 121908], set_id="RNA", rarity="Rare", set_number=179,
+                         abilities=[175, 14, 121908], set_id="RNA", rarity="Rare", collectible=True, set_number=179,
                          mtga_id=69307)
 GyreEngineer = Card(name="gyre_engineer", pretty_name="Gyre Engineer", cost=['1', 'G', 'U'],
                     color_identity=['G', 'U'], card_type="Creature", sub_types="Vedalken Wizard",
-                    abilities=[6102], set_id="RNA", rarity="Uncommon", set_number=180,
+                    abilities=[6102], set_id="RNA", rarity="Uncommon", collectible=True, set_number=180,
                     mtga_id=69308)
 Hackrobat = Card(name="hackrobat", pretty_name="Hackrobat", cost=['1', 'B', 'R'],
                  color_identity=['B', 'R'], card_type="Creature", sub_types="Human Rogue",
-                 abilities=[121910, 94573, 97807], set_id="RNA", rarity="Uncommon", set_number=181,
+                 abilities=[121910, 94573, 97807], set_id="RNA", rarity="Uncommon", collectible=True, set_number=181,
                  mtga_id=69309)
 HighAlert = Card(name="high_alert", pretty_name="High Alert", cost=['1', 'W', 'U'],
                  color_identity=['W', 'U'], card_type="Enchantment", sub_types="",
-                 abilities=[61077, 121911, 121912], set_id="RNA", rarity="Uncommon", set_number=182,
+                 abilities=[61077, 121911, 121912], set_id="RNA", rarity="Uncommon", collectible=True, set_number=182,
                  mtga_id=69310)
 HydroidKrasis = Card(name="hydroid_krasis", pretty_name="Hydroid Krasis", cost=['X', 'G', 'U'],
                      color_identity=['G', 'U'], card_type="Creature", sub_types="Jellyfish Hydra Beast",
-                     abilities=[121913, 8, 14, 76885], set_id="RNA", rarity="Mythic Rare", set_number=183,
+                     abilities=[121913, 8, 14, 76885], set_id="RNA", rarity="Mythic Rare", collectible=True, set_number=183,
                      mtga_id=69311)
 ImperiousOligarch = Card(name="imperious_oligarch", pretty_name="Imperious Oligarch", cost=['W', 'B'],
                          color_identity=['W', 'B'], card_type="Creature", sub_types="Human Cleric",
-                         abilities=[15, 122106], set_id="RNA", rarity="Common", set_number=184,
+                         abilities=[15, 122106], set_id="RNA", rarity="Common", collectible=True, set_number=184,
                          mtga_id=69312)
 JudiththeScourgeDiva = Card(name="judith_the_scourge_diva", pretty_name="Judith, the Scourge Diva", cost=['1', 'B', 'R'],
                             color_identity=['B', 'R'], card_type="Creature", sub_types="Human Shaman",
-                            abilities=[118813, 121914], set_id="RNA", rarity="Rare", set_number=185,
+                            abilities=[118813, 121914], set_id="RNA", rarity="Rare", collectible=True, set_number=185,
                             mtga_id=69313)
 KayaOrzhovUsurper = Card(name="kaya_orzhov_usurper", pretty_name="Kaya, Orzhov Usurper", cost=['1', 'W', 'B'],
                          color_identity=['W', 'B'], card_type="Planeswalker", sub_types="Kaya",
-                         abilities=[121915, 121916, 121917], set_id="RNA", rarity="Mythic Rare", set_number=186,
+                         abilities=[121915, 121916, 121917], set_id="RNA", rarity="Mythic Rare", collectible=True, set_number=186,
                          mtga_id=69314)
 KayasWrath = Card(name="kayas_wrath", pretty_name="Kaya's Wrath", cost=['W', 'W', 'B', 'B'],
                   color_identity=['W', 'B'], card_type="Sorcery", sub_types="",
-                  abilities=[121960], set_id="RNA", rarity="Rare", set_number=187,
+                  abilities=[121960], set_id="RNA", rarity="Rare", collectible=True, set_number=187,
                   mtga_id=69315)
 KnightoftheLastBreath = Card(name="knight_of_the_last_breath", pretty_name="Knight of the Last Breath", cost=['5', 'W', 'B'],
                              color_identity=['W', 'B'], card_type="Creature", sub_types="Giant Knight",
-                             abilities=[121966, 121970], set_id="RNA", rarity="Uncommon", set_number=188,
+                             abilities=[121966, 121970], set_id="RNA", rarity="Uncommon", collectible=True, set_number=188,
                              mtga_id=69316)
 LaviniaAzoriusRenegade = Card(name="lavinia_azorius_renegade", pretty_name="Lavinia, Azorius Renegade", cost=['W', 'U'],
                               color_identity=['W', 'U'], card_type="Creature", sub_types="Human Soldier",
-                              abilities=[121919, 121920], set_id="RNA", rarity="Rare", set_number=189,
+                              abilities=[121919, 121920], set_id="RNA", rarity="Rare", collectible=True, set_number=189,
                               mtga_id=69317)
 LawmagesBinding = Card(name="lawmages_binding", pretty_name="Lawmage's Binding", cost=['1', 'W', 'U'],
                        color_identity=['W', 'U'], card_type="Enchantment", sub_types="Aura",
-                       abilities=[7, 1027, 1183], set_id="RNA", rarity="Common", set_number=190,
+                       abilities=[7, 1027, 1183], set_id="RNA", rarity="Common", collectible=True, set_number=190,
                        mtga_id=69318)
 MacabreMockery = Card(name="macabre_mockery", pretty_name="Macabre Mockery", cost=['2', 'B', 'R'],
                       color_identity=['B', 'R'], card_type="Instant", sub_types="",
-                      abilities=[121986], set_id="RNA", rarity="Uncommon", set_number=191,
+                      abilities=[121986], set_id="RNA", rarity="Uncommon", collectible=True, set_number=191,
                       mtga_id=69319)
 Mortify = Card(name="mortify", pretty_name="Mortify", cost=['1', 'W', 'B'],
                color_identity=['W', 'B'], card_type="Instant", sub_types="",
-               abilities=[3555], set_id="RNA", rarity="Uncommon", set_number=192,
+               abilities=[3555], set_id="RNA", rarity="Uncommon", collectible=True, set_number=192,
                mtga_id=69320)
 NikyaoftheOldWays = Card(name="nikya_of_the_old_ways", pretty_name="Nikya of the Old Ways", cost=['3', 'R', 'G'],
                          color_identity=['R', 'G'], card_type="Creature", sub_types="Centaur Druid",
-                         abilities=[121529, 3776], set_id="RNA", rarity="Rare", set_number=193,
+                         abilities=[121529, 3776], set_id="RNA", rarity="Rare", collectible=True, set_number=193,
                          mtga_id=69321)
 PitilessPontiff = Card(name="pitiless_pontiff", pretty_name="Pitiless Pontiff", cost=['W', 'B'],
                        color_identity=['W', 'B'], card_type="Creature", sub_types="Vampire Cleric",
-                       abilities=[121921], set_id="RNA", rarity="Uncommon", set_number=194,
+                       abilities=[121921], set_id="RNA", rarity="Uncommon", collectible=True, set_number=194,
                        mtga_id=69322)
 PrimeSpeakerVannifar = Card(name="prime_speaker_vannifar", pretty_name="Prime Speaker Vannifar", cost=['2', 'G', 'U'],
                             color_identity=['G', 'U'], card_type="Creature", sub_types="Elf Ooze Wizard",
-                            abilities=[121922], set_id="RNA", rarity="Mythic Rare", set_number=195,
+                            abilities=[121922], set_id="RNA", rarity="Mythic Rare", collectible=True, set_number=195,
                             mtga_id=69323)
 RafterDemon = Card(name="rafter_demon", pretty_name="Rafter Demon", cost=['2', 'B', 'R'],
                    color_identity=['B', 'R'], card_type="Creature", sub_types="Demon",
-                   abilities=[122003, 121924], set_id="RNA", rarity="Common", set_number=196,
+                   abilities=[122003, 121924], set_id="RNA", rarity="Common", collectible=True, set_number=196,
                    mtga_id=69324)
 RakdosFirewheeler = Card(name="rakdos_firewheeler", pretty_name="Rakdos Firewheeler", cost=['B', 'B', 'R', 'R'],
                          color_identity=['B', 'R'], card_type="Creature", sub_types="Human Rogue",
-                         abilities=[121925], set_id="RNA", rarity="Uncommon", set_number=197,
+                         abilities=[121925], set_id="RNA", rarity="Uncommon", collectible=True, set_number=197,
                          mtga_id=69325)
 RakdosRoustabout = Card(name="rakdos_roustabout", pretty_name="Rakdos Roustabout", cost=['1', 'B', 'R'],
                         color_identity=['B', 'R'], card_type="Creature", sub_types="Ogre Warrior",
-                        abilities=[121926], set_id="RNA", rarity="Common", set_number=198,
+                        abilities=[121926], set_id="RNA", rarity="Common", collectible=True, set_number=198,
                         mtga_id=69326)
 RakdostheShowstopper = Card(name="rakdos_the_showstopper", pretty_name="Rakdos, the Showstopper", cost=['4', 'B', 'R'],
                             color_identity=['B', 'R'], card_type="Creature", sub_types="Demon",
-                            abilities=[8, 14, 121927], set_id="RNA", rarity="Mythic Rare", set_number=199,
+                            abilities=[8, 14, 121927], set_id="RNA", rarity="Mythic Rare", collectible=True, set_number=199,
                             mtga_id=69327)
 RavagerWurm = Card(name="ravager_wurm", pretty_name="Ravager Wurm", cost=['3', 'R', 'G', 'G'],
                    color_identity=['R', 'G'], card_type="Creature", sub_types="Wurm",
-                   abilities=[175, 121929], set_id="RNA", rarity="Mythic Rare", set_number=200,
+                   abilities=[175, 121929], set_id="RNA", rarity="Mythic Rare", collectible=True, set_number=200,
                    mtga_id=69328)
 RhythmoftheWild = Card(name="rhythm_of_the_wild", pretty_name="Rhythm of the Wild", cost=['1', 'R', 'G'],
                        color_identity=['R', 'G'], card_type="Enchantment", sub_types="",
-                       abilities=[87960, 121930], set_id="RNA", rarity="Uncommon", set_number=201,
+                       abilities=[87960, 121930], set_id="RNA", rarity="Uncommon", collectible=True, set_number=201,
                        mtga_id=69329)
 RubblebeltRunner = Card(name="rubblebelt_runner", pretty_name="Rubblebelt Runner", cost=['1', 'R', 'G'],
                         color_identity=['R', 'G'], card_type="Creature", sub_types="Viashino Warrior",
-                        abilities=[121931], set_id="RNA", rarity="Common", set_number=202,
+                        abilities=[121931], set_id="RNA", rarity="Common", collectible=True, set_number=202,
                         mtga_id=69330)
 SavageSmash = Card(name="savage_smash", pretty_name="Savage Smash", cost=['1', 'R', 'G'],
                    color_identity=['R', 'G'], card_type="Sorcery", sub_types="",
-                   abilities=[121932], set_id="RNA", rarity="Common", set_number=203,
+                   abilities=[121932], set_id="RNA", rarity="Common", collectible=True, set_number=203,
                    mtga_id=69331)
 SenateGuildmage = Card(name="senate_guildmage", pretty_name="Senate Guildmage", cost=['W', 'U'],
                        color_identity=['W', 'U'], card_type="Creature", sub_types="Human Wizard",
-                       abilities=[17949, 2767], set_id="RNA", rarity="Uncommon", set_number=204,
+                       abilities=[17949, 2767], set_id="RNA", rarity="Uncommon", collectible=True, set_number=204,
                        mtga_id=69332)
 SeraphoftheScales = Card(name="seraph_of_the_scales", pretty_name="Seraph of the Scales", cost=['2', 'W', 'B'],
                          color_identity=['W', 'B'], card_type="Creature", sub_types="Angel",
-                         abilities=[8, 90864, 94573, 122109], set_id="RNA", rarity="Mythic Rare", set_number=205,
+                         abilities=[8, 90864, 94573, 122109], set_id="RNA", rarity="Mythic Rare", collectible=True, set_number=205,
                          mtga_id=69333)
 Sharktocrab = Card(name="sharktocrab", pretty_name="Sharktocrab", cost=['2', 'G', 'U'],
                    color_identity=['G', 'U'], card_type="Creature", sub_types="Fish Octopus Crab",
-                   abilities=[122086, 121933], set_id="RNA", rarity="Uncommon", set_number=206,
+                   abilities=[122086, 121933], set_id="RNA", rarity="Uncommon", collectible=True, set_number=206,
                    mtga_id=69334)
 SimicAscendancy = Card(name="simic_ascendancy", pretty_name="Simic Ascendancy", cost=['G', 'U'],
                        color_identity=['G', 'U'], card_type="Enchantment", sub_types="",
-                       abilities=[121934, 121935, 122023], set_id="RNA", rarity="Rare", set_number=207,
+                       abilities=[121934, 121935, 122023], set_id="RNA", rarity="Rare", collectible=True, set_number=207,
                        mtga_id=69335)
 SphinxofNewPrahv = Card(name="sphinx_of_new_prahv", pretty_name="Sphinx of New Prahv", cost=['W', 'W', 'U', 'U'],
                         color_identity=['W', 'U'], card_type="Creature", sub_types="Sphinx",
-                        abilities=[8, 15, 96148], set_id="RNA", rarity="Uncommon", set_number=208,
+                        abilities=[8, 15, 96148], set_id="RNA", rarity="Uncommon", collectible=True, set_number=208,
                         mtga_id=69336)
 SphinxsInsight = Card(name="sphinxs_insight", pretty_name="Sphinx's Insight", cost=['2', 'W', 'U'],
                       color_identity=['W', 'U'], card_type="Instant", sub_types="",
-                      abilities=[121937], set_id="RNA", rarity="Common", set_number=209,
+                      abilities=[121937], set_id="RNA", rarity="Common", collectible=True, set_number=209,
                       mtga_id=69337)
 SunderShaman = Card(name="sunder_shaman", pretty_name="Sunder Shaman", cost=['R', 'R', 'G', 'G'],
                     color_identity=['R', 'G'], card_type="Creature", sub_types="Giant Shaman",
-                    abilities=[1026, 121938], set_id="RNA", rarity="Uncommon", set_number=210,
+                    abilities=[1026, 121938], set_id="RNA", rarity="Uncommon", collectible=True, set_number=210,
                     mtga_id=69338)
 SyndicateGuildmage = Card(name="syndicate_guildmage", pretty_name="Syndicate Guildmage", cost=['W', 'B'],
                           color_identity=['W', 'B'], card_type="Creature", sub_types="Human Cleric",
-                          abilities=[121939, 122030], set_id="RNA", rarity="Uncommon", set_number=211,
+                          abilities=[121939, 122030], set_id="RNA", rarity="Uncommon", collectible=True, set_number=211,
                           mtga_id=69339)
 TeysaKarlov = Card(name="teysa_karlov", pretty_name="Teysa Karlov", cost=['2', 'W', 'B'],
                    color_identity=['W', 'B'], card_type="Creature", sub_types="Human Advisor",
-                   abilities=[121941, 121942], set_id="RNA", rarity="Rare", set_number=212,
+                   abilities=[121941, 121942], set_id="RNA", rarity="Rare", collectible=True, set_number=212,
                    mtga_id=69340)
 TheaterofHorrors = Card(name="theater_of_horrors", pretty_name="Theater of Horrors", cost=['1', 'B', 'R'],
                         color_identity=['B', 'R'], card_type="Enchantment", sub_types="",
-                        abilities=[121943, 121944, 121945], set_id="RNA", rarity="Rare", set_number=213,
+                        abilities=[121943, 121944, 121945], set_id="RNA", rarity="Rare", collectible=True, set_number=213,
                         mtga_id=69341)
 ZeganaUtopianSpeaker = Card(name="zegana_utopian_speaker", pretty_name="Zegana, Utopian Speaker", cost=['2', 'G', 'U'],
                             color_identity=['G', 'U'], card_type="Creature", sub_types="Merfolk Wizard",
-                            abilities=[122037, 121947, 2683], set_id="RNA", rarity="Rare", set_number=214,
+                            abilities=[122037, 121947, 2683], set_id="RNA", rarity="Rare", collectible=True, set_number=214,
                             mtga_id=69342)
 ZhurTaaGoblin = Card(name="zhurtaa_goblin", pretty_name="Zhur-Taa Goblin", cost=['R', 'G'],
                      color_identity=['R', 'G'], card_type="Creature", sub_types="Goblin Berserker",
-                     abilities=[175], set_id="RNA", rarity="Uncommon", set_number=215,
+                     abilities=[175], set_id="RNA", rarity="Uncommon", collectible=True, set_number=215,
                      mtga_id=69343)
 FootlightFiend = Card(name="footlight_fiend", pretty_name="Footlight Fiend", cost=['(B/R)'],
                       color_identity=['B', 'R'], card_type="Creature", sub_types="Devil",
-                      abilities=[1285], set_id="RNA", rarity="Common", set_number=216,
+                      abilities=[1285], set_id="RNA", rarity="Common", collectible=True, set_number=216,
                       mtga_id=69344)
 RubbleSlinger = Card(name="rubble_slinger", pretty_name="Rubble Slinger", cost=['2', '(R/G)'],
                      color_identity=['R', 'G'], card_type="Creature", sub_types="Human Warrior",
-                     abilities=[13], set_id="RNA", rarity="Common", set_number=217,
+                     abilities=[13], set_id="RNA", rarity="Common", collectible=True, set_number=217,
                      mtga_id=69345)
 Scuttlegator = Card(name="scuttlegator", pretty_name="Scuttlegator", cost=['4', '(G/U)', '(G/U)'],
                     color_identity=['G', 'U'], card_type="Creature", sub_types="Crab Turtle Crocodile",
-                    abilities=[2, 121948, 121949], set_id="RNA", rarity="Common", set_number=218,
+                    abilities=[2, 121948, 121949], set_id="RNA", rarity="Common", collectible=True, set_number=218,
                     mtga_id=69346)
 SenateGriffin = Card(name="senate_griffin", pretty_name="Senate Griffin", cost=['2', '(W/U)', '(W/U)'],
                      color_identity=['W', 'U'], card_type="Creature", sub_types="Griffin",
-                     abilities=[8, 91717], set_id="RNA", rarity="Common", set_number=219,
+                     abilities=[8, 91717], set_id="RNA", rarity="Common", collectible=True, set_number=219,
                      mtga_id=69347)
 VizkopaVampire = Card(name="vizkopa_vampire", pretty_name="Vizkopa Vampire", cost=['2', '(W/B)'],
                       color_identity=['W', 'B'], card_type="Creature", sub_types="Vampire",
-                      abilities=[12], set_id="RNA", rarity="Common", set_number=220,
+                      abilities=[12], set_id="RNA", rarity="Common", collectible=True, set_number=220,
                       mtga_id=69348)
 BedeckBedazzle = Card(name="bedeck__bedazzle", pretty_name="Bedeck // Bedazzle", cost=['(B/R)', '(B/R)', '4', 'B', 'R'],
                       color_identity=['B', 'R'], card_type="Instant Instant", sub_types="",
-                      abilities=[62448, 121950], set_id="RNA", rarity="Rare", set_number=221,
+                      abilities=[62448, 121950], set_id="RNA", rarity="Rare", collectible=True, set_number=221,
                       mtga_id=69349)
 Bedeck = Card(name="bedeck", pretty_name="Bedeck", cost=['(B/R)', '(B/R)'],
               color_identity=['B', 'R'], card_type="Instant", sub_types="",
-              abilities=[62448], set_id="RNA", rarity="Rare", set_number=221,
+              abilities=[62448], set_id="RNA", rarity="Rare", collectible=False, set_number=221,
               mtga_id=69350)
 Bedazzle = Card(name="bedazzle", pretty_name="Bedazzle", cost=['4', 'B', 'R'],
                 color_identity=['B', 'R'], card_type="Instant", sub_types="",
-                abilities=[121950], set_id="RNA", rarity="Rare", set_number=221,
+                abilities=[121950], set_id="RNA", rarity="Rare", collectible=False, set_number=221,
                 mtga_id=69351)
 CarnivalCarnage = Card(name="carnival__carnage", pretty_name="Carnival // Carnage", cost=['(B/R)', '2', 'B', 'R'],
                        color_identity=['B', 'R'], card_type="Instant Sorcery", sub_types="",
-                       abilities=[122046, 121952], set_id="RNA", rarity="Uncommon", set_number=222,
+                       abilities=[122046, 121952], set_id="RNA", rarity="Uncommon", collectible=True, set_number=222,
                        mtga_id=69352)
 Carnival = Card(name="carnival", pretty_name="Carnival", cost=['(B/R)'],
                 color_identity=['B', 'R'], card_type="Instant", sub_types="",
-                abilities=[122046], set_id="RNA", rarity="Uncommon", set_number=222,
+                abilities=[122046], set_id="RNA", rarity="Uncommon", collectible=False, set_number=222,
                 mtga_id=69353)
 Carnage = Card(name="carnage", pretty_name="Carnage", cost=['2', 'B', 'R'],
                color_identity=['B', 'R'], card_type="Sorcery", sub_types="",
-               abilities=[121952], set_id="RNA", rarity="Uncommon", set_number=222,
+               abilities=[121952], set_id="RNA", rarity="Uncommon", collectible=False, set_number=222,
                mtga_id=69354)
 CollisionColossus = Card(name="collision__colossus", pretty_name="Collision // Colossus", cost=['1', '(R/G)', 'R', 'G'],
                          color_identity=['R', 'G'], card_type="Instant Instant", sub_types="",
-                         abilities=[121953, 2729], set_id="RNA", rarity="Uncommon", set_number=223,
+                         abilities=[121953, 2729], set_id="RNA", rarity="Uncommon", collectible=True, set_number=223,
                          mtga_id=69355)
 Collision = Card(name="collision", pretty_name="Collision", cost=['1', '(R/G)'],
                  color_identity=['R', 'G'], card_type="Instant", sub_types="",
-                 abilities=[121953], set_id="RNA", rarity="Uncommon", set_number=223,
+                 abilities=[121953], set_id="RNA", rarity="Uncommon", collectible=False, set_number=223,
                  mtga_id=69356)
 Colossus = Card(name="colossus", pretty_name="Colossus", cost=['R', 'G'],
                 color_identity=['R', 'G'], card_type="Instant", sub_types="",
-                abilities=[2729], set_id="RNA", rarity="Uncommon", set_number=223,
+                abilities=[2729], set_id="RNA", rarity="Uncommon", collectible=False, set_number=223,
                 mtga_id=69357)
 ConsecrateConsume = Card(name="consecrate__consume", pretty_name="Consecrate // Consume", cost=['1', '(W/B)', '2', 'W', 'B'],
                          color_identity=['W', 'B'], card_type="Instant Sorcery", sub_types="",
-                         abilities=[3518, 25848, 121955], set_id="RNA", rarity="Uncommon", set_number=224,
+                         abilities=[3518, 25848, 121955], set_id="RNA", rarity="Uncommon", collectible=True, set_number=224,
                          mtga_id=69358)
 Consecrate = Card(name="consecrate", pretty_name="Consecrate", cost=['1', '(W/B)'],
                   color_identity=['W', 'B'], card_type="Instant", sub_types="",
-                  abilities=[3518, 25848], set_id="RNA", rarity="Uncommon", set_number=224,
+                  abilities=[3518, 25848], set_id="RNA", rarity="Uncommon", collectible=False, set_number=224,
                   mtga_id=69359)
 Consume = Card(name="consume", pretty_name="Consume", cost=['2', 'W', 'B'],
                color_identity=['W', 'B'], card_type="Sorcery", sub_types="",
-               abilities=[121955], set_id="RNA", rarity="Uncommon", set_number=224,
+               abilities=[121955], set_id="RNA", rarity="Uncommon", collectible=False, set_number=224,
                mtga_id=69360)
 DeposeDeploy = Card(name="depose__deploy", pretty_name="Depose // Deploy", cost=['1', '(W/U)', '2', 'W', 'U'],
                     color_identity=['W', 'U'], card_type="Instant Instant", sub_types="",
-                    abilities=[21839, 25848, 121956], set_id="RNA", rarity="Uncommon", set_number=225,
+                    abilities=[21839, 25848, 121956], set_id="RNA", rarity="Uncommon", collectible=True, set_number=225,
                     mtga_id=69361)
 Depose = Card(name="depose", pretty_name="Depose", cost=['1', '(W/U)'],
               color_identity=['W', 'U'], card_type="Instant", sub_types="",
-              abilities=[21839, 25848], set_id="RNA", rarity="Uncommon", set_number=225,
+              abilities=[21839, 25848], set_id="RNA", rarity="Uncommon", collectible=False, set_number=225,
               mtga_id=69362)
 Deploy = Card(name="deploy", pretty_name="Deploy", cost=['2', 'W', 'U'],
               color_identity=['W', 'U'], card_type="Instant", sub_types="",
-              abilities=[121956], set_id="RNA", rarity="Uncommon", set_number=225,
+              abilities=[121956], set_id="RNA", rarity="Uncommon", collectible=False, set_number=225,
               mtga_id=69363)
 IncubationIncongruity = Card(name="incubation__incongruity", pretty_name="Incubation // Incongruity", cost=['(G/U)', '1', 'G', 'U'],
                              color_identity=['U', 'G'], card_type="Sorcery Instant", sub_types="",
-                             abilities=[121957, 121958], set_id="RNA", rarity="Uncommon", set_number=226,
+                             abilities=[121957, 121958], set_id="RNA", rarity="Uncommon", collectible=True, set_number=226,
                              mtga_id=69364)
 Incubation = Card(name="incubation", pretty_name="Incubation", cost=['(G/U)'],
                   color_identity=['G', 'U'], card_type="Sorcery", sub_types="",
-                  abilities=[121957], set_id="RNA", rarity="Uncommon", set_number=226,
+                  abilities=[121957], set_id="RNA", rarity="Uncommon", collectible=False, set_number=226,
                   mtga_id=69365)
 Incongruity = Card(name="incongruity", pretty_name="Incongruity", cost=['1', 'G', 'U'],
                    color_identity=['G', 'U'], card_type="Instant", sub_types="",
-                   abilities=[121958], set_id="RNA", rarity="Uncommon", set_number=226,
+                   abilities=[121958], set_id="RNA", rarity="Uncommon", collectible=False, set_number=226,
                    mtga_id=69366)
 RepudiateReplicate = Card(name="repudiate__replicate", pretty_name="Repudiate // Replicate", cost=['(G/U)', '(G/U)', '1', 'G', 'U'],
                           color_identity=['U', 'G'], card_type="Instant Sorcery", sub_types="",
-                          abilities=[15503, 18554], set_id="RNA", rarity="Rare", set_number=227,
+                          abilities=[15503, 18554], set_id="RNA", rarity="Rare", collectible=True, set_number=227,
                           mtga_id=69367)
 Repudiate = Card(name="repudiate", pretty_name="Repudiate", cost=['(G/U)', '(G/U)'],
                  color_identity=['G', 'U'], card_type="Instant", sub_types="",
-                 abilities=[15503], set_id="RNA", rarity="Rare", set_number=227,
+                 abilities=[15503], set_id="RNA", rarity="Rare", collectible=False, set_number=227,
                  mtga_id=69368)
 Replicate = Card(name="replicate", pretty_name="Replicate", cost=['1', 'G', 'U'],
                  color_identity=['G', 'U'], card_type="Sorcery", sub_types="",
-                 abilities=[18554], set_id="RNA", rarity="Rare", set_number=227,
+                 abilities=[18554], set_id="RNA", rarity="Rare", collectible=False, set_number=227,
                  mtga_id=69369)
 RevivalRevenge = Card(name="revival__revenge", pretty_name="Revival // Revenge", cost=['(W/B)', '(W/B)', '4', 'W', 'B'],
                       color_identity=['W', 'B'], card_type="Sorcery Sorcery", sub_types="",
-                      abilities=[13335, 121961], set_id="RNA", rarity="Rare", set_number=228,
+                      abilities=[13335, 121961], set_id="RNA", rarity="Rare", collectible=True, set_number=228,
                       mtga_id=69370)
 Revival = Card(name="revival", pretty_name="Revival", cost=['(W/B)', '(W/B)'],
                color_identity=['W', 'B'], card_type="Sorcery", sub_types="",
-               abilities=[13335], set_id="RNA", rarity="Rare", set_number=228,
+               abilities=[13335], set_id="RNA", rarity="Rare", collectible=False, set_number=228,
                mtga_id=69371)
 Revenge = Card(name="revenge", pretty_name="Revenge", cost=['4', 'W', 'B'],
                color_identity=['W', 'B'], card_type="Sorcery", sub_types="",
-               abilities=[121961], set_id="RNA", rarity="Rare", set_number=228,
+               abilities=[121961], set_id="RNA", rarity="Rare", collectible=False, set_number=228,
                mtga_id=69372)
 ThrashThreat = Card(name="thrash__threat", pretty_name="Thrash // Threat", cost=['(R/G)', '(R/G)', '2', 'R', 'G'],
                     color_identity=['R', 'G'], card_type="Instant Sorcery", sub_types="",
-                    abilities=[121962, 121963], set_id="RNA", rarity="Rare", set_number=229,
+                    abilities=[121962, 121963], set_id="RNA", rarity="Rare", collectible=True, set_number=229,
                     mtga_id=69373)
 Thrash = Card(name="thrash", pretty_name="Thrash", cost=['(R/G)', '(R/G)'],
               color_identity=['R', 'G'], card_type="Instant", sub_types="",
-              abilities=[121962], set_id="RNA", rarity="Rare", set_number=229,
+              abilities=[121962], set_id="RNA", rarity="Rare", collectible=False, set_number=229,
               mtga_id=69374)
 Threat = Card(name="threat", pretty_name="Threat", cost=['2', 'R', 'G'],
               color_identity=['R', 'G'], card_type="Sorcery", sub_types="",
-              abilities=[121963], set_id="RNA", rarity="Rare", set_number=229,
+              abilities=[121963], set_id="RNA", rarity="Rare", collectible=False, set_number=229,
               mtga_id=69375)
 WarrantWarden = Card(name="warrant__warden", pretty_name="Warrant // Warden", cost=['(W/U)', '(W/U)', '3', 'W', 'U'],
                      color_identity=['W', 'U'], card_type="Instant Sorcery", sub_types="",
-                     abilities=[97291, 121965], set_id="RNA", rarity="Rare", set_number=230,
+                     abilities=[97291, 121965], set_id="RNA", rarity="Rare", collectible=True, set_number=230,
                      mtga_id=69376)
 Warrant = Card(name="warrant", pretty_name="Warrant", cost=['(W/U)', '(W/U)'],
                color_identity=['W', 'U'], card_type="Instant", sub_types="",
-               abilities=[97291], set_id="RNA", rarity="Rare", set_number=230,
+               abilities=[97291], set_id="RNA", rarity="Rare", collectible=False, set_number=230,
                mtga_id=69377)
 Warden = Card(name="warden", pretty_name="Warden", cost=['3', 'W', 'U'],
               color_identity=['W', 'U'], card_type="Sorcery", sub_types="",
-              abilities=[121965], set_id="RNA", rarity="Rare", set_number=230,
+              abilities=[121965], set_id="RNA", rarity="Rare", collectible=False, set_number=230,
               mtga_id=69378)
 AzoriusLocket = Card(name="azorius_locket", pretty_name="Azorius Locket", cost=['3'],
                      color_identity=['W', 'U'], card_type="Artifact", sub_types="",
-                     abilities=[1209, 121967], set_id="RNA", rarity="Common", set_number=231,
+                     abilities=[1209, 121967], set_id="RNA", rarity="Common", collectible=True, set_number=231,
                      mtga_id=69379)
 GateColossus = Card(name="gate_colossus", pretty_name="Gate Colossus", cost=['8'],
                     color_identity=[], card_type="Artifact Creature", sub_types="Construct",
-                    abilities=[121968, 87941, 121969], set_id="RNA", rarity="Uncommon", set_number=232,
+                    abilities=[121968, 87941, 121969], set_id="RNA", rarity="Uncommon", collectible=True, set_number=232,
                     mtga_id=69380)
 GlassoftheGuildpact = Card(name="glass_of_the_guildpact", pretty_name="Glass of the Guildpact", cost=['2'],
                            color_identity=[], card_type="Artifact", sub_types="",
-                           abilities=[122055], set_id="RNA", rarity="Rare", set_number=233,
+                           abilities=[122055], set_id="RNA", rarity="Rare", collectible=True, set_number=233,
                            mtga_id=69381)
 GruulLocket = Card(name="gruul_locket", pretty_name="Gruul Locket", cost=['3'],
                    color_identity=['R', 'G'], card_type="Artifact", sub_types="",
-                   abilities=[1131, 122057], set_id="RNA", rarity="Common", set_number=234,
+                   abilities=[1131, 122057], set_id="RNA", rarity="Common", collectible=True, set_number=234,
                    mtga_id=69382)
 Junktroller = Card(name="junktroller", pretty_name="Junktroller", cost=['4'],
                    color_identity=[], card_type="Artifact Creature", sub_types="Golem",
-                   abilities=[2, 96682], set_id="RNA", rarity="Uncommon", set_number=235,
+                   abilities=[2, 96682], set_id="RNA", rarity="Uncommon", collectible=True, set_number=235,
                    mtga_id=69383)
 OrzhovLocket = Card(name="orzhov_locket", pretty_name="Orzhov Locket", cost=['3'],
                     color_identity=['W', 'B'], card_type="Artifact", sub_types="",
-                    abilities=[18472, 121971], set_id="RNA", rarity="Common", set_number=236,
+                    abilities=[18472, 121971], set_id="RNA", rarity="Common", collectible=True, set_number=236,
                     mtga_id=69384)
 RakdosLocket = Card(name="rakdos_locket", pretty_name="Rakdos Locket", cost=['3'],
                     color_identity=['B', 'R'], card_type="Artifact", sub_types="",
-                    abilities=[1211, 121972], set_id="RNA", rarity="Common", set_number=237,
+                    abilities=[1211, 121972], set_id="RNA", rarity="Common", collectible=True, set_number=237,
                     mtga_id=69385)
 ScrabblingClaws = Card(name="scrabbling_claws", pretty_name="Scrabbling Claws", cost=['1'],
                        color_identity=[], card_type="Artifact", sub_types="",
-                       abilities=[2978, 94928], set_id="RNA", rarity="Uncommon", set_number=238,
+                       abilities=[2978, 94928], set_id="RNA", rarity="Uncommon", collectible=True, set_number=238,
                        mtga_id=69386)
 ScreamingShield = Card(name="screaming_shield", pretty_name="Screaming Shield", cost=['1'],
                        color_identity=[], card_type="Artifact", sub_types="Equipment",
-                       abilities=[121974, 1156], set_id="RNA", rarity="Uncommon", set_number=239,
+                       abilities=[121974, 1156], set_id="RNA", rarity="Uncommon", collectible=True, set_number=239,
                        mtga_id=69387)
 SimicLocket = Card(name="simic_locket", pretty_name="Simic Locket", cost=['3'],
                    color_identity=['U', 'G'], card_type="Artifact", sub_types="",
-                   abilities=[18504, 121976], set_id="RNA", rarity="Common", set_number=240,
+                   abilities=[18504, 121976], set_id="RNA", rarity="Common", collectible=True, set_number=240,
                    mtga_id=69388)
 SphinxoftheGuildpact = Card(name="sphinx_of_the_guildpact", pretty_name="Sphinx of the Guildpact", cost=['7'],
                             color_identity=[], card_type="Artifact Creature", sub_types="Sphinx",
-                            abilities=[121977, 8, 121978], set_id="RNA", rarity="Uncommon", set_number=241,
+                            abilities=[121977, 8, 121978], set_id="RNA", rarity="Uncommon", collectible=True, set_number=241,
                             mtga_id=69389)
 TomeoftheGuildpact = Card(name="tome_of_the_guildpact", pretty_name="Tome of the Guildpact", cost=['5'],
                           color_identity=[], card_type="Artifact", sub_types="",
-                          abilities=[121979, 1055], set_id="RNA", rarity="Rare", set_number=242,
+                          abilities=[121979, 1055], set_id="RNA", rarity="Rare", collectible=True, set_number=242,
                           mtga_id=69390)
 AzoriusGuildgate = Card(name="azorius_guildgate", pretty_name="Azorius Guildgate", cost=[],
                         color_identity=['W', 'U'], card_type="Land", sub_types="Gate",
-                        abilities=[76735, 1209], set_id="RNA", rarity="Common", set_number=243,
+                        abilities=[76735, 1209], set_id="RNA", rarity="Common", collectible=True, set_number=243,
                         mtga_id=69391)
 AzoriusGuildgate2 = Card(name="azorius_guildgate", pretty_name="Azorius Guildgate", cost=[],
                          color_identity=['W', 'U'], card_type="Land", sub_types="Gate",
-                         abilities=[76735, 1209], set_id="RNA", rarity="Common", set_number=244,
+                         abilities=[76735, 1209], set_id="RNA", rarity="Common", collectible=True, set_number=244,
                          mtga_id=69392)
 BloodCrypt = Card(name="blood_crypt", pretty_name="Blood Crypt", cost=[],
                   color_identity=['B', 'R'], card_type="Land", sub_types="Swamp Mountain",
-                  abilities=[90846], set_id="RNA", rarity="Rare", set_number=245,
+                  abilities=[90846], set_id="RNA", rarity="Rare", collectible=True, set_number=245,
                   mtga_id=69393)
 BreedingPool = Card(name="breeding_pool", pretty_name="Breeding Pool", cost=[],
                     color_identity=['G', 'U'], card_type="Land", sub_types="Forest Island",
-                    abilities=[90846], set_id="RNA", rarity="Rare", set_number=246,
+                    abilities=[90846], set_id="RNA", rarity="Rare", collectible=True, set_number=246,
                     mtga_id=69394)
 GatewayPlaza = Card(name="gateway_plaza", pretty_name="Gateway Plaza", cost=[],
                     color_identity=[], card_type="Land", sub_types="Gate",
-                    abilities=[76735, 3625, 1055], set_id="RNA", rarity="Common", set_number=247,
+                    abilities=[76735, 3625, 1055], set_id="RNA", rarity="Common", collectible=True, set_number=247,
                     mtga_id=69395)
 GodlessShrine = Card(name="godless_shrine", pretty_name="Godless Shrine", cost=[],
                      color_identity=['W', 'B'], card_type="Land", sub_types="Plains Swamp",
-                     abilities=[90846], set_id="RNA", rarity="Rare", set_number=248,
+                     abilities=[90846], set_id="RNA", rarity="Rare", collectible=True, set_number=248,
                      mtga_id=69396)
 GruulGuildgate = Card(name="gruul_guildgate", pretty_name="Gruul Guildgate", cost=[],
                       color_identity=['R', 'G'], card_type="Land", sub_types="Gate",
-                      abilities=[76735, 1131], set_id="RNA", rarity="Common", set_number=249,
+                      abilities=[76735, 1131], set_id="RNA", rarity="Common", collectible=True, set_number=249,
                       mtga_id=69397)
 GruulGuildgate2 = Card(name="gruul_guildgate", pretty_name="Gruul Guildgate", cost=[],
                        color_identity=['R', 'G'], card_type="Land", sub_types="Gate",
-                       abilities=[76735, 1131], set_id="RNA", rarity="Common", set_number=250,
+                       abilities=[76735, 1131], set_id="RNA", rarity="Common", collectible=True, set_number=250,
                        mtga_id=69398)
 HallowedFountain = Card(name="hallowed_fountain", pretty_name="Hallowed Fountain", cost=[],
                         color_identity=['W', 'U'], card_type="Land", sub_types="Plains Island",
-                        abilities=[90846], set_id="RNA", rarity="Rare", set_number=251,
+                        abilities=[90846], set_id="RNA", rarity="Rare", collectible=True, set_number=251,
                         mtga_id=69399)
 OrzhovGuildgate = Card(name="orzhov_guildgate", pretty_name="Orzhov Guildgate", cost=[],
                        color_identity=['W', 'B'], card_type="Land", sub_types="Gate",
-                       abilities=[76735, 18472], set_id="RNA", rarity="Common", set_number=252,
+                       abilities=[76735, 18472], set_id="RNA", rarity="Common", collectible=True, set_number=252,
                        mtga_id=69400)
 OrzhovGuildgate2 = Card(name="orzhov_guildgate", pretty_name="Orzhov Guildgate", cost=[],
                         color_identity=['W', 'B'], card_type="Land", sub_types="Gate",
-                        abilities=[76735, 18472], set_id="RNA", rarity="Common", set_number=253,
+                        abilities=[76735, 18472], set_id="RNA", rarity="Common", collectible=True, set_number=253,
                         mtga_id=69401)
 PlazaofHarmony = Card(name="plaza_of_harmony", pretty_name="Plaza of Harmony", cost=[],
                       color_identity=[], card_type="Land", sub_types="",
-                      abilities=[121982, 1152, 121983], set_id="RNA", rarity="Rare", set_number=254,
+                      abilities=[121982, 1152, 121983], set_id="RNA", rarity="Rare", collectible=True, set_number=254,
                       mtga_id=69402)
 RakdosGuildgate = Card(name="rakdos_guildgate", pretty_name="Rakdos Guildgate", cost=[],
                        color_identity=['B', 'R'], card_type="Land", sub_types="Gate",
-                       abilities=[76735, 1211], set_id="RNA", rarity="Common", set_number=255,
+                       abilities=[76735, 1211], set_id="RNA", rarity="Common", collectible=True, set_number=255,
                        mtga_id=69403)
 RakdosGuildgate2 = Card(name="rakdos_guildgate", pretty_name="Rakdos Guildgate", cost=[],
                         color_identity=['B', 'R'], card_type="Land", sub_types="Gate",
-                        abilities=[76735, 1211], set_id="RNA", rarity="Common", set_number=256,
+                        abilities=[76735, 1211], set_id="RNA", rarity="Common", collectible=True, set_number=256,
                         mtga_id=69404)
 SimicGuildgate = Card(name="simic_guildgate", pretty_name="Simic Guildgate", cost=[],
                       color_identity=['G', 'U'], card_type="Land", sub_types="Gate",
-                      abilities=[76735, 18504], set_id="RNA", rarity="Common", set_number=257,
+                      abilities=[76735, 18504], set_id="RNA", rarity="Common", collectible=True, set_number=257,
                       mtga_id=69405)
 SimicGuildgate2 = Card(name="simic_guildgate", pretty_name="Simic Guildgate", cost=[],
                        color_identity=['G', 'U'], card_type="Land", sub_types="Gate",
-                       abilities=[76735, 18504], set_id="RNA", rarity="Common", set_number=258,
+                       abilities=[76735, 18504], set_id="RNA", rarity="Common", collectible=True, set_number=258,
                        mtga_id=69406)
 StompingGround = Card(name="stomping_ground", pretty_name="Stomping Ground", cost=[],
                       color_identity=['R', 'G'], card_type="Land", sub_types="Mountain Forest",
-                      abilities=[90846], set_id="RNA", rarity="Rare", set_number=259,
+                      abilities=[90846], set_id="RNA", rarity="Rare", collectible=True, set_number=259,
                       mtga_id=69407)
 Plains = Card(name="plains", pretty_name="Plains", cost=[],
               color_identity=['W'], card_type="Land", sub_types="Plains",
-              abilities=[], set_id="RNA", rarity="Basic", set_number=260,
+              abilities=[], set_id="RNA", rarity="Basic", collectible=True, set_number=260,
               mtga_id=69408)
 Island = Card(name="island", pretty_name="Island", cost=[],
               color_identity=['U'], card_type="Land", sub_types="Island",
-              abilities=[], set_id="RNA", rarity="Basic", set_number=261,
+              abilities=[], set_id="RNA", rarity="Basic", collectible=True, set_number=261,
               mtga_id=69409)
 Swamp = Card(name="swamp", pretty_name="Swamp", cost=[],
              color_identity=['B'], card_type="Land", sub_types="Swamp",
-             abilities=[], set_id="RNA", rarity="Basic", set_number=262,
+             abilities=[], set_id="RNA", rarity="Basic", collectible=True, set_number=262,
              mtga_id=69410)
 Mountain = Card(name="mountain", pretty_name="Mountain", cost=[],
                 color_identity=['R'], card_type="Land", sub_types="Mountain",
-                abilities=[], set_id="RNA", rarity="Basic", set_number=263,
+                abilities=[], set_id="RNA", rarity="Basic", collectible=True, set_number=263,
                 mtga_id=69411)
 Forest = Card(name="forest", pretty_name="Forest", cost=[],
               color_identity=['G'], card_type="Land", sub_types="Forest",
-              abilities=[], set_id="RNA", rarity="Basic", set_number=264,
+              abilities=[], set_id="RNA", rarity="Basic", collectible=True, set_number=264,
               mtga_id=69412)
 DovinArchitectofLaw = Card(name="dovin_architect_of_law", pretty_name="Dovin, Architect of Law", cost=['4', 'W', 'U'],
                            color_identity=['W', 'U'], card_type="Planeswalker", sub_types="Dovin",
-                           abilities=[122076, 121985, 122078], set_id="RNA", rarity="Mythic Rare", set_number=265,
+                           abilities=[122076, 121985, 122078], set_id="RNA", rarity="Mythic Rare", collectible=True, set_number=265,
                            mtga_id=69413)
 EliteArrester = Card(name="elite_arrester", pretty_name="Elite Arrester", cost=['W'],
                      color_identity=['U', 'W'], card_type="Creature", sub_types="Human Soldier",
-                     abilities=[121987], set_id="RNA", rarity="Common", set_number=266,
+                     abilities=[121987], set_id="RNA", rarity="Common", collectible=True, set_number=266,
                      mtga_id=69414)
 DovinsDismissal = Card(name="dovins_dismissal", pretty_name="Dovin's Dismissal", cost=['2', 'W', 'U'],
                        color_identity=['W', 'U'], card_type="Instant", sub_types="",
-                       abilities=[121988], set_id="RNA", rarity="Rare", set_number=267,
+                       abilities=[121988], set_id="RNA", rarity="Rare", collectible=True, set_number=267,
                        mtga_id=69415)
 DovinsAutomaton = Card(name="dovins_automaton", pretty_name="Dovin's Automaton", cost=['4'],
                        color_identity=[], card_type="Artifact Creature", sub_types="Homunculus",
-                       abilities=[121989], set_id="RNA", rarity="Uncommon", set_number=268,
+                       abilities=[121989], set_id="RNA", rarity="Uncommon", collectible=True, set_number=268,
                        mtga_id=69416)
 DomriCitySmasher = Card(name="domri_city_smasher", pretty_name="Domri, City Smasher", cost=['4', 'R', 'G'],
                         color_identity=['R', 'G'], card_type="Planeswalker", sub_types="Domri",
-                        abilities=[122081, 121991, 121992], set_id="RNA", rarity="Mythic Rare", set_number=269,
+                        abilities=[122081, 121991, 121992], set_id="RNA", rarity="Mythic Rare", collectible=True, set_number=269,
                         mtga_id=69417)
 Ragefire = Card(name="ragefire", pretty_name="Ragefire", cost=['1', 'R'],
                 color_identity=['R'], card_type="Sorcery", sub_types="",
-                abilities=[88831], set_id="RNA", rarity="Common", set_number=270,
+                abilities=[88831], set_id="RNA", rarity="Common", collectible=True, set_number=270,
                 mtga_id=69418)
 ChargingWarBoar = Card(name="charging_war_boar", pretty_name="Charging War Boar", cost=['1', 'R', 'G'],
                        color_identity=['R', 'G'], card_type="Creature", sub_types="Boar",
-                       abilities=[9, 121993], set_id="RNA", rarity="Uncommon", set_number=271,
+                       abilities=[9, 121993], set_id="RNA", rarity="Uncommon", collectible=True, set_number=271,
                        mtga_id=69419)
 DomrisNodorog = Card(name="domris_nodorog", pretty_name="Domri's Nodorog", cost=['3', 'R', 'G'],
                      color_identity=['R', 'G'], card_type="Creature", sub_types="Beast",
-                     abilities=[14, 121994], set_id="RNA", rarity="Rare", set_number=272,
+                     abilities=[14, 121994], set_id="RNA", rarity="Rare", collectible=True, set_number=272,
                      mtga_id=69420)
 TheHauntofHightower = Card(name="the_haunt_of_hightower", pretty_name="The Haunt of Hightower", cost=['4', 'B', 'B'],
                            color_identity=['B'], card_type="Creature", sub_types="Vampire",
-                           abilities=[8, 12, 122084, 8592], set_id="RNA", rarity="Mythic Rare", set_number=273,
+                           abilities=[8, 12, 122084, 8592], set_id="RNA", rarity="Mythic Rare", collectible=True, set_number=273,
                            mtga_id=69421)
 Human = Card(name="human", pretty_name="Human", cost=[],
              color_identity=[], card_type="Creature", sub_types="Human",
-             abilities=[], set_id="RNA", rarity="Token", set_number=1,
+             abilities=[], set_id="RNA", rarity="Token", collectible=False, set_number=10001,
              mtga_id=69422)
 Illusion = Card(name="illusion", pretty_name="Illusion", cost=[],
                 color_identity=[], card_type="Creature", sub_types="Illusion",
-                abilities=[121888], set_id="RNA", rarity="Token", set_number=2,
+                abilities=[121888], set_id="RNA", rarity="Token", collectible=False, set_number=10002,
                 mtga_id=69423)
 Zombie = Card(name="zombie", pretty_name="Zombie", cost=[],
               color_identity=[], card_type="Creature", sub_types="Zombie",
-              abilities=[], set_id="RNA", rarity="Token", set_number=3,
+              abilities=[], set_id="RNA", rarity="Token", collectible=False, set_number=10003,
               mtga_id=69424)
 Goblin = Card(name="goblin", pretty_name="Goblin", cost=[],
               color_identity=[], card_type="Creature", sub_types="Goblin",
-              abilities=[], set_id="RNA", rarity="Token", set_number=4,
+              abilities=[], set_id="RNA", rarity="Token", collectible=False, set_number=10004,
               mtga_id=69425)
 Centaur = Card(name="centaur", pretty_name="Centaur", cost=[],
                color_identity=[], card_type="Creature", sub_types="Centaur",
-               abilities=[], set_id="RNA", rarity="Token", set_number=5,
+               abilities=[], set_id="RNA", rarity="Token", collectible=False, set_number=10005,
                mtga_id=69426)
 FrogLizard = Card(name="frog_lizard", pretty_name="Frog Lizard", cost=[],
                   color_identity=[], card_type="Creature", sub_types="Frog Lizard",
-                  abilities=[], set_id="RNA", rarity="Token", set_number=6,
+                  abilities=[], set_id="RNA", rarity="Token", collectible=False, set_number=10006,
                   mtga_id=69427)
 Ooze = Card(name="ooze", pretty_name="Ooze", cost=[],
             color_identity=[], card_type="Creature", sub_types="Ooze",
-            abilities=[], set_id="RNA", rarity="Token", set_number=7,
+            abilities=[], set_id="RNA", rarity="Token", collectible=False, set_number=10007,
             mtga_id=69428)
 Beast = Card(name="beast", pretty_name="Beast", cost=[],
              color_identity=[], card_type="Creature", sub_types="Beast",
-             abilities=[14], set_id="RNA", rarity="Token", set_number=8,
+             abilities=[14], set_id="RNA", rarity="Token", collectible=False, set_number=10008,
              mtga_id=69429)
 Sphinx = Card(name="sphinx", pretty_name="Sphinx", cost=[],
               color_identity=[], card_type="Creature", sub_types="Sphinx",
-              abilities=[8, 15], set_id="RNA", rarity="Token", set_number=9,
+              abilities=[8, 15], set_id="RNA", rarity="Token", collectible=False, set_number=10009,
               mtga_id=69430)
 Spirit = Card(name="spirit", pretty_name="Spirit", cost=[],
               color_identity=[], card_type="Creature", sub_types="Spirit",
-              abilities=[8], set_id="RNA", rarity="Token", set_number=10,
+              abilities=[8], set_id="RNA", rarity="Token", collectible=False, set_number=10010,
               mtga_id=69431)
 Thopter = Card(name="thopter", pretty_name="Thopter", cost=[],
                color_identity=[], card_type="Artifact Creature", sub_types="Thopter",
-               abilities=[8], set_id="RNA", rarity="Token", set_number=11,
+               abilities=[8], set_id="RNA", rarity="Token", collectible=False, set_number=10011,
                mtga_id=69432)
 Treasure = Card(name="treasure", pretty_name="Treasure", cost=[],
                 color_identity=[], card_type="Artifact", sub_types="Treasure",
-                abilities=[119572], set_id="RNA", rarity="Token", set_number=12,
+                abilities=[119572], set_id="RNA", rarity="Token", collectible=False, set_number=10012,
                 mtga_id=69433)
 
 

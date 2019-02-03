@@ -7,1211 +7,1212 @@ import inspect
 
 BladeInstructor = Card(name="blade_instructor", pretty_name="Blade Instructor", cost=['2', 'W'],
                        color_identity=['W'], card_type="Creature", sub_types="Human Soldier",
-                       abilities=[171], set_id="GRN", rarity="Common", set_number=1,
+                       abilities=[171], set_id="GRN", rarity="Common", collectible=True, set_number=1,
                        mtga_id=68462)
 BountyAgent = Card(name="bounty_agent", pretty_name="Bounty Agent", cost=['1', 'W'],
                    color_identity=['W'], card_type="Creature", sub_types="Human Soldier",
-                   abilities=[15, 121564], set_id="GRN", rarity="Rare", set_number=2,
+                   abilities=[15, 121564], set_id="GRN", rarity="Rare", collectible=True, set_number=2,
                    mtga_id=68463)
 CandlelightVigil = Card(name="candlelight_vigil", pretty_name="Candlelight Vigil", cost=['3', 'W'],
                         color_identity=['W'], card_type="Enchantment", sub_types="Aura",
-                        abilities=[1027, 121551], set_id="GRN", rarity="Common", set_number=3,
+                        abilities=[1027, 121551], set_id="GRN", rarity="Common", collectible=True, set_number=3,
                         mtga_id=68464)
 CitywideBust = Card(name="citywide_bust", pretty_name="Citywide Bust", cost=['1', 'W', 'W'],
                     color_identity=['W'], card_type="Sorcery", sub_types="",
-                    abilities=[121565], set_id="GRN", rarity="Rare", set_number=4,
+                    abilities=[121565], set_id="GRN", rarity="Rare", collectible=True, set_number=4,
                     mtga_id=68465)
 CollartheCulprit = Card(name="collar_the_culprit", pretty_name="Collar the Culprit", cost=['3', 'W'],
                         color_identity=['W'], card_type="Instant", sub_types="",
-                        abilities=[22658], set_id="GRN", rarity="Common", set_number=5,
+                        abilities=[22658], set_id="GRN", rarity="Common", collectible=True, set_number=5,
                         mtga_id=68466)
 ConclaveTribunal = Card(name="conclave_tribunal", pretty_name="Conclave Tribunal", cost=['3', 'W'],
                         color_identity=['W'], card_type="Enchantment", sub_types="",
-                        abilities=[52, 20997], set_id="GRN", rarity="Uncommon", set_number=6,
+                        abilities=[52, 20997], set_id="GRN", rarity="Uncommon", collectible=True, set_number=6,
                         mtga_id=68467)
 CrushContraband = Card(name="crush_contraband", pretty_name="Crush Contraband", cost=['3', 'W'],
                        color_identity=['W'], card_type="Instant", sub_types="",
-                       abilities=[121557], set_id="GRN", rarity="Uncommon", set_number=7,
+                       abilities=[121557], set_id="GRN", rarity="Uncommon", collectible=True, set_number=7,
                        mtga_id=68468)
 DawnofHope = Card(name="dawn_of_hope", pretty_name="Dawn of Hope", cost=['1', 'W'],
                   color_identity=['W'], card_type="Enchantment", sub_types="",
-                  abilities=[121567, 121568], set_id="GRN", rarity="Rare", set_number=8,
+                  abilities=[121567, 121568], set_id="GRN", rarity="Rare", collectible=True, set_number=8,
                   mtga_id=68469)
 Demotion = Card(name="demotion", pretty_name="Demotion", cost=['W'],
                 color_identity=['W'], card_type="Enchantment", sub_types="Aura",
-                abilities=[1027, 90489], set_id="GRN", rarity="Uncommon", set_number=9,
+                abilities=[1027, 90489], set_id="GRN", rarity="Uncommon", collectible=True, set_number=9,
                 mtga_id=68470)
 DivineVisitation = Card(name="divine_visitation", pretty_name="Divine Visitation", cost=['3', 'W', 'W'],
                         color_identity=['W'], card_type="Enchantment", sub_types="",
-                        abilities=[121569], set_id="GRN", rarity="Mythic Rare", set_number=10,
+                        abilities=[121569], set_id="GRN", rarity="Mythic Rare", collectible=True, set_number=10,
                         mtga_id=68471)
 FlightofEquenauts = Card(name="flight_of_equenauts", pretty_name="Flight of Equenauts", cost=['7', 'W'],
                          color_identity=['W'], card_type="Creature", sub_types="Human Knight",
-                         abilities=[52, 8], set_id="GRN", rarity="Uncommon", set_number=11,
+                         abilities=[52, 8], set_id="GRN", rarity="Uncommon", collectible=True, set_number=11,
                          mtga_id=68472)
 GirdforBattle = Card(name="gird_for_battle", pretty_name="Gird for Battle", cost=['W'],
                      color_identity=['W'], card_type="Sorcery", sub_types="",
-                     abilities=[18631], set_id="GRN", rarity="Uncommon", set_number=12,
+                     abilities=[18631], set_id="GRN", rarity="Uncommon", collectible=True, set_number=12,
                      mtga_id=68473)
 HaazdaMarshal = Card(name="haazda_marshal", pretty_name="Haazda Marshal", cost=['W'],
                      color_identity=['W'], card_type="Creature", sub_types="Human Soldier",
-                     abilities=[121570], set_id="GRN", rarity="Uncommon", set_number=13,
+                     abilities=[121570], set_id="GRN", rarity="Uncommon", collectible=True, set_number=13,
                      mtga_id=68474)
 HealersHawk = Card(name="healers_hawk", pretty_name="Healer's Hawk", cost=['W'],
                    color_identity=['W'], card_type="Creature", sub_types="Bird",
-                   abilities=[8, 12], set_id="GRN", rarity="Common", set_number=14,
+                   abilities=[8, 12], set_id="GRN", rarity="Common", collectible=True, set_number=14,
                    mtga_id=68475)
 HuntedWitness = Card(name="hunted_witness", pretty_name="Hunted Witness", cost=['W'],
                      color_identity=['W'], card_type="Creature", sub_types="Human",
-                     abilities=[121571], set_id="GRN", rarity="Common", set_number=15,
+                     abilities=[121571], set_id="GRN", rarity="Common", collectible=True, set_number=15,
                      mtga_id=68476)
 InspiringUnicorn = Card(name="inspiring_unicorn", pretty_name="Inspiring Unicorn", cost=['2', 'W', 'W'],
                         color_identity=['W'], card_type="Creature", sub_types="Unicorn",
-                        abilities=[121572], set_id="GRN", rarity="Uncommon", set_number=16,
+                        abilities=[121572], set_id="GRN", rarity="Uncommon", collectible=True, set_number=16,
                         mtga_id=68477)
 IntrusivePackbeast = Card(name="intrusive_packbeast", pretty_name="Intrusive Packbeast", cost=['4', 'W'],
                           color_identity=['W'], card_type="Creature", sub_types="Beast",
-                          abilities=[15, 121352], set_id="GRN", rarity="Common", set_number=17,
+                          abilities=[15, 121352], set_id="GRN", rarity="Common", collectible=True, set_number=17,
                           mtga_id=68478)
 LedevGuardian = Card(name="ledev_guardian", pretty_name="Ledev Guardian", cost=['3', 'W'],
                      color_identity=['W'], card_type="Creature", sub_types="Human Knight",
-                     abilities=[52], set_id="GRN", rarity="Common", set_number=18,
+                     abilities=[52], set_id="GRN", rarity="Common", collectible=True, set_number=18,
                      mtga_id=68479)
 LightoftheLegion = Card(name="light_of_the_legion", pretty_name="Light of the Legion", cost=['4', 'W', 'W'],
                         color_identity=['W'], card_type="Creature", sub_types="Angel",
-                        abilities=[8, 171, 121471], set_id="GRN", rarity="Rare", set_number=19,
+                        abilities=[8, 171, 121471], set_id="GRN", rarity="Rare", collectible=True, set_number=19,
                         mtga_id=68480)
 LoxodonRestorer = Card(name="loxodon_restorer", pretty_name="Loxodon Restorer", cost=['4', 'W', 'W'],
                        color_identity=['W'], card_type="Creature", sub_types="Elephant Cleric",
-                       abilities=[52, 88604], set_id="GRN", rarity="Common", set_number=20,
+                       abilities=[52, 88604], set_id="GRN", rarity="Common", collectible=True, set_number=20,
                        mtga_id=68481)
 LuminousBonds = Card(name="luminous_bonds", pretty_name="Luminous Bonds", cost=['2', 'W'],
                      color_identity=['W'], card_type="Enchantment", sub_types="Aura",
-                     abilities=[1027, 1083], set_id="GRN", rarity="Common", set_number=21,
+                     abilities=[1027, 1083], set_id="GRN", rarity="Common", collectible=True, set_number=21,
                      mtga_id=68482)
 ParhelionPatrol = Card(name="parhelion_patrol", pretty_name="Parhelion Patrol", cost=['3', 'W'],
                        color_identity=['W'], card_type="Creature", sub_types="Human Knight",
-                       abilities=[8, 15, 171], set_id="GRN", rarity="Common", set_number=22,
+                       abilities=[8, 15, 171], set_id="GRN", rarity="Common", collectible=True, set_number=22,
                        mtga_id=68483)
 RighteousBlow = Card(name="righteous_blow", pretty_name="Righteous Blow", cost=['W'],
                      color_identity=['W'], card_type="Instant", sub_types="",
-                     abilities=[99791], set_id="GRN", rarity="Common", set_number=23,
+                     abilities=[99791], set_id="GRN", rarity="Common", collectible=True, set_number=23,
                      mtga_id=68484)
 RocCharger = Card(name="roc_charger", pretty_name="Roc Charger", cost=['2', 'W'],
                   color_identity=['W'], card_type="Creature", sub_types="Bird",
-                  abilities=[8, 121386], set_id="GRN", rarity="Uncommon", set_number=24,
+                  abilities=[8, 121386], set_id="GRN", rarity="Uncommon", collectible=True, set_number=24,
                   mtga_id=68485)
 SkylineScout = Card(name="skyline_scout", pretty_name="Skyline Scout", cost=['1', 'W'],
                     color_identity=['W'], card_type="Creature", sub_types="Human Scout",
-                    abilities=[121407], set_id="GRN", rarity="Common", set_number=25,
+                    abilities=[121407], set_id="GRN", rarity="Common", collectible=True, set_number=25,
                     mtga_id=68486)
 SunhomeStalwart = Card(name="sunhome_stalwart", pretty_name="Sunhome Stalwart", cost=['1', 'W'],
                        color_identity=['W'], card_type="Creature", sub_types="Human Soldier",
-                       abilities=[6, 171], set_id="GRN", rarity="Uncommon", set_number=26,
+                       abilities=[6, 171], set_id="GRN", rarity="Uncommon", collectible=True, set_number=26,
                        mtga_id=68487)
 SwornCompanions = Card(name="sworn_companions", pretty_name="Sworn Companions", cost=['2', 'W'],
                        color_identity=['W'], card_type="Sorcery", sub_types="",
-                       abilities=[121431], set_id="GRN", rarity="Common", set_number=27,
+                       abilities=[121431], set_id="GRN", rarity="Common", collectible=True, set_number=27,
                        mtga_id=68488)
 TakeHeart = Card(name="take_heart", pretty_name="Take Heart", cost=['W'],
                  color_identity=['W'], card_type="Instant", sub_types="",
-                 abilities=[121451], set_id="GRN", rarity="Common", set_number=28,
+                 abilities=[121451], set_id="GRN", rarity="Common", collectible=True, set_number=28,
                  mtga_id=68489)
 TenthDistrictGuard = Card(name="tenth_district_guard", pretty_name="Tenth District Guard", cost=['1', 'W'],
                           color_identity=['W'], card_type="Creature", sub_types="Human Soldier",
-                          abilities=[121464], set_id="GRN", rarity="Common", set_number=29,
+                          abilities=[121464], set_id="GRN", rarity="Common", collectible=True, set_number=29,
                           mtga_id=68490)
 VeneratedLoxodon = Card(name="venerated_loxodon", pretty_name="Venerated Loxodon", cost=['4', 'W'],
                         color_identity=['W'], card_type="Creature", sub_types="Elephant Cleric",
-                        abilities=[52, 121470], set_id="GRN", rarity="Rare", set_number=30,
+                        abilities=[52, 121470], set_id="GRN", rarity="Rare", collectible=True, set_number=30,
                         mtga_id=68491)
 CaptureSphere = Card(name="capture_sphere", pretty_name="Capture Sphere", cost=['3', 'U'],
                      color_identity=['U'], card_type="Enchantment", sub_types="Aura",
-                     abilities=[7, 1027, 89789, 88178], set_id="GRN", rarity="Common", set_number=31,
+                     abilities=[7, 1027, 89789, 88178], set_id="GRN", rarity="Common", collectible=True, set_number=31,
                      mtga_id=68492)
 ChemistersInsight = Card(name="chemisters_insight", pretty_name="Chemister's Insight", cost=['3', 'U'],
                          color_identity=['U'], card_type="Instant", sub_types="",
-                         abilities=[23607, 170], set_id="GRN", rarity="Uncommon", set_number=32,
+                         abilities=[23607, 170], set_id="GRN", rarity="Uncommon", collectible=True, set_number=32,
                          mtga_id=68493)
 CitywatchSphinx = Card(name="citywatch_sphinx", pretty_name="Citywatch Sphinx", cost=['5', 'U'],
                        color_identity=['U'], card_type="Creature", sub_types="Sphinx",
-                       abilities=[8, 121497], set_id="GRN", rarity="Uncommon", set_number=33,
+                       abilities=[8, 121497], set_id="GRN", rarity="Uncommon", collectible=True, set_number=33,
                        mtga_id=68494)
 DazzlingLights = Card(name="dazzling_lights", pretty_name="Dazzling Lights", cost=['U'],
                       color_identity=['U'], card_type="Instant", sub_types="",
-                      abilities=[6672, 121353], set_id="GRN", rarity="Common", set_number=34,
+                      abilities=[6672, 121353], set_id="GRN", rarity="Common", collectible=True, set_number=34,
                       mtga_id=68495)
 DeviousCoverUp = Card(name="devious_coverup", pretty_name="Devious Cover-Up", cost=['2', 'U', 'U'],
                       color_identity=['U'], card_type="Instant", sub_types="",
-                      abilities=[121354], set_id="GRN", rarity="Common", set_number=35,
+                      abilities=[121354], set_id="GRN", rarity="Common", collectible=True, set_number=35,
                       mtga_id=68496)
 DimirInformant = Card(name="dimir_informant", pretty_name="Dimir Informant", cost=['2', 'U'],
                       color_identity=['U'], card_type="Creature", sub_types="Human Rogue",
-                      abilities=[121357], set_id="GRN", rarity="Common", set_number=36,
+                      abilities=[121357], set_id="GRN", rarity="Common", collectible=True, set_number=36,
                       mtga_id=68497)
 DisdainfulStroke = Card(name="disdainful_stroke", pretty_name="Disdainful Stroke", cost=['1', 'U'],
                         color_identity=['U'], card_type="Instant", sub_types="",
-                        abilities=[21963], set_id="GRN", rarity="Common", set_number=37,
+                        abilities=[21963], set_id="GRN", rarity="Common", collectible=True, set_number=37,
                         mtga_id=68498)
 DreamEater = Card(name="dream_eater", pretty_name="Dream Eater", cost=['4', 'U', 'U'],
                   color_identity=['U'], card_type="Creature", sub_types="Nightmare Sphinx",
-                  abilities=[7, 8, 121521], set_id="GRN", rarity="Mythic Rare", set_number=38,
+                  abilities=[7, 8, 121521], set_id="GRN", rarity="Mythic Rare", collectible=True, set_number=38,
                   mtga_id=68499)
 DrownedSecrets = Card(name="drowned_secrets", pretty_name="Drowned Secrets", cost=['1', 'U'],
                       color_identity=['U'], card_type="Enchantment", sub_types="",
-                      abilities=[121364], set_id="GRN", rarity="Rare", set_number=39,
+                      abilities=[121364], set_id="GRN", rarity="Rare", collectible=True, set_number=39,
                       mtga_id=68500)
 EnhancedSurveillance = Card(name="enhanced_surveillance", pretty_name="Enhanced Surveillance", cost=['1', 'U'],
                             color_identity=['U'], card_type="Enchantment", sub_types="",
-                            abilities=[121365, 121531], set_id="GRN", rarity="Uncommon", set_number=40,
+                            abilities=[121365, 121531], set_id="GRN", rarity="Uncommon", collectible=True, set_number=40,
                             mtga_id=68501)
 GuildSummit = Card(name="guild_summit", pretty_name="Guild Summit", cost=['2', 'U'],
                    color_identity=['U'], card_type="Enchantment", sub_types="",
-                   abilities=[121534, 121537], set_id="GRN", rarity="Uncommon", set_number=41,
+                   abilities=[121534, 121537], set_id="GRN", rarity="Uncommon", collectible=True, set_number=41,
                    mtga_id=68502)
 Leapfrog = Card(name="leapfrog", pretty_name="Leapfrog", cost=['2', 'U'],
                 color_identity=['U'], card_type="Creature", sub_types="Frog",
-                abilities=[121539], set_id="GRN", rarity="Common", set_number=42,
+                abilities=[121539], set_id="GRN", rarity="Common", collectible=True, set_number=42,
                 mtga_id=68503)
 MaximizeAltitude = Card(name="maximize_altitude", pretty_name="Maximize Altitude", cost=['U'],
                         color_identity=['U'], card_type="Sorcery", sub_types="",
-                        abilities=[121369, 170], set_id="GRN", rarity="Common", set_number=43,
+                        abilities=[121369, 170], set_id="GRN", rarity="Common", collectible=True, set_number=43,
                         mtga_id=68504)
 MissionBriefing = Card(name="mission_briefing", pretty_name="Mission Briefing", cost=['U', 'U'],
                        color_identity=['U'], card_type="Instant", sub_types="",
-                       abilities=[121375], set_id="GRN", rarity="Rare", set_number=44,
+                       abilities=[121375], set_id="GRN", rarity="Rare", collectible=True, set_number=44,
                        mtga_id=68505)
 MurmuringMystic = Card(name="murmuring_mystic", pretty_name="Murmuring Mystic", cost=['3', 'U'],
                        color_identity=['U'], card_type="Creature", sub_types="Human Wizard",
-                       abilities=[121381], set_id="GRN", rarity="Uncommon", set_number=45,
+                       abilities=[121381], set_id="GRN", rarity="Uncommon", collectible=True, set_number=45,
                        mtga_id=68506)
 MuseDrake = Card(name="muse_drake", pretty_name="Muse Drake", cost=['3', 'U'],
                  color_identity=['U'], card_type="Creature", sub_types="Drake",
-                 abilities=[8, 86788], set_id="GRN", rarity="Common", set_number=46,
+                 abilities=[8, 86788], set_id="GRN", rarity="Common", collectible=True, set_number=46,
                  mtga_id=68507)
 Narcomoeba = Card(name="narcomoeba", pretty_name="Narcomoeba", cost=['1', 'U'],
                   color_identity=['U'], card_type="Creature", sub_types="Illusion",
-                  abilities=[8, 91716], set_id="GRN", rarity="Rare", set_number=47,
+                  abilities=[8, 91716], set_id="GRN", rarity="Rare", collectible=True, set_number=47,
                   mtga_id=68508)
 NightveilSprite = Card(name="nightveil_sprite", pretty_name="Nightveil Sprite", cost=['1', 'U'],
                        color_identity=['U'], card_type="Creature", sub_types="Faerie Rogue",
-                       abilities=[8, 121394], set_id="GRN", rarity="Uncommon", set_number=48,
+                       abilities=[8, 121394], set_id="GRN", rarity="Uncommon", collectible=True, set_number=48,
                        mtga_id=68509)
 OmnispellAdept = Card(name="omnispell_adept", pretty_name="Omnispell Adept", cost=['4', 'U'],
                       color_identity=['U'], card_type="Creature", sub_types="Human Wizard",
-                      abilities=[121397], set_id="GRN", rarity="Rare", set_number=49,
+                      abilities=[121397], set_id="GRN", rarity="Rare", collectible=True, set_number=49,
                       mtga_id=68510)
 PasswallAdept = Card(name="passwall_adept", pretty_name="Passwall Adept", cost=['1', 'U'],
                      color_identity=['U'], card_type="Creature", sub_types="Human Wizard",
-                     abilities=[101336], set_id="GRN", rarity="Common", set_number=50,
+                     abilities=[101336], set_id="GRN", rarity="Common", collectible=True, set_number=50,
                      mtga_id=68511)
 Quasiduplicate = Card(name="quasiduplicate", pretty_name="Quasiduplicate", cost=['1', 'U', 'U'],
                       color_identity=['U'], card_type="Sorcery", sub_types="",
-                      abilities=[18554, 170], set_id="GRN", rarity="Rare", set_number=51,
+                      abilities=[18554, 170], set_id="GRN", rarity="Rare", collectible=True, set_number=51,
                       mtga_id=68512)
 RadicalIdea = Card(name="radical_idea", pretty_name="Radical Idea", cost=['1', 'U'],
                    color_identity=['U'], card_type="Instant", sub_types="",
-                   abilities=[25848, 170], set_id="GRN", rarity="Common", set_number=52,
+                   abilities=[25848, 170], set_id="GRN", rarity="Common", collectible=True, set_number=52,
                    mtga_id=68513)
 SelectiveSnare = Card(name="selective_snare", pretty_name="Selective Snare", cost=['X', 'U'],
                       color_identity=['U'], card_type="Sorcery", sub_types="",
-                      abilities=[121416], set_id="GRN", rarity="Uncommon", set_number=53,
+                      abilities=[121416], set_id="GRN", rarity="Uncommon", collectible=True, set_number=53,
                       mtga_id=68514)
 SinisterSabotage = Card(name="sinister_sabotage", pretty_name="Sinister Sabotage", cost=['1', 'U', 'U'],
                         color_identity=['U'], card_type="Instant", sub_types="",
-                        abilities=[25846, 121425], set_id="GRN", rarity="Uncommon", set_number=54,
+                        abilities=[25846, 121425], set_id="GRN", rarity="Uncommon", collectible=True, set_number=54,
                         mtga_id=68515)
 ThoughtboundPhantasm = Card(name="thoughtbound_phantasm", pretty_name="Thoughtbound Phantasm", cost=['U'],
                             color_identity=['U'], card_type="Creature", sub_types="Spirit",
-                            abilities=[2, 121430, 121434], set_id="GRN", rarity="Uncommon", set_number=55,
+                            abilities=[2, 121430, 121434], set_id="GRN", rarity="Uncommon", collectible=True, set_number=55,
                             mtga_id=68516)
 UnexplainedDisappearance = Card(name="unexplained_disappearance", pretty_name="Unexplained Disappearance", cost=['1', 'U'],
                                 color_identity=['U'], card_type="Instant", sub_types="",
-                                abilities=[22505, 121425], set_id="GRN", rarity="Common", set_number=56,
+                                abilities=[22505, 121425], set_id="GRN", rarity="Common", collectible=True, set_number=56,
                                 mtga_id=68517)
 VedalkenMesmerist = Card(name="vedalken_mesmerist", pretty_name="Vedalken Mesmerist", cost=['1', 'U'],
                          color_identity=['U'], card_type="Creature", sub_types="Vedalken Wizard",
-                         abilities=[121442], set_id="GRN", rarity="Common", set_number=57,
+                         abilities=[121442], set_id="GRN", rarity="Common", collectible=True, set_number=57,
                          mtga_id=68518)
 WallofMist = Card(name="wall_of_mist", pretty_name="Wall of Mist", cost=['1', 'U'],
                   color_identity=['U'], card_type="Creature", sub_types="Wall",
-                  abilities=[2], set_id="GRN", rarity="Common", set_number=58,
+                  abilities=[2], set_id="GRN", rarity="Common", collectible=True, set_number=58,
                   mtga_id=68519)
 WatcherintheMist = Card(name="watcher_in_the_mist", pretty_name="Watcher in the Mist", cost=['3', 'U', 'U'],
                         color_identity=['U'], card_type="Creature", sub_types="Spirit",
-                        abilities=[8, 121357], set_id="GRN", rarity="Common", set_number=59,
+                        abilities=[8, 121357], set_id="GRN", rarity="Common", collectible=True, set_number=59,
                         mtga_id=68520)
 WishcoinCrab = Card(name="wishcoin_crab", pretty_name="Wishcoin Crab", cost=['3', 'U'],
                     color_identity=['U'], card_type="Creature", sub_types="Crab",
-                    abilities=[], set_id="GRN", rarity="Common", set_number=60,
+                    abilities=[], set_id="GRN", rarity="Common", collectible=True, set_number=60,
                     mtga_id=68521)
 BarrierofBones = Card(name="barrier_of_bones", pretty_name="Barrier of Bones", cost=['B'],
                       color_identity=['B'], card_type="Creature", sub_types="Skeleton Wall",
-                      abilities=[2, 121445], set_id="GRN", rarity="Common", set_number=61,
+                      abilities=[2, 121445], set_id="GRN", rarity="Common", collectible=True, set_number=61,
                       mtga_id=68522)
 BartizanBats = Card(name="bartizan_bats", pretty_name="Bartizan Bats", cost=['3', 'B'],
                     color_identity=['B'], card_type="Creature", sub_types="Bat",
-                    abilities=[8], set_id="GRN", rarity="Common", set_number=62,
+                    abilities=[8], set_id="GRN", rarity="Common", collectible=True, set_number=62,
                     mtga_id=68523)
 BloodOperative = Card(name="blood_operative", pretty_name="Blood Operative", cost=['1', 'B', 'B'],
                       color_identity=['B'], card_type="Creature", sub_types="Vampire Assassin",
-                      abilities=[12, 121450, 121454], set_id="GRN", rarity="Rare", set_number=63,
+                      abilities=[12, 121450, 121454], set_id="GRN", rarity="Rare", collectible=True, set_number=63,
                       mtga_id=68524)
 BurglarRat = Card(name="burglar_rat", pretty_name="Burglar Rat", cost=['1', 'B'],
                   color_identity=['B'], card_type="Creature", sub_types="Rat",
-                  abilities=[92927], set_id="GRN", rarity="Common", set_number=64,
+                  abilities=[92927], set_id="GRN", rarity="Common", collectible=True, set_number=64,
                   mtga_id=68525)
 ChildofNight = Card(name="child_of_night", pretty_name="Child of Night", cost=['1', 'B'],
                     color_identity=['B'], card_type="Creature", sub_types="Vampire",
-                    abilities=[12], set_id="GRN", rarity="Common", set_number=65,
+                    abilities=[12], set_id="GRN", rarity="Common", collectible=True, set_number=65,
                     mtga_id=68526)
 CreepingChill = Card(name="creeping_chill", pretty_name="Creeping Chill", cost=['3', 'B'],
                      color_identity=['B'], card_type="Sorcery", sub_types="",
-                     abilities=[121462, 121463], set_id="GRN", rarity="Uncommon", set_number=66,
+                     abilities=[121462, 121463], set_id="GRN", rarity="Uncommon", collectible=True, set_number=66,
                      mtga_id=68527)
 DeadWeight = Card(name="dead_weight", pretty_name="Dead Weight", cost=['B'],
                   color_identity=['B'], card_type="Enchantment", sub_types="Aura",
-                  abilities=[1027, 7138], set_id="GRN", rarity="Common", set_number=67,
+                  abilities=[1027, 7138], set_id="GRN", rarity="Common", collectible=True, set_number=67,
                   mtga_id=68528)
 DeadlyVisit = Card(name="deadly_visit", pretty_name="Deadly Visit", cost=['3', 'B', 'B'],
                    color_identity=['B'], card_type="Sorcery", sub_types="",
-                   abilities=[26818, 121353], set_id="GRN", rarity="Common", set_number=68,
+                   abilities=[26818, 121353], set_id="GRN", rarity="Common", collectible=True, set_number=68,
                    mtga_id=68529)
 DoomWhisperer = Card(name="doom_whisperer", pretty_name="Doom Whisperer", cost=['3', 'B', 'B'],
                      color_identity=['B'], card_type="Creature", sub_types="Nightmare Demon",
-                     abilities=[8, 14, 121466], set_id="GRN", rarity="Mythic Rare", set_number=69,
+                     abilities=[8, 14, 121466], set_id="GRN", rarity="Mythic Rare", collectible=True, set_number=69,
                      mtga_id=68530)
 DouserofLights = Card(name="douser_of_lights", pretty_name="Douser of Lights", cost=['4', 'B'],
                       color_identity=['B'], card_type="Creature", sub_types="Horror",
-                      abilities=[], set_id="GRN", rarity="Common", set_number=70,
+                      abilities=[], set_id="GRN", rarity="Common", collectible=True, set_number=70,
                       mtga_id=68531)
 GruesomeMenagerie = Card(name="gruesome_menagerie", pretty_name="Gruesome Menagerie", cost=['3', 'B', 'B'],
                          color_identity=['B'], card_type="Sorcery", sub_types="",
-                         abilities=[121467], set_id="GRN", rarity="Rare", set_number=71,
+                         abilities=[121467], set_id="GRN", rarity="Rare", collectible=True, set_number=71,
                          mtga_id=68532)
 HiredPoisoner = Card(name="hired_poisoner", pretty_name="Hired Poisoner", cost=['B'],
                      color_identity=['B'], card_type="Creature", sub_types="Human Assassin",
-                     abilities=[1], set_id="GRN", rarity="Common", set_number=72,
+                     abilities=[1], set_id="GRN", rarity="Common", collectible=True, set_number=72,
                      mtga_id=68533)
 KraulSwarm = Card(name="kraul_swarm", pretty_name="Kraul Swarm", cost=['4', 'B'],
                   color_identity=['B'], card_type="Creature", sub_types="Insect Warrior",
-                  abilities=[8, 121468], set_id="GRN", rarity="Uncommon", set_number=73,
+                  abilities=[8, 121468], set_id="GRN", rarity="Uncommon", collectible=True, set_number=73,
                   mtga_id=68534)
 LotlethGiant = Card(name="lotleth_giant", pretty_name="Lotleth Giant", cost=['6', 'B'],
                     color_identity=['B'], card_type="Creature", sub_types="Zombie Giant",
-                    abilities=[121469], set_id="GRN", rarity="Uncommon", set_number=74,
+                    abilities=[121469], set_id="GRN", rarity="Uncommon", collectible=True, set_number=74,
                     mtga_id=68535)
 MausoleumSecrets = Card(name="mausoleum_secrets", pretty_name="Mausoleum Secrets", cost=['1', 'B'],
                         color_identity=['B'], card_type="Instant", sub_types="",
-                        abilities=[121472], set_id="GRN", rarity="Rare", set_number=75,
+                        abilities=[121472], set_id="GRN", rarity="Rare", collectible=True, set_number=75,
                         mtga_id=68536)
 MephiticVapors = Card(name="mephitic_vapors", pretty_name="Mephitic Vapors", cost=['2', 'B'],
                       color_identity=['B'], card_type="Sorcery", sub_types="",
-                      abilities=[30056, 121353], set_id="GRN", rarity="Common", set_number=76,
+                      abilities=[30056, 121353], set_id="GRN", rarity="Common", collectible=True, set_number=76,
                       mtga_id=68537)
 MidnightReaper = Card(name="midnight_reaper", pretty_name="Midnight Reaper", cost=['2', 'B'],
                       color_identity=['B'], card_type="Creature", sub_types="Zombie Knight",
-                      abilities=[121475], set_id="GRN", rarity="Rare", set_number=77,
+                      abilities=[121475], set_id="GRN", rarity="Rare", collectible=True, set_number=77,
                       mtga_id=68538)
 MoodmarkPainter = Card(name="moodmark_painter", pretty_name="Moodmark Painter", cost=['2', 'B', 'B'],
                        color_identity=['B'], card_type="Creature", sub_types="Human Shaman",
-                       abilities=[121476], set_id="GRN", rarity="Common", set_number=78,
+                       abilities=[121476], set_id="GRN", rarity="Common", collectible=True, set_number=78,
                        mtga_id=68539)
 NecroticWound = Card(name="necrotic_wound", pretty_name="Necrotic Wound", cost=['B'],
                      color_identity=['B'], card_type="Instant", sub_types="",
-                     abilities=[121477], set_id="GRN", rarity="Uncommon", set_number=79,
+                     abilities=[121477], set_id="GRN", rarity="Uncommon", collectible=True, set_number=79,
                      mtga_id=68540)
 NeverHappened = Card(name="never_happened", pretty_name="Never Happened", cost=['2', 'B'],
                      color_identity=['B'], card_type="Sorcery", sub_types="",
-                     abilities=[121478], set_id="GRN", rarity="Common", set_number=80,
+                     abilities=[121478], set_id="GRN", rarity="Common", collectible=True, set_number=80,
                      mtga_id=68541)
 PilferingImp = Card(name="pilfering_imp", pretty_name="Pilfering Imp", cost=['B'],
                     color_identity=['B'], card_type="Creature", sub_types="Imp",
-                    abilities=[8, 121479], set_id="GRN", rarity="Uncommon", set_number=81,
+                    abilities=[8, 121479], set_id="GRN", rarity="Uncommon", collectible=True, set_number=81,
                     mtga_id=68542)
 Plaguecrafter = Card(name="plaguecrafter", pretty_name="Plaguecrafter", cost=['2', 'B'],
                      color_identity=['B'], card_type="Creature", sub_types="Human Shaman",
-                     abilities=[121480], set_id="GRN", rarity="Uncommon", set_number=82,
+                     abilities=[121480], set_id="GRN", rarity="Uncommon", collectible=True, set_number=82,
                      mtga_id=68543)
 PriceofFame = Card(name="price_of_fame", pretty_name="Price of Fame", cost=['3', 'B'],
                    color_identity=['B'], card_type="Instant", sub_types="",
-                   abilities=[121482, 26818, 121353], set_id="GRN", rarity="Uncommon", set_number=83,
+                   abilities=[121482, 26818, 121353], set_id="GRN", rarity="Uncommon", collectible=True, set_number=83,
                    mtga_id=68544)
 RitualofSoot = Card(name="ritual_of_soot", pretty_name="Ritual of Soot", cost=['2', 'B', 'B'],
                     color_identity=['B'], card_type="Sorcery", sub_types="",
-                    abilities=[24394], set_id="GRN", rarity="Rare", set_number=84,
+                    abilities=[24394], set_id="GRN", rarity="Rare", collectible=True, set_number=84,
                     mtga_id=68545)
 SeveredStrands = Card(name="severed_strands", pretty_name="Severed Strands", cost=['1', 'B'],
                       color_identity=['B'], card_type="Sorcery", sub_types="",
-                      abilities=[1275, 121483], set_id="GRN", rarity="Common", set_number=85,
+                      abilities=[1275, 121483], set_id="GRN", rarity="Common", collectible=True, set_number=85,
                       mtga_id=68546)
 SpinalCentipede = Card(name="spinal_centipede", pretty_name="Spinal Centipede", cost=['2', 'B'],
                        color_identity=['B'], card_type="Creature", sub_types="Insect",
-                       abilities=[87008], set_id="GRN", rarity="Common", set_number=86,
+                       abilities=[87008], set_id="GRN", rarity="Common", collectible=True, set_number=86,
                        mtga_id=68547)
 UndercityNecrolisk = Card(name="undercity_necrolisk", pretty_name="Undercity Necrolisk", cost=['3', 'B'],
                           color_identity=['B'], card_type="Creature", sub_types="Zombie Lizard",
-                          abilities=[121484], set_id="GRN", rarity="Uncommon", set_number=87,
+                          abilities=[121484], set_id="GRN", rarity="Uncommon", collectible=True, set_number=87,
                           mtga_id=68548)
 VeiledShade = Card(name="veiled_shade", pretty_name="Veiled Shade", cost=['2', 'B'],
                    color_identity=['B'], card_type="Creature", sub_types="Shade",
-                   abilities=[76746], set_id="GRN", rarity="Common", set_number=88,
+                   abilities=[76746], set_id="GRN", rarity="Common", collectible=True, set_number=88,
                    mtga_id=68549)
 ViciousRumors = Card(name="vicious_rumors", pretty_name="Vicious Rumors", cost=['B'],
                      color_identity=['B'], card_type="Sorcery", sub_types="",
-                     abilities=[121486], set_id="GRN", rarity="Common", set_number=89,
+                     abilities=[121486], set_id="GRN", rarity="Common", collectible=True, set_number=89,
                      mtga_id=68550)
 WhisperingSnitch = Card(name="whispering_snitch", pretty_name="Whispering Snitch", cost=['1', 'B'],
                         color_identity=['B'], card_type="Creature", sub_types="Vampire Rogue",
-                        abilities=[121488], set_id="GRN", rarity="Uncommon", set_number=90,
+                        abilities=[121488], set_id="GRN", rarity="Uncommon", collectible=True, set_number=90,
                         mtga_id=68551)
 ArclightPhoenix = Card(name="arclight_phoenix", pretty_name="Arclight Phoenix", cost=['3', 'R'],
                        color_identity=['R'], card_type="Creature", sub_types="Phoenix",
-                       abilities=[8, 9, 121489], set_id="GRN", rarity="Mythic Rare", set_number=91,
+                       abilities=[8, 9, 121489], set_id="GRN", rarity="Mythic Rare", collectible=True, set_number=91,
                        mtga_id=68552)
 BargingSergeant = Card(name="barging_sergeant", pretty_name="Barging Sergeant", cost=['4', 'R'],
                        color_identity=['R'], card_type="Creature", sub_types="Minotaur Soldier",
-                       abilities=[9, 171], set_id="GRN", rarity="Common", set_number=92,
+                       abilities=[9, 171], set_id="GRN", rarity="Common", collectible=True, set_number=92,
                        mtga_id=68553)
 BookDevourer = Card(name="book_devourer", pretty_name="Book Devourer", cost=['5', 'R'],
                     color_identity=['R'], card_type="Creature", sub_types="Beast",
-                    abilities=[14, 121491], set_id="GRN", rarity="Uncommon", set_number=93,
+                    abilities=[14, 121491], set_id="GRN", rarity="Uncommon", collectible=True, set_number=93,
                     mtga_id=68554)
 CommandtheStorm = Card(name="command_the_storm", pretty_name="Command the Storm", cost=['4', 'R'],
                        color_identity=['R'], card_type="Instant", sub_types="",
-                       abilities=[13250], set_id="GRN", rarity="Common", set_number=94,
+                       abilities=[13250], set_id="GRN", rarity="Common", collectible=True, set_number=94,
                        mtga_id=68555)
 CosmotronicWave = Card(name="cosmotronic_wave", pretty_name="Cosmotronic Wave", cost=['3', 'R'],
                        color_identity=['R'], card_type="Sorcery", sub_types="",
-                       abilities=[121493], set_id="GRN", rarity="Common", set_number=95,
+                       abilities=[121493], set_id="GRN", rarity="Common", collectible=True, set_number=95,
                        mtga_id=68556)
 DirectCurrent = Card(name="direct_current", pretty_name="Direct Current", cost=['1', 'R', 'R'],
                      color_identity=['R'], card_type="Sorcery", sub_types="",
-                     abilities=[86613, 170], set_id="GRN", rarity="Common", set_number=96,
+                     abilities=[86613, 170], set_id="GRN", rarity="Common", collectible=True, set_number=96,
                      mtga_id=68557)
 ElectrostaticField = Card(name="electrostatic_field", pretty_name="Electrostatic Field", cost=['1', 'R'],
                           color_identity=['R'], card_type="Creature", sub_types="Wall",
-                          abilities=[2, 121494], set_id="GRN", rarity="Uncommon", set_number=97,
+                          abilities=[2, 121494], set_id="GRN", rarity="Uncommon", collectible=True, set_number=97,
                           mtga_id=68558)
 ErraticCyclops = Card(name="erratic_cyclops", pretty_name="Erratic Cyclops", cost=['3', 'R'],
                       color_identity=['R'], card_type="Creature", sub_types="Cyclops Shaman",
-                      abilities=[14, 121495], set_id="GRN", rarity="Rare", set_number=98,
+                      abilities=[14, 121495], set_id="GRN", rarity="Rare", collectible=True, set_number=98,
                       mtga_id=68559)
 ExperimentalFrenzy = Card(name="experimental_frenzy", pretty_name="Experimental Frenzy", cost=['3', 'R'],
                           color_identity=['R'], card_type="Enchantment", sub_types="",
-                          abilities=[14523, 3396, 1107, 121499], set_id="GRN", rarity="Rare", set_number=99,
+                          abilities=[14523, 3396, 1107, 121499], set_id="GRN", rarity="Rare", collectible=True, set_number=99,
                           mtga_id=68560)
 FearlessHalberdier = Card(name="fearless_halberdier", pretty_name="Fearless Halberdier", cost=['2', 'R'],
                           color_identity=['R'], card_type="Creature", sub_types="Human Warrior",
-                          abilities=[], set_id="GRN", rarity="Common", set_number=100,
+                          abilities=[], set_id="GRN", rarity="Common", collectible=True, set_number=100,
                           mtga_id=68561)
 FireUrchin = Card(name="fire_urchin", pretty_name="Fire Urchin", cost=['1', 'R'],
                   color_identity=['R'], card_type="Creature", sub_types="Elemental",
-                  abilities=[14, 121500], set_id="GRN", rarity="Common", set_number=101,
+                  abilities=[14, 121500], set_id="GRN", rarity="Common", collectible=True, set_number=101,
                   mtga_id=68562)
 GoblinBanneret = Card(name="goblin_banneret", pretty_name="Goblin Banneret", cost=['R'],
                       color_identity=['R'], card_type="Creature", sub_types="Goblin Soldier",
-                      abilities=[171, 76843], set_id="GRN", rarity="Uncommon", set_number=102,
+                      abilities=[171, 76843], set_id="GRN", rarity="Uncommon", collectible=True, set_number=102,
                       mtga_id=68563)
 GoblinCratermaker = Card(name="goblin_cratermaker", pretty_name="Goblin Cratermaker", cost=['1', 'R'],
                          color_identity=['R'], card_type="Creature", sub_types="Goblin Warrior",
-                         abilities=[121505], set_id="GRN", rarity="Uncommon", set_number=103,
+                         abilities=[121505], set_id="GRN", rarity="Uncommon", collectible=True, set_number=103,
                          mtga_id=68564)
 GoblinLocksmith = Card(name="goblin_locksmith", pretty_name="Goblin Locksmith", cost=['1', 'R'],
                        color_identity=['R'], card_type="Creature", sub_types="Goblin Rogue",
-                       abilities=[121506], set_id="GRN", rarity="Common", set_number=104,
+                       abilities=[121506], set_id="GRN", rarity="Common", collectible=True, set_number=104,
                        mtga_id=68565)
 GraviticPunch = Card(name="gravitic_punch", pretty_name="Gravitic Punch", cost=['3', 'R'],
                      color_identity=['R'], card_type="Sorcery", sub_types="",
-                     abilities=[121507, 170], set_id="GRN", rarity="Common", set_number=105,
+                     abilities=[121507, 170], set_id="GRN", rarity="Common", collectible=True, set_number=105,
                      mtga_id=68566)
 HellkiteWhelp = Card(name="hellkite_whelp", pretty_name="Hellkite Whelp", cost=['4', 'R'],
                      color_identity=['R'], card_type="Creature", sub_types="Dragon",
-                     abilities=[8, 121508], set_id="GRN", rarity="Uncommon", set_number=106,
+                     abilities=[8, 121508], set_id="GRN", rarity="Uncommon", collectible=True, set_number=106,
                      mtga_id=68567)
 InescapableBlaze = Card(name="inescapable_blaze", pretty_name="Inescapable Blaze", cost=['4', 'R', 'R'],
                         color_identity=['R'], card_type="Instant", sub_types="",
-                        abilities=[120287, 121510], set_id="GRN", rarity="Uncommon", set_number=107,
+                        abilities=[120287, 121510], set_id="GRN", rarity="Uncommon", collectible=True, set_number=107,
                         mtga_id=68568)
 LavaCoil = Card(name="lava_coil", pretty_name="Lava Coil", cost=['1', 'R'],
                 color_identity=['R'], card_type="Sorcery", sub_types="",
-                abilities=[121512], set_id="GRN", rarity="Uncommon", set_number=108,
+                abilities=[121512], set_id="GRN", rarity="Uncommon", collectible=True, set_number=108,
                 mtga_id=68569)
 LegionWarboss = Card(name="legion_warboss", pretty_name="Legion Warboss", cost=['2', 'R'],
                      color_identity=['R'], card_type="Creature", sub_types="Goblin Soldier",
-                     abilities=[171, 121513], set_id="GRN", rarity="Rare", set_number=109,
+                     abilities=[171, 121513], set_id="GRN", rarity="Rare", collectible=True, set_number=109,
                      mtga_id=68570)
 ManiacalRage = Card(name="maniacal_rage", pretty_name="Maniacal Rage", cost=['1', 'R'],
                     color_identity=['R'], card_type="Enchantment", sub_types="Aura",
-                    abilities=[1027, 90333], set_id="GRN", rarity="Common", set_number=110,
+                    abilities=[1027, 90333], set_id="GRN", rarity="Common", collectible=True, set_number=110,
                     mtga_id=68571)
 MaximizeVelocity = Card(name="maximize_velocity", pretty_name="Maximize Velocity", cost=['R'],
                         color_identity=['R'], card_type="Sorcery", sub_types="",
-                        abilities=[121514, 170], set_id="GRN", rarity="Common", set_number=111,
+                        abilities=[121514, 170], set_id="GRN", rarity="Common", collectible=True, set_number=111,
                         mtga_id=68572)
 OrneryGoblin = Card(name="ornery_goblin", pretty_name="Ornery Goblin", cost=['1', 'R'],
                     color_identity=['R'], card_type="Creature", sub_types="Goblin Warrior",
-                    abilities=[99455], set_id="GRN", rarity="Common", set_number=112,
+                    abilities=[99455], set_id="GRN", rarity="Common", collectible=True, set_number=112,
                     mtga_id=68573)
 RiskFactor = Card(name="risk_factor", pretty_name="Risk Factor", cost=['2', 'R'],
                   color_identity=['R'], card_type="Instant", sub_types="",
-                  abilities=[121515, 170], set_id="GRN", rarity="Rare", set_number=113,
+                  abilities=[121515, 170], set_id="GRN", rarity="Rare", collectible=True, set_number=113,
                   mtga_id=68574)
 RubblebeltBoar = Card(name="rubblebelt_boar", pretty_name="Rubblebelt Boar", cost=['3', 'R'],
                       color_identity=['R'], card_type="Creature", sub_types="Boar",
-                      abilities=[94974], set_id="GRN", rarity="Common", set_number=114,
+                      abilities=[94974], set_id="GRN", rarity="Common", collectible=True, set_number=114,
                       mtga_id=68575)
 RunawaySteamKin = Card(name="runaway_steamkin", pretty_name="Runaway Steam-Kin", cost=['1', 'R'],
                        color_identity=['R'], card_type="Creature", sub_types="Elemental",
-                       abilities=[121516, 121517], set_id="GRN", rarity="Rare", set_number=115,
+                       abilities=[121516, 121517], set_id="GRN", rarity="Rare", collectible=True, set_number=115,
                        mtga_id=68576)
 SmeltWardMinotaur = Card(name="smeltward_minotaur", pretty_name="Smelt-Ward Minotaur", cost=['2', 'R'],
                          color_identity=['R'], card_type="Creature", sub_types="Minotaur Warrior",
-                         abilities=[121518], set_id="GRN", rarity="Uncommon", set_number=116,
+                         abilities=[121518], set_id="GRN", rarity="Uncommon", collectible=True, set_number=116,
                          mtga_id=68577)
 StreetRiot = Card(name="street_riot", pretty_name="Street Riot", cost=['4', 'R'],
                   color_identity=['R'], card_type="Enchantment", sub_types="",
-                  abilities=[121519], set_id="GRN", rarity="Uncommon", set_number=117,
+                  abilities=[121519], set_id="GRN", rarity="Uncommon", collectible=True, set_number=117,
                   mtga_id=68578)
 SureStrike = Card(name="sure_strike", pretty_name="Sure Strike", cost=['1', 'R'],
                   color_identity=['R'], card_type="Instant", sub_types="",
-                  abilities=[1019], set_id="GRN", rarity="Common", set_number=118,
+                  abilities=[1019], set_id="GRN", rarity="Common", collectible=True, set_number=118,
                   mtga_id=68579)
 TorchCourier = Card(name="torch_courier", pretty_name="Torch Courier", cost=['R'],
                     color_identity=['R'], card_type="Creature", sub_types="Goblin",
-                    abilities=[9, 121355], set_id="GRN", rarity="Common", set_number=119,
+                    abilities=[9, 121355], set_id="GRN", rarity="Common", collectible=True, set_number=119,
                     mtga_id=68580)
 WojekBodyguard = Card(name="wojek_bodyguard", pretty_name="Wojek Bodyguard", cost=['2', 'R'],
                       color_identity=['R'], card_type="Creature", sub_types="Human Soldier",
-                      abilities=[171, 87894], set_id="GRN", rarity="Common", set_number=120,
+                      abilities=[171, 87894], set_id="GRN", rarity="Common", collectible=True, set_number=120,
                       mtga_id=68581)
 AffectionateIndrik = Card(name="affectionate_indrik", pretty_name="Affectionate Indrik", cost=['5', 'G'],
                           color_identity=['G'], card_type="Creature", sub_types="Beast",
-                          abilities=[102099], set_id="GRN", rarity="Uncommon", set_number=121,
+                          abilities=[102099], set_id="GRN", rarity="Uncommon", collectible=True, set_number=121,
                           mtga_id=68582)
 ArboretumElemental = Card(name="arboretum_elemental", pretty_name="Arboretum Elemental", cost=['7', 'G', 'G'],
                           color_identity=['G'], card_type="Creature", sub_types="Elemental",
-                          abilities=[52, 10], set_id="GRN", rarity="Uncommon", set_number=122,
+                          abilities=[52, 10], set_id="GRN", rarity="Uncommon", collectible=True, set_number=122,
                           mtga_id=68583)
 BeastWhisperer = Card(name="beast_whisperer", pretty_name="Beast Whisperer", cost=['2', 'G', 'G'],
                       color_identity=['G'], card_type="Creature", sub_types="Elf Druid",
-                      abilities=[62610], set_id="GRN", rarity="Rare", set_number=123,
+                      abilities=[62610], set_id="GRN", rarity="Rare", collectible=True, set_number=123,
                       mtga_id=68584)
 BountyofMight = Card(name="bounty_of_might", pretty_name="Bounty of Might", cost=['4', 'G', 'G'],
                      color_identity=['G'], card_type="Instant", sub_types="",
-                     abilities=[24733, 24733, 24733], set_id="GRN", rarity="Rare", set_number=124,
+                     abilities=[24733, 24733, 24733], set_id="GRN", rarity="Rare", collectible=True, set_number=124,
                      mtga_id=68585)
 CircuitousRoute = Card(name="circuitous_route", pretty_name="Circuitous Route", cost=['3', 'G'],
                        color_identity=['G'], card_type="Sorcery", sub_types="",
-                       abilities=[121356], set_id="GRN", rarity="Uncommon", set_number=125,
+                       abilities=[121356], set_id="GRN", rarity="Uncommon", collectible=True, set_number=125,
                        mtga_id=68586)
 CrushingCanopy = Card(name="crushing_canopy", pretty_name="Crushing Canopy", cost=['2', 'G'],
                       color_identity=['G'], card_type="Instant", sub_types="",
-                      abilities=[1206], set_id="GRN", rarity="Common", set_number=126,
+                      abilities=[1206], set_id="GRN", rarity="Common", collectible=True, set_number=126,
                       mtga_id=68587)
 DevkarinDissident = Card(name="devkarin_dissident", pretty_name="Devkarin Dissident", cost=['1', 'G'],
                          color_identity=['G'], card_type="Creature", sub_types="Elf Warrior",
-                         abilities=[121358], set_id="GRN", rarity="Common", set_number=127,
+                         abilities=[121358], set_id="GRN", rarity="Common", collectible=True, set_number=127,
                          mtga_id=68588)
 DistrictGuide = Card(name="district_guide", pretty_name="District Guide", cost=['2', 'G'],
                      color_identity=['G'], card_type="Creature", sub_types="Elf Scout",
-                     abilities=[121359], set_id="GRN", rarity="Uncommon", set_number=128,
+                     abilities=[121359], set_id="GRN", rarity="Uncommon", collectible=True, set_number=128,
                      mtga_id=68589)
 GenerousStray = Card(name="generous_stray", pretty_name="Generous Stray", cost=['2', 'G'],
                      color_identity=['G'], card_type="Creature", sub_types="Cat",
-                     abilities=[86788], set_id="GRN", rarity="Common", set_number=129,
+                     abilities=[86788], set_id="GRN", rarity="Common", collectible=True, set_number=129,
                      mtga_id=68590)
 GolgariRaiders = Card(name="golgari_raiders", pretty_name="Golgari Raiders", cost=['3', 'G'],
                       color_identity=['G'], card_type="Creature", sub_types="Elf Warrior",
-                      abilities=[9, 121360], set_id="GRN", rarity="Uncommon", set_number=130,
+                      abilities=[9, 121360], set_id="GRN", rarity="Uncommon", collectible=True, set_number=130,
                       mtga_id=68591)
 GrapplingSundew = Card(name="grappling_sundew", pretty_name="Grappling Sundew", cost=['1', 'G'],
                        color_identity=['G'], card_type="Creature", sub_types="Plant",
-                       abilities=[2, 13, 121361], set_id="GRN", rarity="Uncommon", set_number=131,
+                       abilities=[2, 13, 121361], set_id="GRN", rarity="Uncommon", collectible=True, set_number=131,
                        mtga_id=68592)
 HatcherySpider = Card(name="hatchery_spider", pretty_name="Hatchery Spider", cost=['5', 'G', 'G'],
                       color_identity=['G'], card_type="Creature", sub_types="Spider",
-                      abilities=[13, 121362], set_id="GRN", rarity="Rare", set_number=132,
+                      abilities=[13, 121362], set_id="GRN", rarity="Rare", collectible=True, set_number=132,
                       mtga_id=68593)
 HitchclawRecluse = Card(name="hitchclaw_recluse", pretty_name="Hitchclaw Recluse", cost=['2', 'G'],
                         color_identity=['G'], card_type="Creature", sub_types="Spider",
-                        abilities=[13], set_id="GRN", rarity="Common", set_number=133,
+                        abilities=[13], set_id="GRN", rarity="Common", collectible=True, set_number=133,
                         mtga_id=68594)
 IronshellBeetle = Card(name="ironshell_beetle", pretty_name="Ironshell Beetle", cost=['1', 'G'],
                        color_identity=['G'], card_type="Creature", sub_types="Insect",
-                       abilities=[92425], set_id="GRN", rarity="Common", set_number=134,
+                       abilities=[92425], set_id="GRN", rarity="Common", collectible=True, set_number=134,
                        mtga_id=68595)
 KraulForagers = Card(name="kraul_foragers", pretty_name="Kraul Foragers", cost=['4', 'G'],
                      color_identity=['G'], card_type="Creature", sub_types="Insect Scout",
-                     abilities=[121526], set_id="GRN", rarity="Common", set_number=135,
+                     abilities=[121526], set_id="GRN", rarity="Common", collectible=True, set_number=135,
                      mtga_id=68596)
 KraulHarpooner = Card(name="kraul_harpooner", pretty_name="Kraul Harpooner", cost=['1', 'G'],
                       color_identity=['G'], card_type="Creature", sub_types="Insect Warrior",
-                      abilities=[13, 121527], set_id="GRN", rarity="Uncommon", set_number=136,
+                      abilities=[13, 121527], set_id="GRN", rarity="Uncommon", collectible=True, set_number=136,
                       mtga_id=68597)
 MightoftheMasses = Card(name="might_of_the_masses", pretty_name="Might of the Masses", cost=['G'],
                         color_identity=['G'], card_type="Instant", sub_types="",
-                        abilities=[9094], set_id="GRN", rarity="Uncommon", set_number=137,
+                        abilities=[9094], set_id="GRN", rarity="Uncommon", collectible=True, set_number=137,
                         mtga_id=68598)
 NullhideFerox = Card(name="nullhide_ferox", pretty_name="Nullhide Ferox", cost=['2', 'G', 'G'],
                      color_identity=['G'], card_type="Creature", sub_types="Beast",
-                     abilities=[10, 121529, 121530, 92976], set_id="GRN", rarity="Mythic Rare", set_number=138,
+                     abilities=[10, 121529, 121530, 92976], set_id="GRN", rarity="Mythic Rare", collectible=True, set_number=138,
                      mtga_id=68599)
 PacksFavor = Card(name="packs_favor", pretty_name="Pack's Favor", cost=['2', 'G'],
                   color_identity=['G'], card_type="Instant", sub_types="",
-                  abilities=[52, 24733], set_id="GRN", rarity="Common", set_number=139,
+                  abilities=[52, 24733], set_id="GRN", rarity="Common", collectible=True, set_number=139,
                   mtga_id=68600)
 PauseforReflection = Card(name="pause_for_reflection", pretty_name="Pause for Reflection", cost=['2', 'G'],
                           color_identity=['G'], card_type="Instant", sub_types="",
-                          abilities=[52, 27746], set_id="GRN", rarity="Common", set_number=140,
+                          abilities=[52, 27746], set_id="GRN", rarity="Common", collectible=True, set_number=140,
                           mtga_id=68601)
 PeltCollector = Card(name="pelt_collector", pretty_name="Pelt Collector", cost=['G'],
                      color_identity=['G'], card_type="Creature", sub_types="Elf Warrior",
-                     abilities=[121532, 121533], set_id="GRN", rarity="Rare", set_number=141,
+                     abilities=[121532, 121533], set_id="GRN", rarity="Rare", collectible=True, set_number=141,
                      mtga_id=68602)
 PortcullisVine = Card(name="portcullis_vine", pretty_name="Portcullis Vine", cost=['G'],
                       color_identity=['G'], card_type="Creature", sub_types="Plant Wall",
-                      abilities=[2, 121363], set_id="GRN", rarity="Common", set_number=142,
+                      abilities=[2, 121363], set_id="GRN", rarity="Common", collectible=True, set_number=142,
                       mtga_id=68603)
 PreyUpon = Card(name="prey_upon", pretty_name="Prey Upon", cost=['G'],
                 color_identity=['G'], card_type="Sorcery", sub_types="",
-                abilities=[99356], set_id="GRN", rarity="Common", set_number=143,
+                abilities=[99356], set_id="GRN", rarity="Common", collectible=True, set_number=143,
                 mtga_id=68604)
 SiegeWurm = Card(name="siege_wurm", pretty_name="Siege Wurm", cost=['5', 'G', 'G'],
                  color_identity=['G'], card_type="Creature", sub_types="Wurm",
-                 abilities=[52, 14], set_id="GRN", rarity="Common", set_number=144,
+                 abilities=[52, 14], set_id="GRN", rarity="Common", collectible=True, set_number=144,
                  mtga_id=68605)
 SproutingRenewal = Card(name="sprouting_renewal", pretty_name="Sprouting Renewal", cost=['2', 'G'],
                         color_identity=['G'], card_type="Sorcery", sub_types="",
-                        abilities=[52, 121536], set_id="GRN", rarity="Uncommon", set_number=145,
+                        abilities=[52, 121536], set_id="GRN", rarity="Uncommon", collectible=True, set_number=145,
                         mtga_id=68606)
 UrbanUtopia = Card(name="urban_utopia", pretty_name="Urban Utopia", cost=['1', 'G'],
                    color_identity=['G'], card_type="Enchantment", sub_types="Aura",
-                   abilities=[1570, 86788, 99704], set_id="GRN", rarity="Common", set_number=146,
+                   abilities=[1570, 86788, 99704], set_id="GRN", rarity="Common", collectible=True, set_number=146,
                    mtga_id=68607)
 VigorsporeWurm = Card(name="vigorspore_wurm", pretty_name="Vigorspore Wurm", cost=['5', 'G'],
                       color_identity=['G'], card_type="Creature", sub_types="Wurm",
-                      abilities=[121538, 1026], set_id="GRN", rarity="Common", set_number=147,
+                      abilities=[121538, 1026], set_id="GRN", rarity="Common", collectible=True, set_number=147,
                       mtga_id=68608)
 VividRevival = Card(name="vivid_revival", pretty_name="Vivid Revival", cost=['4', 'G'],
                     color_identity=['G'], card_type="Sorcery", sub_types="",
-                    abilities=[121366], set_id="GRN", rarity="Rare", set_number=148,
+                    abilities=[121366], set_id="GRN", rarity="Rare", collectible=True, set_number=148,
                     mtga_id=68609)
 WaryOkapi = Card(name="wary_okapi", pretty_name="Wary Okapi", cost=['2', 'G'],
                  color_identity=['G'], card_type="Creature", sub_types="Antelope",
-                 abilities=[15], set_id="GRN", rarity="Common", set_number=149,
+                 abilities=[15], set_id="GRN", rarity="Common", collectible=True, set_number=149,
                  mtga_id=68610)
 WildCeratok = Card(name="wild_ceratok", pretty_name="Wild Ceratok", cost=['3', 'G'],
                    color_identity=['G'], card_type="Creature", sub_types="Rhino",
-                   abilities=[], set_id="GRN", rarity="Common", set_number=150,
+                   abilities=[], set_id="GRN", rarity="Common", collectible=True, set_number=150,
                    mtga_id=68611)
 ArtfulTakedown = Card(name="artful_takedown", pretty_name="Artful Takedown", cost=['2', 'U', 'B'],
                       color_identity=['U', 'B'], card_type="Instant", sub_types="",
-                      abilities=[121541], set_id="GRN", rarity="Common", set_number=151,
+                      abilities=[121541], set_id="GRN", rarity="Common", collectible=True, set_number=151,
                       mtga_id=68612)
 AssassinsTrophy = Card(name="assassins_trophy", pretty_name="Assassin's Trophy", cost=['B', 'G'],
                        color_identity=['B', 'G'], card_type="Instant", sub_types="",
-                       abilities=[121542], set_id="GRN", rarity="Rare", set_number=152,
+                       abilities=[121542], set_id="GRN", rarity="Rare", collectible=True, set_number=152,
                        mtga_id=68613)
 AureliaExemplarofJustice = Card(name="aurelia_exemplar_of_justice", pretty_name="Aurelia, Exemplar of Justice", cost=['2', 'R', 'W'],
                                 color_identity=['R', 'W'], card_type="Creature", sub_types="Angel",
-                                abilities=[8, 171, 121367], set_id="GRN", rarity="Mythic Rare", set_number=153,
+                                abilities=[8, 171, 121367], set_id="GRN", rarity="Mythic Rare", collectible=True, set_number=153,
                                 mtga_id=68614)
 BeaconBolt = Card(name="beacon_bolt", pretty_name="Beacon Bolt", cost=['1', 'U', 'R'],
                   color_identity=['U', 'R'], card_type="Sorcery", sub_types="",
-                  abilities=[121543, 170], set_id="GRN", rarity="Uncommon", set_number=154,
+                  abilities=[121543, 170], set_id="GRN", rarity="Uncommon", collectible=True, set_number=154,
                   mtga_id=68615)
 BeamsplitterMage = Card(name="beamsplitter_mage", pretty_name="Beamsplitter Mage", cost=['U', 'R'],
                         color_identity=['U', 'R'], card_type="Creature", sub_types="Vedalken Wizard",
-                        abilities=[121544], set_id="GRN", rarity="Uncommon", set_number=155,
+                        abilities=[121544], set_id="GRN", rarity="Uncommon", collectible=True, set_number=155,
                         mtga_id=68616)
 BorosChallenger = Card(name="boros_challenger", pretty_name="Boros Challenger", cost=['R', 'W'],
                        color_identity=['R', 'W'], card_type="Creature", sub_types="Human Soldier",
-                       abilities=[171, 121546], set_id="GRN", rarity="Uncommon", set_number=156,
+                       abilities=[171, 121546], set_id="GRN", rarity="Uncommon", collectible=True, set_number=156,
                        mtga_id=68617)
 Camaraderie = Card(name="camaraderie", pretty_name="Camaraderie", cost=['4', 'G', 'W'],
                    color_identity=['G', 'W'], card_type="Sorcery", sub_types="",
-                   abilities=[121490], set_id="GRN", rarity="Rare", set_number=157,
+                   abilities=[121490], set_id="GRN", rarity="Rare", collectible=True, set_number=157,
                    mtga_id=68618)
 CentaurPeacemaker = Card(name="centaur_peacemaker", pretty_name="Centaur Peacemaker", cost=['1', 'G', 'W'],
                          color_identity=['G', 'W'], card_type="Creature", sub_types="Centaur Cleric",
-                         abilities=[121547], set_id="GRN", rarity="Common", set_number=158,
+                         abilities=[121547], set_id="GRN", rarity="Common", collectible=True, set_number=158,
                          mtga_id=68619)
 ChanceforGlory = Card(name="chance_for_glory", pretty_name="Chance for Glory", cost=['1', 'R', 'W'],
                       color_identity=['R', 'W'], card_type="Instant", sub_types="",
-                      abilities=[121548], set_id="GRN", rarity="Mythic Rare", set_number=159,
+                      abilities=[121548], set_id="GRN", rarity="Mythic Rare", collectible=True, set_number=159,
                       mtga_id=68620)
 CharnelTroll = Card(name="charnel_troll", pretty_name="Charnel Troll", cost=['1', 'B', 'G'],
                     color_identity=['B', 'G'], card_type="Creature", sub_types="Troll",
-                    abilities=[14, 121549, 121550], set_id="GRN", rarity="Rare", set_number=160,
+                    abilities=[14, 121549, 121550], set_id="GRN", rarity="Rare", collectible=True, set_number=160,
                     mtga_id=68621)
 ConclaveCavalier = Card(name="conclave_cavalier", pretty_name="Conclave Cavalier", cost=['G', 'G', 'W', 'W'],
                         color_identity=['G', 'W'], card_type="Creature", sub_types="Centaur Knight",
-                        abilities=[15, 121368], set_id="GRN", rarity="Uncommon", set_number=161,
+                        abilities=[15, 121368], set_id="GRN", rarity="Uncommon", collectible=True, set_number=161,
                         mtga_id=68622)
 ConclaveGuildmage = Card(name="conclave_guildmage", pretty_name="Conclave Guildmage", cost=['G', 'W'],
                          color_identity=['G', 'W'], card_type="Creature", sub_types="Elf Cleric",
-                         abilities=[121552, 121553], set_id="GRN", rarity="Uncommon", set_number=162,
+                         abilities=[121552, 121553], set_id="GRN", rarity="Uncommon", collectible=True, set_number=162,
                          mtga_id=68623)
 CracklingDrake = Card(name="crackling_drake", pretty_name="Crackling Drake", cost=['U', 'U', 'R', 'R'],
                       color_identity=['U', 'R'], card_type="Creature", sub_types="Drake",
-                      abilities=[8, 121554, 86788], set_id="GRN", rarity="Uncommon", set_number=163,
+                      abilities=[8, 121554, 86788], set_id="GRN", rarity="Uncommon", collectible=True, set_number=163,
                       mtga_id=68624)
 DarkbladeAgent = Card(name="darkblade_agent", pretty_name="Darkblade Agent", cost=['1', 'U', 'B'],
                       color_identity=['U', 'B'], card_type="Creature", sub_types="Human Assassin",
-                      abilities=[121556], set_id="GRN", rarity="Common", set_number=164,
+                      abilities=[121556], set_id="GRN", rarity="Common", collectible=True, set_number=164,
                       mtga_id=68625)
 DeafeningClarion = Card(name="deafening_clarion", pretty_name="Deafening Clarion", cost=['1', 'R', 'W'],
                         color_identity=['R', 'W'], card_type="Sorcery", sub_types="",
-                        abilities=[121558], set_id="GRN", rarity="Rare", set_number=165,
+                        abilities=[121558], set_id="GRN", rarity="Rare", collectible=True, set_number=165,
                         mtga_id=68626)
 DimirSpybug = Card(name="dimir_spybug", pretty_name="Dimir Spybug", cost=['U', 'B'],
                    color_identity=['U', 'B'], card_type="Creature", sub_types="Insect",
-                   abilities=[8, 142, 121430], set_id="GRN", rarity="Uncommon", set_number=166,
+                   abilities=[8, 142, 121430], set_id="GRN", rarity="Uncommon", collectible=True, set_number=166,
                    mtga_id=68627)
 DisinformationCampaign = Card(name="disinformation_campaign", pretty_name="Disinformation Campaign", cost=['1', 'U', 'B'],
                               color_identity=['U', 'B'], card_type="Enchantment", sub_types="",
-                              abilities=[121559, 121560], set_id="GRN", rarity="Uncommon", set_number=167,
+                              abilities=[121559, 121560], set_id="GRN", rarity="Uncommon", collectible=True, set_number=167,
                               mtga_id=68628)
 EmmaraSouloftheAccord = Card(name="emmara_soul_of_the_accord", pretty_name="Emmara, Soul of the Accord", cost=['G', 'W'],
                              color_identity=['G', 'W'], card_type="Creature", sub_types="Elf Cleric",
-                             abilities=[121561], set_id="GRN", rarity="Rare", set_number=168,
+                             abilities=[121561], set_id="GRN", rarity="Rare", collectible=True, set_number=168,
                              mtga_id=68629)
 ErstwhileTrooper = Card(name="erstwhile_trooper", pretty_name="Erstwhile Trooper", cost=['1', 'B', 'G'],
                         color_identity=['B', 'G'], card_type="Creature", sub_types="Zombie Soldier",
-                        abilities=[121562], set_id="GRN", rarity="Common", set_number=169,
+                        abilities=[121562], set_id="GRN", rarity="Common", collectible=True, set_number=169,
                         mtga_id=68630)
 EtratatheSilencer = Card(name="etrata_the_silencer", pretty_name="Etrata, the Silencer", cost=['2', 'U', 'B'],
                          color_identity=['U', 'B'], card_type="Creature", sub_types="Vampire Assassin",
-                         abilities=[62969, 121566], set_id="GRN", rarity="Rare", set_number=170,
+                         abilities=[62969, 121566], set_id="GRN", rarity="Rare", collectible=True, set_number=170,
                          mtga_id=68631)
 FiremindsResearch = Card(name="fireminds_research", pretty_name="Firemind's Research", cost=['U', 'R'],
                          color_identity=['U', 'R'], card_type="Enchantment", sub_types="",
-                         abilities=[121370, 121371, 121372], set_id="GRN", rarity="Rare", set_number=171,
+                         abilities=[121370, 121371, 121372], set_id="GRN", rarity="Rare", collectible=True, set_number=171,
                          mtga_id=68632)
 GarrisonSergeant = Card(name="garrison_sergeant", pretty_name="Garrison Sergeant", cost=['3', 'R', 'W'],
                         color_identity=['R', 'W'], card_type="Creature", sub_types="Viashino Soldier",
-                        abilities=[121373], set_id="GRN", rarity="Common", set_number=172,
+                        abilities=[121373], set_id="GRN", rarity="Common", collectible=True, set_number=172,
                         mtga_id=68633)
 GlowsporeShaman = Card(name="glowspore_shaman", pretty_name="Glowspore Shaman", cost=['B', 'G'],
                        color_identity=['B', 'G'], card_type="Creature", sub_types="Elf Shaman",
-                       abilities=[121374], set_id="GRN", rarity="Uncommon", set_number=173,
+                       abilities=[121374], set_id="GRN", rarity="Uncommon", collectible=True, set_number=173,
                        mtga_id=68634)
 GoblinElectromancer = Card(name="goblin_electromancer", pretty_name="Goblin Electromancer", cost=['U', 'R'],
                            color_identity=['U', 'R'], card_type="Creature", sub_types="Goblin Wizard",
-                           abilities=[19445], set_id="GRN", rarity="Common", set_number=174,
+                           abilities=[19445], set_id="GRN", rarity="Common", collectible=True, set_number=174,
                            mtga_id=68635)
 GolgariFindbroker = Card(name="golgari_findbroker", pretty_name="Golgari Findbroker", cost=['B', 'B', 'G', 'G'],
                          color_identity=['B', 'G'], card_type="Creature", sub_types="Elf Shaman",
-                         abilities=[121376], set_id="GRN", rarity="Uncommon", set_number=175,
+                         abilities=[121376], set_id="GRN", rarity="Uncommon", collectible=True, set_number=175,
                          mtga_id=68636)
 HammerDropper = Card(name="hammer_dropper", pretty_name="Hammer Dropper", cost=['2', 'R', 'W'],
                      color_identity=['R', 'W'], card_type="Creature", sub_types="Giant Soldier",
-                     abilities=[171], set_id="GRN", rarity="Common", set_number=176,
+                     abilities=[171], set_id="GRN", rarity="Common", collectible=True, set_number=176,
                      mtga_id=68637)
 HouseGuildmage = Card(name="house_guildmage", pretty_name="House Guildmage", cost=['U', 'B'],
                       color_identity=['U', 'B'], card_type="Creature", sub_types="Human Wizard",
-                      abilities=[121377, 121378], set_id="GRN", rarity="Uncommon", set_number=177,
+                      abilities=[121377, 121378], set_id="GRN", rarity="Uncommon", collectible=True, set_number=177,
                       mtga_id=68638)
 Hypothesizzle = Card(name="hypothesizzle", pretty_name="Hypothesizzle", cost=['3', 'U', 'R'],
                      color_identity=['U', 'R'], card_type="Instant", sub_types="",
-                     abilities=[121379], set_id="GRN", rarity="Common", set_number=178,
+                     abilities=[121379], set_id="GRN", rarity="Common", collectible=True, set_number=178,
                      mtga_id=68639)
 Ionize = Card(name="ionize", pretty_name="Ionize", cost=['1', 'U', 'R'],
               color_identity=['U', 'R'], card_type="Instant", sub_types="",
-              abilities=[121380], set_id="GRN", rarity="Rare", set_number=179,
+              abilities=[121380], set_id="GRN", rarity="Rare", collectible=True, set_number=179,
               mtga_id=68640)
 IzoniThousandEyed = Card(name="izoni_thousandeyed", pretty_name="Izoni, Thousand-Eyed", cost=['2', 'B', 'B', 'G', 'G'],
                          color_identity=['B', 'G'], card_type="Creature", sub_types="Elf Shaman",
-                         abilities=[121474, 121382], set_id="GRN", rarity="Rare", set_number=180,
+                         abilities=[121474, 121382], set_id="GRN", rarity="Rare", collectible=True, set_number=180,
                          mtga_id=68641)
 JoinShields = Card(name="join_shields", pretty_name="Join Shields", cost=['3', 'G', 'W'],
                    color_identity=['G', 'W'], card_type="Instant", sub_types="",
-                   abilities=[121383], set_id="GRN", rarity="Uncommon", set_number=181,
+                   abilities=[121383], set_id="GRN", rarity="Uncommon", collectible=True, set_number=181,
                    mtga_id=68642)
 JusticeStrike = Card(name="justice_strike", pretty_name="Justice Strike", cost=['R', 'W'],
                      color_identity=['R', 'W'], card_type="Instant", sub_types="",
-                     abilities=[12670], set_id="GRN", rarity="Uncommon", set_number=182,
+                     abilities=[12670], set_id="GRN", rarity="Uncommon", collectible=True, set_number=182,
                      mtga_id=68643)
 KnightofAutumn = Card(name="knight_of_autumn", pretty_name="Knight of Autumn", cost=['1', 'G', 'W'],
                       color_identity=['G', 'W'], card_type="Creature", sub_types="Dryad Knight",
-                      abilities=[121509], set_id="GRN", rarity="Rare", set_number=183,
+                      abilities=[121509], set_id="GRN", rarity="Rare", collectible=True, set_number=183,
                       mtga_id=68644)
 LazavtheMultifarious = Card(name="lazav_the_multifarious", pretty_name="Lazav, the Multifarious", cost=['U', 'B'],
                             color_identity=['U', 'B'], card_type="Creature", sub_types="Shapeshifter",
-                            abilities=[121445, 122112], set_id="GRN", rarity="Mythic Rare", set_number=184,
+                            abilities=[121445, 122112], set_id="GRN", rarity="Mythic Rare", collectible=True, set_number=184,
                             mtga_id=68645)
 LeagueGuildmage = Card(name="league_guildmage", pretty_name="League Guildmage", cost=['U', 'R'],
                        color_identity=['U', 'R'], card_type="Creature", sub_types="Human Wizard",
-                       abilities=[8701, 121388], set_id="GRN", rarity="Uncommon", set_number=185,
+                       abilities=[8701, 121388], set_id="GRN", rarity="Uncommon", collectible=True, set_number=185,
                        mtga_id=68646)
 LedevChampion = Card(name="ledev_champion", pretty_name="Ledev Champion", cost=['1', 'G', 'W'],
                      color_identity=['G', 'W'], card_type="Creature", sub_types="Elf Knight",
-                     abilities=[121389, 121524], set_id="GRN", rarity="Uncommon", set_number=186,
+                     abilities=[121389, 121524], set_id="GRN", rarity="Uncommon", collectible=True, set_number=186,
                      mtga_id=68647)
 LegionGuildmage = Card(name="legion_guildmage", pretty_name="Legion Guildmage", cost=['R', 'W'],
                        color_identity=['R', 'W'], card_type="Creature", sub_types="Human Wizard",
-                       abilities=[121390, 121391], set_id="GRN", rarity="Uncommon", set_number=187,
+                       abilities=[121390, 121391], set_id="GRN", rarity="Uncommon", collectible=True, set_number=187,
                        mtga_id=68648)
 MarchoftheMultitudes = Card(name="march_of_the_multitudes", pretty_name="March of the Multitudes", cost=['X', 'G', 'W', 'W'],
                             color_identity=['G', 'W'], card_type="Instant", sub_types="",
-                            abilities=[52, 121392], set_id="GRN", rarity="Mythic Rare", set_number=188,
+                            abilities=[52, 121392], set_id="GRN", rarity="Mythic Rare", collectible=True, set_number=188,
                             mtga_id=68649)
 MnemonicBetrayal = Card(name="mnemonic_betrayal", pretty_name="Mnemonic Betrayal", cost=['1', 'U', 'B'],
                         color_identity=['U', 'B'], card_type="Sorcery", sub_types="",
-                        abilities=[121393, 89260], set_id="GRN", rarity="Mythic Rare", set_number=189,
+                        abilities=[121393, 89260], set_id="GRN", rarity="Mythic Rare", collectible=True, set_number=189,
                         mtga_id=68650)
 Molderhulk = Card(name="molderhulk", pretty_name="Molderhulk", cost=['7', 'B', 'G'],
                   color_identity=['B', 'G'], card_type="Creature", sub_types="Fungus Zombie",
-                  abilities=[121545, 101750], set_id="GRN", rarity="Uncommon", set_number=190,
+                  abilities=[121545, 101750], set_id="GRN", rarity="Uncommon", collectible=True, set_number=190,
                   mtga_id=68651)
 NightveilPredator = Card(name="nightveil_predator", pretty_name="Nightveil Predator", cost=['U', 'U', 'B', 'B'],
                          color_identity=['U', 'B'], card_type="Creature", sub_types="Vampire",
-                         abilities=[8, 1, 10], set_id="GRN", rarity="Uncommon", set_number=191,
+                         abilities=[8, 1, 10], set_id="GRN", rarity="Uncommon", collectible=True, set_number=191,
                          mtga_id=68652)
 NivMizzetParun = Card(name="nivmizzet_parun", pretty_name="Niv-Mizzet, Parun", cost=['U', 'U', 'U', 'R', 'R', 'R'],
                       color_identity=['U', 'R'], card_type="Creature", sub_types="Dragon Wizard",
-                      abilities=[120287, 8, 91091, 121395], set_id="GRN", rarity="Rare", set_number=192,
+                      abilities=[120287, 8, 91091, 121395], set_id="GRN", rarity="Rare", collectible=True, set_number=192,
                       mtga_id=68653)
 NotionRain = Card(name="notion_rain", pretty_name="Notion Rain", cost=['1', 'U', 'B'],
                   color_identity=['U', 'B'], card_type="Sorcery", sub_types="",
-                  abilities=[121396], set_id="GRN", rarity="Common", set_number=193,
+                  abilities=[121396], set_id="GRN", rarity="Common", collectible=True, set_number=193,
                   mtga_id=68654)
 OchranAssassin = Card(name="ochran_assassin", pretty_name="Ochran Assassin", cost=['1', 'B', 'G'],
                       color_identity=['B', 'G'], card_type="Creature", sub_types="Elf Assassin",
-                      abilities=[1, 88808], set_id="GRN", rarity="Uncommon", set_number=194,
+                      abilities=[1, 88808], set_id="GRN", rarity="Uncommon", collectible=True, set_number=194,
                       mtga_id=68655)
 RalIzzetViceroy = Card(name="ral_izzet_viceroy", pretty_name="Ral, Izzet Viceroy", cost=['3', 'U', 'R'],
                        color_identity=['U', 'R'], card_type="Planeswalker", sub_types="Ral",
-                       abilities=[121399, 121398, 121400], set_id="GRN", rarity="Mythic Rare", set_number=195,
+                       abilities=[121399, 121398, 121400], set_id="GRN", rarity="Mythic Rare", collectible=True, set_number=195,
                        mtga_id=68656)
 RhizomeLurcher = Card(name="rhizome_lurcher", pretty_name="Rhizome Lurcher", cost=['2', 'B', 'G'],
                       color_identity=['B', 'G'], card_type="Creature", sub_types="Fungus Zombie",
-                      abilities=[121401], set_id="GRN", rarity="Common", set_number=196,
+                      abilities=[121401], set_id="GRN", rarity="Common", collectible=True, set_number=196,
                       mtga_id=68657)
 RosemaneCentaur = Card(name="rosemane_centaur", pretty_name="Rosemane Centaur", cost=['3', 'G', 'W'],
                        color_identity=['G', 'W'], card_type="Creature", sub_types="Centaur Soldier",
-                       abilities=[52, 15], set_id="GRN", rarity="Common", set_number=197,
+                       abilities=[52, 15], set_id="GRN", rarity="Common", collectible=True, set_number=197,
                        mtga_id=68658)
 SkyknightLegionnaire = Card(name="skyknight_legionnaire", pretty_name="Skyknight Legionnaire", cost=['1', 'R', 'W'],
                             color_identity=['R', 'W'], card_type="Creature", sub_types="Human Knight",
-                            abilities=[8, 9], set_id="GRN", rarity="Common", set_number=198,
+                            abilities=[8, 9], set_id="GRN", rarity="Common", collectible=True, set_number=198,
                             mtga_id=68659)
 SonicAssault = Card(name="sonic_assault", pretty_name="Sonic Assault", cost=['1', 'U', 'R'],
                     color_identity=['U', 'R'], card_type="Instant", sub_types="",
-                    abilities=[121402, 170], set_id="GRN", rarity="Common", set_number=199,
+                    abilities=[121402, 170], set_id="GRN", rarity="Common", collectible=True, set_number=199,
                     mtga_id=68660)
 SumalaWoodshaper = Card(name="sumala_woodshaper", pretty_name="Sumala Woodshaper", cost=['2', 'G', 'W'],
                         color_identity=['G', 'W'], card_type="Creature", sub_types="Elf Druid",
-                        abilities=[121427], set_id="GRN", rarity="Common", set_number=200,
+                        abilities=[121427], set_id="GRN", rarity="Common", collectible=True, set_number=200,
                         mtga_id=68661)
 SwarmGuildmage = Card(name="swarm_guildmage", pretty_name="Swarm Guildmage", cost=['B', 'G'],
                       color_identity=['B', 'G'], card_type="Creature", sub_types="Elf Shaman",
-                      abilities=[121403, 121404], set_id="GRN", rarity="Uncommon", set_number=201,
+                      abilities=[121403, 121404], set_id="GRN", rarity="Uncommon", collectible=True, set_number=201,
                       mtga_id=68662)
 SwathcutterGiant = Card(name="swathcutter_giant", pretty_name="Swathcutter Giant", cost=['4', 'R', 'W'],
                         color_identity=['R', 'W'], card_type="Creature", sub_types="Giant Soldier",
-                        abilities=[15, 121405], set_id="GRN", rarity="Uncommon", set_number=202,
+                        abilities=[15, 121405], set_id="GRN", rarity="Uncommon", collectible=True, set_number=202,
                         mtga_id=68663)
 SwiftbladeVindicator = Card(name="swiftblade_vindicator", pretty_name="Swiftblade Vindicator", cost=['R', 'W'],
                             color_identity=['R', 'W'], card_type="Creature", sub_types="Human Soldier",
-                            abilities=[3, 15, 14], set_id="GRN", rarity="Rare", set_number=203,
+                            abilities=[3, 15, 14], set_id="GRN", rarity="Rare", collectible=True, set_number=203,
                             mtga_id=68664)
 TajicLegionsEdge = Card(name="tajic_legions_edge", pretty_name="Tajic, Legion's Edge", cost=['1', 'R', 'W'],
                         color_identity=['R', 'W'], card_type="Creature", sub_types="Human Soldier",
-                        abilities=[9, 171, 121406, 100360], set_id="GRN", rarity="Rare", set_number=204,
+                        abilities=[9, 171, 121406, 100360], set_id="GRN", rarity="Rare", collectible=True, set_number=204,
                         mtga_id=68665)
 ThiefofSanity = Card(name="thief_of_sanity", pretty_name="Thief of Sanity", cost=['1', 'U', 'B'],
                      color_identity=['U', 'B'], card_type="Creature", sub_types="Specter",
-                     abilities=[8, 121452], set_id="GRN", rarity="Rare", set_number=205,
+                     abilities=[8, 121452], set_id="GRN", rarity="Rare", collectible=True, set_number=205,
                      mtga_id=68666)
 ThoughtErasure = Card(name="thought_erasure", pretty_name="Thought Erasure", cost=['U', 'B'],
                       color_identity=['U', 'B'], card_type="Sorcery", sub_types="",
-                      abilities=[117067, 121425], set_id="GRN", rarity="Uncommon", set_number=206,
+                      abilities=[117067, 121425], set_id="GRN", rarity="Uncommon", collectible=True, set_number=206,
                       mtga_id=68667)
 ThousandYearStorm = Card(name="thousandyear_storm", pretty_name="Thousand-Year Storm", cost=['4', 'U', 'R'],
                          color_identity=['U', 'R'], card_type="Enchantment", sub_types="",
-                         abilities=[121458], set_id="GRN", rarity="Mythic Rare", set_number=207,
+                         abilities=[121458], set_id="GRN", rarity="Mythic Rare", collectible=True, set_number=207,
                          mtga_id=68668)
 TrostaniDiscordant = Card(name="trostani_discordant", pretty_name="Trostani Discordant", cost=['3', 'G', 'W'],
                           color_identity=['G', 'W'], card_type="Creature", sub_types="Dryad",
-                          abilities=[2433, 121409, 121410], set_id="GRN", rarity="Mythic Rare", set_number=208,
+                          abilities=[2433, 121409, 121410], set_id="GRN", rarity="Mythic Rare", collectible=True, set_number=208,
                           mtga_id=68669)
 TruefireCaptain = Card(name="truefire_captain", pretty_name="Truefire Captain", cost=['R', 'R', 'W', 'W'],
                        color_identity=['R', 'W'], card_type="Creature", sub_types="Human Knight",
-                       abilities=[171, 121465], set_id="GRN", rarity="Uncommon", set_number=209,
+                       abilities=[171, 121465], set_id="GRN", rarity="Uncommon", collectible=True, set_number=209,
                        mtga_id=68670)
 UndercityUprising = Card(name="undercity_uprising", pretty_name="Undercity Uprising", cost=['2', 'B', 'G'],
                          color_identity=['B', 'G'], card_type="Sorcery", sub_types="",
-                         abilities=[121411], set_id="GRN", rarity="Common", set_number=210,
+                         abilities=[121411], set_id="GRN", rarity="Common", collectible=True, set_number=210,
                          mtga_id=68671)
 UnderrealmLich = Card(name="underrealm_lich", pretty_name="Underrealm Lich", cost=['3', 'B', 'G'],
                       color_identity=['B', 'G'], card_type="Creature", sub_types="Zombie Elf Shaman",
-                      abilities=[121412, 121413], set_id="GRN", rarity="Mythic Rare", set_number=211,
+                      abilities=[121412, 121413], set_id="GRN", rarity="Mythic Rare", collectible=True, set_number=211,
                       mtga_id=68672)
 UnmooredEgo = Card(name="unmoored_ego", pretty_name="Unmoored Ego", cost=['1', 'U', 'B'],
                    color_identity=['U', 'B'], card_type="Sorcery", sub_types="",
-                   abilities=[121414], set_id="GRN", rarity="Rare", set_number=212,
+                   abilities=[121414], set_id="GRN", rarity="Rare", collectible=True, set_number=212,
                    mtga_id=68673)
 VraskaGolgariQueen = Card(name="vraska_golgari_queen", pretty_name="Vraska, Golgari Queen", cost=['2', 'B', 'G'],
                           color_identity=['B', 'G'], card_type="Planeswalker", sub_types="Vraska",
-                          abilities=[121415, 121473, 121418], set_id="GRN", rarity="Mythic Rare", set_number=213,
+                          abilities=[121415, 121473, 121418], set_id="GRN", rarity="Mythic Rare", collectible=True, set_number=213,
                           mtga_id=68674)
 WeeDragonauts = Card(name="wee_dragonauts", pretty_name="Wee Dragonauts", cost=['1', 'U', 'R'],
                      color_identity=['U', 'R'], card_type="Creature", sub_types="Faerie Wizard",
-                     abilities=[8, 91866], set_id="GRN", rarity="Uncommon", set_number=214,
+                     abilities=[8, 91866], set_id="GRN", rarity="Uncommon", collectible=True, set_number=214,
                      mtga_id=68675)
 WorldsoulColossus = Card(name="worldsoul_colossus", pretty_name="Worldsoul Colossus", cost=['X', 'G', 'W'],
                          color_identity=['G', 'W'], card_type="Creature", sub_types="Elemental",
-                         abilities=[52, 76885], set_id="GRN", rarity="Uncommon", set_number=215,
+                         abilities=[52, 76885], set_id="GRN", rarity="Uncommon", collectible=True, set_number=215,
                          mtga_id=68676)
 FreshFacedRecruit = Card(name="freshfaced_recruit", pretty_name="Fresh-Faced Recruit", cost=['1', '(R/W)'],
                          color_identity=['R', 'W'], card_type="Creature", sub_types="Human Soldier",
-                         abilities=[121419], set_id="GRN", rarity="Common", set_number=216,
+                         abilities=[121419], set_id="GRN", rarity="Common", collectible=True, set_number=216,
                          mtga_id=68677)
 PistonFistCyclops = Card(name="pistonfist_cyclops", pretty_name="Piston-Fist Cyclops", cost=['1', '(U/R)', '(U/R)'],
                          color_identity=['U', 'R'], card_type="Creature", sub_types="Cyclops",
-                         abilities=[2, 121481], set_id="GRN", rarity="Common", set_number=217,
+                         abilities=[2, 121481], set_id="GRN", rarity="Common", collectible=True, set_number=217,
                          mtga_id=68678)
 PitilessGorgon = Card(name="pitiless_gorgon", pretty_name="Pitiless Gorgon", cost=['1', '(B/G)', '(B/G)'],
                       color_identity=['B', 'G'], card_type="Creature", sub_types="Gorgon",
-                      abilities=[1], set_id="GRN", rarity="Common", set_number=218,
+                      abilities=[1], set_id="GRN", rarity="Common", collectible=True, set_number=218,
                       mtga_id=68679)
 VernadiShieldmate = Card(name="vernadi_shieldmate", pretty_name="Vernadi Shieldmate", cost=['1', '(G/W)'],
                          color_identity=['G', 'W'], card_type="Creature", sub_types="Human Soldier",
-                         abilities=[15], set_id="GRN", rarity="Common", set_number=219,
+                         abilities=[15], set_id="GRN", rarity="Common", collectible=True, set_number=219,
                          mtga_id=68680)
 WhisperAgent = Card(name="whisper_agent", pretty_name="Whisper Agent", cost=['1', '(U/B)', '(U/B)'],
                     color_identity=['U', 'B'], card_type="Creature", sub_types="Human Rogue",
-                    abilities=[7, 121445], set_id="GRN", rarity="Common", set_number=220,
+                    abilities=[7, 121445], set_id="GRN", rarity="Common", collectible=True, set_number=220,
                     mtga_id=68681)
 AssureAssemble = Card(name="assure__assemble", pretty_name="Assure // Assemble", cost=['(G/W)', '(G/W)', '4', 'G', 'W'],
                       color_identity=['W', 'G'], card_type="Instant Instant", sub_types="",
-                      abilities=[121420, 121421], set_id="GRN", rarity="Rare", set_number=221,
+                      abilities=[121420, 121421], set_id="GRN", rarity="Rare", collectible=True, set_number=221,
                       mtga_id=68682)
 Assure = Card(name="assure", pretty_name="Assure", cost=['(G/W)', '(G/W)'],
               color_identity=['G', 'W'], card_type="Instant", sub_types="",
-              abilities=[121420], set_id="GRN", rarity="Rare", set_number=221,
+              abilities=[121420], set_id="GRN", rarity="Rare", collectible=False, set_number=221,
               mtga_id=68683)
 Assemble = Card(name="assemble", pretty_name="Assemble", cost=['4', 'G', 'W'],
                 color_identity=['G', 'W'], card_type="Instant", sub_types="",
-                abilities=[121421], set_id="GRN", rarity="Rare", set_number=221,
+                abilities=[121421], set_id="GRN", rarity="Rare", collectible=False, set_number=221,
                 mtga_id=68684)
 ConniveConcoct = Card(name="connive__concoct", pretty_name="Connive // Concoct", cost=['2', '(U/B)', '(U/B)', '3', 'U', 'B'],
                       color_identity=['U', 'B'], card_type="Sorcery Sorcery", sub_types="",
-                      abilities=[121422, 121423], set_id="GRN", rarity="Rare", set_number=222,
+                      abilities=[121422, 121423], set_id="GRN", rarity="Rare", collectible=True, set_number=222,
                       mtga_id=68685)
 Connive = Card(name="connive", pretty_name="Connive", cost=['2', '(U/B)', '(U/B)'],
                color_identity=['U', 'B'], card_type="Sorcery", sub_types="",
-               abilities=[121422], set_id="GRN", rarity="Rare", set_number=222,
+               abilities=[121422], set_id="GRN", rarity="Rare", collectible=False, set_number=222,
                mtga_id=68686)
 Concoct = Card(name="concoct", pretty_name="Concoct", cost=['3', 'U', 'B'],
                color_identity=['U', 'B'], card_type="Sorcery", sub_types="",
-               abilities=[121423], set_id="GRN", rarity="Rare", set_number=222,
+               abilities=[121423], set_id="GRN", rarity="Rare", collectible=False, set_number=222,
                mtga_id=68687)
 DiscoveryDispersal = Card(name="discovery__dispersal", pretty_name="Discovery // Dispersal", cost=['1', '(U/B)', '3', 'U', 'B'],
                           color_identity=['U', 'B'], card_type="Sorcery Instant", sub_types="",
-                          abilities=[121424, 121485], set_id="GRN", rarity="Uncommon", set_number=223,
+                          abilities=[121424, 121485], set_id="GRN", rarity="Uncommon", collectible=True, set_number=223,
                           mtga_id=68688)
 Discovery = Card(name="discovery", pretty_name="Discovery", cost=['1', '(U/B)'],
                  color_identity=['U', 'B'], card_type="Sorcery", sub_types="",
-                 abilities=[121424], set_id="GRN", rarity="Uncommon", set_number=223,
+                 abilities=[121424], set_id="GRN", rarity="Uncommon", collectible=False, set_number=223,
                  mtga_id=68689)
 Dispersal = Card(name="dispersal", pretty_name="Dispersal", cost=['3', 'U', 'B'],
                  color_identity=['U', 'B'], card_type="Instant", sub_types="",
-                 abilities=[121485], set_id="GRN", rarity="Uncommon", set_number=223,
+                 abilities=[121485], set_id="GRN", rarity="Uncommon", collectible=False, set_number=223,
                  mtga_id=68690)
 ExpansionExplosion = Card(name="expansion__explosion", pretty_name="Expansion // Explosion", cost=['(U/R)', '(U/R)', 'X', 'U', 'U', 'R', 'R'],
                           color_identity=['U', 'R'], card_type="Instant Instant", sub_types="",
-                          abilities=[121426, 121487], set_id="GRN", rarity="Rare", set_number=224,
+                          abilities=[121426, 121487], set_id="GRN", rarity="Rare", collectible=True, set_number=224,
                           mtga_id=68691)
 Expansion = Card(name="expansion", pretty_name="Expansion", cost=['(U/R)', '(U/R)'],
                  color_identity=['U', 'R'], card_type="Instant", sub_types="",
-                 abilities=[121426], set_id="GRN", rarity="Rare", set_number=224,
+                 abilities=[121426], set_id="GRN", rarity="Rare", collectible=False, set_number=224,
                  mtga_id=68692)
 Explosion = Card(name="explosion", pretty_name="Explosion", cost=['X', 'U', 'U', 'R', 'R'],
                  color_identity=['U', 'R'], card_type="Instant", sub_types="",
-                 abilities=[121487], set_id="GRN", rarity="Rare", set_number=224,
+                 abilities=[121487], set_id="GRN", rarity="Rare", collectible=False, set_number=224,
                  mtga_id=68693)
 FindFinality = Card(name="find__finality", pretty_name="Find // Finality", cost=['(B/G)', '(B/G)', '4', 'B', 'G'],
                     color_identity=['B', 'G'], card_type="Sorcery Sorcery", sub_types="",
-                    abilities=[1923, 121428], set_id="GRN", rarity="Rare", set_number=225,
+                    abilities=[1923, 121428], set_id="GRN", rarity="Rare", collectible=True, set_number=225,
                     mtga_id=68694)
 Find = Card(name="find", pretty_name="Find", cost=['(B/G)', '(B/G)'],
             color_identity=['B', 'G'], card_type="Sorcery", sub_types="",
-            abilities=[1923], set_id="GRN", rarity="Rare", set_number=225,
+            abilities=[1923], set_id="GRN", rarity="Rare", collectible=False, set_number=225,
             mtga_id=68695)
 Finality = Card(name="finality", pretty_name="Finality", cost=['4', 'B', 'G'],
                 color_identity=['B', 'G'], card_type="Sorcery", sub_types="",
-                abilities=[121428], set_id="GRN", rarity="Rare", set_number=225,
+                abilities=[121428], set_id="GRN", rarity="Rare", collectible=False, set_number=225,
                 mtga_id=68696)
 FlowerFlourish = Card(name="flower__flourish", pretty_name="Flower // Flourish", cost=['(G/W)', '4', 'G', 'W'],
                       color_identity=['W', 'G'], card_type="Sorcery Sorcery", sub_types="",
-                      abilities=[121429, 24883], set_id="GRN", rarity="Uncommon", set_number=226,
+                      abilities=[121429, 24883], set_id="GRN", rarity="Uncommon", collectible=True, set_number=226,
                       mtga_id=68697)
 Flower = Card(name="flower", pretty_name="Flower", cost=['(G/W)'],
               color_identity=['G', 'W'], card_type="Sorcery", sub_types="",
-              abilities=[121429], set_id="GRN", rarity="Uncommon", set_number=226,
+              abilities=[121429], set_id="GRN", rarity="Uncommon", collectible=False, set_number=226,
               mtga_id=68698)
 Flourish = Card(name="flourish", pretty_name="Flourish", cost=['4', 'G', 'W'],
                 color_identity=['G', 'W'], card_type="Sorcery", sub_types="",
-                abilities=[24883], set_id="GRN", rarity="Uncommon", set_number=226,
+                abilities=[24883], set_id="GRN", rarity="Uncommon", collectible=False, set_number=226,
                 mtga_id=68699)
 IntegrityIntervention = Card(name="integrity__intervention", pretty_name="Integrity // Intervention", cost=['(R/W)', '2', 'R', 'W'],
                              color_identity=['W', 'R'], card_type="Instant Instant", sub_types="",
-                             abilities=[6437, 88264], set_id="GRN", rarity="Uncommon", set_number=227,
+                             abilities=[6437, 88264], set_id="GRN", rarity="Uncommon", collectible=True, set_number=227,
                              mtga_id=68700)
 Integrity = Card(name="integrity", pretty_name="Integrity", cost=['(R/W)'],
                  color_identity=['R', 'W'], card_type="Instant", sub_types="",
-                 abilities=[6437], set_id="GRN", rarity="Uncommon", set_number=227,
+                 abilities=[6437], set_id="GRN", rarity="Uncommon", collectible=False, set_number=227,
                  mtga_id=68701)
 Intervention = Card(name="intervention", pretty_name="Intervention", cost=['2', 'R', 'W'],
                     color_identity=['R', 'W'], card_type="Instant", sub_types="",
-                    abilities=[88264], set_id="GRN", rarity="Uncommon", set_number=227,
+                    abilities=[88264], set_id="GRN", rarity="Uncommon", collectible=False, set_number=227,
                     mtga_id=68702)
 InvertInvent = Card(name="invert__invent", pretty_name="Invert // Invent", cost=['(U/R)', '4', 'U', 'R'],
                     color_identity=['U', 'R'], card_type="Instant Instant", sub_types="",
-                    abilities=[133045, 121433], set_id="GRN", rarity="Uncommon", set_number=228,
+                    abilities=[133335, 121433], set_id="GRN", rarity="Uncommon", collectible=True, set_number=228,
                     mtga_id=68703)
 Invert = Card(name="invert", pretty_name="Invert", cost=['(U/R)'],
               color_identity=['U', 'R'], card_type="Instant", sub_types="",
-              abilities=[133045], set_id="GRN", rarity="Uncommon", set_number=228,
+              abilities=[133335], set_id="GRN", rarity="Uncommon", collectible=False, set_number=228,
               mtga_id=68704)
 Invent = Card(name="invent", pretty_name="Invent", cost=['4', 'U', 'R'],
               color_identity=['U', 'R'], card_type="Instant", sub_types="",
-              abilities=[121433], set_id="GRN", rarity="Uncommon", set_number=228,
+              abilities=[121433], set_id="GRN", rarity="Uncommon", collectible=False, set_number=228,
               mtga_id=68705)
 ResponseResurgence = Card(name="response__resurgence", pretty_name="Response // Resurgence", cost=['(R/W)', '(R/W)', '3', 'R', 'W'],
                           color_identity=['W', 'R'], card_type="Instant Sorcery", sub_types="",
-                          abilities=[101788, 121498], set_id="GRN", rarity="Rare", set_number=229,
+                          abilities=[101788, 121498], set_id="GRN", rarity="Rare", collectible=True, set_number=229,
                           mtga_id=68706)
 Response = Card(name="response", pretty_name="Response", cost=['(R/W)', '(R/W)'],
                 color_identity=['R', 'W'], card_type="Instant", sub_types="",
-                abilities=[101788], set_id="GRN", rarity="Rare", set_number=229,
+                abilities=[101788], set_id="GRN", rarity="Rare", collectible=False, set_number=229,
                 mtga_id=68707)
 Resurgence = Card(name="resurgence", pretty_name="Resurgence", cost=['3', 'R', 'W'],
                   color_identity=['R', 'W'], card_type="Sorcery", sub_types="",
-                  abilities=[121498], set_id="GRN", rarity="Rare", set_number=229,
+                  abilities=[121498], set_id="GRN", rarity="Rare", collectible=False, set_number=229,
                   mtga_id=68708)
 StatusStatue = Card(name="status__statue", pretty_name="Status // Statue", cost=['(B/G)', '2', 'B', 'G'],
                     color_identity=['B', 'G'], card_type="Instant Instant", sub_types="",
-                    abilities=[121435, 121436], set_id="GRN", rarity="Uncommon", set_number=230,
+                    abilities=[121435, 121436], set_id="GRN", rarity="Uncommon", collectible=True, set_number=230,
                     mtga_id=68709)
 Status = Card(name="status", pretty_name="Status", cost=['(B/G)'],
               color_identity=['B', 'G'], card_type="Instant", sub_types="",
-              abilities=[121435], set_id="GRN", rarity="Uncommon", set_number=230,
+              abilities=[121435], set_id="GRN", rarity="Uncommon", collectible=False, set_number=230,
               mtga_id=68710)
 Statue = Card(name="statue", pretty_name="Statue", cost=['2', 'B', 'G'],
               color_identity=['B', 'G'], card_type="Instant", sub_types="",
-              abilities=[121436], set_id="GRN", rarity="Uncommon", set_number=230,
+              abilities=[121436], set_id="GRN", rarity="Uncommon", collectible=False, set_number=230,
               mtga_id=68711)
 BorosLocket = Card(name="boros_locket", pretty_name="Boros Locket", cost=['3'],
                    color_identity=['W', 'R'], card_type="Artifact", sub_types="",
-                   abilities=[4247, 121437], set_id="GRN", rarity="Common", set_number=231,
+                   abilities=[4247, 121437], set_id="GRN", rarity="Common", collectible=True, set_number=231,
                    mtga_id=68712)
 ChamberSentry = Card(name="chamber_sentry", pretty_name="Chamber Sentry", cost=['X'],
-                     color_identity=['U', 'B', 'W', 'G', 'R'], card_type="Artifact Creature", sub_types="Construct",
-                     abilities=[121438, 121503, 121439], set_id="GRN", rarity="Rare", set_number=232,
+                     color_identity=['W', 'U', 'B', 'R', 'G'], card_type="Artifact Creature", sub_types="Construct",
+                     abilities=[121438, 121503, 121439], set_id="GRN", rarity="Rare", collectible=True, set_number=232,
                      mtga_id=68713)
 ChromaticLantern = Card(name="chromatic_lantern", pretty_name="Chromatic Lantern", cost=['3'],
                         color_identity=[], card_type="Artifact", sub_types="",
-                        abilities=[88225, 1055], set_id="GRN", rarity="Rare", set_number=233,
+                        abilities=[88225, 1055], set_id="GRN", rarity="Rare", collectible=True, set_number=233,
                         mtga_id=68714)
 DimirLocket = Card(name="dimir_locket", pretty_name="Dimir Locket", cost=['3'],
                    color_identity=['U', 'B'], card_type="Artifact", sub_types="",
-                   abilities=[1167, 121440], set_id="GRN", rarity="Common", set_number=234,
+                   abilities=[1167, 121440], set_id="GRN", rarity="Common", collectible=True, set_number=234,
                    mtga_id=68715)
 GatekeeperGargoyle = Card(name="gatekeeper_gargoyle", pretty_name="Gatekeeper Gargoyle", cost=['6'],
                           color_identity=[], card_type="Artifact Creature", sub_types="Gargoyle",
-                          abilities=[8, 121441], set_id="GRN", rarity="Uncommon", set_number=235,
+                          abilities=[8, 121441], set_id="GRN", rarity="Uncommon", collectible=True, set_number=235,
                           mtga_id=68716)
 GlaiveoftheGuildpact = Card(name="glaive_of_the_guildpact", pretty_name="Glaive of the Guildpact", cost=['2'],
                             color_identity=[], card_type="Artifact", sub_types="Equipment",
-                            abilities=[121511, 1156], set_id="GRN", rarity="Uncommon", set_number=236,
+                            abilities=[121511, 1156], set_id="GRN", rarity="Uncommon", collectible=True, set_number=236,
                             mtga_id=68717)
 GolgariLocket = Card(name="golgari_locket", pretty_name="Golgari Locket", cost=['3'],
                      color_identity=['B', 'G'], card_type="Artifact", sub_types="",
-                     abilities=[4407, 121443], set_id="GRN", rarity="Common", set_number=237,
+                     abilities=[4407, 121443], set_id="GRN", rarity="Common", collectible=True, set_number=237,
                      mtga_id=68718)
 IzzetLocket = Card(name="izzet_locket", pretty_name="Izzet Locket", cost=['3'],
                    color_identity=['U', 'R'], card_type="Artifact", sub_types="",
-                   abilities=[1039, 121444], set_id="GRN", rarity="Common", set_number=238,
+                   abilities=[1039, 121444], set_id="GRN", rarity="Common", collectible=True, set_number=238,
                    mtga_id=68719)
 RampagingMonument = Card(name="rampaging_monument", pretty_name="Rampaging Monument", cost=['4'],
                          color_identity=[], card_type="Artifact Creature", sub_types="Cleric",
-                         abilities=[14, 90236, 121446], set_id="GRN", rarity="Uncommon", set_number=239,
+                         abilities=[14, 90236, 121446], set_id="GRN", rarity="Uncommon", collectible=True, set_number=239,
                          mtga_id=68720)
 SelesnyaLocket = Card(name="selesnya_locket", pretty_name="Selesnya Locket", cost=['3'],
                       color_identity=['W', 'G'], card_type="Artifact", sub_types="",
-                      abilities=[1203, 121447], set_id="GRN", rarity="Common", set_number=240,
+                      abilities=[1203, 121447], set_id="GRN", rarity="Common", collectible=True, set_number=240,
                       mtga_id=68721)
 SilentDart = Card(name="silent_dart", pretty_name="Silent Dart", cost=['1'],
                   color_identity=[], card_type="Artifact", sub_types="",
-                  abilities=[121448], set_id="GRN", rarity="Uncommon", set_number=241,
+                  abilities=[121448], set_id="GRN", rarity="Uncommon", collectible=True, set_number=241,
                   mtga_id=68722)
 WandofVertebrae = Card(name="wand_of_vertebrae", pretty_name="Wand of Vertebrae", cost=['1'],
                        color_identity=[], card_type="Artifact", sub_types="",
-                       abilities=[121449, 121520], set_id="GRN", rarity="Uncommon", set_number=242,
+                       abilities=[121449, 121520], set_id="GRN", rarity="Uncommon", collectible=True, set_number=242,
                        mtga_id=68723)
 BorosGuildgate = Card(name="boros_guildgate", pretty_name="Boros Guildgate", cost=[],
                       color_identity=['R', 'W'], card_type="Land", sub_types="Gate",
-                      abilities=[76735, 4247], set_id="GRN", rarity="Common", set_number=243,
+                      abilities=[76735, 4247], set_id="GRN", rarity="Common", collectible=True, set_number=243,
                       mtga_id=68724)
 BorosGuildgate2 = Card(name="boros_guildgate", pretty_name="Boros Guildgate", cost=[],
                        color_identity=['R', 'W'], card_type="Land", sub_types="Gate",
-                       abilities=[76735, 4247], set_id="GRN", rarity="Common", set_number=244,
+                       abilities=[76735, 4247], set_id="GRN", rarity="Common", collectible=True, set_number=244,
                        mtga_id=68725)
 DimirGuildgate = Card(name="dimir_guildgate", pretty_name="Dimir Guildgate", cost=[],
                       color_identity=['U', 'B'], card_type="Land", sub_types="Gate",
-                      abilities=[76735, 1167], set_id="GRN", rarity="Common", set_number=245,
+                      abilities=[76735, 1167], set_id="GRN", rarity="Common", collectible=True, set_number=245,
                       mtga_id=68726)
 DimirGuildgate2 = Card(name="dimir_guildgate", pretty_name="Dimir Guildgate", cost=[],
                        color_identity=['U', 'B'], card_type="Land", sub_types="Gate",
-                       abilities=[76735, 1167], set_id="GRN", rarity="Common", set_number=246,
+                       abilities=[76735, 1167], set_id="GRN", rarity="Common", collectible=True, set_number=246,
                        mtga_id=68727)
 GatewayPlaza = Card(name="gateway_plaza", pretty_name="Gateway Plaza", cost=[],
                     color_identity=[], card_type="Land", sub_types="Gate",
-                    abilities=[76735, 3625, 1055], set_id="GRN", rarity="Common", set_number=247,
+                    abilities=[76735, 3625, 1055], set_id="GRN", rarity="Common", collectible=True, set_number=247,
                     mtga_id=68728)
 GolgariGuildgate = Card(name="golgari_guildgate", pretty_name="Golgari Guildgate", cost=[],
                         color_identity=['B', 'G'], card_type="Land", sub_types="Gate",
-                        abilities=[76735, 4407], set_id="GRN", rarity="Common", set_number=248,
+                        abilities=[76735, 4407], set_id="GRN", rarity="Common", collectible=True, set_number=248,
                         mtga_id=68729)
 GolgariGuildgate2 = Card(name="golgari_guildgate", pretty_name="Golgari Guildgate", cost=[],
                          color_identity=['B', 'G'], card_type="Land", sub_types="Gate",
-                         abilities=[76735, 4407], set_id="GRN", rarity="Common", set_number=249,
+                         abilities=[76735, 4407], set_id="GRN", rarity="Common", collectible=True, set_number=249,
                          mtga_id=68730)
 GuildmagesForum = Card(name="guildmages_forum", pretty_name="Guildmages' Forum", cost=[],
                        color_identity=[], card_type="Land", sub_types="",
-                       abilities=[1152, 121453], set_id="GRN", rarity="Rare", set_number=250,
+                       abilities=[1152, 121453], set_id="GRN", rarity="Rare", collectible=True, set_number=250,
                        mtga_id=68731)
 IzzetGuildgate = Card(name="izzet_guildgate", pretty_name="Izzet Guildgate", cost=[],
                       color_identity=['U', 'R'], card_type="Land", sub_types="Gate",
-                      abilities=[76735, 1039], set_id="GRN", rarity="Common", set_number=251,
+                      abilities=[76735, 1039], set_id="GRN", rarity="Common", collectible=True, set_number=251,
                       mtga_id=68732)
 IzzetGuildgate2 = Card(name="izzet_guildgate", pretty_name="Izzet Guildgate", cost=[],
                        color_identity=['U', 'R'], card_type="Land", sub_types="Gate",
-                       abilities=[76735, 1039], set_id="GRN", rarity="Common", set_number=252,
+                       abilities=[76735, 1039], set_id="GRN", rarity="Common", collectible=True, set_number=252,
                        mtga_id=68733)
 OvergrownTomb = Card(name="overgrown_tomb", pretty_name="Overgrown Tomb", cost=[],
                      color_identity=['B', 'G'], card_type="Land", sub_types="Swamp Forest",
-                     abilities=[90846], set_id="GRN", rarity="Rare", set_number=253,
+                     abilities=[90846], set_id="GRN", rarity="Rare", collectible=True, set_number=253,
                      mtga_id=68734)
 SacredFoundry = Card(name="sacred_foundry", pretty_name="Sacred Foundry", cost=[],
                      color_identity=['R', 'W'], card_type="Land", sub_types="Mountain Plains",
-                     abilities=[90846], set_id="GRN", rarity="Rare", set_number=254,
+                     abilities=[90846], set_id="GRN", rarity="Rare", collectible=True, set_number=254,
                      mtga_id=68735)
 SelesnyaGuildgate = Card(name="selesnya_guildgate", pretty_name="Selesnya Guildgate", cost=[],
                          color_identity=['G', 'W'], card_type="Land", sub_types="Gate",
-                         abilities=[76735, 1203], set_id="GRN", rarity="Common", set_number=255,
+                         abilities=[76735, 1203], set_id="GRN", rarity="Common", collectible=True, set_number=255,
                          mtga_id=68736)
 SelesnyaGuildgate2 = Card(name="selesnya_guildgate", pretty_name="Selesnya Guildgate", cost=[],
                           color_identity=['G', 'W'], card_type="Land", sub_types="Gate",
-                          abilities=[76735, 1203], set_id="GRN", rarity="Common", set_number=256,
+                          abilities=[76735, 1203], set_id="GRN", rarity="Common", collectible=True, set_number=256,
                           mtga_id=68737)
 SteamVents = Card(name="steam_vents", pretty_name="Steam Vents", cost=[],
                   color_identity=['U', 'R'], card_type="Land", sub_types="Island Mountain",
-                  abilities=[90846], set_id="GRN", rarity="Rare", set_number=257,
+                  abilities=[90846], set_id="GRN", rarity="Rare", collectible=True, set_number=257,
                   mtga_id=68738)
 TempleGarden = Card(name="temple_garden", pretty_name="Temple Garden", cost=[],
                     color_identity=['G', 'W'], card_type="Land", sub_types="Forest Plains",
-                    abilities=[90846], set_id="GRN", rarity="Rare", set_number=258,
+                    abilities=[90846], set_id="GRN", rarity="Rare", collectible=True, set_number=258,
                     mtga_id=68739)
 WateryGrave = Card(name="watery_grave", pretty_name="Watery Grave", cost=[],
                    color_identity=['U', 'B'], card_type="Land", sub_types="Island Swamp",
-                   abilities=[90846], set_id="GRN", rarity="Rare", set_number=259,
+                   abilities=[90846], set_id="GRN", rarity="Rare", collectible=True, set_number=259,
                    mtga_id=68740)
 Plains = Card(name="plains", pretty_name="Plains", cost=[],
               color_identity=['W'], card_type="Land", sub_types="Plains",
-              abilities=[], set_id="GRN", rarity="Basic", set_number=260,
+              abilities=[], set_id="GRN", rarity="Basic", collectible=True, set_number=260,
               mtga_id=68741)
 Island = Card(name="island", pretty_name="Island", cost=[],
               color_identity=['U'], card_type="Land", sub_types="Island",
-              abilities=[], set_id="GRN", rarity="Basic", set_number=261,
+              abilities=[], set_id="GRN", rarity="Basic", collectible=True, set_number=261,
               mtga_id=68742)
 Swamp = Card(name="swamp", pretty_name="Swamp", cost=[],
              color_identity=['B'], card_type="Land", sub_types="Swamp",
-             abilities=[], set_id="GRN", rarity="Basic", set_number=262,
+             abilities=[], set_id="GRN", rarity="Basic", collectible=True, set_number=262,
              mtga_id=68743)
 Mountain = Card(name="mountain", pretty_name="Mountain", cost=[],
                 color_identity=['R'], card_type="Land", sub_types="Mountain",
-                abilities=[], set_id="GRN", rarity="Basic", set_number=263,
+                abilities=[], set_id="GRN", rarity="Basic", collectible=True, set_number=263,
                 mtga_id=68744)
 Forest = Card(name="forest", pretty_name="Forest", cost=[],
               color_identity=['G'], card_type="Land", sub_types="Forest",
-              abilities=[], set_id="GRN", rarity="Basic", set_number=264,
+              abilities=[], set_id="GRN", rarity="Basic", collectible=True, set_number=264,
               mtga_id=68745)
 RalCallerofStorms = Card(name="ral_caller_of_storms", pretty_name="Ral, Caller of Storms", cost=['4', 'U', 'R'],
                          color_identity=['U', 'R'], card_type="Planeswalker", sub_types="Ral",
-                         abilities=[1323, 121455, 121522], set_id="GRN", rarity="Mythic Rare", set_number=265,
+                         abilities=[1323, 121455, 121522], set_id="GRN", rarity="Mythic Rare", collectible=True, set_number=265,
                          mtga_id=68746)
 RalsDispersal = Card(name="rals_dispersal", pretty_name="Ral's Dispersal", cost=['3', 'U', 'U'],
                      color_identity=['U'], card_type="Instant", sub_types="",
-                     abilities=[121456], set_id="GRN", rarity="Rare", set_number=266,
+                     abilities=[121456], set_id="GRN", rarity="Rare", collectible=True, set_number=266,
                      mtga_id=68747)
 PrecisionBolt = Card(name="precision_bolt", pretty_name="Precision Bolt", cost=['2', 'R'],
                      color_identity=['R'], card_type="Sorcery", sub_types="",
-                     abilities=[70361], set_id="GRN", rarity="Common", set_number=267,
+                     abilities=[70361], set_id="GRN", rarity="Common", collectible=True, set_number=267,
                      mtga_id=68748)
 RalsStaticaster = Card(name="rals_staticaster", pretty_name="Ral's Staticaster", cost=['2', 'U', 'R'],
                        color_identity=['U', 'R'], card_type="Creature", sub_types="Viashino Wizard",
-                       abilities=[14, 121457], set_id="GRN", rarity="Uncommon", set_number=268,
+                       abilities=[14, 121457], set_id="GRN", rarity="Uncommon", collectible=True, set_number=268,
                        mtga_id=68749)
 VraskaRegalGorgon = Card(name="vraska_regal_gorgon", pretty_name="Vraska, Regal Gorgon", cost=['5', 'B', 'G'],
                          color_identity=['B', 'G'], card_type="Planeswalker", sub_types="Vraska",
-                         abilities=[121523, 102469, 121525], set_id="GRN", rarity="Mythic Rare", set_number=269,
+                         abilities=[121523, 102469, 121525], set_id="GRN", rarity="Mythic Rare", collectible=True, set_number=269,
                          mtga_id=68750)
 KraulRaider = Card(name="kraul_raider", pretty_name="Kraul Raider", cost=['2', 'B'],
                    color_identity=['B'], card_type="Creature", sub_types="Insect Warrior",
-                   abilities=[142], set_id="GRN", rarity="Common", set_number=270,
+                   abilities=[142], set_id="GRN", rarity="Common", collectible=True, set_number=270,
                    mtga_id=68751)
 AttendantofVraska = Card(name="attendant_of_vraska", pretty_name="Attendant of Vraska", cost=['1', 'B', 'G'],
                          color_identity=['B', 'G'], card_type="Creature", sub_types="Zombie Soldier",
-                         abilities=[121459], set_id="GRN", rarity="Uncommon", set_number=271,
+                         abilities=[121459], set_id="GRN", rarity="Uncommon", collectible=True, set_number=271,
                          mtga_id=68752)
 VraskasStoneglare = Card(name="vraskas_stoneglare", pretty_name="Vraska's Stoneglare", cost=['4', 'B', 'G'],
                          color_identity=['B', 'G'], card_type="Sorcery", sub_types="",
-                         abilities=[121460], set_id="GRN", rarity="Rare", set_number=272,
+                         abilities=[121460], set_id="GRN", rarity="Rare", collectible=True, set_number=272,
                          mtga_id=68753)
 ImperviousGreatwurm = Card(name="impervious_greatwurm", pretty_name="Impervious Greatwurm", cost=['7', 'G', 'G', 'G'],
                            color_identity=['G'], card_type="Creature", sub_types="Wurm",
-                           abilities=[52, 104], set_id="GRN", rarity="Mythic Rare", set_number=273,
+                           abilities=[52, 104], set_id="GRN", rarity="Mythic Rare", collectible=True, set_number=273,
                            mtga_id=68754)
 Angel = Card(name="angel", pretty_name="Angel", cost=[],
              color_identity=[], card_type="Creature", sub_types="Angel",
-             abilities=[8, 15], set_id="GRN", rarity="Token", set_number=1,
+             abilities=[8, 15], set_id="GRN", rarity="Token", collectible=False, set_number=10001,
              mtga_id=68755)
 Soldier = Card(name="soldier", pretty_name="Soldier", cost=[],
                color_identity=[], card_type="Creature", sub_types="Soldier",
-               abilities=[12], set_id="GRN", rarity="Token", set_number=2,
+               abilities=[12], set_id="GRN", rarity="Token", collectible=False, set_number=10002,
                mtga_id=68756)
 BirdIllusion = Card(name="bird_illusion", pretty_name="Bird Illusion", cost=[],
                     color_identity=[], card_type="Creature", sub_types="Bird Illusion",
-                    abilities=[8], set_id="GRN", rarity="Token", set_number=3,
+                    abilities=[8], set_id="GRN", rarity="Token", collectible=False, set_number=10003,
                     mtga_id=68757)
 Goblin = Card(name="goblin", pretty_name="Goblin", cost=[],
               color_identity=[], card_type="Creature", sub_types="Goblin",
-              abilities=[], set_id="GRN", rarity="Token", set_number=4,
+              abilities=[], set_id="GRN", rarity="Token", collectible=False, set_number=10004,
               mtga_id=68758)
 Insect = Card(name="insect", pretty_name="Insect", cost=[],
               color_identity=[], card_type="Creature", sub_types="Insect",
-              abilities=[], set_id="GRN", rarity="Token", set_number=5,
+              abilities=[], set_id="GRN", rarity="Token", collectible=False, set_number=10005,
               mtga_id=68759)
 ElfKnight = Card(name="elf_knight", pretty_name="Elf Knight", cost=[],
                  color_identity=[], card_type="Creature", sub_types="Elf Knight",
-                 abilities=[15], set_id="GRN", rarity="Token", set_number=6,
+                 abilities=[15], set_id="GRN", rarity="Token", collectible=False, set_number=10006,
                  mtga_id=68760)
-
-# manually added
-RalIzzetViceroy_Masterpiece = Card(name="ral_izzet_viceroy", pretty_name="Ral, Izzet Viceroy", cost=['3', 'U', 'R'],
-                                   color_identity=['U', 'R'], card_type="Planeswalker", sub_types="Ral",
-                                   abilities=[121399, 121398, 121400], set_id="GRN",
-                                   rarity="Mythic Rare", set_number=5000, mtga_id=69449)
-VraskaGolgariQueen_Masterpiece = Card(name="vraska_golgari_queen", pretty_name="Vraska, Golgari Queen",
-                                      cost=['2', 'B', 'G'], color_identity=['B', 'G'], card_type="Planeswalker",
-                                      sub_types="Vraska", abilities=[121415, 121473, 121418], set_id="GRN",
-                                      rarity="Mythic Rare", set_number=8000, mtga_id=69450)
-
+RalIzzetViceroy2 = Card(name="ral_izzet_viceroy", pretty_name="Ral, Izzet Viceroy", cost=['3', 'U', 'R'],
+                        color_identity=['U', 'R'], card_type="Planeswalker", sub_types="Ral",
+                        abilities=[121399, 121398, 121400], set_id="GRN", rarity="Mythic Rare", collectible=True, set_number=5000,
+                        mtga_id=69449)
+VraskaGolgariQueen2 = Card(name="vraska_golgari_queen", pretty_name="Vraska, Golgari Queen", cost=['2', 'B', 'G'],
+                           color_identity=['B', 'G'], card_type="Planeswalker", sub_types="Vraska",
+                           abilities=[121415, 121473, 121418], set_id="GRN", rarity="Mythic Rare", collectible=True, set_number=8000,
+                           mtga_id=69450)
+FiremindsResearch2 = Card(name="fireminds_research", pretty_name="Firemind's Research", cost=['U', 'R'],
+                          color_identity=['U', 'R'], card_type="Enchantment", sub_types="",
+                          abilities=[121370, 121371, 121372], set_id="GRN", rarity="Rare", collectible=True, set_number=171,
+                          mtga_id=69780)
 
 
 clsmembers = [card for name, card in inspect.getmembers(sys.modules[__name__]) if isinstance(card, Card)]
@@ -1783,5 +1784,5 @@ set_ability_map = {1: 'Deathtouch',
          'in your graveyard with converted mana cost X, except its name is '
          "Lazav, the Multifarious, it's legendary in addition to its other "
          'types, and it has this ability.',
- 133045: 'Switch the power and toughness of each of up to two target creatures '
+ 133335: 'Switch the power and toughness of each of up to two target creatures '
          'until end of turn.'}
