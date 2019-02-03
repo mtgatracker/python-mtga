@@ -1187,6 +1187,11 @@ TeferiHeroofDominaria_Masterpiece = Card(name="teferi_hero_of_dominaria", pretty
                                          color_identity=['W', 'U'], card_type="Legendary Planeswalker", sub_types="Teferi",
                                          abilities=[118898, 118899, 118992], set_id="DOM", rarity="Mythic Rare", set_number=6000, mtga_id=69451)
 
+LlanowarElves_Promo = Card(name="llanowar_elves", pretty_name="Llanowar Elves", cost=['G'],
+                           color_identity=['G'], card_type="Creature", sub_types="Elf Druid",
+                           abilities=[1005], set_id="DAR", rarity="Common", set_number=168,
+                           mtga_id=69781)
+
 clsmembers = [card for name, card in inspect.getmembers(sys.modules[__name__]) if isinstance(card, Card)]
 Dominaria = Set("dar", cards=clsmembers)
 
