@@ -1190,12 +1190,6 @@ LlanowarElves2 = Card(name="llanowar_elves", pretty_name="Llanowar Elves", cost=
                       abilities=[1005], set_id="DAR", rarity="Common", collectible=True, set_number=168,
                       mtga_id=69781)
 
-
-LlanowarElves_Promo = Card(name="llanowar_elves", pretty_name="Llanowar Elves", cost=['G'],
-                           color_identity=['G'], card_type="Creature", sub_types="Elf Druid",
-                           abilities=[1005], set_id="DAR", rarity="Common", set_number=168,
-                           mtga_id=69781)
-
 clsmembers = [card for name, card in inspect.getmembers(sys.modules[__name__]) if isinstance(card, Card)]
 Dominaria = Set("dar", cards=clsmembers)
 
