@@ -7,1319 +7,1319 @@ import inspect
 
 AegisoftheHeavens = Card(name="aegis_of_the_heavens", pretty_name="Aegis of the Heavens", cost=['1', 'W'],
                          color_identity=['W'], card_type="Instant", sub_types="",
-                         abilities=[119255], set_id="M19", rarity="Uncommon", set_number=1,
+                         abilities=[119255], set_id="M19", rarity="Uncommon", collectible=True, set_number=1,
                          mtga_id=67682)
 AethershieldArtificer = Card(name="aethershield_artificer", pretty_name="Aethershield Artificer", cost=['3', 'W'],
                              color_identity=['W'], card_type="Creature", sub_types="Dwarf Artificer",
-                             abilities=[119256], set_id="M19", rarity="Uncommon", set_number=2,
+                             abilities=[119256], set_id="M19", rarity="Uncommon", collectible=True, set_number=2,
                              mtga_id=67684)
 AjaniAdversaryofTyrants = Card(name="ajani_adversary_of_tyrants", pretty_name="Ajani, Adversary of Tyrants", cost=['2', 'W', 'W'],
                                color_identity=['W'], card_type="Planeswalker", sub_types="Ajani",
-                               abilities=[119257, 119244, 119259], set_id="M19", rarity="Mythic Rare", set_number=3,
+                               abilities=[119257, 119244, 119259], set_id="M19", rarity="Mythic Rare", collectible=True, set_number=3,
                                mtga_id=67686)
 AjanisLastStand = Card(name="ajanis_last_stand", pretty_name="Ajani's Last Stand", cost=['2', 'W', 'W'],
                        color_identity=['W'], card_type="Enchantment", sub_types="",
-                       abilities=[119260, 119261], set_id="M19", rarity="Rare", set_number=4,
+                       abilities=[119260, 119261], set_id="M19", rarity="Rare", collectible=True, set_number=4,
                        mtga_id=67688)
 AjanisPridemate = Card(name="ajanis_pridemate", pretty_name="Ajani's Pridemate", cost=['1', 'W'],
                        color_identity=['W'], card_type="Creature", sub_types="Cat Soldier",
-                       abilities=[92970], set_id="M19", rarity="Uncommon", set_number=5,
+                       abilities=[92970], set_id="M19", rarity="Uncommon", collectible=True, set_number=5,
                        mtga_id=67690)
 AjanisWelcome = Card(name="ajanis_welcome", pretty_name="Ajani's Welcome", cost=['W'],
                      color_identity=['W'], card_type="Enchantment", sub_types="",
-                     abilities=[119250], set_id="M19", rarity="Uncommon", set_number=6,
+                     abilities=[119250], set_id="M19", rarity="Uncommon", collectible=True, set_number=6,
                      mtga_id=67692)
 AngeloftheDawn = Card(name="angel_of_the_dawn", pretty_name="Angel of the Dawn", cost=['4', 'W'],
                       color_identity=['W'], card_type="Creature", sub_types="Angel",
-                      abilities=[8, 76894], set_id="M19", rarity="Common", set_number=7,
+                      abilities=[8, 76894], set_id="M19", rarity="Common", collectible=True, set_number=7,
                       mtga_id=67694)
 CavalryDrillmaster = Card(name="cavalry_drillmaster", pretty_name="Cavalry Drillmaster", cost=['1', 'W'],
                           color_identity=['W'], card_type="Creature", sub_types="Human Knight",
-                          abilities=[119262], set_id="M19", rarity="Common", set_number=8,
+                          abilities=[119262], set_id="M19", rarity="Common", collectible=True, set_number=8,
                           mtga_id=67696)
 CleansingNova = Card(name="cleansing_nova", pretty_name="Cleansing Nova", cost=['3', 'W', 'W'],
                      color_identity=['W'], card_type="Sorcery", sub_types="",
-                     abilities=[119263], set_id="M19", rarity="Rare", set_number=9,
+                     abilities=[119263], set_id="M19", rarity="Rare", collectible=True, set_number=9,
                      mtga_id=67698)
 DaybreakChaplain = Card(name="daybreak_chaplain", pretty_name="Daybreak Chaplain", cost=['1', 'W'],
                         color_identity=['W'], card_type="Creature", sub_types="Human Cleric",
-                        abilities=[12], set_id="M19", rarity="Common", set_number=10,
+                        abilities=[12], set_id="M19", rarity="Common", collectible=True, set_number=10,
                         mtga_id=67700)
 DwarvenPriest = Card(name="dwarven_priest", pretty_name="Dwarven Priest", cost=['3', 'W'],
                      color_identity=['W'], card_type="Creature", sub_types="Dwarf Cleric",
-                     abilities=[90788], set_id="M19", rarity="Common", set_number=11,
+                     abilities=[90788], set_id="M19", rarity="Common", collectible=True, set_number=11,
                      mtga_id=67702)
 GallantCavalry = Card(name="gallant_cavalry", pretty_name="Gallant Cavalry", cost=['3', 'W'],
                       color_identity=['W'], card_type="Creature", sub_types="Human Knight",
-                      abilities=[15, 99956], set_id="M19", rarity="Common", set_number=12,
+                      abilities=[15, 99956], set_id="M19", rarity="Common", collectible=True, set_number=12,
                       mtga_id=67704)
 HeraldofFaith = Card(name="herald_of_faith", pretty_name="Herald of Faith", cost=['3', 'W', 'W'],
                      color_identity=['W'], card_type="Creature", sub_types="Angel",
-                     abilities=[8, 119264], set_id="M19", rarity="Uncommon", set_number=13,
+                     abilities=[8, 119264], set_id="M19", rarity="Uncommon", collectible=True, set_number=13,
                      mtga_id=67706)
 HieromancersCage = Card(name="hieromancers_cage", pretty_name="Hieromancer's Cage", cost=['3', 'W'],
                         color_identity=['W'], card_type="Enchantment", sub_types="",
-                        abilities=[20997], set_id="M19", rarity="Uncommon", set_number=14,
+                        abilities=[20997], set_id="M19", rarity="Uncommon", collectible=True, set_number=14,
                         mtga_id=67708)
 InspiredCharge = Card(name="inspired_charge", pretty_name="Inspired Charge", cost=['2', 'W', 'W'],
                       color_identity=['W'], card_type="Instant", sub_types="",
-                      abilities=[11632], set_id="M19", rarity="Common", set_number=15,
+                      abilities=[11632], set_id="M19", rarity="Common", collectible=True, set_number=15,
                       mtga_id=67710)
 InvoketheDivine = Card(name="invoke_the_divine", pretty_name="Invoke the Divine", cost=['2', 'W'],
                        color_identity=['W'], card_type="Instant", sub_types="",
-                       abilities=[2813], set_id="M19", rarity="Common", set_number=16,
+                       abilities=[2813], set_id="M19", rarity="Common", collectible=True, set_number=16,
                        mtga_id=67712)
 Isolate = Card(name="isolate", pretty_name="Isolate", cost=['W'],
                color_identity=['W'], card_type="Instant", sub_types="",
-               abilities=[119082], set_id="M19", rarity="Rare", set_number=17,
+               abilities=[119082], set_id="M19", rarity="Rare", collectible=True, set_number=17,
                mtga_id=67714)
 KnightoftheTusk = Card(name="knight_of_the_tusk", pretty_name="Knight of the Tusk", cost=['4', 'W', 'W'],
                        color_identity=['W'], card_type="Creature", sub_types="Human Knight",
-                       abilities=[15], set_id="M19", rarity="Common", set_number=18,
+                       abilities=[15], set_id="M19", rarity="Common", collectible=True, set_number=18,
                        mtga_id=67716)
 KnightsPledge = Card(name="knights_pledge", pretty_name="Knight's Pledge", cost=['1', 'W'],
                      color_identity=['W'], card_type="Enchantment", sub_types="Aura",
-                     abilities=[1027, 2018], set_id="M19", rarity="Common", set_number=19,
+                     abilities=[1027, 2018], set_id="M19", rarity="Common", collectible=True, set_number=19,
                      mtga_id=67718)
 KnightlyValor = Card(name="knightly_valor", pretty_name="Knightly Valor", cost=['4', 'W'],
                      color_identity=['W'], card_type="Enchantment", sub_types="Aura",
-                     abilities=[1027, 99956, 19558], set_id="M19", rarity="Uncommon", set_number=20,
+                     abilities=[1027, 99956, 19558], set_id="M19", rarity="Uncommon", collectible=True, set_number=20,
                      mtga_id=67720)
 LenaSelflessChampion = Card(name="lena_selfless_champion", pretty_name="Lena, Selfless Champion", cost=['4', 'W', 'W'],
                             color_identity=['W'], card_type="Creature", sub_types="Human Knight",
-                            abilities=[119137, 119146], set_id="M19", rarity="Rare", set_number=21,
+                            abilities=[119137, 119146], set_id="M19", rarity="Rare", collectible=True, set_number=21,
                             mtga_id=67722)
 LeoninVanguard = Card(name="leonin_vanguard", pretty_name="Leonin Vanguard", cost=['W'],
                       color_identity=['W'], card_type="Creature", sub_types="Cat Soldier",
-                      abilities=[119166], set_id="M19", rarity="Uncommon", set_number=22,
+                      abilities=[119166], set_id="M19", rarity="Uncommon", collectible=True, set_number=22,
                       mtga_id=67724)
 LeoninWarleader = Card(name="leonin_warleader", pretty_name="Leonin Warleader", cost=['2', 'W', 'W'],
                        color_identity=['W'], card_type="Creature", sub_types="Cat Soldier",
-                       abilities=[119181], set_id="M19", rarity="Rare", set_number=23,
+                       abilities=[119181], set_id="M19", rarity="Rare", collectible=True, set_number=23,
                        mtga_id=67726)
 LoxodonLineBreaker = Card(name="loxodon_line_breaker", pretty_name="Loxodon Line Breaker", cost=['2', 'W'],
                           color_identity=['W'], card_type="Creature", sub_types="Elephant Soldier",
-                          abilities=[], set_id="M19", rarity="Common", set_number=24,
+                          abilities=[], set_id="M19", rarity="Common", collectible=True, set_number=24,
                           mtga_id=67728)
 LuminousBonds = Card(name="luminous_bonds", pretty_name="Luminous Bonds", cost=['2', 'W'],
                      color_identity=['W'], card_type="Enchantment", sub_types="Aura",
-                     abilities=[1027, 1083], set_id="M19", rarity="Common", set_number=25,
+                     abilities=[1027, 1083], set_id="M19", rarity="Common", collectible=True, set_number=25,
                      mtga_id=67730)
 MakeaStand = Card(name="make_a_stand", pretty_name="Make a Stand", cost=['2', 'W'],
                   color_identity=['W'], card_type="Instant", sub_types="",
-                  abilities=[62471], set_id="M19", rarity="Uncommon", set_number=26,
+                  abilities=[62471], set_id="M19", rarity="Uncommon", collectible=True, set_number=26,
                   mtga_id=67732)
 MentoroftheMeek = Card(name="mentor_of_the_meek", pretty_name="Mentor of the Meek", cost=['2', 'W'],
                        color_identity=['W'], card_type="Creature", sub_types="Human Soldier",
-                       abilities=[18682], set_id="M19", rarity="Rare", set_number=27,
+                       abilities=[18682], set_id="M19", rarity="Rare", collectible=True, set_number=27,
                        mtga_id=67734)
 MightyLeap = Card(name="mighty_leap", pretty_name="Mighty Leap", cost=['1', 'W'],
                   color_identity=['W'], card_type="Instant", sub_types="",
-                  abilities=[1235], set_id="M19", rarity="Common", set_number=28,
+                  abilities=[1235], set_id="M19", rarity="Common", collectible=True, set_number=28,
                   mtga_id=67736)
 MilitiaBugler = Card(name="militia_bugler", pretty_name="Militia Bugler", cost=['2', 'W'],
                      color_identity=['W'], card_type="Creature", sub_types="Human Soldier",
-                     abilities=[15, 119203], set_id="M19", rarity="Uncommon", set_number=29,
+                     abilities=[15, 119203], set_id="M19", rarity="Uncommon", collectible=True, set_number=29,
                      mtga_id=67738)
 NoviceKnight = Card(name="novice_knight", pretty_name="Novice Knight", cost=['W'],
                     color_identity=['W'], card_type="Creature", sub_types="Human Knight",
-                    abilities=[2, 119206], set_id="M19", rarity="Uncommon", set_number=30,
+                    abilities=[2, 119206], set_id="M19", rarity="Uncommon", collectible=True, set_number=30,
                     mtga_id=67740)
 OreskosSwiftclaw = Card(name="oreskos_swiftclaw", pretty_name="Oreskos Swiftclaw", cost=['1', 'W'],
                         color_identity=['W'], card_type="Creature", sub_types="Cat Warrior",
-                        abilities=[], set_id="M19", rarity="Common", set_number=31,
+                        abilities=[], set_id="M19", rarity="Common", collectible=True, set_number=31,
                         mtga_id=67742)
 PegasusCourser = Card(name="pegasus_courser", pretty_name="Pegasus Courser", cost=['2', 'W'],
                       color_identity=['W'], card_type="Creature", sub_types="Pegasus",
-                      abilities=[8, 103816], set_id="M19", rarity="Common", set_number=32,
+                      abilities=[8, 103816], set_id="M19", rarity="Common", collectible=True, set_number=32,
                       mtga_id=67744)
 RemorsefulCleric = Card(name="remorseful_cleric", pretty_name="Remorseful Cleric", cost=['1', 'W'],
                         color_identity=['W'], card_type="Creature", sub_types="Spirit Cleric",
-                        abilities=[8, 119081], set_id="M19", rarity="Rare", set_number=33,
+                        abilities=[8, 119081], set_id="M19", rarity="Rare", collectible=True, set_number=33,
                         mtga_id=67746)
 ResplendentAngel = Card(name="resplendent_angel", pretty_name="Resplendent Angel", cost=['1', 'W', 'W'],
                         color_identity=['W'], card_type="Creature", sub_types="Angel",
-                        abilities=[8, 119087, 119083], set_id="M19", rarity="Mythic Rare", set_number=34,
+                        abilities=[8, 119087, 119083], set_id="M19", rarity="Mythic Rare", collectible=True, set_number=34,
                         mtga_id=67748)
 Revitalize = Card(name="revitalize", pretty_name="Revitalize", cost=['1', 'W'],
                   color_identity=['W'], card_type="Instant", sub_types="",
-                  abilities=[30479, 25848], set_id="M19", rarity="Common", set_number=35,
+                  abilities=[30479, 25848], set_id="M19", rarity="Common", collectible=True, set_number=35,
                   mtga_id=67750)
 RustwingFalcon = Card(name="rustwing_falcon", pretty_name="Rustwing Falcon", cost=['W'],
                       color_identity=['W'], card_type="Creature", sub_types="Bird",
-                      abilities=[8], set_id="M19", rarity="Common", set_number=36,
+                      abilities=[8], set_id="M19", rarity="Common", collectible=True, set_number=36,
                       mtga_id=67752)
 ShieldMare = Card(name="shield_mare", pretty_name="Shield Mare", cost=['1', 'W', 'W'],
                   color_identity=['W'], card_type="Creature", sub_types="Horse",
-                  abilities=[97130, 119224], set_id="M19", rarity="Uncommon", set_number=37,
+                  abilities=[97130, 119224], set_id="M19", rarity="Uncommon", collectible=True, set_number=37,
                   mtga_id=67754)
 StarCrownedStag = Card(name="starcrowned_stag", pretty_name="Star-Crowned Stag", cost=['3', 'W'],
                        color_identity=['W'], card_type="Creature", sub_types="Elk",
-                       abilities=[94230], set_id="M19", rarity="Common", set_number=38,
+                       abilities=[94230], set_id="M19", rarity="Common", collectible=True, set_number=38,
                        mtga_id=67756)
 Suncleanser = Card(name="suncleanser", pretty_name="Suncleanser", cost=['1', 'W'],
                    color_identity=['W'], card_type="Creature", sub_types="Human Cleric",
-                   abilities=[119093], set_id="M19", rarity="Rare", set_number=39,
+                   abilities=[119093], set_id="M19", rarity="Rare", collectible=True, set_number=39,
                    mtga_id=67758)
 TakeVengeance = Card(name="take_vengeance", pretty_name="Take Vengeance", cost=['1', 'W'],
                      color_identity=['W'], card_type="Sorcery", sub_types="",
-                     abilities=[1385], set_id="M19", rarity="Common", set_number=40,
+                     abilities=[1385], set_id="M19", rarity="Common", collectible=True, set_number=40,
                      mtga_id=67760)
 TrustyPackbeast = Card(name="trusty_packbeast", pretty_name="Trusty Packbeast", cost=['2', 'W'],
                        color_identity=['W'], card_type="Creature", sub_types="Beast",
-                       abilities=[119101], set_id="M19", rarity="Common", set_number=41,
+                       abilities=[119101], set_id="M19", rarity="Common", collectible=True, set_number=41,
                        mtga_id=67762)
 ValiantKnight = Card(name="valiant_knight", pretty_name="Valiant Knight", cost=['3', 'W'],
                      color_identity=['W'], card_type="Creature", sub_types="Human Knight",
-                     abilities=[119104, 119107], set_id="M19", rarity="Rare", set_number=42,
+                     abilities=[119104, 119107], set_id="M19", rarity="Rare", collectible=True, set_number=42,
                      mtga_id=67764)
 AetherTunnel = Card(name="aether_tunnel", pretty_name="Aether Tunnel", cost=['1', 'U'],
                     color_identity=['U'], card_type="Enchantment", sub_types="Aura",
-                    abilities=[1027, 119109], set_id="M19", rarity="Uncommon", set_number=43,
+                    abilities=[1027, 119109], set_id="M19", rarity="Uncommon", collectible=True, set_number=43,
                     mtga_id=67766)
 Anticipate = Card(name="anticipate", pretty_name="Anticipate", cost=['1', 'U'],
                   color_identity=['U'], card_type="Instant", sub_types="",
-                  abilities=[61084], set_id="M19", rarity="Common", set_number=44,
+                  abilities=[61084], set_id="M19", rarity="Common", collectible=True, set_number=44,
                   mtga_id=67768)
 AvenWindMage = Card(name="aven_wind_mage", pretty_name="Aven Wind Mage", cost=['2', 'U'],
                     color_identity=['U'], card_type="Creature", sub_types="Bird Wizard",
-                    abilities=[8, 119114], set_id="M19", rarity="Common", set_number=45,
+                    abilities=[8, 119114], set_id="M19", rarity="Common", collectible=True, set_number=45,
                     mtga_id=67770)
 AviationPioneer = Card(name="aviation_pioneer", pretty_name="Aviation Pioneer", cost=['2', 'U'],
                        color_identity=['U'], card_type="Creature", sub_types="Human Artificer",
-                       abilities=[102214], set_id="M19", rarity="Common", set_number=46,
+                       abilities=[102214], set_id="M19", rarity="Common", collectible=True, set_number=46,
                        mtga_id=67772)
 BonetoAsh = Card(name="bone_to_ash", pretty_name="Bone to Ash", cost=['2', 'U', 'U'],
                  color_identity=['U'], card_type="Instant", sub_types="",
-                 abilities=[24121, 25848], set_id="M19", rarity="Uncommon", set_number=47,
+                 abilities=[24121, 25848], set_id="M19", rarity="Uncommon", collectible=True, set_number=47,
                  mtga_id=67774)
 Cancel = Card(name="cancel", pretty_name="Cancel", cost=['1', 'U', 'U'],
               color_identity=['U'], card_type="Instant", sub_types="",
-              abilities=[25846], set_id="M19", rarity="Common", set_number=48,
+              abilities=[25846], set_id="M19", rarity="Common", collectible=True, set_number=48,
               mtga_id=67776)
 DepartedDeckhand = Card(name="departed_deckhand", pretty_name="Departed Deckhand", cost=['1', 'U'],
                         color_identity=['U'], card_type="Creature", sub_types="Spirit Pirate",
-                        abilities=[88041, 119133, 119136], set_id="M19", rarity="Uncommon", set_number=49,
+                        abilities=[88041, 119133, 119136], set_id="M19", rarity="Uncommon", collectible=True, set_number=49,
                         mtga_id=67778)
 Disperse = Card(name="disperse", pretty_name="Disperse", cost=['1', 'U'],
                 color_identity=['U'], card_type="Instant", sub_types="",
-                abilities=[94618], set_id="M19", rarity="Common", set_number=50,
+                abilities=[94618], set_id="M19", rarity="Common", collectible=True, set_number=50,
                 mtga_id=67780)
 Divination = Card(name="divination", pretty_name="Divination", cost=['2', 'U'],
                   color_identity=['U'], card_type="Sorcery", sub_types="",
-                  abilities=[23607], set_id="M19", rarity="Common", set_number=51,
+                  abilities=[23607], set_id="M19", rarity="Common", collectible=True, set_number=51,
                   mtga_id=67782)
 DjinnofWishes = Card(name="djinn_of_wishes", pretty_name="Djinn of Wishes", cost=['3', 'U', 'U'],
                      color_identity=['U'], card_type="Creature", sub_types="Djinn",
-                     abilities=[8, 1111, 1112], set_id="M19", rarity="Rare", set_number=52,
+                     abilities=[8, 1111, 1112], set_id="M19", rarity="Rare", collectible=True, set_number=52,
                      mtga_id=67784)
 Dwindle = Card(name="dwindle", pretty_name="Dwindle", cost=['2', 'U'],
                color_identity=['U'], card_type="Enchantment", sub_types="Aura",
-               abilities=[1027, 20990, 119148], set_id="M19", rarity="Common", set_number=53,
+               abilities=[1027, 20990, 119148], set_id="M19", rarity="Common", collectible=True, set_number=53,
                mtga_id=67786)
 EssenceScatter = Card(name="essence_scatter", pretty_name="Essence Scatter", cost=['1', 'U'],
                       color_identity=['U'], card_type="Instant", sub_types="",
-                      abilities=[24121], set_id="M19", rarity="Common", set_number=54,
+                      abilities=[24121], set_id="M19", rarity="Common", collectible=True, set_number=54,
                       mtga_id=67788)
 ExclusionMage = Card(name="exclusion_mage", pretty_name="Exclusion Mage", cost=['2', 'U'],
                      color_identity=['U'], card_type="Creature", sub_types="Human Wizard",
-                     abilities=[96307], set_id="M19", rarity="Uncommon", set_number=55,
+                     abilities=[96307], set_id="M19", rarity="Uncommon", collectible=True, set_number=55,
                      mtga_id=67790)
 FrilledSeaSerpent = Card(name="frilled_sea_serpent", pretty_name="Frilled Sea Serpent", cost=['4', 'U', 'U'],
                          color_identity=['U'], card_type="Creature", sub_types="Serpent",
-                         abilities=[119156], set_id="M19", rarity="Common", set_number=56,
+                         abilities=[119156], set_id="M19", rarity="Common", collectible=True, set_number=56,
                          mtga_id=67792)
 GearsmithProdigy = Card(name="gearsmith_prodigy", pretty_name="Gearsmith Prodigy", cost=['U'],
                         color_identity=['U'], card_type="Creature", sub_types="Human Artificer",
-                        abilities=[103319], set_id="M19", rarity="Common", set_number=57,
+                        abilities=[103319], set_id="M19", rarity="Common", collectible=True, set_number=57,
                         mtga_id=67794)
 Ghostform = Card(name="ghostform", pretty_name="Ghostform", cost=['1', 'U'],
                  color_identity=['U'], card_type="Sorcery", sub_types="",
-                 abilities=[99695], set_id="M19", rarity="Common", set_number=58,
+                 abilities=[99695], set_id="M19", rarity="Common", collectible=True, set_number=58,
                  mtga_id=67796)
 HorizonScholar = Card(name="horizon_scholar", pretty_name="Horizon Scholar", cost=['5', 'U'],
                       color_identity=['U'], card_type="Creature", sub_types="Sphinx",
-                      abilities=[8, 100685], set_id="M19", rarity="Uncommon", set_number=59,
+                      abilities=[8, 100685], set_id="M19", rarity="Uncommon", collectible=True, set_number=59,
                       mtga_id=67798)
 MetamorphicAlteration = Card(name="metamorphic_alteration", pretty_name="Metamorphic Alteration", cost=['1', 'U'],
                              color_identity=['U'], card_type="Enchantment", sub_types="Aura",
-                             abilities=[1027, 119174, 1078], set_id="M19", rarity="Rare", set_number=60,
+                             abilities=[1027, 119174, 1078], set_id="M19", rarity="Rare", collectible=True, set_number=60,
                              mtga_id=67800)
 MirrorImage = Card(name="mirror_image", pretty_name="Mirror Image", cost=['2', 'U'],
                    color_identity=['U'], card_type="Creature", sub_types="Shapeshifter",
-                   abilities=[119177], set_id="M19", rarity="Uncommon", set_number=61,
+                   abilities=[119177], set_id="M19", rarity="Uncommon", collectible=True, set_number=61,
                    mtga_id=67802)
 Mistcaller = Card(name="mistcaller", pretty_name="Mistcaller", cost=['U'],
                   color_identity=['U'], card_type="Creature", sub_types="Merfolk Wizard",
-                  abilities=[119180], set_id="M19", rarity="Rare", set_number=62,
+                  abilities=[119180], set_id="M19", rarity="Rare", collectible=True, set_number=62,
                   mtga_id=67804)
 MysticArchaeologist = Card(name="mystic_archaeologist", pretty_name="Mystic Archaeologist", cost=['1', 'U'],
                            color_identity=['U'], card_type="Creature", sub_types="Human Wizard",
-                           abilities=[119182], set_id="M19", rarity="Rare", set_number=63,
+                           abilities=[119182], set_id="M19", rarity="Rare", collectible=True, set_number=63,
                            mtga_id=67806)
 Omenspeaker = Card(name="omenspeaker", pretty_name="Omenspeaker", cost=['1', 'U'],
                    color_identity=['U'], card_type="Creature", sub_types="Human Wizard",
-                   abilities=[100685], set_id="M19", rarity="Common", set_number=64,
+                   abilities=[100685], set_id="M19", rarity="Common", collectible=True, set_number=64,
                    mtga_id=67808)
 Omniscience = Card(name="omniscience", pretty_name="Omniscience", cost=['7', 'U', 'U', 'U'],
                    color_identity=['U'], card_type="Enchantment", sub_types="",
-                   abilities=[19205], set_id="M19", rarity="Mythic Rare", set_number=65,
+                   abilities=[19205], set_id="M19", rarity="Mythic Rare", collectible=True, set_number=65,
                    mtga_id=67810)
 OnewiththeMachine = Card(name="one_with_the_machine", pretty_name="One with the Machine", cost=['3', 'U'],
                          color_identity=['U'], card_type="Sorcery", sub_types="",
-                         abilities=[119185], set_id="M19", rarity="Rare", set_number=66,
+                         abilities=[119185], set_id="M19", rarity="Rare", collectible=True, set_number=66,
                          mtga_id=67812)
 PatientRebuilding = Card(name="patient_rebuilding", pretty_name="Patient Rebuilding", cost=['3', 'U', 'U'],
                          color_identity=['U'], card_type="Enchantment", sub_types="",
-                         abilities=[119186], set_id="M19", rarity="Rare", set_number=67,
+                         abilities=[119186], set_id="M19", rarity="Rare", collectible=True, set_number=67,
                          mtga_id=67814)
 PsychicCorrosion = Card(name="psychic_corrosion", pretty_name="Psychic Corrosion", cost=['2', 'U'],
                         color_identity=['U'], card_type="Enchantment", sub_types="",
-                        abilities=[119187], set_id="M19", rarity="Uncommon", set_number=68,
+                        abilities=[119187], set_id="M19", rarity="Uncommon", collectible=True, set_number=68,
                         mtga_id=67816)
 SaiMasterThopterist = Card(name="sai_master_thopterist", pretty_name="Sai, Master Thopterist", cost=['2', 'U'],
                            color_identity=['U'], card_type="Creature", sub_types="Human Artificer",
-                           abilities=[76777, 119188], set_id="M19", rarity="Rare", set_number=69,
+                           abilities=[76777, 119188], set_id="M19", rarity="Rare", collectible=True, set_number=69,
                            mtga_id=67818)
 SalvagerofSecrets = Card(name="salvager_of_secrets", pretty_name="Salvager of Secrets", cost=['3', 'U', 'U'],
                          color_identity=['U'], card_type="Creature", sub_types="Merfolk Wizard",
-                         abilities=[90211], set_id="M19", rarity="Common", set_number=70,
+                         abilities=[90211], set_id="M19", rarity="Common", collectible=True, set_number=70,
                          mtga_id=67820)
 ScholarofStars = Card(name="scholar_of_stars", pretty_name="Scholar of Stars", cost=['3', 'U'],
                       color_identity=['U'], card_type="Creature", sub_types="Human Artificer",
-                      abilities=[119190], set_id="M19", rarity="Common", set_number=71,
+                      abilities=[119190], set_id="M19", rarity="Common", collectible=True, set_number=71,
                       mtga_id=67822)
 Sift = Card(name="sift", pretty_name="Sift", cost=['3', 'U'],
             color_identity=['U'], card_type="Sorcery", sub_types="",
-            abilities=[6908], set_id="M19", rarity="Uncommon", set_number=72,
+            abilities=[6908], set_id="M19", rarity="Uncommon", collectible=True, set_number=72,
             mtga_id=67824)
 SkilledAnimator = Card(name="skilled_animator", pretty_name="Skilled Animator", cost=['2', 'U'],
                        color_identity=['U'], card_type="Creature", sub_types="Human Artificer",
-                       abilities=[119191], set_id="M19", rarity="Uncommon", set_number=73,
+                       abilities=[119191], set_id="M19", rarity="Uncommon", collectible=True, set_number=73,
                        mtga_id=67826)
 Sleep = Card(name="sleep", pretty_name="Sleep", cost=['2', 'U', 'U'],
              color_identity=['U'], card_type="Sorcery", sub_types="",
-             abilities=[92851], set_id="M19", rarity="Uncommon", set_number=74,
+             abilities=[92851], set_id="M19", rarity="Uncommon", collectible=True, set_number=74,
              mtga_id=67828)
 SnappingDrake = Card(name="snapping_drake", pretty_name="Snapping Drake", cost=['3', 'U'],
                      color_identity=['U'], card_type="Creature", sub_types="Drake",
-                     abilities=[8], set_id="M19", rarity="Common", set_number=75,
+                     abilities=[8], set_id="M19", rarity="Common", collectible=True, set_number=75,
                      mtga_id=67830)
 SupremePhantom = Card(name="supreme_phantom", pretty_name="Supreme Phantom", cost=['1', 'U'],
                       color_identity=['U'], card_type="Creature", sub_types="Spirit",
-                      abilities=[8, 119192], set_id="M19", rarity="Rare", set_number=76,
+                      abilities=[8, 119192], set_id="M19", rarity="Rare", collectible=True, set_number=76,
                       mtga_id=67832)
 SurgeMare = Card(name="surge_mare", pretty_name="Surge Mare", cost=['U', 'U'],
                  color_identity=['U'], card_type="Creature", sub_types="Horse Fish",
-                 abilities=[97134, 119194, 119195], set_id="M19", rarity="Uncommon", set_number=77,
+                 abilities=[97134, 119194, 119195], set_id="M19", rarity="Uncommon", collectible=True, set_number=77,
                  mtga_id=67834)
 Switcheroo = Card(name="switcheroo", pretty_name="Switcheroo", cost=['4', 'U'],
                   color_identity=['U'], card_type="Sorcery", sub_types="",
-                  abilities=[19199], set_id="M19", rarity="Uncommon", set_number=78,
+                  abilities=[19199], set_id="M19", rarity="Uncommon", collectible=True, set_number=78,
                   mtga_id=67836)
 TezzeretArtificeMaster = Card(name="tezzeret_artifice_master", pretty_name="Tezzeret, Artifice Master", cost=['3', 'U', 'U'],
                               color_identity=['U'], card_type="Planeswalker", sub_types="Tezzeret",
-                              abilities=[119197, 119199, 119201], set_id="M19", rarity="Mythic Rare", set_number=79,
+                              abilities=[119197, 119199, 119201], set_id="M19", rarity="Mythic Rare", collectible=True, set_number=79,
                               mtga_id=67838)
 TolarianScholar = Card(name="tolarian_scholar", pretty_name="Tolarian Scholar", cost=['2', 'U'],
                        color_identity=['U'], card_type="Creature", sub_types="Human Wizard",
-                       abilities=[], set_id="M19", rarity="Common", set_number=80,
+                       abilities=[], set_id="M19", rarity="Common", collectible=True, set_number=80,
                        mtga_id=67840)
 TotallyLost = Card(name="totally_lost", pretty_name="Totally Lost", cost=['4', 'U'],
                    color_identity=['U'], card_type="Instant", sub_types="",
-                   abilities=[99758], set_id="M19", rarity="Common", set_number=81,
+                   abilities=[99758], set_id="M19", rarity="Common", collectible=True, set_number=81,
                    mtga_id=67842)
 UncomfortableChill = Card(name="uncomfortable_chill", pretty_name="Uncomfortable Chill", cost=['2', 'U'],
                           color_identity=['U'], card_type="Instant", sub_types="",
-                          abilities=[2920, 25848], set_id="M19", rarity="Common", set_number=82,
+                          abilities=[2920, 25848], set_id="M19", rarity="Common", collectible=True, set_number=82,
                           mtga_id=67844)
 WallofMist = Card(name="wall_of_mist", pretty_name="Wall of Mist", cost=['1', 'U'],
                   color_identity=['U'], card_type="Creature", sub_types="Wall",
-                  abilities=[2], set_id="M19", rarity="Common", set_number=83,
+                  abilities=[2], set_id="M19", rarity="Common", collectible=True, set_number=83,
                   mtga_id=67846)
 WindreaderSphinx = Card(name="windreader_sphinx", pretty_name="Windreader Sphinx", cost=['5', 'U', 'U'],
                         color_identity=['U'], card_type="Creature", sub_types="Sphinx",
-                        abilities=[8, 20301], set_id="M19", rarity="Rare", set_number=84,
+                        abilities=[8, 20301], set_id="M19", rarity="Rare", collectible=True, set_number=84,
                         mtga_id=67848)
 AbnormalEndurance = Card(name="abnormal_endurance", pretty_name="Abnormal Endurance", cost=['1', 'B'],
                          color_identity=['B'], card_type="Instant", sub_types="",
-                         abilities=[88098], set_id="M19", rarity="Common", set_number=85,
+                         abilities=[88098], set_id="M19", rarity="Common", collectible=True, set_number=85,
                          mtga_id=67850)
 BloodDivination = Card(name="blood_divination", pretty_name="Blood Divination", cost=['3', 'B'],
                        color_identity=['B'], card_type="Sorcery", sub_types="",
-                       abilities=[1275, 1746], set_id="M19", rarity="Uncommon", set_number=86,
+                       abilities=[1275, 1746], set_id="M19", rarity="Uncommon", collectible=True, set_number=86,
                        mtga_id=67852)
 Bogstomper = Card(name="bogstomper", pretty_name="Bogstomper", cost=['4', 'B', 'B'],
                   color_identity=['B'], card_type="Creature", sub_types="Beast",
-                  abilities=[], set_id="M19", rarity="Common", set_number=87,
+                  abilities=[], set_id="M19", rarity="Common", collectible=True, set_number=87,
                   mtga_id=67854)
 BoneDragon = Card(name="bone_dragon", pretty_name="Bone Dragon", cost=['3', 'B', 'B'],
                   color_identity=['B'], card_type="Creature", sub_types="Dragon Skeleton",
-                  abilities=[8, 119205], set_id="M19", rarity="Mythic Rare", set_number=88,
+                  abilities=[8, 119205], set_id="M19", rarity="Mythic Rare", collectible=True, set_number=88,
                   mtga_id=67856)
 ChildofNight = Card(name="child_of_night", pretty_name="Child of Night", cost=['1', 'B'],
                     color_identity=['B'], card_type="Creature", sub_types="Vampire",
-                    abilities=[12], set_id="M19", rarity="Common", set_number=89,
+                    abilities=[12], set_id="M19", rarity="Common", collectible=True, set_number=89,
                     mtga_id=67858)
 DeathBaron = Card(name="death_baron", pretty_name="Death Baron", cost=['1', 'B', 'B'],
                   color_identity=['B'], card_type="Creature", sub_types="Zombie Wizard",
-                  abilities=[5179], set_id="M19", rarity="Rare", set_number=90,
+                  abilities=[5179], set_id="M19", rarity="Rare", collectible=True, set_number=90,
                   mtga_id=67860)
 DemonofCatastrophes = Card(name="demon_of_catastrophes", pretty_name="Demon of Catastrophes", cost=['2', 'B', 'B'],
                            color_identity=['B'], card_type="Creature", sub_types="Demon",
-                           abilities=[1275, 8, 14], set_id="M19", rarity="Rare", set_number=91,
+                           abilities=[1275, 8, 14], set_id="M19", rarity="Rare", collectible=True, set_number=91,
                            mtga_id=67862)
 DiregrafGhoul = Card(name="diregraf_ghoul", pretty_name="Diregraf Ghoul", cost=['B'],
                      color_identity=['B'], card_type="Creature", sub_types="Zombie",
-                     abilities=[76735], set_id="M19", rarity="Uncommon", set_number=92,
+                     abilities=[76735], set_id="M19", rarity="Uncommon", collectible=True, set_number=92,
                      mtga_id=67864)
 DoomedDissenter = Card(name="doomed_dissenter", pretty_name="Doomed Dissenter", cost=['1', 'B'],
                        color_identity=['B'], card_type="Creature", sub_types="Human",
-                       abilities=[88075], set_id="M19", rarity="Common", set_number=93,
+                       abilities=[88075], set_id="M19", rarity="Common", collectible=True, set_number=93,
                        mtga_id=67866)
 Duress = Card(name="duress", pretty_name="Duress", cost=['B'],
               color_identity=['B'], card_type="Sorcery", sub_types="",
-              abilities=[21775], set_id="M19", rarity="Common", set_number=94,
+              abilities=[21775], set_id="M19", rarity="Common", collectible=True, set_number=94,
               mtga_id=67868)
 EpicureofBlood = Card(name="epicure_of_blood", pretty_name="Epicure of Blood", cost=['4', 'B'],
                       color_identity=['B'], card_type="Creature", sub_types="Vampire",
-                      abilities=[62618], set_id="M19", rarity="Common", set_number=95,
+                      abilities=[62618], set_id="M19", rarity="Common", collectible=True, set_number=95,
                       mtga_id=67870)
 FellSpecter = Card(name="fell_specter", pretty_name="Fell Specter", cost=['3', 'B'],
                    color_identity=['B'], card_type="Creature", sub_types="Specter",
-                   abilities=[8, 88244, 2904], set_id="M19", rarity="Uncommon", set_number=96,
+                   abilities=[8, 88244, 2904], set_id="M19", rarity="Uncommon", collectible=True, set_number=96,
                    mtga_id=67872)
 FrayingOmnipotence = Card(name="fraying_omnipotence", pretty_name="Fraying Omnipotence", cost=['3', 'B', 'B'],
                           color_identity=['B'], card_type="Sorcery", sub_types="",
-                          abilities=[119207], set_id="M19", rarity="Rare", set_number=97,
+                          abilities=[119207], set_id="M19", rarity="Rare", collectible=True, set_number=97,
                           mtga_id=67874)
 Gravedigger = Card(name="gravedigger", pretty_name="Gravedigger", cost=['3', 'B'],
                    color_identity=['B'], card_type="Creature", sub_types="Zombie",
-                   abilities=[1157], set_id="M19", rarity="Uncommon", set_number=98,
+                   abilities=[1157], set_id="M19", rarity="Uncommon", collectible=True, set_number=98,
                    mtga_id=67876)
 GraveyardMarshal = Card(name="graveyard_marshal", pretty_name="Graveyard Marshal", cost=['B', 'B'],
                         color_identity=['B'], card_type="Creature", sub_types="Zombie Soldier",
-                        abilities=[119208], set_id="M19", rarity="Rare", set_number=99,
+                        abilities=[119208], set_id="M19", rarity="Rare", collectible=True, set_number=99,
                         mtga_id=67878)
 HiredBlade = Card(name="hired_blade", pretty_name="Hired Blade", cost=['2', 'B'],
                   color_identity=['B'], card_type="Creature", sub_types="Human Assassin",
-                  abilities=[7], set_id="M19", rarity="Common", set_number=100,
+                  abilities=[7], set_id="M19", rarity="Common", collectible=True, set_number=100,
                   mtga_id=67880)
 InfectiousHorror = Card(name="infectious_horror", pretty_name="Infectious Horror", cost=['3', 'B'],
                         color_identity=['B'], card_type="Creature", sub_types="Zombie Horror",
-                        abilities=[90310], set_id="M19", rarity="Common", set_number=101,
+                        abilities=[90310], set_id="M19", rarity="Common", collectible=True, set_number=101,
                         mtga_id=67882)
 InfernalReckoning = Card(name="infernal_reckoning", pretty_name="Infernal Reckoning", cost=['B'],
                          color_identity=['B'], card_type="Instant", sub_types="",
-                         abilities=[119209], set_id="M19", rarity="Rare", set_number=102,
+                         abilities=[119209], set_id="M19", rarity="Rare", collectible=True, set_number=102,
                          mtga_id=67884)
 InfernalScarring = Card(name="infernal_scarring", pretty_name="Infernal Scarring", cost=['1', 'B'],
                         color_identity=['B'], card_type="Enchantment", sub_types="Aura",
-                        abilities=[1027, 102264], set_id="M19", rarity="Common", set_number=103,
+                        abilities=[1027, 102264], set_id="M19", rarity="Common", collectible=True, set_number=103,
                         mtga_id=67886)
 IsareththeAwakener = Card(name="isareth_the_awakener", pretty_name="Isareth the Awakener", cost=['1', 'B', 'B'],
                           color_identity=['B'], card_type="Creature", sub_types="Human Wizard",
-                          abilities=[1, 119210], set_id="M19", rarity="Rare", set_number=104,
+                          abilities=[1, 119210], set_id="M19", rarity="Rare", collectible=True, set_number=104,
                           mtga_id=67888)
 LichsCaress = Card(name="lichs_caress", pretty_name="Lich's Caress", cost=['3', 'B', 'B'],
                    color_identity=['B'], card_type="Sorcery", sub_types="",
-                   abilities=[119212], set_id="M19", rarity="Common", set_number=105,
+                   abilities=[119212], set_id="M19", rarity="Common", collectible=True, set_number=105,
                    mtga_id=67890)
 LilianaUntouchedbyDeath = Card(name="liliana_untouched_by_death", pretty_name="Liliana, Untouched by Death", cost=['2', 'B', 'B'],
                                color_identity=['B'], card_type="Planeswalker", sub_types="Liliana",
-                               abilities=[119213, 119214, 119215], set_id="M19", rarity="Mythic Rare", set_number=106,
+                               abilities=[119213, 119214, 119215], set_id="M19", rarity="Mythic Rare", collectible=True, set_number=106,
                                mtga_id=67892)
 LilianasContract = Card(name="lilianas_contract", pretty_name="Liliana's Contract", cost=['3', 'B', 'B'],
                         color_identity=['B'], card_type="Enchantment", sub_types="",
-                        abilities=[119216, 119084], set_id="M19", rarity="Rare", set_number=107,
+                        abilities=[119216, 119084], set_id="M19", rarity="Rare", collectible=True, set_number=107,
                         mtga_id=67894)
 MacabreWaltz = Card(name="macabre_waltz", pretty_name="Macabre Waltz", cost=['1', 'B'],
                     color_identity=['B'], card_type="Sorcery", sub_types="",
-                    abilities=[9569], set_id="M19", rarity="Common", set_number=108,
+                    abilities=[9569], set_id="M19", rarity="Common", collectible=True, set_number=108,
                     mtga_id=67896)
 MindRot = Card(name="mind_rot", pretty_name="Mind Rot", cost=['2', 'B'],
                color_identity=['B'], card_type="Sorcery", sub_types="",
-               abilities=[23608], set_id="M19", rarity="Common", set_number=109,
+               abilities=[23608], set_id="M19", rarity="Common", collectible=True, set_number=109,
                mtga_id=67898)
 Murder = Card(name="murder", pretty_name="Murder", cost=['1', 'B', 'B'],
               color_identity=['B'], card_type="Instant", sub_types="",
-              abilities=[26818], set_id="M19", rarity="Uncommon", set_number=110,
+              abilities=[26818], set_id="M19", rarity="Uncommon", collectible=True, set_number=110,
               mtga_id=67900)
 NightmaresThirst = Card(name="nightmares_thirst", pretty_name="Nightmare's Thirst", cost=['B'],
                         color_identity=['B'], card_type="Instant", sub_types="",
-                        abilities=[119085], set_id="M19", rarity="Uncommon", set_number=111,
+                        abilities=[119085], set_id="M19", rarity="Uncommon", collectible=True, set_number=111,
                         mtga_id=67902)
 OpentheGraves = Card(name="open_the_graves", pretty_name="Open the Graves", cost=['3', 'B', 'B'],
                      color_identity=['B'], card_type="Enchantment", sub_types="",
-                     abilities=[119086], set_id="M19", rarity="Rare", set_number=112,
+                     abilities=[119086], set_id="M19", rarity="Rare", collectible=True, set_number=112,
                      mtga_id=67904)
 PhylacteryLich = Card(name="phylactery_lich", pretty_name="Phylactery Lich", cost=['B', 'B', 'B'],
                       color_identity=['B'], card_type="Creature", sub_types="Zombie",
-                      abilities=[104, 92953, 92954], set_id="M19", rarity="Rare", set_number=113,
+                      abilities=[104, 92953, 92954], set_id="M19", rarity="Rare", collectible=True, set_number=113,
                       mtga_id=67906)
 PlagueMare = Card(name="plague_mare", pretty_name="Plague Mare", cost=['1', 'B', 'B'],
                   color_identity=['B'], card_type="Creature", sub_types="Nightmare Horse",
-                  abilities=[97118, 119218], set_id="M19", rarity="Uncommon", set_number=114,
+                  abilities=[97118, 119218], set_id="M19", rarity="Uncommon", collectible=True, set_number=114,
                   mtga_id=67908)
 RavenousHarpy = Card(name="ravenous_harpy", pretty_name="Ravenous Harpy", cost=['2', 'B'],
                      color_identity=['B'], card_type="Creature", sub_types="Harpy",
-                     abilities=[8, 119088], set_id="M19", rarity="Uncommon", set_number=115,
+                     abilities=[8, 119088], set_id="M19", rarity="Uncommon", collectible=True, set_number=115,
                      mtga_id=67910)
 ReassemblingSkeleton = Card(name="reassembling_skeleton", pretty_name="Reassembling Skeleton", cost=['1', 'B'],
                             color_identity=['B'], card_type="Creature", sub_types="Skeleton Warrior",
-                            abilities=[1188], set_id="M19", rarity="Uncommon", set_number=116,
+                            abilities=[1188], set_id="M19", rarity="Uncommon", collectible=True, set_number=116,
                             mtga_id=67912)
 RisefromtheGrave = Card(name="rise_from_the_grave", pretty_name="Rise from the Grave", cost=['4', 'B'],
                         color_identity=['B'], card_type="Sorcery", sub_types="",
-                        abilities=[2159], set_id="M19", rarity="Uncommon", set_number=117,
+                        abilities=[2159], set_id="M19", rarity="Uncommon", collectible=True, set_number=117,
                         mtga_id=67914)
 SkeletonArcher = Card(name="skeleton_archer", pretty_name="Skeleton Archer", cost=['3', 'B'],
                       color_identity=['B'], card_type="Creature", sub_types="Skeleton Archer",
-                      abilities=[92894], set_id="M19", rarity="Common", set_number=118,
+                      abilities=[92894], set_id="M19", rarity="Common", collectible=True, set_number=118,
                       mtga_id=67916)
 SkymarchBloodletter = Card(name="skymarch_bloodletter", pretty_name="Skymarch Bloodletter", cost=['2', 'B'],
                            color_identity=['B'], card_type="Creature", sub_types="Vampire Soldier",
-                           abilities=[8, 91870], set_id="M19", rarity="Common", set_number=119,
+                           abilities=[8, 91870], set_id="M19", rarity="Common", collectible=True, set_number=119,
                            mtga_id=67918)
 SovereignsBite = Card(name="sovereigns_bite", pretty_name="Sovereign's Bite", cost=['1', 'B'],
                       color_identity=['B'], card_type="Sorcery", sub_types="",
-                      abilities=[119090], set_id="M19", rarity="Common", set_number=120,
+                      abilities=[119090], set_id="M19", rarity="Common", collectible=True, set_number=120,
                       mtga_id=67920)
 StitchersSupplier = Card(name="stitchers_supplier", pretty_name="Stitcher's Supplier", cost=['B'],
                          color_identity=['B'], card_type="Creature", sub_types="Zombie",
-                         abilities=[119220], set_id="M19", rarity="Uncommon", set_number=121,
+                         abilities=[119220], set_id="M19", rarity="Uncommon", collectible=True, set_number=121,
                          mtga_id=67922)
 StranglingSpores = Card(name="strangling_spores", pretty_name="Strangling Spores", cost=['3', 'B'],
                         color_identity=['B'], card_type="Instant", sub_types="",
-                        abilities=[2338], set_id="M19", rarity="Common", set_number=122,
+                        abilities=[2338], set_id="M19", rarity="Common", collectible=True, set_number=122,
                         mtga_id=67924)
 TwoHeadedZombie = Card(name="twoheaded_zombie", pretty_name="Two-Headed Zombie", cost=['3', 'B'],
                        color_identity=['B'], card_type="Creature", sub_types="Zombie",
-                       abilities=[142], set_id="M19", rarity="Common", set_number=123,
+                       abilities=[142], set_id="M19", rarity="Common", collectible=True, set_number=123,
                        mtga_id=67926)
 VampireNeonate = Card(name="vampire_neonate", pretty_name="Vampire Neonate", cost=['B'],
                       color_identity=['B'], card_type="Creature", sub_types="Vampire",
-                      abilities=[119221], set_id="M19", rarity="Common", set_number=124,
+                      abilities=[119221], set_id="M19", rarity="Common", collectible=True, set_number=124,
                       mtga_id=67928)
 VampireSovereign = Card(name="vampire_sovereign", pretty_name="Vampire Sovereign", cost=['3', 'B', 'B'],
                         color_identity=['B'], card_type="Creature", sub_types="Vampire",
-                        abilities=[8, 119223], set_id="M19", rarity="Uncommon", set_number=125,
+                        abilities=[8, 119223], set_id="M19", rarity="Uncommon", collectible=True, set_number=125,
                         mtga_id=67930)
 WalkingCorpse = Card(name="walking_corpse", pretty_name="Walking Corpse", cost=['1', 'B'],
                      color_identity=['B'], card_type="Creature", sub_types="Zombie",
-                     abilities=[], set_id="M19", rarity="Common", set_number=126,
+                     abilities=[], set_id="M19", rarity="Common", collectible=True, set_number=126,
                      mtga_id=67932)
 ActofTreason = Card(name="act_of_treason", pretty_name="Act of Treason", cost=['2', 'R'],
                     color_identity=['R'], card_type="Sorcery", sub_types="",
-                    abilities=[1278], set_id="M19", rarity="Common", set_number=127,
+                    abilities=[1278], set_id="M19", rarity="Common", collectible=True, set_number=127,
                     mtga_id=67934)
 AlpineMoon = Card(name="alpine_moon", pretty_name="Alpine Moon", cost=['R'],
                   color_identity=['R'], card_type="Enchantment", sub_types="",
-                  abilities=[119225, 119226], set_id="M19", rarity="Rare", set_number=128,
+                  abilities=[119225, 119226], set_id="M19", rarity="Rare", collectible=True, set_number=128,
                   mtga_id=67936)
 ApexofPower = Card(name="apex_of_power", pretty_name="Apex of Power", cost=['7', 'R', 'R', 'R'],
                    color_identity=['R'], card_type="Sorcery", sub_types="",
-                   abilities=[119227, 119091], set_id="M19", rarity="Mythic Rare", set_number=129,
+                   abilities=[119227, 119091], set_id="M19", rarity="Mythic Rare", collectible=True, set_number=129,
                    mtga_id=67938)
 Banefire = Card(name="banefire", pretty_name="Banefire", cost=['X', 'R'],
                 color_identity=['R'], card_type="Sorcery", sub_types="",
-                abilities=[88144, 90322], set_id="M19", rarity="Rare", set_number=130,
+                abilities=[88144, 90322], set_id="M19", rarity="Rare", collectible=True, set_number=130,
                 mtga_id=67940)
 BoggartBrute = Card(name="boggart_brute", pretty_name="Boggart Brute", cost=['2', 'R'],
                     color_identity=['R'], card_type="Creature", sub_types="Goblin Warrior",
-                    abilities=[142], set_id="M19", rarity="Common", set_number=131,
+                    abilities=[142], set_id="M19", rarity="Common", collectible=True, set_number=131,
                     mtga_id=67942)
 CatalystElemental = Card(name="catalyst_elemental", pretty_name="Catalyst Elemental", cost=['2', 'R'],
                          color_identity=['R'], card_type="Creature", sub_types="Elemental",
-                         abilities=[92035], set_id="M19", rarity="Common", set_number=132,
+                         abilities=[92035], set_id="M19", rarity="Common", collectible=True, set_number=132,
                          mtga_id=67944)
 CrashThrough = Card(name="crash_through", pretty_name="Crash Through", cost=['R'],
                     color_identity=['R'], card_type="Sorcery", sub_types="",
-                    abilities=[103806, 25848], set_id="M19", rarity="Common", set_number=133,
+                    abilities=[103806, 25848], set_id="M19", rarity="Common", collectible=True, set_number=133,
                     mtga_id=67946)
 DarkDwellerOracle = Card(name="darkdweller_oracle", pretty_name="Dark-Dweller Oracle", cost=['1', 'R'],
                          color_identity=['R'], card_type="Creature", sub_types="Goblin Shaman",
-                         abilities=[119230], set_id="M19", rarity="Rare", set_number=134,
+                         abilities=[119230], set_id="M19", rarity="Rare", collectible=True, set_number=134,
                          mtga_id=67948)
 DemandingDragon = Card(name="demanding_dragon", pretty_name="Demanding Dragon", cost=['3', 'R', 'R'],
                        color_identity=['R'], card_type="Creature", sub_types="Dragon",
-                       abilities=[8, 119232], set_id="M19", rarity="Rare", set_number=135,
+                       abilities=[8, 119232], set_id="M19", rarity="Rare", collectible=True, set_number=135,
                        mtga_id=67950)
 DismissivePyromancer = Card(name="dismissive_pyromancer", pretty_name="Dismissive Pyromancer", cost=['1', 'R'],
                             color_identity=['R'], card_type="Creature", sub_types="Human Wizard",
-                            abilities=[20793, 119234], set_id="M19", rarity="Rare", set_number=136,
+                            abilities=[20793, 119234], set_id="M19", rarity="Rare", collectible=True, set_number=136,
                             mtga_id=67952)
 Doublecast = Card(name="doublecast", pretty_name="Doublecast", cost=['R', 'R'],
                   color_identity=['R'], card_type="Sorcery", sub_types="",
-                  abilities=[119092], set_id="M19", rarity="Uncommon", set_number=137,
+                  abilities=[119092], set_id="M19", rarity="Uncommon", collectible=True, set_number=137,
                   mtga_id=67954)
 DragonEgg = Card(name="dragon_egg", pretty_name="Dragon Egg", cost=['2', 'R'],
                  color_identity=['R'], card_type="Creature", sub_types="Dragon Egg",
-                 abilities=[2, 100587], set_id="M19", rarity="Uncommon", set_number=138,
+                 abilities=[2, 100587], set_id="M19", rarity="Uncommon", collectible=True, set_number=138,
                  mtga_id=67956)
 Electrify = Card(name="electrify", pretty_name="Electrify", cost=['3', 'R'],
                  color_identity=['R'], card_type="Instant", sub_types="",
-                 abilities=[21773], set_id="M19", rarity="Common", set_number=139,
+                 abilities=[21773], set_id="M19", rarity="Common", collectible=True, set_number=139,
                  mtga_id=67958)
 FieryFinish = Card(name="fiery_finish", pretty_name="Fiery Finish", cost=['4', 'R', 'R'],
                    color_identity=['R'], card_type="Sorcery", sub_types="",
-                   abilities=[88112], set_id="M19", rarity="Uncommon", set_number=140,
+                   abilities=[88112], set_id="M19", rarity="Uncommon", collectible=True, set_number=140,
                    mtga_id=67960)
 FireElemental = Card(name="fire_elemental", pretty_name="Fire Elemental", cost=['3', 'R', 'R'],
                      color_identity=['R'], card_type="Creature", sub_types="Elemental",
-                     abilities=[], set_id="M19", rarity="Common", set_number=141,
+                     abilities=[], set_id="M19", rarity="Common", collectible=True, set_number=141,
                      mtga_id=67962)
 GoblinInstigator = Card(name="goblin_instigator", pretty_name="Goblin Instigator", cost=['1', 'R'],
                         color_identity=['R'], card_type="Creature", sub_types="Goblin Rogue",
-                        abilities=[119237], set_id="M19", rarity="Common", set_number=142,
+                        abilities=[119237], set_id="M19", rarity="Common", collectible=True, set_number=142,
                         mtga_id=67964)
 GoblinMotivator = Card(name="goblin_motivator", pretty_name="Goblin Motivator", cost=['R'],
                        color_identity=['R'], card_type="Creature", sub_types="Goblin Warrior",
-                       abilities=[15166], set_id="M19", rarity="Common", set_number=143,
+                       abilities=[15166], set_id="M19", rarity="Common", collectible=True, set_number=143,
                        mtga_id=67966)
 GoblinTrashmaster = Card(name="goblin_trashmaster", pretty_name="Goblin Trashmaster", cost=['2', 'R', 'R'],
                          color_identity=['R'], card_type="Creature", sub_types="Goblin Warrior",
-                         abilities=[119238, 119239], set_id="M19", rarity="Rare", set_number=144,
+                         abilities=[119238, 119239], set_id="M19", rarity="Rare", collectible=True, set_number=144,
                          mtga_id=67968)
 Guttersnipe = Card(name="guttersnipe", pretty_name="Guttersnipe", cost=['2', 'R'],
                    color_identity=['R'], card_type="Creature", sub_types="Goblin Shaman",
-                   abilities=[100026], set_id="M19", rarity="Uncommon", set_number=145,
+                   abilities=[100026], set_id="M19", rarity="Uncommon", collectible=True, set_number=145,
                    mtga_id=67970)
 HavocDevils = Card(name="havoc_devils", pretty_name="Havoc Devils", cost=['2', 'R', 'R'],
                    color_identity=['R'], card_type="Creature", sub_types="Devil",
-                   abilities=[14], set_id="M19", rarity="Common", set_number=146,
+                   abilities=[14], set_id="M19", rarity="Common", collectible=True, set_number=146,
                    mtga_id=67972)
 HostileMinotaur = Card(name="hostile_minotaur", pretty_name="Hostile Minotaur", cost=['3', 'R'],
                        color_identity=['R'], card_type="Creature", sub_types="Minotaur",
-                       abilities=[9], set_id="M19", rarity="Common", set_number=147,
+                       abilities=[9], set_id="M19", rarity="Common", collectible=True, set_number=147,
                        mtga_id=67974)
 InfernoHellion = Card(name="inferno_hellion", pretty_name="Inferno Hellion", cost=['3', 'R'],
                       color_identity=['R'], card_type="Creature", sub_types="Hellion",
-                      abilities=[14, 119198], set_id="M19", rarity="Uncommon", set_number=148,
+                      abilities=[14, 119198], set_id="M19", rarity="Uncommon", collectible=True, set_number=148,
                       mtga_id=67976)
 LathlissDragonQueen = Card(name="lathliss_dragon_queen", pretty_name="Lathliss, Dragon Queen", cost=['4', 'R', 'R'],
                            color_identity=['R'], card_type="Creature", sub_types="Dragon",
-                           abilities=[8, 119241, 119242], set_id="M19", rarity="Rare", set_number=149,
+                           abilities=[8, 119241, 119242], set_id="M19", rarity="Rare", collectible=True, set_number=149,
                            mtga_id=67978)
 LavaAxe = Card(name="lava_axe", pretty_name="Lava Axe", cost=['4', 'R'],
                color_identity=['R'], card_type="Sorcery", sub_types="",
-               abilities=[1118], set_id="M19", rarity="Common", set_number=150,
+               abilities=[1118], set_id="M19", rarity="Common", collectible=True, set_number=150,
                mtga_id=67980)
 LightningMare = Card(name="lightning_mare", pretty_name="Lightning Mare", cost=['R', 'R'],
                      color_identity=['R'], card_type="Creature", sub_types="Elemental Horse",
-                     abilities=[120287, 92274, 88126], set_id="M19", rarity="Uncommon", set_number=151,
+                     abilities=[120287, 92274, 88126], set_id="M19", rarity="Uncommon", collectible=True, set_number=151,
                      mtga_id=67982)
 LightningStrike = Card(name="lightning_strike", pretty_name="Lightning Strike", cost=['1', 'R'],
                        color_identity=['R'], card_type="Instant", sub_types="",
-                       abilities=[70361], set_id="M19", rarity="Uncommon", set_number=152,
+                       abilities=[70361], set_id="M19", rarity="Uncommon", collectible=True, set_number=152,
                        mtga_id=67984)
 OnakkeOgre = Card(name="onakke_ogre", pretty_name="Onakke Ogre", cost=['2', 'R'],
                   color_identity=['R'], card_type="Creature", sub_types="Ogre Warrior",
-                  abilities=[], set_id="M19", rarity="Common", set_number=153,
+                  abilities=[], set_id="M19", rarity="Common", collectible=True, set_number=153,
                   mtga_id=67986)
 SarkhanFireblood = Card(name="sarkhan_fireblood", pretty_name="Sarkhan, Fireblood", cost=['1', 'R', 'R'],
                         color_identity=['R'], card_type="Planeswalker", sub_types="Sarkhan",
-                        abilities=[119245, 119246, 119247], set_id="M19", rarity="Mythic Rare", set_number=154,
+                        abilities=[119245, 119246, 119247], set_id="M19", rarity="Mythic Rare", collectible=True, set_number=154,
                         mtga_id=67988)
 SarkhansUnsealing = Card(name="sarkhans_unsealing", pretty_name="Sarkhan's Unsealing", cost=['3', 'R'],
                          color_identity=['R'], card_type="Enchantment", sub_types="",
-                         abilities=[119249, 119251], set_id="M19", rarity="Rare", set_number=155,
+                         abilities=[119249, 119251], set_id="M19", rarity="Rare", collectible=True, set_number=155,
                          mtga_id=67990)
 Shock = Card(name="shock", pretty_name="Shock", cost=['R'],
              color_identity=['R'], card_type="Instant", sub_types="",
-             abilities=[86613], set_id="M19", rarity="Common", set_number=156,
+             abilities=[86613], set_id="M19", rarity="Common", collectible=True, set_number=156,
              mtga_id=67992)
 SiegebreakerGiant = Card(name="siegebreaker_giant", pretty_name="Siegebreaker Giant", cost=['3', 'R', 'R'],
                          color_identity=['R'], card_type="Creature", sub_types="Giant Warrior",
-                         abilities=[14, 119252], set_id="M19", rarity="Uncommon", set_number=157,
+                         abilities=[14, 119252], set_id="M19", rarity="Uncommon", collectible=True, set_number=157,
                          mtga_id=67994)
 Smelt = Card(name="smelt", pretty_name="Smelt", cost=['R'],
              color_identity=['R'], card_type="Instant", sub_types="",
-             abilities=[22564], set_id="M19", rarity="Common", set_number=158,
+             abilities=[22564], set_id="M19", rarity="Common", collectible=True, set_number=158,
              mtga_id=67996)
 SparktongueDragon = Card(name="sparktongue_dragon", pretty_name="Sparktongue Dragon", cost=['3', 'R', 'R'],
                          color_identity=['R'], card_type="Creature", sub_types="Dragon",
-                         abilities=[8, 119253], set_id="M19", rarity="Common", set_number=159,
+                         abilities=[8, 119253], set_id="M19", rarity="Common", collectible=True, set_number=159,
                          mtga_id=67998)
 SpitFlame = Card(name="spit_flame", pretty_name="Spit Flame", cost=['2', 'R'],
                  color_identity=['R'], card_type="Instant", sub_types="",
-                 abilities=[21773, 119254], set_id="M19", rarity="Rare", set_number=160,
+                 abilities=[21773, 119254], set_id="M19", rarity="Rare", collectible=True, set_number=160,
                  mtga_id=68000)
 SureStrike = Card(name="sure_strike", pretty_name="Sure Strike", cost=['1', 'R'],
                   color_identity=['R'], card_type="Instant", sub_types="",
-                  abilities=[1019], set_id="M19", rarity="Common", set_number=161,
+                  abilities=[1019], set_id="M19", rarity="Common", collectible=True, set_number=161,
                   mtga_id=68002)
 TectonicRift = Card(name="tectonic_rift", pretty_name="Tectonic Rift", cost=['3', 'R'],
                     color_identity=['R'], card_type="Sorcery", sub_types="",
-                    abilities=[1098], set_id="M19", rarity="Uncommon", set_number=162,
+                    abilities=[1098], set_id="M19", rarity="Uncommon", collectible=True, set_number=162,
                     mtga_id=68004)
 Thud = Card(name="thud", pretty_name="Thud", cost=['R'],
             color_identity=['R'], card_type="Sorcery", sub_types="",
-            abilities=[1275, 1276], set_id="M19", rarity="Uncommon", set_number=163,
+            abilities=[1275, 1276], set_id="M19", rarity="Uncommon", collectible=True, set_number=163,
             mtga_id=68006)
 TormentingVoice = Card(name="tormenting_voice", pretty_name="Tormenting Voice", cost=['1', 'R'],
                        color_identity=['R'], card_type="Sorcery", sub_types="",
-                       abilities=[87929, 23607], set_id="M19", rarity="Common", set_number=164,
+                       abilities=[87929, 23607], set_id="M19", rarity="Common", collectible=True, set_number=164,
                        mtga_id=68008)
 TrumpetBlast = Card(name="trumpet_blast", pretty_name="Trumpet Blast", cost=['2', 'R'],
                     color_identity=['R'], card_type="Instant", sub_types="",
-                    abilities=[11569], set_id="M19", rarity="Common", set_number=165,
+                    abilities=[11569], set_id="M19", rarity="Common", collectible=True, set_number=165,
                     mtga_id=68010)
 ViashinoPyromancer = Card(name="viashino_pyromancer", pretty_name="Viashino Pyromancer", cost=['1', 'R'],
                           color_identity=['R'], card_type="Creature", sub_types="Viashino Wizard",
-                          abilities=[119095], set_id="M19", rarity="Common", set_number=166,
+                          abilities=[119095], set_id="M19", rarity="Common", collectible=True, set_number=166,
                           mtga_id=68012)
 VolcanicDragon = Card(name="volcanic_dragon", pretty_name="Volcanic Dragon", cost=['4', 'R', 'R'],
                       color_identity=['R'], card_type="Creature", sub_types="Dragon",
-                      abilities=[8, 9], set_id="M19", rarity="Uncommon", set_number=167,
+                      abilities=[8, 9], set_id="M19", rarity="Uncommon", collectible=True, set_number=167,
                       mtga_id=68014)
 VolleyVeteran = Card(name="volley_veteran", pretty_name="Volley Veteran", cost=['3', 'R'],
                      color_identity=['R'], card_type="Creature", sub_types="Goblin Warrior",
-                     abilities=[119096], set_id="M19", rarity="Uncommon", set_number=168,
+                     abilities=[119096], set_id="M19", rarity="Uncommon", collectible=True, set_number=168,
                      mtga_id=68016)
 BlanchwoodArmor = Card(name="blanchwood_armor", pretty_name="Blanchwood Armor", cost=['2', 'G'],
                        color_identity=['G'], card_type="Enchantment", sub_types="Aura",
-                       abilities=[1027, 1438], set_id="M19", rarity="Uncommon", set_number=169,
+                       abilities=[1027, 1438], set_id="M19", rarity="Uncommon", collectible=True, set_number=169,
                        mtga_id=68018)
 BristlingBoar = Card(name="bristling_boar", pretty_name="Bristling Boar", cost=['3', 'G'],
                      color_identity=['G'], card_type="Creature", sub_types="Boar",
-                     abilities=[1026], set_id="M19", rarity="Common", set_number=170,
+                     abilities=[1026], set_id="M19", rarity="Common", collectible=True, set_number=170,
                      mtga_id=68020)
 CentaurCourser = Card(name="centaur_courser", pretty_name="Centaur Courser", cost=['2', 'G'],
                       color_identity=['G'], card_type="Creature", sub_types="Centaur Warrior",
-                      abilities=[], set_id="M19", rarity="Common", set_number=171,
+                      abilities=[], set_id="M19", rarity="Common", collectible=True, set_number=171,
                       mtga_id=68022)
 ColossalDreadmaw = Card(name="colossal_dreadmaw", pretty_name="Colossal Dreadmaw", cost=['4', 'G', 'G'],
                         color_identity=['G'], card_type="Creature", sub_types="Dinosaur",
-                        abilities=[14], set_id="M19", rarity="Common", set_number=172,
+                        abilities=[14], set_id="M19", rarity="Common", collectible=True, set_number=172,
                         mtga_id=68024)
 ColossalMajesty = Card(name="colossal_majesty", pretty_name="Colossal Majesty", cost=['2', 'G'],
                        color_identity=['G'], card_type="Enchantment", sub_types="",
-                       abilities=[119097], set_id="M19", rarity="Uncommon", set_number=173,
+                       abilities=[119097], set_id="M19", rarity="Uncommon", collectible=True, set_number=173,
                        mtga_id=68026)
 DaggerbackBasilisk = Card(name="daggerback_basilisk", pretty_name="Daggerback Basilisk", cost=['2', 'G'],
                           color_identity=['G'], card_type="Creature", sub_types="Basilisk",
-                          abilities=[1], set_id="M19", rarity="Common", set_number=174,
+                          abilities=[1], set_id="M19", rarity="Common", collectible=True, set_number=174,
                           mtga_id=68028)
 DeclareDominance = Card(name="declare_dominance", pretty_name="Declare Dominance", cost=['3', 'G', 'G'],
                         color_identity=['G'], card_type="Sorcery", sub_types="",
-                        abilities=[119098], set_id="M19", rarity="Uncommon", set_number=175,
+                        abilities=[119098], set_id="M19", rarity="Uncommon", collectible=True, set_number=175,
                         mtga_id=68030)
 DruidofHorns = Card(name="druid_of_horns", pretty_name="Druid of Horns", cost=['3', 'G'],
                     color_identity=['G'], card_type="Creature", sub_types="Human Druid",
-                    abilities=[119099], set_id="M19", rarity="Uncommon", set_number=176,
+                    abilities=[119099], set_id="M19", rarity="Uncommon", collectible=True, set_number=176,
                     mtga_id=68032)
 DruidoftheCowl = Card(name="druid_of_the_cowl", pretty_name="Druid of the Cowl", cost=['1', 'G'],
                       color_identity=['G'], card_type="Creature", sub_types="Elf Druid",
-                      abilities=[1005], set_id="M19", rarity="Common", set_number=177,
+                      abilities=[1005], set_id="M19", rarity="Common", collectible=True, set_number=177,
                       mtga_id=68034)
 DryadGreenseeker = Card(name="dryad_greenseeker", pretty_name="Dryad Greenseeker", cost=['1', 'G'],
                         color_identity=['G'], card_type="Creature", sub_types="Dryad",
-                        abilities=[119100], set_id="M19", rarity="Uncommon", set_number=178,
+                        abilities=[119100], set_id="M19", rarity="Uncommon", collectible=True, set_number=178,
                         mtga_id=68036)
 ElvishClancaller = Card(name="elvish_clancaller", pretty_name="Elvish Clancaller", cost=['G', 'G'],
                         color_identity=['G'], card_type="Creature", sub_types="Elf Druid",
-                        abilities=[119184, 119102], set_id="M19", rarity="Rare", set_number=179,
+                        abilities=[119184, 119102], set_id="M19", rarity="Rare", collectible=True, set_number=179,
                         mtga_id=68038)
 ElvishRejuvenator = Card(name="elvish_rejuvenator", pretty_name="Elvish Rejuvenator", cost=['2', 'G'],
                          color_identity=['G'], card_type="Creature", sub_types="Elf Druid",
-                         abilities=[119103], set_id="M19", rarity="Common", set_number=180,
+                         abilities=[119103], set_id="M19", rarity="Common", collectible=True, set_number=180,
                          mtga_id=68040)
 GhastbarkTwins = Card(name="ghastbark_twins", pretty_name="Ghastbark Twins", cost=['5', 'G', 'G'],
                       color_identity=['G'], card_type="Creature", sub_types="Treefolk",
-                      abilities=[14, 76869], set_id="M19", rarity="Uncommon", set_number=181,
+                      abilities=[14, 76869], set_id="M19", rarity="Uncommon", collectible=True, set_number=181,
                       mtga_id=68042)
 GhirapurGuide = Card(name="ghirapur_guide", pretty_name="Ghirapur Guide", cost=['2', 'G'],
                      color_identity=['G'], card_type="Creature", sub_types="Elf Scout",
-                     abilities=[103385], set_id="M19", rarity="Uncommon", set_number=182,
+                     abilities=[103385], set_id="M19", rarity="Uncommon", collectible=True, set_number=182,
                      mtga_id=68044)
 GiantSpider = Card(name="giant_spider", pretty_name="Giant Spider", cost=['3', 'G'],
                    color_identity=['G'], card_type="Creature", sub_types="Spider",
-                   abilities=[13], set_id="M19", rarity="Common", set_number=183,
+                   abilities=[13], set_id="M19", rarity="Common", collectible=True, set_number=183,
                    mtga_id=68046)
 GiftofParadise = Card(name="gift_of_paradise", pretty_name="Gift of Paradise", cost=['2', 'G'],
                       color_identity=['G'], card_type="Enchantment", sub_types="Aura",
-                      abilities=[1570, 1102, 61119], set_id="M19", rarity="Uncommon", set_number=184,
+                      abilities=[1570, 1102, 61119], set_id="M19", rarity="Uncommon", collectible=True, set_number=184,
                       mtga_id=68048)
 Gigantosaurus = Card(name="gigantosaurus", pretty_name="Gigantosaurus", cost=['G', 'G', 'G', 'G', 'G'],
                      color_identity=['G'], card_type="Creature", sub_types="Dinosaur",
-                     abilities=[], set_id="M19", rarity="Rare", set_number=185,
+                     abilities=[], set_id="M19", rarity="Rare", collectible=True, set_number=185,
                      mtga_id=68050)
 GoreclawTerrorofQalSisma = Card(name="goreclaw_terror_of_qal_sisma", pretty_name="Goreclaw, Terror of Qal Sisma", cost=['3', 'G'],
                                 color_identity=['G'], card_type="Creature", sub_types="Bear",
-                                abilities=[119105, 119106], set_id="M19", rarity="Rare", set_number=186,
+                                abilities=[119105, 119106], set_id="M19", rarity="Rare", collectible=True, set_number=186,
                                 mtga_id=68052)
 GreenwoodSentinel = Card(name="greenwood_sentinel", pretty_name="Greenwood Sentinel", cost=['1', 'G'],
                          color_identity=['G'], card_type="Creature", sub_types="Elf Scout",
-                         abilities=[15], set_id="M19", rarity="Common", set_number=187,
+                         abilities=[15], set_id="M19", rarity="Common", collectible=True, set_number=187,
                          mtga_id=68054)
 HighlandGame = Card(name="highland_game", pretty_name="Highland Game", cost=['1', 'G'],
                     color_identity=['G'], card_type="Creature", sub_types="Elk",
-                    abilities=[93266], set_id="M19", rarity="Common", set_number=188,
+                    abilities=[93266], set_id="M19", rarity="Common", collectible=True, set_number=188,
                     mtga_id=68056)
 HungeringHydra = Card(name="hungering_hydra", pretty_name="Hungering Hydra", cost=['X', 'G'],
                       color_identity=['G'], card_type="Creature", sub_types="Hydra",
-                      abilities=[76885, 1026, 119108], set_id="M19", rarity="Rare", set_number=189,
+                      abilities=[76885, 1026, 119108], set_id="M19", rarity="Rare", collectible=True, set_number=189,
                       mtga_id=68058)
 Naturalize = Card(name="naturalize", pretty_name="Naturalize", cost=['1', 'G'],
                   color_identity=['G'], card_type="Instant", sub_types="",
-                  abilities=[120290], set_id="M19", rarity="Common", set_number=190,
+                  abilities=[120290], set_id="M19", rarity="Common", collectible=True, set_number=190,
                   mtga_id=68060)
 Oakenform = Card(name="oakenform", pretty_name="Oakenform", cost=['2', 'G'],
                  color_identity=['G'], card_type="Enchantment", sub_types="Aura",
-                 abilities=[1027, 1318], set_id="M19", rarity="Common", set_number=191,
+                 abilities=[1027, 1318], set_id="M19", rarity="Common", collectible=True, set_number=191,
                  mtga_id=68062)
 PelakkaWurm = Card(name="pelakka_wurm", pretty_name="Pelakka Wurm", cost=['4', 'G', 'G', 'G'],
                    color_identity=['G'], card_type="Creature", sub_types="Wurm",
-                   abilities=[14, 17518, 17519], set_id="M19", rarity="Rare", set_number=192,
+                   abilities=[14, 17518, 17519], set_id="M19", rarity="Rare", collectible=True, set_number=192,
                    mtga_id=68064)
 Plummet = Card(name="plummet", pretty_name="Plummet", cost=['1', 'G'],
                color_identity=['G'], card_type="Instant", sub_types="",
-               abilities=[29759], set_id="M19", rarity="Common", set_number=193,
+               abilities=[29759], set_id="M19", rarity="Common", collectible=True, set_number=193,
                mtga_id=68066)
 ProdigiousGrowth = Card(name="prodigious_growth", pretty_name="Prodigious Growth", cost=['4', 'G', 'G'],
                         color_identity=['G'], card_type="Enchantment", sub_types="Aura",
-                        abilities=[1027, 119110], set_id="M19", rarity="Rare", set_number=194,
+                        abilities=[1027, 119110], set_id="M19", rarity="Rare", collectible=True, set_number=194,
                         mtga_id=68068)
 RabidBite = Card(name="rabid_bite", pretty_name="Rabid Bite", cost=['1', 'G'],
                  color_identity=['G'], card_type="Sorcery", sub_types="",
-                 abilities=[61234], set_id="M19", rarity="Common", set_number=195,
+                 abilities=[61234], set_id="M19", rarity="Common", collectible=True, set_number=195,
                  mtga_id=68070)
 ReclamationSage = Card(name="reclamation_sage", pretty_name="Reclamation Sage", cost=['2', 'G'],
                        color_identity=['G'], card_type="Creature", sub_types="Elf Shaman",
-                       abilities=[101429], set_id="M19", rarity="Uncommon", set_number=196,
+                       abilities=[101429], set_id="M19", rarity="Uncommon", collectible=True, set_number=196,
                        mtga_id=68072)
 Recollect = Card(name="recollect", pretty_name="Recollect", cost=['2', 'G'],
                  color_identity=['G'], card_type="Sorcery", sub_types="",
-                 abilities=[6082], set_id="M19", rarity="Uncommon", set_number=197,
+                 abilities=[6082], set_id="M19", rarity="Uncommon", collectible=True, set_number=197,
                  mtga_id=68074)
 RhoxOracle = Card(name="rhox_oracle", pretty_name="Rhox Oracle", cost=['4', 'G'],
                   color_identity=['G'], card_type="Creature", sub_types="Rhino Monk",
-                  abilities=[86788], set_id="M19", rarity="Common", set_number=198,
+                  abilities=[86788], set_id="M19", rarity="Common", collectible=True, set_number=198,
                   mtga_id=68076)
 RootSnare = Card(name="root_snare", pretty_name="Root Snare", cost=['1', 'G'],
                  color_identity=['G'], card_type="Instant", sub_types="",
-                 abilities=[27746], set_id="M19", rarity="Common", set_number=199,
+                 abilities=[27746], set_id="M19", rarity="Common", collectible=True, set_number=199,
                  mtga_id=68078)
 RunicArmasaur = Card(name="runic_armasaur", pretty_name="Runic Armasaur", cost=['1', 'G', 'G'],
                      color_identity=['G'], card_type="Creature", sub_types="Dinosaur",
-                     abilities=[119111], set_id="M19", rarity="Rare", set_number=200,
+                     abilities=[119111], set_id="M19", rarity="Rare", collectible=True, set_number=200,
                      mtga_id=68080)
 Scapeshift = Card(name="scapeshift", pretty_name="Scapeshift", cost=['2', 'G', 'G'],
                   color_identity=['G'], card_type="Sorcery", sub_types="",
-                  abilities=[15392], set_id="M19", rarity="Mythic Rare", set_number=201,
+                  abilities=[15392], set_id="M19", rarity="Mythic Rare", collectible=True, set_number=201,
                   mtga_id=68082)
 TalonsofWildwood = Card(name="talons_of_wildwood", pretty_name="Talons of Wildwood", cost=['1', 'G'],
                         color_identity=['G'], card_type="Enchantment", sub_types="Aura",
-                        abilities=[1027, 15269, 119112], set_id="M19", rarity="Common", set_number=202,
+                        abilities=[1027, 15269, 119112], set_id="M19", rarity="Common", collectible=True, set_number=202,
                         mtga_id=68084)
 ThornLieutenant = Card(name="thorn_lieutenant", pretty_name="Thorn Lieutenant", cost=['1', 'G'],
                        color_identity=['G'], card_type="Creature", sub_types="Elf Warrior",
-                       abilities=[119113, 102965], set_id="M19", rarity="Rare", set_number=203,
+                       abilities=[119113, 102965], set_id="M19", rarity="Rare", collectible=True, set_number=203,
                        mtga_id=68086)
 ThornhideWolves = Card(name="thornhide_wolves", pretty_name="Thornhide Wolves", cost=['4', 'G'],
                        color_identity=['G'], card_type="Creature", sub_types="Wolf",
-                       abilities=[], set_id="M19", rarity="Common", set_number=204,
+                       abilities=[], set_id="M19", rarity="Common", collectible=True, set_number=204,
                        mtga_id=68088)
 TitanicGrowth = Card(name="titanic_growth", pretty_name="Titanic Growth", cost=['1', 'G'],
                      color_identity=['G'], card_type="Instant", sub_types="",
-                     abilities=[1031], set_id="M19", rarity="Common", set_number=205,
+                     abilities=[1031], set_id="M19", rarity="Common", collectible=True, set_number=205,
                      mtga_id=68090)
 VigilantBaloth = Card(name="vigilant_baloth", pretty_name="Vigilant Baloth", cost=['3', 'G', 'G'],
                       color_identity=['G'], card_type="Creature", sub_types="Beast",
-                      abilities=[15], set_id="M19", rarity="Uncommon", set_number=206,
+                      abilities=[15], set_id="M19", rarity="Uncommon", collectible=True, set_number=206,
                       mtga_id=68092)
 VineMare = Card(name="vine_mare", pretty_name="Vine Mare", cost=['2', 'G', 'G'],
                 color_identity=['G'], card_type="Creature", sub_types="Elemental Horse",
-                abilities=[10, 97144], set_id="M19", rarity="Uncommon", set_number=207,
+                abilities=[10, 97144], set_id="M19", rarity="Uncommon", collectible=True, set_number=207,
                 mtga_id=68094)
 VivienReid = Card(name="vivien_reid", pretty_name="Vivien Reid", cost=['3', 'G', 'G'],
                   color_identity=['G'], card_type="Planeswalker", sub_types="Vivien",
-                  abilities=[119115, 119116, 119147], set_id="M19", rarity="Mythic Rare", set_number=208,
+                  abilities=[119115, 119116, 119147], set_id="M19", rarity="Mythic Rare", collectible=True, set_number=208,
                   mtga_id=68096)
 ViviensInvocation = Card(name="viviens_invocation", pretty_name="Vivien's Invocation", cost=['5', 'G', 'G'],
                          color_identity=['G'], card_type="Sorcery", sub_types="",
-                         abilities=[119149], set_id="M19", rarity="Rare", set_number=209,
+                         abilities=[119149], set_id="M19", rarity="Rare", collectible=True, set_number=209,
                          mtga_id=68098)
 WallofVines = Card(name="wall_of_vines", pretty_name="Wall of Vines", cost=['G'],
                    color_identity=['G'], card_type="Creature", sub_types="Plant Wall",
-                   abilities=[2, 13], set_id="M19", rarity="Common", set_number=210,
+                   abilities=[2, 13], set_id="M19", rarity="Common", collectible=True, set_number=210,
                    mtga_id=68100)
 AerialEngineer = Card(name="aerial_engineer", pretty_name="Aerial Engineer", cost=['2', 'W', 'U'],
                       color_identity=['W', 'U'], card_type="Creature", sub_types="Human Artificer",
-                      abilities=[119152], set_id="M19", rarity="Uncommon", set_number=211,
+                      abilities=[119152], set_id="M19", rarity="Uncommon", collectible=True, set_number=211,
                       mtga_id=68102)
 ArcadestheStrategist = Card(name="arcades_the_strategist", pretty_name="Arcades, the Strategist", cost=['1', 'G', 'W', 'U'],
                             color_identity=['W', 'U', 'G'], card_type="Creature", sub_types="Elder Dragon",
-                            abilities=[8, 15, 119118, 119119], set_id="M19", rarity="Mythic Rare", set_number=212,
+                            abilities=[8, 15, 119118, 119119], set_id="M19", rarity="Mythic Rare", collectible=True, set_number=212,
                             mtga_id=68104)
 BrawlBashOgre = Card(name="brawlbash_ogre", pretty_name="Brawl-Bash Ogre", cost=['2', 'B', 'R'],
                      color_identity=['B', 'R'], card_type="Creature", sub_types="Ogre Warrior",
-                     abilities=[142, 119120], set_id="M19", rarity="Uncommon", set_number=213,
+                     abilities=[142, 119120], set_id="M19", rarity="Uncommon", collectible=True, set_number=213,
                      mtga_id=68106)
 ChromiumtheMutable = Card(name="chromium_the_mutable", pretty_name="Chromium, the Mutable", cost=['4', 'W', 'U', 'B'],
                           color_identity=['W', 'U', 'B'], card_type="Creature", sub_types="Elder Dragon",
-                          abilities=[7, 120287, 8, 119171], set_id="M19", rarity="Mythic Rare", set_number=214,
+                          abilities=[7, 120287, 8, 119171], set_id="M19", rarity="Mythic Rare", collectible=True, set_number=214,
                           mtga_id=68108)
 DraconicDisciple = Card(name="draconic_disciple", pretty_name="Draconic Disciple", cost=['1', 'R', 'G'],
                         color_identity=['R', 'G'], card_type="Creature", sub_types="Human Shaman",
-                        abilities=[1055, 119121], set_id="M19", rarity="Uncommon", set_number=215,
+                        abilities=[1055, 119121], set_id="M19", rarity="Uncommon", collectible=True, set_number=215,
                         mtga_id=68110)
 EnigmaDrake = Card(name="enigma_drake", pretty_name="Enigma Drake", cost=['1', 'U', 'R'],
                    color_identity=['U', 'R'], card_type="Creature", sub_types="Drake",
-                   abilities=[8, 87971], set_id="M19", rarity="Uncommon", set_number=216,
+                   abilities=[8, 87971], set_id="M19", rarity="Uncommon", collectible=True, set_number=216,
                    mtga_id=68112)
 HeroicReinforcements = Card(name="heroic_reinforcements", pretty_name="Heroic Reinforcements", cost=['2', 'R', 'W'],
                             color_identity=['R', 'W'], card_type="Sorcery", sub_types="",
-                            abilities=[119122], set_id="M19", rarity="Uncommon", set_number=217,
+                            abilities=[119122], set_id="M19", rarity="Uncommon", collectible=True, set_number=217,
                             mtga_id=68114)
 NicolBolastheRavager = Card(name="nicol_bolas_the_ravager", pretty_name="Nicol Bolas, the Ravager", cost=['1', 'U', 'B', 'R'],
                             color_identity=['U', 'B', 'R'], card_type="Creature", sub_types="Elder Dragon",
-                            abilities=[8, 92927, 119123], set_id="M19", rarity="Mythic Rare", set_number=218,
+                            abilities=[8, 92927, 119123], set_id="M19", rarity="Mythic Rare", collectible=True, set_number=218,
                             mtga_id=68116)
 NicolBolastheArisen = Card(name="nicol_bolas_the_arisen", pretty_name="Nicol Bolas, the Arisen", cost=[],
                            color_identity=['U', 'B', 'R'], card_type="Planeswalker", sub_types="Bolas",
-                           abilities=[119183, 119124, 119125, 119126], set_id="M19", rarity="Mythic Rare", set_number=218,
+                           abilities=[119183, 119124, 119125, 119126], set_id="M19", rarity="Mythic Rare", collectible=False, set_number=218,
                            mtga_id=68118)
 PalladiaMorstheRuiner = Card(name="palladiamors_the_ruiner", pretty_name="Palladia-Mors, the Ruiner", cost=['3', 'R', 'G', 'W'],
                              color_identity=['W', 'R', 'G'], card_type="Creature", sub_types="Elder Dragon",
-                             abilities=[8, 15, 14, 119127], set_id="M19", rarity="Mythic Rare", set_number=219,
+                             abilities=[8, 15, 14, 119127], set_id="M19", rarity="Mythic Rare", collectible=True, set_number=219,
                              mtga_id=68120)
 PoisonTipArcher = Card(name="poisontip_archer", pretty_name="Poison-Tip Archer", cost=['2', 'B', 'G'],
                        color_identity=['B', 'G'], card_type="Creature", sub_types="Elf Archer",
-                       abilities=[13, 1, 119128], set_id="M19", rarity="Uncommon", set_number=220,
+                       abilities=[13, 1, 119128], set_id="M19", rarity="Uncommon", collectible=True, set_number=220,
                        mtga_id=68122)
 PsychicSymbiont = Card(name="psychic_symbiont", pretty_name="Psychic Symbiont", cost=['4', 'U', 'B'],
                        color_identity=['U', 'B'], card_type="Creature", sub_types="Nightmare Horror",
-                       abilities=[8, 119189], set_id="M19", rarity="Uncommon", set_number=221,
+                       abilities=[8, 119189], set_id="M19", rarity="Uncommon", collectible=True, set_number=221,
                        mtga_id=68124)
 RegalBloodlord = Card(name="regal_bloodlord", pretty_name="Regal Bloodlord", cost=['3', 'W', 'B'],
                       color_identity=['W', 'B'], card_type="Creature", sub_types="Vampire Soldier",
-                      abilities=[8, 119129], set_id="M19", rarity="Uncommon", set_number=222,
+                      abilities=[8, 119129], set_id="M19", rarity="Uncommon", collectible=True, set_number=222,
                       mtga_id=68126)
 SatyrEnchanter = Card(name="satyr_enchanter", pretty_name="Satyr Enchanter", cost=['1', 'G', 'W'],
                       color_identity=['G', 'W'], card_type="Creature", sub_types="Satyr Druid",
-                      abilities=[13572], set_id="M19", rarity="Uncommon", set_number=223,
+                      abilities=[13572], set_id="M19", rarity="Uncommon", collectible=True, set_number=223,
                       mtga_id=68128)
 SkyriderPatrol = Card(name="skyrider_patrol", pretty_name="Skyrider Patrol", cost=['2', 'G', 'U'],
                       color_identity=['G', 'U'], card_type="Creature", sub_types="Elf Scout",
-                      abilities=[8, 119130], set_id="M19", rarity="Uncommon", set_number=224,
+                      abilities=[8, 119130], set_id="M19", rarity="Uncommon", collectible=True, set_number=224,
                       mtga_id=68130)
 VaevictisAsmaditheDire = Card(name="vaevictis_asmadi_the_dire", pretty_name="Vaevictis Asmadi, the Dire", cost=['3', 'B', 'R', 'G'],
                               color_identity=['B', 'R', 'G'], card_type="Creature", sub_types="Elder Dragon",
-                              abilities=[8, 119131], set_id="M19", rarity="Mythic Rare", set_number=225,
+                              abilities=[8, 119131], set_id="M19", rarity="Mythic Rare", collectible=True, set_number=225,
                               mtga_id=68132)
 AmuletofSafekeeping = Card(name="amulet_of_safekeeping", pretty_name="Amulet of Safekeeping", cost=['2'],
                            color_identity=[], card_type="Artifact", sub_types="",
-                           abilities=[119132, 119193], set_id="M19", rarity="Rare", set_number=226,
+                           abilities=[119132, 119193], set_id="M19", rarity="Rare", collectible=True, set_number=226,
                            mtga_id=68134)
 ArcaneEncyclopedia = Card(name="arcane_encyclopedia", pretty_name="Arcane Encyclopedia", cost=['3'],
                           color_identity=[], card_type="Artifact", sub_types="",
-                          abilities=[119134], set_id="M19", rarity="Uncommon", set_number=227,
+                          abilities=[119134], set_id="M19", rarity="Uncommon", collectible=True, set_number=227,
                           mtga_id=68136)
 ChaosWand = Card(name="chaos_wand", pretty_name="Chaos Wand", cost=['3'],
                  color_identity=[], card_type="Artifact", sub_types="",
-                 abilities=[119196], set_id="M19", rarity="Rare", set_number=228,
+                 abilities=[119196], set_id="M19", rarity="Rare", collectible=True, set_number=228,
                  mtga_id=68138)
 CrucibleofWorlds = Card(name="crucible_of_worlds", pretty_name="Crucible of Worlds", cost=['3'],
                         color_identity=[], card_type="Artifact", sub_types="",
-                        abilities=[6832], set_id="M19", rarity="Mythic Rare", set_number=229,
+                        abilities=[6832], set_id="M19", rarity="Mythic Rare", collectible=True, set_number=229,
                         mtga_id=68140)
 DesecratedTomb = Card(name="desecrated_tomb", pretty_name="Desecrated Tomb", cost=['3'],
                       color_identity=[], card_type="Artifact", sub_types="",
-                      abilities=[119135], set_id="M19", rarity="Rare", set_number=230,
+                      abilities=[119135], set_id="M19", rarity="Rare", collectible=True, set_number=230,
                       mtga_id=68142)
 DiamondMare = Card(name="diamond_mare", pretty_name="Diamond Mare", cost=['2'],
                    color_identity=[], card_type="Artifact Creature", sub_types="Horse",
-                   abilities=[88237, 62127], set_id="M19", rarity="Uncommon", set_number=231,
+                   abilities=[88237, 62127], set_id="M19", rarity="Uncommon", collectible=True, set_number=231,
                    mtga_id=68144)
 DragonsHoard = Card(name="dragons_hoard", pretty_name="Dragon's Hoard", cost=['3'],
                     color_identity=[], card_type="Artifact", sub_types="",
-                    abilities=[119202, 119138, 1055], set_id="M19", rarity="Rare", set_number=232,
+                    abilities=[119202, 119138, 1055], set_id="M19", rarity="Rare", collectible=True, set_number=232,
                     mtga_id=68146)
 ExplosiveApparatus = Card(name="explosive_apparatus", pretty_name="Explosive Apparatus", cost=['1'],
                           color_identity=[], card_type="Artifact", sub_types="",
-                          abilities=[103005], set_id="M19", rarity="Common", set_number=233,
+                          abilities=[103005], set_id="M19", rarity="Common", collectible=True, set_number=233,
                           mtga_id=68148)
 FieldCreeper = Card(name="field_creeper", pretty_name="Field Creeper", cost=['2'],
                     color_identity=[], card_type="Artifact Creature", sub_types="Scarecrow",
-                    abilities=[], set_id="M19", rarity="Common", set_number=234,
+                    abilities=[], set_id="M19", rarity="Common", collectible=True, set_number=234,
                     mtga_id=68150)
 FountainofRenewal = Card(name="fountain_of_renewal", pretty_name="Fountain of Renewal", cost=['1'],
                          color_identity=[], card_type="Artifact", sub_types="",
-                         abilities=[21074, 119139], set_id="M19", rarity="Uncommon", set_number=235,
+                         abilities=[21074, 119139], set_id="M19", rarity="Uncommon", collectible=True, set_number=235,
                          mtga_id=68152)
 GargoyleSentinel = Card(name="gargoyle_sentinel", pretty_name="Gargoyle Sentinel", cost=['3'],
                         color_identity=[], card_type="Artifact Creature", sub_types="Gargoyle",
-                        abilities=[2, 92921], set_id="M19", rarity="Uncommon", set_number=236,
+                        abilities=[2, 92921], set_id="M19", rarity="Uncommon", collectible=True, set_number=236,
                         mtga_id=68154)
 GearsmithGuardian = Card(name="gearsmith_guardian", pretty_name="Gearsmith Guardian", cost=['5'],
                          color_identity=[], card_type="Artifact Creature", sub_types="Construct",
-                         abilities=[119140], set_id="M19", rarity="Common", set_number=237,
+                         abilities=[119140], set_id="M19", rarity="Common", collectible=True, set_number=237,
                          mtga_id=68156)
 MagistratesScepter = Card(name="magistrates_scepter", pretty_name="Magistrate's Scepter", cost=['3'],
                           color_identity=[], card_type="Artifact", sub_types="",
-                          abilities=[94489, 94490], set_id="M19", rarity="Rare", set_number=238,
+                          abilities=[94489, 94490], set_id="M19", rarity="Rare", collectible=True, set_number=238,
                           mtga_id=68158)
 Manalith = Card(name="manalith", pretty_name="Manalith", cost=['3'],
                 color_identity=[], card_type="Artifact", sub_types="",
-                abilities=[1055], set_id="M19", rarity="Common", set_number=239,
+                abilities=[1055], set_id="M19", rarity="Common", collectible=True, set_number=239,
                 mtga_id=68160)
 MaraudersAxe = Card(name="marauders_axe", pretty_name="Marauder's Axe", cost=['2'],
                     color_identity=[], card_type="Artifact", sub_types="Equipment",
-                    abilities=[4712, 1319], set_id="M19", rarity="Common", set_number=240,
+                    abilities=[4712, 1319], set_id="M19", rarity="Common", collectible=True, set_number=240,
                     mtga_id=68162)
 MeteorGolem = Card(name="meteor_golem", pretty_name="Meteor Golem", cost=['7'],
                    color_identity=[], card_type="Artifact Creature", sub_types="Golem",
-                   abilities=[119141], set_id="M19", rarity="Uncommon", set_number=241,
+                   abilities=[119141], set_id="M19", rarity="Uncommon", collectible=True, set_number=241,
                    mtga_id=68164)
 Millstone = Card(name="millstone", pretty_name="Millstone", cost=['2'],
                  color_identity=[], card_type="Artifact", sub_types="",
-                 abilities=[1588], set_id="M19", rarity="Uncommon", set_number=242,
+                 abilities=[1588], set_id="M19", rarity="Uncommon", collectible=True, set_number=242,
                  mtga_id=68166)
 RoguesGloves = Card(name="rogues_gloves", pretty_name="Rogue's Gloves", cost=['2'],
                     color_identity=[], card_type="Artifact", sub_types="Equipment",
-                    abilities=[7642, 1319], set_id="M19", rarity="Uncommon", set_number=243,
+                    abilities=[7642, 1319], set_id="M19", rarity="Uncommon", collectible=True, set_number=243,
                     mtga_id=68168)
 SigiledSwordofValeron = Card(name="sigiled_sword_of_valeron", pretty_name="Sigiled Sword of Valeron", cost=['3'],
                              color_identity=[], card_type="Artifact", sub_types="Equipment",
-                             abilities=[119142, 119143, 1156], set_id="M19", rarity="Rare", set_number=244,
+                             abilities=[119142, 119143, 1156], set_id="M19", rarity="Rare", collectible=True, set_number=244,
                              mtga_id=68170)
 Skyscanner = Card(name="skyscanner", pretty_name="Skyscanner", cost=['3'],
                   color_identity=[], card_type="Artifact Creature", sub_types="Thopter",
-                  abilities=[8, 86788], set_id="M19", rarity="Common", set_number=245,
+                  abilities=[8, 86788], set_id="M19", rarity="Common", collectible=True, set_number=245,
                   mtga_id=68172)
 SuspiciousBookcase = Card(name="suspicious_bookcase", pretty_name="Suspicious Bookcase", cost=['2'],
                           color_identity=[], card_type="Artifact Creature", sub_types="Wall",
-                          abilities=[2, 119144], set_id="M19", rarity="Uncommon", set_number=246,
+                          abilities=[2, 119144], set_id="M19", rarity="Uncommon", collectible=True, set_number=246,
                           mtga_id=68174)
 TransmogrifyingWand = Card(name="transmogrifying_wand", pretty_name="Transmogrifying Wand", cost=['3'],
                            color_identity=[], card_type="Artifact", sub_types="",
-                           abilities=[93150, 119145], set_id="M19", rarity="Rare", set_number=247,
+                           abilities=[93150, 119145], set_id="M19", rarity="Rare", collectible=True, set_number=247,
                            mtga_id=68176)
 CinderBarrens = Card(name="cinder_barrens", pretty_name="Cinder Barrens", cost=[],
                      color_identity=['B', 'R'], card_type="Land", sub_types="",
-                     abilities=[76735, 1211], set_id="M19", rarity="Common", set_number=248,
+                     abilities=[76735, 1211], set_id="M19", rarity="Common", collectible=True, set_number=248,
                      mtga_id=68178)
 DetectionTower = Card(name="detection_tower", pretty_name="Detection Tower", cost=[],
                       color_identity=[], card_type="Land", sub_types="",
-                      abilities=[1152, 119211], set_id="M19", rarity="Rare", set_number=249,
+                      abilities=[1152, 119211], set_id="M19", rarity="Rare", collectible=True, set_number=249,
                       mtga_id=68180)
 ForsakenSanctuary = Card(name="forsaken_sanctuary", pretty_name="Forsaken Sanctuary", cost=[],
                          color_identity=['W', 'B'], card_type="Land", sub_types="",
-                         abilities=[76735, 18472], set_id="M19", rarity="Common", set_number=250,
+                         abilities=[76735, 18472], set_id="M19", rarity="Common", collectible=True, set_number=250,
                          mtga_id=68182)
 FoulOrchard = Card(name="foul_orchard", pretty_name="Foul Orchard", cost=[],
                    color_identity=['B', 'G'], card_type="Land", sub_types="",
-                   abilities=[76735, 4407], set_id="M19", rarity="Common", set_number=251,
+                   abilities=[76735, 4407], set_id="M19", rarity="Common", collectible=True, set_number=251,
                    mtga_id=68184)
 HighlandLake = Card(name="highland_lake", pretty_name="Highland Lake", cost=[],
                     color_identity=['U', 'R'], card_type="Land", sub_types="",
-                    abilities=[76735, 1039], set_id="M19", rarity="Common", set_number=252,
+                    abilities=[76735, 1039], set_id="M19", rarity="Common", collectible=True, set_number=252,
                     mtga_id=68186)
 MeanderingRiver = Card(name="meandering_river", pretty_name="Meandering River", cost=[],
                        color_identity=['W', 'U'], card_type="Land", sub_types="",
-                       abilities=[76735, 1209], set_id="M19", rarity="Common", set_number=253,
+                       abilities=[76735, 1209], set_id="M19", rarity="Common", collectible=True, set_number=253,
                        mtga_id=68188)
 ReliquaryTower = Card(name="reliquary_tower", pretty_name="Reliquary Tower", cost=[],
                       color_identity=[], card_type="Land", sub_types="",
-                      abilities=[1640, 1152], set_id="M19", rarity="Uncommon", set_number=254,
+                      abilities=[1640, 1152], set_id="M19", rarity="Uncommon", collectible=True, set_number=254,
                       mtga_id=68190)
 RuptureSpire = Card(name="rupture_spire", pretty_name="Rupture Spire", cost=[],
                     color_identity=[], card_type="Land", sub_types="",
-                    abilities=[76735, 3625, 1055], set_id="M19", rarity="Uncommon", set_number=255,
+                    abilities=[76735, 3625, 1055], set_id="M19", rarity="Uncommon", collectible=True, set_number=255,
                     mtga_id=68192)
 StoneQuarry = Card(name="stone_quarry", pretty_name="Stone Quarry", cost=[],
                    color_identity=['R', 'W'], card_type="Land", sub_types="",
-                   abilities=[76735, 4247], set_id="M19", rarity="Common", set_number=256,
+                   abilities=[76735, 4247], set_id="M19", rarity="Common", collectible=True, set_number=256,
                    mtga_id=68194)
 SubmergedBoneyard = Card(name="submerged_boneyard", pretty_name="Submerged Boneyard", cost=[],
                          color_identity=['U', 'B'], card_type="Land", sub_types="",
-                         abilities=[76735, 1167], set_id="M19", rarity="Common", set_number=257,
+                         abilities=[76735, 1167], set_id="M19", rarity="Common", collectible=True, set_number=257,
                          mtga_id=68196)
 TimberGorge = Card(name="timber_gorge", pretty_name="Timber Gorge", cost=[],
                    color_identity=['R', 'G'], card_type="Land", sub_types="",
-                   abilities=[76735, 1131], set_id="M19", rarity="Common", set_number=258,
+                   abilities=[76735, 1131], set_id="M19", rarity="Common", collectible=True, set_number=258,
                    mtga_id=68198)
 TranquilExpanse = Card(name="tranquil_expanse", pretty_name="Tranquil Expanse", cost=[],
                        color_identity=['G', 'W'], card_type="Land", sub_types="",
-                       abilities=[76735, 1203], set_id="M19", rarity="Common", set_number=259,
+                       abilities=[76735, 1203], set_id="M19", rarity="Common", collectible=True, set_number=259,
                        mtga_id=68200)
 WoodlandStream = Card(name="woodland_stream", pretty_name="Woodland Stream", cost=[],
                       color_identity=['G', 'U'], card_type="Land", sub_types="",
-                      abilities=[76735, 18504], set_id="M19", rarity="Common", set_number=260,
+                      abilities=[76735, 18504], set_id="M19", rarity="Common", collectible=True, set_number=260,
                       mtga_id=68202)
 Plains = Card(name="plains", pretty_name="Plains", cost=[],
               color_identity=['W'], card_type="Land", sub_types="Plains",
-              abilities=[], set_id="M19", rarity="Basic", set_number=261,
+              abilities=[], set_id="M19", rarity="Basic", collectible=True, set_number=261,
               mtga_id=68204)
 Plains2 = Card(name="plains", pretty_name="Plains", cost=[],
                color_identity=['W'], card_type="Land", sub_types="Plains",
-               abilities=[], set_id="M19", rarity="Basic", set_number=262,
+               abilities=[], set_id="M19", rarity="Basic", collectible=True, set_number=262,
                mtga_id=68206)
 Plains3 = Card(name="plains", pretty_name="Plains", cost=[],
                color_identity=['W'], card_type="Land", sub_types="Plains",
-               abilities=[], set_id="M19", rarity="Basic", set_number=263,
+               abilities=[], set_id="M19", rarity="Basic", collectible=True, set_number=263,
                mtga_id=68208)
 Plains4 = Card(name="plains", pretty_name="Plains", cost=[],
                color_identity=['W'], card_type="Land", sub_types="Plains",
-               abilities=[], set_id="M19", rarity="Basic", set_number=264,
+               abilities=[], set_id="M19", rarity="Basic", collectible=True, set_number=264,
                mtga_id=68210)
 Island = Card(name="island", pretty_name="Island", cost=[],
               color_identity=['U'], card_type="Land", sub_types="Island",
-              abilities=[], set_id="M19", rarity="Basic", set_number=265,
+              abilities=[], set_id="M19", rarity="Basic", collectible=True, set_number=265,
               mtga_id=68212)
 Island2 = Card(name="island", pretty_name="Island", cost=[],
                color_identity=['U'], card_type="Land", sub_types="Island",
-               abilities=[], set_id="M19", rarity="Basic", set_number=266,
+               abilities=[], set_id="M19", rarity="Basic", collectible=True, set_number=266,
                mtga_id=68214)
 Island3 = Card(name="island", pretty_name="Island", cost=[],
                color_identity=['U'], card_type="Land", sub_types="Island",
-               abilities=[], set_id="M19", rarity="Basic", set_number=267,
+               abilities=[], set_id="M19", rarity="Basic", collectible=True, set_number=267,
                mtga_id=68216)
 Island4 = Card(name="island", pretty_name="Island", cost=[],
                color_identity=['U'], card_type="Land", sub_types="Island",
-               abilities=[], set_id="M19", rarity="Basic", set_number=268,
+               abilities=[], set_id="M19", rarity="Basic", collectible=True, set_number=268,
                mtga_id=68218)
 Swamp = Card(name="swamp", pretty_name="Swamp", cost=[],
              color_identity=['B'], card_type="Land", sub_types="Swamp",
-             abilities=[], set_id="M19", rarity="Basic", set_number=269,
+             abilities=[], set_id="M19", rarity="Basic", collectible=True, set_number=269,
              mtga_id=68220)
 Swamp2 = Card(name="swamp", pretty_name="Swamp", cost=[],
               color_identity=['B'], card_type="Land", sub_types="Swamp",
-              abilities=[], set_id="M19", rarity="Basic", set_number=270,
+              abilities=[], set_id="M19", rarity="Basic", collectible=True, set_number=270,
               mtga_id=68222)
 Swamp3 = Card(name="swamp", pretty_name="Swamp", cost=[],
               color_identity=['B'], card_type="Land", sub_types="Swamp",
-              abilities=[], set_id="M19", rarity="Basic", set_number=271,
+              abilities=[], set_id="M19", rarity="Basic", collectible=True, set_number=271,
               mtga_id=68224)
 Swamp4 = Card(name="swamp", pretty_name="Swamp", cost=[],
               color_identity=['B'], card_type="Land", sub_types="Swamp",
-              abilities=[], set_id="M19", rarity="Basic", set_number=272,
+              abilities=[], set_id="M19", rarity="Basic", collectible=True, set_number=272,
               mtga_id=68226)
 Mountain = Card(name="mountain", pretty_name="Mountain", cost=[],
                 color_identity=['R'], card_type="Land", sub_types="Mountain",
-                abilities=[], set_id="M19", rarity="Basic", set_number=273,
+                abilities=[], set_id="M19", rarity="Basic", collectible=True, set_number=273,
                 mtga_id=68228)
 Mountain2 = Card(name="mountain", pretty_name="Mountain", cost=[],
                  color_identity=['R'], card_type="Land", sub_types="Mountain",
-                 abilities=[], set_id="M19", rarity="Basic", set_number=274,
+                 abilities=[], set_id="M19", rarity="Basic", collectible=True, set_number=274,
                  mtga_id=68230)
 Mountain3 = Card(name="mountain", pretty_name="Mountain", cost=[],
                  color_identity=['R'], card_type="Land", sub_types="Mountain",
-                 abilities=[], set_id="M19", rarity="Basic", set_number=275,
+                 abilities=[], set_id="M19", rarity="Basic", collectible=True, set_number=275,
                  mtga_id=68232)
 Mountain4 = Card(name="mountain", pretty_name="Mountain", cost=[],
                  color_identity=['R'], card_type="Land", sub_types="Mountain",
-                 abilities=[], set_id="M19", rarity="Basic", set_number=276,
+                 abilities=[], set_id="M19", rarity="Basic", collectible=True, set_number=276,
                  mtga_id=68234)
 Forest = Card(name="forest", pretty_name="Forest", cost=[],
               color_identity=['G'], card_type="Land", sub_types="Forest",
-              abilities=[], set_id="M19", rarity="Basic", set_number=277,
+              abilities=[], set_id="M19", rarity="Basic", collectible=True, set_number=277,
               mtga_id=68236)
 Forest2 = Card(name="forest", pretty_name="Forest", cost=[],
                color_identity=['G'], card_type="Land", sub_types="Forest",
-               abilities=[], set_id="M19", rarity="Basic", set_number=278,
+               abilities=[], set_id="M19", rarity="Basic", collectible=True, set_number=278,
                mtga_id=68238)
 Forest3 = Card(name="forest", pretty_name="Forest", cost=[],
                color_identity=['G'], card_type="Land", sub_types="Forest",
-               abilities=[], set_id="M19", rarity="Basic", set_number=279,
+               abilities=[], set_id="M19", rarity="Basic", collectible=True, set_number=279,
                mtga_id=68240)
 Forest4 = Card(name="forest", pretty_name="Forest", cost=[],
                color_identity=['G'], card_type="Land", sub_types="Forest",
-               abilities=[], set_id="M19", rarity="Basic", set_number=280,
+               abilities=[], set_id="M19", rarity="Basic", collectible=True, set_number=280,
                mtga_id=68242)
 AjaniWiseCounselor = Card(name="ajani_wise_counselor", pretty_name="Ajani, Wise Counselor", cost=['3', 'W', 'W'],
                           color_identity=['W'], card_type="Planeswalker", sub_types="Ajani",
-                          abilities=[18244, 119217, 119150], set_id="M19", rarity="Mythic Rare", set_number=281,
+                          abilities=[18244, 119217, 119150], set_id="M19", rarity="Mythic Rare", collectible=True, set_number=281,
                           mtga_id=68244)
 AjanisInfluence = Card(name="ajanis_influence", pretty_name="Ajani's Influence", cost=['2', 'W', 'W'],
                        color_identity=['W'], card_type="Sorcery", sub_types="",
-                       abilities=[23602, 119151], set_id="M19", rarity="Rare", set_number=282,
+                       abilities=[23602, 119151], set_id="M19", rarity="Rare", collectible=True, set_number=282,
                        mtga_id=68246)
 CourtCleric = Card(name="court_cleric", pretty_name="Court Cleric", cost=['W'],
                    color_identity=['W'], card_type="Creature", sub_types="Human Cleric",
-                   abilities=[12, 119219], set_id="M19", rarity="Uncommon", set_number=283,
+                   abilities=[12, 119219], set_id="M19", rarity="Uncommon", collectible=True, set_number=283,
                    mtga_id=68248)
 SerrasGuardian = Card(name="serras_guardian", pretty_name="Serra's Guardian", cost=['4', 'W', 'W'],
                       color_identity=['W'], card_type="Creature", sub_types="Angel",
-                      abilities=[8, 15, 20486], set_id="M19", rarity="Rare", set_number=284,
+                      abilities=[8, 15, 20486], set_id="M19", rarity="Rare", collectible=True, set_number=284,
                       mtga_id=68250)
 SilverbeakGriffin = Card(name="silverbeak_griffin", pretty_name="Silverbeak Griffin", cost=['W', 'W'],
                          color_identity=['W'], card_type="Creature", sub_types="Griffin",
-                         abilities=[8], set_id="M19", rarity="Common", set_number=285,
+                         abilities=[8], set_id="M19", rarity="Common", collectible=True, set_number=285,
                          mtga_id=68252)
 TezzeretCruelMachinist = Card(name="tezzeret_cruel_machinist", pretty_name="Tezzeret, Cruel Machinist", cost=['4', 'U', 'U'],
                               color_identity=['U'], card_type="Planeswalker", sub_types="Tezzeret",
-                              abilities=[1323, 119153, 86616], set_id="M19", rarity="Mythic Rare", set_number=286,
+                              abilities=[1323, 119153, 86616], set_id="M19", rarity="Mythic Rare", collectible=True, set_number=286,
                               mtga_id=68254)
 RiddlemasterSphinx = Card(name="riddlemaster_sphinx", pretty_name="Riddlemaster Sphinx", cost=['4', 'U', 'U'],
                           color_identity=['U'], card_type="Creature", sub_types="Sphinx",
-                          abilities=[8, 119222], set_id="M19", rarity="Rare", set_number=287,
+                          abilities=[8, 119222], set_id="M19", rarity="Rare", collectible=True, set_number=287,
                           mtga_id=68256)
 PendulumofPatterns = Card(name="pendulum_of_patterns", pretty_name="Pendulum of Patterns", cost=['2'],
                           color_identity=[], card_type="Artifact", sub_types="",
-                          abilities=[1102, 116489], set_id="M19", rarity="Common", set_number=288,
+                          abilities=[1102, 116489], set_id="M19", rarity="Common", collectible=True, set_number=288,
                           mtga_id=68258)
 TezzeretsGatebreaker = Card(name="tezzerets_gatebreaker", pretty_name="Tezzeret's Gatebreaker", cost=['4'],
                             color_identity=['U'], card_type="Artifact", sub_types="",
-                            abilities=[119157, 119158], set_id="M19", rarity="Rare", set_number=289,
+                            abilities=[119157, 119158], set_id="M19", rarity="Rare", collectible=True, set_number=289,
                             mtga_id=68260)
 TezzeretsStrider = Card(name="tezzerets_strider", pretty_name="Tezzeret's Strider", cost=['3'],
                         color_identity=[], card_type="Artifact Creature", sub_types="Golem",
-                        abilities=[119159], set_id="M19", rarity="Uncommon", set_number=290,
+                        abilities=[119159], set_id="M19", rarity="Uncommon", collectible=True, set_number=290,
                         mtga_id=68262)
 LilianatheNecromancer = Card(name="liliana_the_necromancer", pretty_name="Liliana, the Necromancer", cost=['3', 'B', 'B'],
                              color_identity=['B'], card_type="Planeswalker", sub_types="Liliana",
-                             abilities=[119160, 119228, 119161], set_id="M19", rarity="Mythic Rare", set_number=291,
+                             abilities=[119160, 119228, 119161], set_id="M19", rarity="Mythic Rare", collectible=True, set_number=291,
                              mtga_id=68264)
 ArisenGorgon = Card(name="arisen_gorgon", pretty_name="Arisen Gorgon", cost=['1', 'B', 'B'],
                     color_identity=['B'], card_type="Creature", sub_types="Zombie Gorgon",
-                    abilities=[119162], set_id="M19", rarity="Uncommon", set_number=292,
+                    abilities=[119162], set_id="M19", rarity="Uncommon", collectible=True, set_number=292,
                     mtga_id=68266)
 Gravewaker = Card(name="gravewaker", pretty_name="Gravewaker", cost=['4', 'B', 'B'],
                   color_identity=['B'], card_type="Creature", sub_types="Bird Spirit",
-                  abilities=[8, 119163], set_id="M19", rarity="Rare", set_number=293,
+                  abilities=[8, 119163], set_id="M19", rarity="Rare", collectible=True, set_number=293,
                   mtga_id=68268)
 LilianasSpoils = Card(name="lilianas_spoils", pretty_name="Liliana's Spoils", cost=['3', 'B'],
                       color_identity=['B'], card_type="Sorcery", sub_types="",
-                      abilities=[119164, 119165], set_id="M19", rarity="Rare", set_number=294,
+                      abilities=[119164, 119165], set_id="M19", rarity="Rare", collectible=True, set_number=294,
                       mtga_id=68270)
 TatteredMummy = Card(name="tattered_mummy", pretty_name="Tattered Mummy", cost=['1', 'B'],
                      color_identity=['B'], card_type="Creature", sub_types="Zombie Jackal",
-                     abilities=[97556], set_id="M19", rarity="Common", set_number=295,
+                     abilities=[97556], set_id="M19", rarity="Common", collectible=True, set_number=295,
                      mtga_id=68272)
 SarkhanDragonsoul = Card(name="sarkhan_dragonsoul", pretty_name="Sarkhan, Dragonsoul", cost=['4', 'R', 'R'],
                          color_identity=['R'], card_type="Planeswalker", sub_types="Sarkhan",
-                         abilities=[119233, 119167, 119168], set_id="M19", rarity="Mythic Rare", set_number=296,
+                         abilities=[119233, 119167, 119168], set_id="M19", rarity="Mythic Rare", collectible=True, set_number=296,
                          mtga_id=68274)
 KarganDragonrider = Card(name="kargan_dragonrider", pretty_name="Kargan Dragonrider", cost=['1', 'R'],
                          color_identity=['R'], card_type="Creature", sub_types="Human Warrior",
-                         abilities=[119169], set_id="M19", rarity="Common", set_number=297,
+                         abilities=[119169], set_id="M19", rarity="Common", collectible=True, set_number=297,
                          mtga_id=68276)
 SarkhansDragonfire = Card(name="sarkhans_dragonfire", pretty_name="Sarkhan's Dragonfire", cost=['3', 'R', 'R'],
                           color_identity=['R'], card_type="Sorcery", sub_types="",
-                          abilities=[70361, 119170], set_id="M19", rarity="Rare", set_number=298,
+                          abilities=[70361, 119170], set_id="M19", rarity="Rare", collectible=True, set_number=298,
                           mtga_id=68278)
 SarkhansWhelp = Card(name="sarkhans_whelp", pretty_name="Sarkhan's Whelp", cost=['2', 'R'],
                      color_identity=['R'], card_type="Creature", sub_types="Dragon",
-                     abilities=[8, 119236], set_id="M19", rarity="Uncommon", set_number=299,
+                     abilities=[8, 119236], set_id="M19", rarity="Uncommon", collectible=True, set_number=299,
                      mtga_id=68280)
 ShivanDragon = Card(name="shivan_dragon", pretty_name="Shivan Dragon", cost=['4', 'R', 'R'],
                     color_identity=['R'], card_type="Creature", sub_types="Dragon",
-                    abilities=[8, 1097], set_id="M19", rarity="Rare", set_number=300,
+                    abilities=[8, 1097], set_id="M19", rarity="Rare", collectible=True, set_number=300,
                     mtga_id=68282)
 VivienoftheArkbow = Card(name="vivien_of_the_arkbow", pretty_name="Vivien of the Arkbow", cost=['4', 'G', 'G'],
                          color_identity=['G'], card_type="Planeswalker", sub_types="Vivien",
-                         abilities=[116479, 119172, 119173], set_id="M19", rarity="Mythic Rare", set_number=301,
+                         abilities=[116479, 119172, 119173], set_id="M19", rarity="Mythic Rare", collectible=True, set_number=301,
                          mtga_id=68284)
 AggressiveMammoth = Card(name="aggressive_mammoth", pretty_name="Aggressive Mammoth", cost=['3', 'G', 'G', 'G'],
                          color_identity=['G'], card_type="Creature", sub_types="Elephant",
-                         abilities=[14, 20623], set_id="M19", rarity="Rare", set_number=302,
+                         abilities=[14, 20623], set_id="M19", rarity="Rare", collectible=True, set_number=302,
                          mtga_id=68286)
 SkallaWolf = Card(name="skalla_wolf", pretty_name="Skalla Wolf", cost=['3', 'G', 'G'],
                   color_identity=['G'], card_type="Creature", sub_types="Wolf Spirit",
-                  abilities=[119240], set_id="M19", rarity="Rare", set_number=303,
+                  abilities=[119240], set_id="M19", rarity="Rare", collectible=True, set_number=303,
                   mtga_id=68288)
 UrsineChampion = Card(name="ursine_champion", pretty_name="Ursine Champion", cost=['1', 'G'],
                       color_identity=['G'], card_type="Creature", sub_types="Human Berserker",
-                      abilities=[119175], set_id="M19", rarity="Common", set_number=304,
+                      abilities=[119175], set_id="M19", rarity="Common", collectible=True, set_number=304,
                       mtga_id=68290)
 ViviensJaguar = Card(name="viviens_jaguar", pretty_name="Vivien's Jaguar", cost=['2', 'G'],
                      color_identity=['G'], card_type="Creature", sub_types="Cat Spirit",
-                     abilities=[13, 1345], set_id="M19", rarity="Uncommon", set_number=305,
+                     abilities=[13, 1345], set_id="M19", rarity="Uncommon", collectible=True, set_number=305,
                      mtga_id=68292)
 NexusofFate = Card(name="nexus_of_fate", pretty_name="Nexus of Fate", cost=['5', 'U', 'U'],
                    color_identity=['U'], card_type="Instant", sub_types="",
-                   abilities=[4577, 6365], set_id="M19", rarity="Mythic Rare", set_number=306,
+                   abilities=[4577, 6365], set_id="M19", rarity="Mythic Rare", collectible=True, set_number=306,
                    mtga_id=68294)
 SunSentinel = Card(name="sun_sentinel", pretty_name="Sun Sentinel", cost=['1', 'W'],
                    color_identity=['W'], card_type="Creature", sub_types="Human Soldier",
-                   abilities=[15], set_id="M19", rarity="Common", set_number=307,
+                   abilities=[15], set_id="M19", rarity="Common", collectible=True, set_number=307,
                    mtga_id=68296)
 AirElemental = Card(name="air_elemental", pretty_name="Air Elemental", cost=['3', 'U', 'U'],
                     color_identity=['U'], card_type="Creature", sub_types="Elemental",
-                    abilities=[8], set_id="M19", rarity="Uncommon", set_number=308,
+                    abilities=[8], set_id="M19", rarity="Uncommon", collectible=True, set_number=308,
                     mtga_id=68298)
 Befuddle = Card(name="befuddle", pretty_name="Befuddle", cost=['2', 'U'],
                 color_identity=['U'], card_type="Instant", sub_types="",
-                abilities=[63602, 25848], set_id="M19", rarity="Common", set_number=309,
+                abilities=[63602, 25848], set_id="M19", rarity="Common", collectible=True, set_number=309,
                 mtga_id=68300)
 MistCloakedHerald = Card(name="mistcloaked_herald", pretty_name="Mist-Cloaked Herald", cost=['U'],
                          color_identity=['U'], card_type="Creature", sub_types="Merfolk Warrior",
-                         abilities=[62969], set_id="M19", rarity="Common", set_number=310,
+                         abilities=[62969], set_id="M19", rarity="Common", collectible=True, set_number=310,
                          mtga_id=68302)
 Waterknot = Card(name="waterknot", pretty_name="Waterknot", cost=['1', 'U', 'U'],
                  color_identity=['U'], card_type="Enchantment", sub_types="Aura",
-                 abilities=[1027, 89789, 88178], set_id="M19", rarity="Common", set_number=311,
+                 abilities=[1027, 89789, 88178], set_id="M19", rarity="Common", collectible=True, set_number=311,
                  mtga_id=68304)
 GraspingScoundrel = Card(name="grasping_scoundrel", pretty_name="Grasping Scoundrel", cost=['B'],
                          color_identity=['B'], card_type="Creature", sub_types="Human Pirate",
-                         abilities=[117081], set_id="M19", rarity="Common", set_number=312,
+                         abilities=[117081], set_id="M19", rarity="Common", collectible=True, set_number=312,
                          mtga_id=68306)
 RadiatingLightning = Card(name="radiating_lightning", pretty_name="Radiating Lightning", cost=['3', 'R'],
                           color_identity=['R'], card_type="Instant", sub_types="",
-                          abilities=[118840], set_id="M19", rarity="Common", set_number=313,
+                          abilities=[118840], set_id="M19", rarity="Common", collectible=True, set_number=313,
                           mtga_id=68308)
 LlanowarElves = Card(name="llanowar_elves", pretty_name="Llanowar Elves", cost=['G'],
                      color_identity=['G'], card_type="Creature", sub_types="Elf Druid",
-                     abilities=[1005], set_id="M19", rarity="Common", set_number=314,
+                     abilities=[1005], set_id="M19", rarity="Common", collectible=True, set_number=314,
                      mtga_id=68310)
 Angel = Card(name="angel", pretty_name="Angel", cost=[],
              color_identity=[], card_type="Creature", sub_types="Angel",
-             abilities=[8, 15], set_id="M19", rarity="Token", set_number=1,
+             abilities=[8, 15], set_id="M19", rarity="Token", collectible=False, set_number=10001,
              mtga_id=68312)
 Avatar = Card(name="avatar", pretty_name="Avatar", cost=[],
               color_identity=[], card_type="Creature", sub_types="Avatar",
-              abilities=[8], set_id="M19", rarity="Token", set_number=2,
+              abilities=[8], set_id="M19", rarity="Token", collectible=False, set_number=10002,
               mtga_id=68313)
 Cat = Card(name="cat", pretty_name="Cat", cost=[],
            color_identity=[], card_type="Creature", sub_types="Cat",
-           abilities=[12], set_id="M19", rarity="Token", set_number=3,
+           abilities=[12], set_id="M19", rarity="Token", collectible=False, set_number=10003,
            mtga_id=68314)
 Knight = Card(name="knight", pretty_name="Knight", cost=[],
               color_identity=[], card_type="Creature", sub_types="Knight",
-              abilities=[15], set_id="M19", rarity="Token", set_number=4,
+              abilities=[15], set_id="M19", rarity="Token", collectible=False, set_number=10004,
               mtga_id=68315)
 Ox = Card(name="ox", pretty_name="Ox", cost=[],
           color_identity=[], card_type="Creature", sub_types="Ox",
-          abilities=[], set_id="M19", rarity="Token", set_number=5,
+          abilities=[], set_id="M19", rarity="Token", collectible=False, set_number=10005,
           mtga_id=68316)
 Soldier = Card(name="soldier", pretty_name="Soldier", cost=[],
                color_identity=[], card_type="Creature", sub_types="Soldier",
-               abilities=[], set_id="M19", rarity="Token", set_number=6,
+               abilities=[], set_id="M19", rarity="Token", collectible=False, set_number=10006,
                mtga_id=68317)
 Bat = Card(name="bat", pretty_name="Bat", cost=[],
            color_identity=[], card_type="Creature", sub_types="Bat",
-           abilities=[8], set_id="M19", rarity="Token", set_number=7,
+           abilities=[8], set_id="M19", rarity="Token", collectible=False, set_number=10007,
            mtga_id=68318)
 Zombie = Card(name="zombie", pretty_name="Zombie", cost=[],
               color_identity=[], card_type="Creature", sub_types="Zombie",
-              abilities=[], set_id="M19", rarity="Token", set_number=8,
+              abilities=[], set_id="M19", rarity="Token", collectible=False, set_number=10008,
               mtga_id=68319)
 Dragon = Card(name="dragon", pretty_name="Dragon", cost=[],
               color_identity=['R'], card_type="Creature", sub_types="Dragon",
-              abilities=[8, 8867], set_id="M19", rarity="Token", set_number=9,
+              abilities=[8, 8867], set_id="M19", rarity="Token", collectible=False, set_number=10009,
               mtga_id=68320)
 Dragon2 = Card(name="dragon", pretty_name="Dragon", cost=[],
                color_identity=[], card_type="Creature", sub_types="Dragon",
-               abilities=[8], set_id="M19", rarity="Token", set_number=10,
+               abilities=[8], set_id="M19", rarity="Token", collectible=False, set_number=10010,
                mtga_id=68321)
 Goblin = Card(name="goblin", pretty_name="Goblin", cost=[],
               color_identity=[], card_type="Creature", sub_types="Goblin",
-              abilities=[], set_id="M19", rarity="Token", set_number=11,
+              abilities=[], set_id="M19", rarity="Token", collectible=False, set_number=10011,
               mtga_id=68322)
 Beast = Card(name="beast", pretty_name="Beast", cost=[],
              color_identity=[], card_type="Creature", sub_types="Beast",
-             abilities=[], set_id="M19", rarity="Token", set_number=12,
+             abilities=[], set_id="M19", rarity="Token", collectible=False, set_number=10012,
              mtga_id=68323)
 ElfWarrior = Card(name="elf_warrior", pretty_name="Elf Warrior", cost=[],
                   color_identity=[], card_type="Creature", sub_types="Elf Warrior",
-                  abilities=[], set_id="M19", rarity="Token", set_number=13,
+                  abilities=[], set_id="M19", rarity="Token", collectible=False, set_number=10013,
                   mtga_id=68324)
 Thopter = Card(name="thopter", pretty_name="Thopter", cost=[],
                color_identity=[], card_type="Artifact Creature", sub_types="Thopter",
-               abilities=[8], set_id="M19", rarity="Token", set_number=14,
+               abilities=[8], set_id="M19", rarity="Token", collectible=False, set_number=10014,
                mtga_id=68325)
 
 
@@ -1513,8 +1513,7 @@ set_ability_map = {1: 'Deathtouch',
         'on an artifact you control.',
  92954: 'When you control no permanents with phylactery counters on them, '
         'sacrifice Phylactery Lich.',
- 92970: "Whenever you gain life, you may put a +1/+1 counter on Ajani's "
-        'Pridemate.',
+ 92970: "Whenever you gain life, put a +1/+1 counter on Ajani's Pridemate.",
  93150: 'Transmogrifying Wand enters the battlefield with three charge '
         'counters on it.',
  93266: 'When Highland Game dies, you gain 2 life.',
