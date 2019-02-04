@@ -18,3 +18,12 @@ from mtga.set_data import all_mtga_cards
 print(all_mtga_cards.find_one("63773"))
 # <Card: 'Torrential Gearhulk' ['Blue'] KLD 63773>
 ```
+
+## Deploying
+
+Because I always forget:
+
+```bash
+python setup.py sdist bdist_wheel
+twine upload dist/MTGA-<version>*
+```

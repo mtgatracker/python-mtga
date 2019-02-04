@@ -11,8 +11,19 @@ import json
 import re
 import pprint
 import string
+
+import os
+
 printable = set(string.printable)
 
+data_loc = r"C:\Program Files (x86)\Wizards of the Coast\MTGA\MTGA_Data\Downloads\Data"
+
+jsons = {"enums": None, "cards": None, "abilities": None, "loc": None}
+
+for filename in os.listdir(data_loc):
+    key = filename.split("_")[1]
+    if key in jsons.keys():
+        jsons[key] = os.path.join(data_loc, filename)
 
 COLOR_ID_MAP = {1: "W", 2: "U", 3: "B", 4: "R", 5: "G"}
 RARITY_ID_MAP = {0: "Token", 1: "Basic", 2: "Common", 3: "Uncommon", 4: "Rare", 5: "Mythic Rare"}
@@ -30,14 +41,17 @@ def generate_set_map(loc, cards, enums, set_name):
     all_abilities = {}
 
     loc_map = {}
-    for obj in loc[0]["keys"]:
+    en = list(filter(lambda x: x["langkey"] == "EN", loc))[0]
+    for obj in en["keys"]:
         if obj["id"] in loc_map.keys():
             print("WARNING: overwriting id {} = {} with {}".format(obj["id"], loc_map[obj["id"]], obj["text"]))
         loc_map[obj["id"]] = obj["text"]
-    # loc_map = {obj["id"]: obj["text"] for obj in loc[0]["keys"]}
+    loc_map = {obj["id"]: obj["text"] for obj in en["keys"]}
     enum_map = {obj["name"]: {inner_obj["id"]: inner_obj["text"] for inner_obj in obj["values"]} for obj in enums}
     set_cards = [card for card in cards if card["set"].upper() == set_name.upper()]
     assert set_cards, "No cards found in set {}. Double check your nomenclature, and ensure the input files contain your set!"
+
+    token_count = 1
 
     print("translating {} cards from set {}".format(len(set_cards), set_name))
     output_lines = []
@@ -58,6 +72,7 @@ def generate_set_map(loc, cards, enums, set_name):
             # cc's look like: o2o(U/B)o(U/B)o3oUoB, want to turn it into ["2", "(U/B)"] etc
             cost = [cost_part for cost_part in cc_raw.split("o")[1:] if cost_part != "0"]
             color_identity = [COLOR_ID_MAP[color_id] for color_id in card["colorIdentity"]]
+            collectible = card["isCollectible"]
 
             card_type_ids = [enum_map["CardType"][card_type] for card_type in card["types"]]
             card_types = " ".join([loc_map[loc_id] for loc_id in card_type_ids])
@@ -69,7 +84,14 @@ def generate_set_map(loc, cards, enums, set_name):
 
             rarity = RARITY_ID_MAP[card["rarity"]]
 
-            set_number = int(card["CollectorNumber"])
+            if card["isToken"]:
+                set_number = token_count + 10000
+                token_count += 1
+            else:
+                if card["CollectorNumber"].startswith("GR"):
+                    set_number = int(card["CollectorNumber"][2]) * 1000
+                else:
+                    set_number = int(card["CollectorNumber"])
 
             grp_id = card["grpid"]
             abilities = []
@@ -87,7 +109,7 @@ def generate_set_map(loc, cards, enums, set_name):
             # name, pretty_name, cost, color_identity, card_type, sub_types, set_id, rarity, set_number, mtga_id
             new_card_str = '{} = Card(name="{}", pretty_name="{}", cost={},\n' \
                            '{{}}color_identity={}, card_type="{}", sub_types="{}",\n' \
-                           '{{}}abilities={}, set_id="{}", rarity="{}", set_number={},\n' \
+                           '{{}}abilities={}, set_id="{}", rarity="{}", collectible={}, set_number={},\n' \
                            '{{}}mtga_id={})'.format(
                 card_name_class_cased_suffixed,
                 card_name_snake_cased,
@@ -99,6 +121,7 @@ def generate_set_map(loc, cards, enums, set_name):
                 abilities,
                 set_id,
                 rarity,
+                collectible,
                 set_number,
                 grp_id
             ).format(" "*indentation_length, " "*indentation_length, " "*indentation_length)
@@ -106,6 +129,7 @@ def generate_set_map(loc, cards, enums, set_name):
 
         except Exception:
             print("hit an error on {} / {} / {}".format(card["grpid"], loc_map[card["titleId"]], card["CollectorNumber"]))
+            raise
     header = """
 import sys
 from mtga.models.card import Card
@@ -131,18 +155,18 @@ if __name__ == '__main__':
     arg_parser.add_argument('-s', '--set')
     args = arg_parser.parse_args()
 
-    with open(args.cards_file, "r", encoding="utf-8") as card_in:
+    with open(args.cards_file or jsons["cards"], "r", encoding="utf-8") as card_in:
         cards = json.load(card_in)
 
-    with open(args.loc_file, "r", encoding="utf-8") as loc_in:
+    with open(args.loc_file or jsons["loc"], "r", encoding="utf-8") as loc_in:
         loc = json.load(loc_in)
-
-    with open(args.enums_file, "r", encoding="utf-8") as enums_in:
+    with open(args.enums_file or jsons["enums"], "r", encoding="utf-8") as enums_in:
         enums = json.load(enums_in)
+
     if args.set:
         generate_set_map(loc, cards, enums, args.set)
     else:
         print("generating all sets!")
-        known_sets = ["ana", "dar", "grn", "m19", "rix", "xln"]
+        known_sets = ["ana", "dar", "grn", "m19", "rix", "xln", "rna"]
         for card_set in known_sets:
             generate_set_map(loc, cards, enums, card_set)
