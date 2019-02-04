@@ -31,7 +31,7 @@ class Pool(object):
             abilities = {}
         self.abilities = abilities
         self.cards = cards
-        self.lookup = {**abilities}
+        self.lookup = abilities
         for card in cards:
             self.lookup[card.mtga_id] = card
 
