@@ -72,6 +72,7 @@ if __name__ == "__main__":
 
         description="python-mtga: a python-accessible interface for MTGA cards",
         long_description=LONG_DESCRIPTION,
+        long_description_content_type="text/markdown",
 
         # The project's main homepage.
         url="https://github.com/mtgatracker/mtgatracker",
