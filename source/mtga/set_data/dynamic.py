@@ -8,12 +8,22 @@ import re
 from mtga.models.card import Card
 from mtga.models.card_set import Set
 
+def _get_data_location():
+    root = os.environ.get(
+        "ProgramFiles(x86)",
+        os.environ.get(
+            "ProgramFiles",
+            r"C:\Program Files (x86)"
+        )
+    )
+    return os.path.join(root, "Wizards of the Coast", "MTGA", "MTGA_Data", "Downloads", "Data")
+
 COLOR_ID_MAP = {1: "W", 2: "U", 3: "B", 4: "R", 5: "G"}
 RARITY_ID_MAP = {0: "Token", 1: "Basic", 2: "Common", 3: "Uncommon", 4: "Rare", 5: "Mythic Rare"}
 
 dynamic_set_tuples = []
 
-data_location = r"C:\Program Files (x86)\Wizards of the Coast\MTGA\MTGA_Data\Downloads\Data"
+data_location = _get_data_location()
 
 json_filepaths = {"enums": "", "cards": "", "abilities": "", "loc": ""}
 
