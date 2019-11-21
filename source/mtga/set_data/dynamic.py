@@ -13,7 +13,18 @@ RARITY_ID_MAP = {0: "Token", 1: "Basic", 2: "Common", 3: "Uncommon", 4: "Rare", 
 
 dynamic_set_tuples = []
 
-data_location = r"C:\Program Files (x86)\Wizards of the Coast\MTGA\MTGA_Data\Downloads\Data"
+try:
+    from winreg import ConnectRegistry, OpenKey, HKEY_LOCAL_MACHINE, QueryValueEx
+    registry_connection = ConnectRegistry(None, HKEY_LOCAL_MACHINE)
+    reg_path = "SOFTWARE\WOW6432Node\Wizards of the Coast\MTGArena"
+    registry_key = OpenKey(registry_connection, reg_path)
+    data_location = QueryValueEx(registry_key, "Path")[0] + r"MTGA_Data\Downloads\Data"
+    print("Found data @ ")
+    print(data_location)
+    print(r"C:\Program Files (x86)\Wizards of the Coast\MTGA\MTGA_Data\Downloads\Data")
+except:
+    print("Couldn't locate MTGA from registry, falling back to hardcoded path...")
+    data_location = r"C:\Program Files (x86)\Wizards of the Coast\MTGA\MTGA_Data\Downloads\Data"
 
 json_filepaths = {"enums": "", "cards": "", "abilities": "", "loc": ""}
 
@@ -40,7 +51,11 @@ for set_name in listed_cardsets:
     all_abilities = {}
 
     loc_map = {}
-    en = list(filter(lambda x: x["langkey"] == "EN", loc))[0]
+    try:
+        en = list(filter(lambda x: x["langkey"] == "EN", loc))[0]
+    except:
+        ## langkeys are null in 11/21 patch???
+        en = loc[0]
     for obj in en["keys"]:
         # if obj["id"] in loc_map.keys():
         #     print("WARNING: overwriting id {} = {} with {}".format(obj["id"], loc_map[obj["id"]], obj["text"]))
