@@ -63,11 +63,8 @@ for set_name in listed_cardsets:
     all_abilities = {}
 
     loc_map = {}
-    try:
-        en = list(filter(lambda x: x["langkey"] == "EN", loc))[0]
-    except:
-        ## langkeys are null in 11/21 patch???
-        en = loc[0]
+    # Post 2019-11-21 patch, language is encoded in a different key
+    en = list(filter(lambda x: x["langkey"] == "EN" or x["isoCode"] == "en-US", loc))[0]
     for obj in en["keys"]:
         # if obj["id"] in loc_map.keys():
         #     print("WARNING: overwriting id {} = {} with {}".format(obj["id"], loc_map[obj["id"]], obj["text"]))
