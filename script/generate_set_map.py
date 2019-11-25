@@ -23,6 +23,7 @@ jsons = {"enums": None, "cards": None, "abilities": None, "loc": None}
 for filename in os.listdir(data_loc):
     key = filename.split("_")[1]
     if key in jsons.keys():
+        print("setting {} to {}".format(key, filename))
         jsons[key] = os.path.join(data_loc, filename)
 
 COLOR_ID_MAP = {1: "W", 2: "U", 3: "B", 4: "R", 5: "G"}
@@ -88,7 +89,7 @@ def generate_set_map(loc, cards, enums, set_name):
                 set_number = token_count + 10000
                 token_count += 1
             else:
-                if card["CollectorNumber"].startswith("GR"):
+                if card["CollectorNumber"].startswith("GR") or card["CollectorNumber"].startswith("GP"):
                     set_number = int(card["CollectorNumber"][2]) * 1000
                 else:
                     set_number = int(card["CollectorNumber"])
@@ -167,6 +168,7 @@ if __name__ == '__main__':
         generate_set_map(loc, cards, enums, args.set)
     else:
         print("generating all sets!")
-        known_sets = ["ana", "dar", "grn", "m19", "rix", "xln", "rna"]
+        known_sets = ["ana", "dar", "grn", "m19", "rix", "xln", "rna",
+                      "mi", "roe", "rtr", "bfz", "akh", "arenasup", "g18", "eld"]
         for card_set in known_sets:
             generate_set_map(loc, cards, enums, card_set)
