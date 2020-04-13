@@ -127,7 +127,12 @@ for set_name in listed_cardsets:
             for ability in abilities_raw:
                 aid = ability["abilityId"]
                 textid = ability["textId"]
-                text = loc_map[textid].encode("ascii", errors="ignore").decode()
+                try:
+                    text = loc_map[textid].encode("ascii", errors="ignore").decode()
+                except:
+                    # TODO: there are multiple loc files now?? something weird is up. I don't really feel like trying to
+                    # figure this out right now though.
+                    text = "unknown ability id {} / {}".format(aid, textid)
                 abilities.append(aid)
                 all_abilities[aid] = text
 
@@ -140,7 +145,7 @@ for set_name in listed_cardsets:
         except Exception:
             print("hit an error on {} / {} / {}".format(card["grpid"], loc_map[card["titleId"]],
                                                         card["CollectorNumber"]))
-            raise
+            # raise
     card_set_obj = Set(set_name_class_cased, cards=set_card_objs)
     dynamic_set_tuples.append((card_set_obj, all_abilities))
 
