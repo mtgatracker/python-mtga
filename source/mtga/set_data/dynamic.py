@@ -124,10 +124,13 @@ for set_name in listed_cardsets:
                 set_number = token_count + 10000
                 token_count += 1
             else:
-                if card["CollectorNumber"].startswith("GR") or card["CollectorNumber"].startswith("GP"):
-                    set_number = int(card["CollectorNumber"][2]) * 1000
-                else:
-                    set_number = int(card["CollectorNumber"])
+                try:
+                    if card["CollectorNumber"].startswith("GR") or card["CollectorNumber"].startswith("GP"):
+                        set_number = int(card["CollectorNumber"][2]) * 1000
+                    else:
+                        set_number = int(card["CollectorNumber"])
+                except ValueError:
+                    set_number = card["grpid"]
 
             grp_id = card["grpid"]
             abilities = []
