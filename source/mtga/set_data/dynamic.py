@@ -28,7 +28,7 @@ dynamic_set_tuples = []
 try:
     from winreg import ConnectRegistry, OpenKey, HKEY_LOCAL_MACHINE, QueryValueEx
     registry_connection = ConnectRegistry(None, HKEY_LOCAL_MACHINE)
-    reg_path = "SOFTWARE\WOW6432Node\Wizards of the Coast\MTGArena"
+    reg_path = r"SOFTWARE\WOW6432Node\Wizards of the Coast\MTGArena"
     registry_key = OpenKey(registry_connection, reg_path)
     data_location = QueryValueEx(registry_key, "Path")[0] + r"MTGA_Data\Downloads\Data"
     print("Found data @ ")
