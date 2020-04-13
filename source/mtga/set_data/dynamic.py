@@ -108,7 +108,10 @@ for set_name in listed_cardsets:
             # cc's look like: o2o(U/B)o(U/B)o3oUoB, want to turn it into ["2", "(U/B)"] etc
             cost = [cost_part for cost_part in cc_raw.split("o")[1:] if cost_part != "0"]
             color_identity = [COLOR_ID_MAP[color_id] for color_id in card["colorIdentity"]]
-            collectible = card["isCollectible"]
+            try:
+                collectible = card["isCollectible"]
+            except KeyError:
+                collectible = False
 
             card_type_ids = [enum_map["CardType"][card_type] for card_type in card["types"]]
             card_types = " ".join([loc_map[loc_id] for loc_id in card_type_ids])
