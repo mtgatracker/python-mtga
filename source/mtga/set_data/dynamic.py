@@ -5,6 +5,7 @@
 import json
 import os
 import re
+from pathlib import Path
 from mtga.models.card import Card
 from mtga.models.card_set import Set
 
@@ -40,11 +41,19 @@ except:
 
 json_filepaths = {"enums": "", "cards": "", "abilities": "", "loc": ""}
 
-for filename in os.listdir(data_location):
-    key = filename.split("_")[1]
+# A newer file SHOULD be the preference; alpha sort of hashes may be out of order
+# Otherwise it will be necessary to find which is really used
+for filepath in sorted(Path(data_location).iterdir(), key=os.path.getmtime):
+    filename = os.path.basename(filepath)
+    # In case of rogue files
+    filesplit = filename.split("_")
+    if len(filesplit) > 1:
+        key = filesplit[1]
+    else:
+        key = ""
     if key in json_filepaths.keys() and filename.endswith("mtga"):
         # print("setting {} to {}".format(key, filename))
-        json_filepaths[key] = os.path.join(data_location, filename)
+        json_filepaths[key] = filepath
 
 with open(json_filepaths["cards"], "r", encoding="utf-8") as card_in:
     cards = json.load(card_in)
