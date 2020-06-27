@@ -12,11 +12,8 @@ from mtga.models.card_set import Set
 
 def _get_data_location_hardcoded():
     root = os.environ.get(
-        "ProgramFiles(x86)",
-        os.environ.get(
-            "ProgramFiles",
-            r"C:\Program Files (x86)"
-        )
+        "ProgramFiles",
+        r"C:\Program Files"
     )
     return os.path.join(root, "Wizards of the Coast", "MTGA", "MTGA_Data", "Downloads", "Data")
 
@@ -29,12 +26,12 @@ dynamic_set_tuples = []
 try:
     from winreg import ConnectRegistry, OpenKey, HKEY_LOCAL_MACHINE, QueryValueEx
     registry_connection = ConnectRegistry(None, HKEY_LOCAL_MACHINE)
-    reg_path = r"SOFTWARE\WOW6432Node\Wizards of the Coast\MTGArena"
+    reg_path = r"SOFTWARE\Wizards of the Coast\MTGArena"
     registry_key = OpenKey(registry_connection, reg_path)
     data_location = QueryValueEx(registry_key, "Path")[0] + r"MTGA_Data\Downloads\Data"
     print("Found data @ ")
     print(data_location)
-    print(r"C:\Program Files (x86)\Wizards of the Coast\MTGA\MTGA_Data\Downloads\Data")
+    print(r"C:\Program Files\Wizards of the Coast\MTGA\MTGA_Data\Downloads\Data")
 except:
     print("Couldn't locate MTGA from registry, falling back to hardcoded path...")
     data_location = _get_data_location_hardcoded()
