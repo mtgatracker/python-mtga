@@ -5,6 +5,7 @@
 import json
 import os
 import re
+from pathlib import Path
 from mtga.models.card import Card
 from mtga.models.card_set import Set
 
@@ -28,7 +29,7 @@ dynamic_set_tuples = []
 try:
     from winreg import ConnectRegistry, OpenKey, HKEY_LOCAL_MACHINE, QueryValueEx
     registry_connection = ConnectRegistry(None, HKEY_LOCAL_MACHINE)
-    reg_path = "SOFTWARE\WOW6432Node\Wizards of the Coast\MTGArena"
+    reg_path = r"SOFTWARE\WOW6432Node\Wizards of the Coast\MTGArena"
     registry_key = OpenKey(registry_connection, reg_path)
     data_location = QueryValueEx(registry_key, "Path")[0] + r"MTGA_Data\Downloads\Data"
     print("Found data @ ")
@@ -40,11 +41,19 @@ except:
 
 json_filepaths = {"enums": "", "cards": "", "abilities": "", "loc": ""}
 
-for filename in os.listdir(data_location):
-    key = filename.split("_")[1]
+# A newer file SHOULD be the preference; alpha sort of hashes may be out of order
+# Otherwise it will be necessary to find which is really used
+for filepath in sorted(Path(data_location).iterdir(), key=os.path.getmtime):
+    filename = os.path.basename(filepath)
+    # In case of rogue files
+    filesplit = filename.split("_")
+    if len(filesplit) > 1:
+        key = filesplit[1]
+    else:
+        key = ""
     if key in json_filepaths.keys() and filename.endswith("mtga"):
         # print("setting {} to {}".format(key, filename))
-        json_filepaths[key] = os.path.join(data_location, filename)
+        json_filepaths[key] = filepath
 
 with open(json_filepaths["cards"], "r", encoding="utf-8") as card_in:
     cards = json.load(card_in)
@@ -99,7 +108,10 @@ for set_name in listed_cardsets:
             # cc's look like: o2o(U/B)o(U/B)o3oUoB, want to turn it into ["2", "(U/B)"] etc
             cost = [cost_part for cost_part in cc_raw.split("o")[1:] if cost_part != "0"]
             color_identity = [COLOR_ID_MAP[color_id] for color_id in card["colorIdentity"]]
-            collectible = card["isCollectible"]
+            try:
+                collectible = card["isCollectible"]
+            except KeyError:
+                collectible = False
 
             card_type_ids = [enum_map["CardType"][card_type] for card_type in card["types"]]
             card_types = " ".join([loc_map[loc_id] for loc_id in card_type_ids])
@@ -115,10 +127,13 @@ for set_name in listed_cardsets:
                 set_number = token_count + 10000
                 token_count += 1
             else:
-                if card["CollectorNumber"].startswith("GR") or card["CollectorNumber"].startswith("GP"):
-                    set_number = int(card["CollectorNumber"][2]) * 1000
-                else:
-                    set_number = int(card["CollectorNumber"])
+                try:
+                    if card["CollectorNumber"].startswith("GR") or card["CollectorNumber"].startswith("GP"):
+                        set_number = int(card["CollectorNumber"][2]) * 1000
+                    else:
+                        set_number = int(card["CollectorNumber"])
+                except ValueError:
+                    set_number = card["grpid"]
 
             grp_id = card["grpid"]
             abilities = []
@@ -127,7 +142,12 @@ for set_name in listed_cardsets:
             for ability in abilities_raw:
                 aid = ability["abilityId"]
                 textid = ability["textId"]
-                text = loc_map[textid].encode("ascii", errors="ignore").decode()
+                try:
+                    text = loc_map[textid].encode("ascii", errors="ignore").decode()
+                except:
+                    # TODO: there are multiple loc files now?? something weird is up. I don't really feel like trying to
+                    # figure this out right now though.
+                    text = "unknown ability id {} / {}".format(aid, textid)
                 abilities.append(aid)
                 all_abilities[aid] = text
 
@@ -143,7 +163,7 @@ for set_name in listed_cardsets:
         except Exception:
             print("hit an error on {} / {} / {}".format(card["grpid"], loc_map[card["titleId"]],
                                                         card["CollectorNumber"]))
-            raise
+            # raise
     card_set_obj = Set(set_name_class_cased, cards=set_card_objs)
     dynamic_set_tuples.append((card_set_obj, all_abilities))
 
