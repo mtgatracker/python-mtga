@@ -20,5 +20,6 @@ print(all_mtga_cards.find_one("71809"))
 Because I always forget:
 ```bash
 python setup.py sdist bdist_wheel
+twine check dist/*  # check for readme issues (e.g. line endings MUST BE LF, not CRLF lol)
 twine upload dist/MTGA-<version>*
 ```
