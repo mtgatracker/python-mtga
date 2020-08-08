@@ -26,12 +26,13 @@ dynamic_set_tuples = []
 
 def get_data_location():
     current_os = sys.platform
-    if current_os not in ["darwin", "win32"]:
+    if current_os not in ["darwin", "win32", "linux"]:
         raise
 
     return {
         "darwin": get_darwin_data_location,
         "win32": get_win_data_location,
+        "linux": get_win_data_location,
     }[current_os]()
 
 def get_darwin_data_location():
