@@ -10,7 +10,7 @@ class Card(object):
 
     def __init__(self, name="", pretty_name="", cost=None, color_identity=None, card_type="", sub_types="",
                  abilities=None, set_id="", rarity="", artist="", collectible=True, set_number=-1,
-                 mtga_id=-1, power=None, toughness=None):
+                 mtga_id=-1, power=None, toughness=None, styles=[]):
         self.name = name
         self.set = set_id
         self.pretty_name = pretty_name
@@ -32,6 +32,9 @@ class Card(object):
         self.abilities = abilities
         self.power = power
         self.toughness = toughness
+        if styles is None:
+            styles = []
+        self.styles = styles
 
     @property
     def abilities_decoded(self):

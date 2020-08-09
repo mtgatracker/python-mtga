@@ -177,7 +177,7 @@ for set_name in listed_cardsets:
                                 color_identity=color_identity, card_type=card_types, sub_types=sub_types,
                                 abilities=abilities, set_id=set_id, rarity=rarity, artist=card["artistCredit"],
                                 collectible=collectible, set_number=set_number, mtga_id=grp_id,
-                                power=power, toughness=toughness)
+                                power=power, toughness=toughness, styles=set(card["knownSupportedStyles"]))
             set_card_objs.append(new_card_obj)
 
         except Exception:
