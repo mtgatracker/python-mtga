@@ -9,8 +9,8 @@ COLORMAP = {
 class Card(object):
 
     def __init__(self, name="", pretty_name="", cost=None, color_identity=None, card_type="", sub_types="",
-                 abilities=None, set_id="", rarity="", collectible=True, set_number=-1, mtga_id=-1,
-                 power=None, toughness=None):
+                 abilities=None, set_id="", rarity="", artist="", collectible=True, set_number=-1,
+                 mtga_id=-1, power=None, toughness=None):
         self.name = name
         self.set = set_id
         self.pretty_name = pretty_name
@@ -25,6 +25,7 @@ class Card(object):
         self.set_number = set_number
         self.mtga_id = mtga_id
         self.rarity = rarity
+        self.artist = artist
         self.collectible = collectible
         if abilities is None:
             abilities = []
