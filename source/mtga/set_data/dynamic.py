@@ -5,6 +5,7 @@
 import json
 import os
 import re
+import sys
 from pathlib import Path
 from mtga.models.card import Card
 from mtga.models.card_set import Set
@@ -13,11 +14,8 @@ import logging
 
 def _get_data_location_hardcoded():
     root = os.environ.get(
-        "ProgramFiles(x86)",
-        os.environ.get(
-            "ProgramFiles",
-            r"C:\Program Files (x86)"
-        )
+        "ProgramFiles",
+        r"C:\Program Files"
     )
     return os.path.join(root, "Wizards of the Coast", "MTGA", "MTGA_Data", "Downloads", "Data")
 
@@ -27,16 +25,36 @@ RARITY_ID_MAP = {0: "Token", 1: "Basic", 2: "Common", 3: "Uncommon", 4: "Rare", 
 
 dynamic_set_tuples = []
 
-try:
-    from winreg import ConnectRegistry, OpenKey, HKEY_LOCAL_MACHINE, QueryValueEx
-    registry_connection = ConnectRegistry(None, HKEY_LOCAL_MACHINE)
-    reg_path = r"SOFTWARE\WOW6432Node\Wizards of the Coast\MTGArena"
-    registry_key = OpenKey(registry_connection, reg_path)
-    data_location = QueryValueEx(registry_key, "Path")[0] + r"MTGA_Data\Downloads\Data"
-    logging.debug("Found data @ " + data_location)
-except Exception as e:
-    logging.debug("Couldn't locate MTGA from registry, falling back to hardcoded path...")
-    data_location = _get_data_location_hardcoded()
+def get_data_location():
+    current_os = sys.platform
+    if current_os not in ["darwin", "win32"]:
+        raise
+
+    return {
+        "darwin": get_darwin_data_location,
+        "win32": get_win_data_location,
+    }[current_os]()
+
+def get_darwin_data_location():
+    return os.path.join(
+        os.path.expanduser("~"),
+        "Library/Application Support/com.wizards.mtga/Downloads/Data",
+    )
+
+def get_win_data_location():
+    try:
+        from winreg import ConnectRegistry, OpenKey, HKEY_LOCAL_MACHINE, QueryValueEx
+        registry_connection = ConnectRegistry(None, HKEY_LOCAL_MACHINE)
+        reg_path = r"SOFTWARE\Wizards of the Coast\MTGArena"
+        registry_key = OpenKey(registry_connection, reg_path)
+        data_location = QueryValueEx(registry_key, "Path")[0] + r"MTGA_Data\Downloads\Data"
+        logging.debug("Found data @ " + data_location)
+    except:
+        logging.debug("Couldn't locate MTGA from registry, falling back to hardcoded path...")
+        data_location = _get_data_location_hardcoded()
+    return data_location
+
+data_location = get_data_location()
 
 json_filepaths = {"enums": "", "cards": "", "abilities": "", "loc": ""}
 

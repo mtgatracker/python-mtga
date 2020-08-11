@@ -76,7 +76,7 @@ if __name__ == "__main__":
         license="MIT License",
 
         # The project's main homepage.
-        url="https://github.com/mtgatracker/mtgatracker",
+        url="https://github.com/mtgatracker/python-mtga",
 
         # Author details
         author=__author__,
