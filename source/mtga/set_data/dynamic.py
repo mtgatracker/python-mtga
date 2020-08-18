@@ -146,10 +146,10 @@ for set_name in listed_cardsets:
                 token_count += 1
             else:
                 try:
-                    if card["CollectorNumber"].startswith("GR") or card["CollectorNumber"].startswith("GP"):
-                        set_number = int(card["CollectorNumber"][2]) * 1000
+                    if card["collectorNumber"].startswith("GR") or card["collectorNumber"].startswith("GP"):
+                        set_number = int(card["collectorNumber"][2]) * 1000
                     else:
-                        set_number = int(card["CollectorNumber"])
+                        set_number = int(card["collectorNumber"])
                 except ValueError:
                     set_number = card["grpid"]
 
@@ -177,7 +177,7 @@ for set_name in listed_cardsets:
 
         except Exception:
             print("hit an error on {} / {} / {}".format(card["grpid"], loc_map[card["titleId"]],
-                                                        card["CollectorNumber"]))
+                                                        card["collectorNumber"]))
             # raise
     card_set_obj = Set(set_name_class_cased, cards=set_card_objs)
     dynamic_set_tuples.append((card_set_obj, all_abilities))
