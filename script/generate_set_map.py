@@ -89,10 +89,10 @@ def generate_set_map(loc, cards, enums, set_name):
                 set_number = token_count + 10000
                 token_count += 1
             else:
-                if card["CollectorNumber"].startswith("GR") or card["CollectorNumber"].startswith("GP"):
-                    set_number = int(card["CollectorNumber"][2]) * 1000
+                if card["collectorNumber"].startswith("GR") or card["collectorNumber"].startswith("GP"):
+                    set_number = int(card["collectorNumber"][2]) * 1000
                 else:
-                    set_number = int(card["CollectorNumber"])
+                    set_number = int(card["collectorNumber"])
 
             grp_id = card["grpid"]
             abilities = []
@@ -129,7 +129,7 @@ def generate_set_map(loc, cards, enums, set_name):
             output_lines.append(new_card_str)
 
         except Exception:
-            print("hit an error on {} / {} / {}".format(card["grpid"], loc_map[card["titleId"]], card["CollectorNumber"]))
+            print("hit an error on {} / {} / {}".format(card["grpid"], loc_map[card["titleId"]], card["collectorNumber"]))
             raise
     header = """
 import sys
