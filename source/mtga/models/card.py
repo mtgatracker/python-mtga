@@ -9,7 +9,8 @@ COLORMAP = {
 class Card(object):
 
     def __init__(self, name="", pretty_name="", cost=None, color_identity=None, card_type="", sub_types="",
-                 abilities=None, set_id="", rarity="", collectible=True, set_number=-1, mtga_id=-1):
+                 abilities=None, set_id="", rarity="", collectible=True, set_number=-1, mtga_id=-1,
+                 power=None, toughness=None):
         self.name = name
         self.set = set_id
         self.pretty_name = pretty_name
@@ -28,6 +29,8 @@ class Card(object):
         if abilities is None:
             abilities = []
         self.abilities = abilities
+        self.power = power
+        self.toughness = toughness
 
     @property
     def abilities_decoded(self):
@@ -104,8 +107,8 @@ class Card(object):
 
 class GameCard(Card):
 
-    def __init__(self, name, pretty_name, cost, color_identity, card_type, sub_types, set_id, rarity, set_number, mtga_id, owner_seat_id, game_id=-1):
-        super().__init__(name, pretty_name, cost, color_identity, card_type, sub_types, set_id, rarity, set_number, mtga_id)
+    def __init__(self, name, pretty_name, cost, color_identity, card_type, sub_types, set_id, rarity, set_number, mtga_id, owner_seat_id, game_id=-1, power=None, toughness=None):
+        super().__init__(name, pretty_name, cost, color_identity, card_type, sub_types, set_id, rarity, set_number, mtga_id, power, toughness)
         self.game_id = game_id
         self.previous_iids = []
         self.owner_seat_id = owner_seat_id

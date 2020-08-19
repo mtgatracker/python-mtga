@@ -26,12 +26,13 @@ dynamic_set_tuples = []
 
 def get_data_location():
     current_os = sys.platform
-    if current_os not in ["darwin", "win32"]:
+    if current_os not in ["darwin", "win32", "linux"]:
         raise
 
     return {
         "darwin": get_darwin_data_location,
         "win32": get_win_data_location,
+        "linux": get_win_data_location,
     }[current_os]()
 
 def get_darwin_data_location():
@@ -146,10 +147,10 @@ for set_name in listed_cardsets:
                 token_count += 1
             else:
                 try:
-                    if card["CollectorNumber"].startswith("GR") or card["CollectorNumber"].startswith("GP"):
-                        set_number = int(card["CollectorNumber"][2]) * 1000
+                    if card["collectorNumber"].startswith("GR") or card["collectorNumber"].startswith("GP"):
+                        set_number = int(card["collectorNumber"][2]) * 1000
                     else:
-                        set_number = int(card["CollectorNumber"])
+                        set_number = int(card["collectorNumber"])
                 except ValueError:
                     set_number = card["grpid"]
 
@@ -169,15 +170,18 @@ for set_name in listed_cardsets:
                 abilities.append(aid)
                 all_abilities[aid] = text
 
+            power = card["power"]
+            toughness = card["toughness"]
+
             new_card_obj = Card(name=card_name_snake_cased, pretty_name=card_title, cost=cost,
                                 color_identity=color_identity, card_type=card_types, sub_types=sub_types,
                                 abilities=abilities, set_id=set_id, rarity=rarity, collectible=collectible,
-                                set_number=set_number, mtga_id=grp_id)
+                                set_number=set_number, mtga_id=grp_id, power=power, toughness=toughness)
             set_card_objs.append(new_card_obj)
 
         except Exception:
             print("hit an error on {} / {} / {}".format(card["grpid"], loc_map[card["titleId"]],
-                                                        card["CollectorNumber"]))
+                                                        card["collectorNumber"]))
             # raise
     card_set_obj = Set(set_name_class_cased, cards=set_card_objs)
     dynamic_set_tuples.append((card_set_obj, all_abilities))
