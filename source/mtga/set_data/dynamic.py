@@ -139,6 +139,7 @@ for set_name in listed_cardsets:
             sub_types = " ".join([loc_map[loc_id] for loc_id in sub_types_ids])
 
             set_id = set_name.upper()
+            digital_set_id = card["DigitalReleaseSet"] or None
 
             rarity = RARITY_ID_MAP[card["rarity"]]
 
@@ -173,11 +174,25 @@ for set_name in listed_cardsets:
             power = card["power"]
             toughness = card["toughness"]
 
-            new_card_obj = Card(name=card_name_snake_cased, pretty_name=card_title, cost=cost,
-                                color_identity=color_identity, card_type=card_types, sub_types=sub_types,
-                                abilities=abilities, set_id=set_id, rarity=rarity, artist=card["artistCredit"],
-                                collectible=collectible, set_number=set_number, mtga_id=grp_id,
-                                power=power, toughness=toughness, styles=set(card["knownSupportedStyles"]))
+            new_card_obj = Card(
+                name=card_name_snake_cased,
+                pretty_name=card_title,
+                cost=cost,
+                color_identity=color_identity,
+                card_type=card_types,
+                sub_types=sub_types,
+                abilities=abilities,
+                set_id=set_id,
+                digital_set_id=digital_set_id,
+                rarity=rarity,
+                artist=card["artistCredit"],
+                collectible=collectible,
+                set_number=set_number,
+                mtga_id=grp_id,
+                power=power,
+                toughness=toughness,
+                styles=set(card["knownSupportedStyles"])
+            )
             set_card_objs.append(new_card_obj)
 
         except Exception:
