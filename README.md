@@ -1,4 +1,14 @@
 # Python MTGA
+
+## pak21 fork
+
+If you're reading this, it means you obtained this package from [pak21's fork](https://github.com/pak21/python-mtga)
+of the [original](https://github.com/mtgatracker/python-mtga). This
+fork has potentially breaking changes, please do not file any issues
+found with this fork on the original.
+
+## Introduction
+
 MTGA tools & set data for python. Original cardset generated with MTGJSON and scryfall,
 with initial set of  MTGA grpId's collected by Fugi & Spencatro.
 (Now we just use the data already present in your MTGA installation.)
