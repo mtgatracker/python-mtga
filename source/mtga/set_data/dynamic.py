@@ -9,6 +9,7 @@ import sys
 from pathlib import Path
 from mtga.models.card import Card
 from mtga.models.card_set import Set
+import logging
 
 
 def _get_data_location_hardcoded():
@@ -47,11 +48,9 @@ def get_win_data_location():
         reg_path = r"SOFTWARE\Wizards of the Coast\MTGArena"
         registry_key = OpenKey(registry_connection, reg_path)
         data_location = QueryValueEx(registry_key, "Path")[0] + r"MTGA_Data\Downloads\Data"
-        print("Found data @ ")
-        print(data_location)
-        print(r"C:\Program Files\Wizards of the Coast\MTGA\MTGA_Data\Downloads\Data")
+        logging.debug("Found data @ " + data_location)
     except:
-        print("Couldn't locate MTGA from registry, falling back to hardcoded path...")
+        logging.debug("Couldn't locate MTGA from registry, falling back to hardcoded path...")
         data_location = _get_data_location_hardcoded()
     return data_location
 

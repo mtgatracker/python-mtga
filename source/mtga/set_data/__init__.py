@@ -1,5 +1,8 @@
 from mtga.models.card_set import Pool
-try:
+import logging
+
+
+def get_all_mtga_cards_dynamic():
     from mtga.set_data import dynamic
     dynamic_sets = []
     all_mtga_abilities = {}
@@ -12,8 +15,10 @@ try:
         all_mtga_cards = Pool.from_sets("mtga_cards",
                                         sets=[*dynamic_sets],
                                         abilities=all_mtga_abilities)
-except:
-    print("WARNING! Could not dynamically generate card sets. Do you have Arena installed?")
+    return all_mtga_cards, all_mtga_abilities
+
+
+def get_all_mtga_cards_static():
     from mtga.set_data import xln, dom, rix, m19, ana, grn, rna, war, m20, eld, akh, arenasup, bfz, mi, roe, rtr
 
     all_mtga_abilities = {**rix.set_ability_map, **xln.set_ability_map, **dom.set_ability_map, **m19.set_ability_map,
@@ -30,4 +35,11 @@ except:
                                       arenasup.ArenaSup, bfz.BattleForZendikar, mi.Mirage, roe.RiseOfEldrazi,
                                       rtr.ReturnToRavnica],
                                 abilities=all_mtga_abilities)
+    return all_mtga_cards, all_mtga_abilities
 
+
+try:
+    all_mtga_cards, all_mtga_abilities = get_all_mtga_cards_dynamic()
+except Exception as e:
+    logging.warning("Could not dynamically generate card sets. Do you have Arena installed?")
+    all_mtga_cards, all_mtga_abilities = get_all_mtga_cards_static()
