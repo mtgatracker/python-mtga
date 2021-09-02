@@ -91,7 +91,7 @@ for set_name in listed_cardsets:
 
     loc_map = {}
     try:
-        en = list(filter(lambda x: x["langkey"] == "EN", loc))[0]
+        en = list(filter(lambda x: x["isoCode"] == "ja-JP", loc))[0] # en-US or ja-JP
     except:
         ## langkeys are null in 11/21 patch???
         en = loc[0]
@@ -122,26 +122,46 @@ for set_name in listed_cardsets:
             used_classnames.append(card_name_class_cased_suffixed)
 
             card_name_snake_cased = re.sub('[^0-9a-zA-Z_]', '', card_title.lower().replace(" ", "_"))
-            cc_raw = card["castingcost"]
+            try:
+                cc_raw = card["castingcost"]
+            except KeyError:
+                cc_raw = ""
             # cc's look like: o2o(U/B)o(U/B)o3oUoB, want to turn it into ["2", "(U/B)"] etc
             cost = [cost_part for cost_part in cc_raw.split("o")[1:] if cost_part != "0"]
-            color_identity = [COLOR_ID_MAP[color_id] for color_id in card["colorIdentity"]]
+            try:
+                color_identity = [COLOR_ID_MAP[color_id] for color_id in card["colorIdentity"]]
+            except KeyError:
+                color_identity = []
             try:
                 collectible = card["isCollectible"]
             except KeyError:
                 collectible = False
 
-            card_type_ids = [enum_map["CardType"][card_type] for card_type in card["types"]]
+            try:
+                card_type_ids = [enum_map["CardType"][card_type] for card_type in card["types"]]
+            except KeyError:
+                card_type_ids = []
             card_types = " ".join([loc_map[loc_id] for loc_id in card_type_ids])
 
-            sub_types_ids = [enum_map["SubType"][sub_type] for sub_type in card["subtypes"]]
+            try:
+                sub_types_ids = [enum_map["SubType"][sub_type] for sub_type in card["subtypes"]]
+            except KeyError:
+                sub_types_ids = []
             sub_types = " ".join([loc_map[loc_id] for loc_id in sub_types_ids])
 
             set_id = set_name.upper()
 
-            rarity = RARITY_ID_MAP[card["rarity"]]
-
-            if card["isToken"]:
+            try:
+                rarity = RARITY_ID_MAP[card["rarity"]]
+            except KeyError:
+                rarity = RARITY_ID_MAP[0]
+            
+            try:
+                is_token = card["isToken"]
+            except KeyError:
+                is_token = False
+            
+            if is_token:
                 set_number = token_count + 10000
                 token_count += 1
             else:
@@ -156,10 +176,29 @@ for set_name in listed_cardsets:
             grp_id = card["grpid"]
             abilities = []
 
-            abilities_raw = card["abilities"]
+            try:
+                abilities_raw = card["abilities"]
+            except KeyError:
+                abilities_raw = []
             for ability in abilities_raw:
-                aid = ability["abilityId"]
-                textid = ability["textId"]
+                aid = ability["Id"]
+                textid = ability["TextId"]
+                try:
+                    text = loc_map[textid].encode("ascii", errors="ignore").decode()
+                except:
+                    # TODO: there are multiple loc files now?? something weird is up. I don't really feel like trying to
+                    # figure this out right now though.
+                    text = "unknown ability id {} / {}".format(aid, textid)
+                abilities.append(aid)
+                all_abilities[aid] = text
+
+            try:
+                hidden_abilities_raw = card["hiddenAbilities"]
+            except KeyError:
+                hidden_abilities_raw = []
+            for ability in hidden_abilities_raw:
+                aid = ability["Id"]
+                textid = ability["TextId"]
                 try:
                     text = loc_map[textid].encode("ascii", errors="ignore").decode()
                 except:
