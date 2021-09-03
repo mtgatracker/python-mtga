@@ -91,7 +91,7 @@ for set_name in listed_cardsets:
 
     loc_map = {}
     try:
-        en = list(filter(lambda x: x["isoCode"] == "ja-JP", loc))[0] # en-US or ja-JP
+        en = list(filter(lambda x: x["isoCode"] == "en-US", loc))[0] # en-US or ja-JP
     except:
         ## langkeys are null in 11/21 patch???
         en = loc[0]
