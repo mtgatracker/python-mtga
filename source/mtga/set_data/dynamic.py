@@ -123,27 +123,27 @@ for set_name in listed_cardsets:
             used_classnames.append(card_name_class_cased_suffixed)
 
             card_name_snake_cased = re.sub('[^0-9a-zA-Z_]', '', card_title.lower().replace(" ", "_"))
-            cc_raw = card["castingcost"]
+            cc_raw = card.get("castingcost", "0")
             # cc's look like: o2o(U/B)o(U/B)o3oUoB, want to turn it into ["2", "(U/B)"] etc
             cost = [cost_part for cost_part in cc_raw.split("o")[1:] if cost_part != "0"]
-            color_identity = [COLOR_ID_MAP[color_id] for color_id in card["colorIdentity"]]
+            color_identity = [COLOR_ID_MAP[color_id] for color_id in card.get("colorIdentity", [])]
             try:
                 collectible = card["isCollectible"]
             except KeyError:
                 collectible = False
 
-            card_type_ids = [enum_map["CardType"][card_type] for card_type in card["types"]]
+            card_type_ids = [enum_map["CardType"][card_type] for card_type in card.get("types", [])]
             card_types = " ".join([loc_map[loc_id] for loc_id in card_type_ids])
 
-            sub_types_ids = [enum_map["SubType"][sub_type] for sub_type in card["subtypes"]]
+            sub_types_ids = [enum_map["SubType"][sub_type] for sub_type in card.get("subtypes", [])]
             sub_types = " ".join([loc_map[loc_id] for loc_id in sub_types_ids])
 
             set_id = set_name.upper()
-            digital_set_id = card["DigitalReleaseSet"] or None
+            digital_set_id = card.get("DigitalReleaseSet")
 
-            rarity = RARITY_ID_MAP[card["rarity"]]
+            rarity = RARITY_ID_MAP[card.get("rarity", 0)]
 
-            if card["isToken"]:
+            if card.get("isToken", False):
                 set_number = token_count + 10000
                 token_count += 1
             else:
@@ -158,10 +158,10 @@ for set_name in listed_cardsets:
             grp_id = card["grpid"]
             abilities = []
 
-            abilities_raw = card["abilities"]
+            abilities_raw = card.get("abilities", [])
             for ability in abilities_raw:
-                aid = ability["abilityId"]
-                textid = ability["textId"]
+                aid = ability["Id"]
+                textid = ability["TextId"]
                 try:
                     text = loc_map[textid].encode("ascii", errors="ignore").decode()
                 except:
@@ -171,8 +171,8 @@ for set_name in listed_cardsets:
                 abilities.append(aid)
                 all_abilities[aid] = text
 
-            power = card["power"]
-            toughness = card["toughness"]
+            power = card.get("power", 0)
+            toughness = card.get("toughness", 0)
 
             new_card_obj = Card(
                 name=card_name_snake_cased,
@@ -185,20 +185,20 @@ for set_name in listed_cardsets:
                 set_id=set_id,
                 digital_set_id=digital_set_id,
                 rarity=rarity,
-                artist=card["artistCredit"],
+                artist=card.get("artistCredit"),
                 collectible=collectible,
                 set_number=set_number,
                 mtga_id=grp_id,
                 power=power,
                 toughness=toughness,
-                styles=set(card["knownSupportedStyles"])
+                styles=set(card.get("knownSupportedStyles", []))
             )
             set_card_objs.append(new_card_obj)
 
         except Exception:
             print("hit an error on {} / {} / {}".format(card["grpid"], loc_map[card["titleId"]],
                                                         card["collectorNumber"]))
-            # raise
+            #raise
     card_set_obj = Set(set_name_class_cased, cards=set_card_objs)
     dynamic_set_tuples.append((card_set_obj, all_abilities))
 
