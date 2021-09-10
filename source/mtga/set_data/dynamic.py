@@ -49,6 +49,7 @@ def get_win_data_location():
         data_location = QueryValueEx(registry_key, "Path")[0] + r"MTGA_Data\Downloads\Data"
         print("Found data @ ")
         print(data_location)
+        print(r"C:\Program Files\Wizards of the Coast\MTGA\MTGA_Data\Downloads\Data")
     except:
         print("Couldn't locate MTGA from registry, falling back to hardcoded path...")
         data_location = _get_data_location_hardcoded()
@@ -90,7 +91,7 @@ for set_name in listed_cardsets:
 
     loc_map = {}
     try:
-        en = list(filter(lambda x: x["isoCode"] == "en-US", loc))[0] # en-US or ja-JP
+        en = list(filter(lambda x: x["isoCode"] == "ja-JP", loc))[0] # en-US or ja-JP
     except:
         ## langkeys are null in 11/21 patch???
         en = loc[0]
