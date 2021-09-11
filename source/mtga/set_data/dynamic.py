@@ -49,7 +49,6 @@ def get_win_data_location():
         data_location = QueryValueEx(registry_key, "Path")[0] + r"MTGA_Data\Downloads\Data"
         print("Found data @ ")
         print(data_location)
-        print(r"C:\Program Files\Wizards of the Coast\MTGA\MTGA_Data\Downloads\Data")
     except:
         print("Couldn't locate MTGA from registry, falling back to hardcoded path...")
         data_location = _get_data_location_hardcoded()
