@@ -3,6 +3,7 @@
 
  This file adapted from generate_set_map.py """
 import json
+import locale
 import os
 import re
 import sys
@@ -21,6 +22,17 @@ def _get_data_location_hardcoded():
 
 COLOR_ID_MAP = {1: "W", 2: "U", 3: "B", 4: "R", 5: "G"}
 RARITY_ID_MAP = {0: "Token", 1: "Basic", 2: "Common", 3: "Uncommon", 4: "Rare", 5: "Mythic Rare"}
+ISO_CODE_MAP = {
+    "English": "en-US",
+    "French": "fr-FR",
+    "Italian": "it-IT",
+    "German": "de-DE",
+    "Spanish": "es-ES",
+    "Japanese": "ja-JP",
+    "Portuguese": "pt-BR",
+    "Russian": "ru-RU",
+    "Korean": "ko-KR",
+}
 
 dynamic_set_tuples = []
 
@@ -88,17 +100,20 @@ for set_name in listed_cardsets:
     set_name_class_cased = re.sub('[^0-9a-zA-Z_]', '', set_name)
     all_abilities = {}
 
+    try:
+        iso_code = ISO_CODE_MAP.get(locale.getlocale()[0].split("_")[0])
+    except:
+        iso_code = ISO_CODE_MAP.get("English")
     loc_map = {}
     try:
-        en = list(filter(lambda x: x["isoCode"] == "ja-JP", loc))[0] # en-US or ja-JP
+        lang = list(filter(lambda x: x["isoCode"] == iso_code, loc))[0]
     except:
-        ## langkeys are null in 11/21 patch???
-        en = loc[0]
-    for obj in en["keys"]:
+        lang = loc[0]
+    for obj in lang["keys"]:
         # if obj["id"] in loc_map.keys():
         #     print("WARNING: overwriting id {} = {} with {}".format(obj["id"], loc_map[obj["id"]], obj["text"]))
         loc_map[obj["id"]] = obj["text"]
-    loc_map = {obj["id"]: obj["text"] for obj in en["keys"]}
+    loc_map = {obj["id"]: obj["text"] for obj in lang["keys"]}
     enum_map = {obj["name"]: {inner_obj["id"]: inner_obj["text"] for inner_obj in obj["values"]} for obj in enums}
     set_cards = [card for card in cards if card["set"].upper() == set_name.upper()]
     assert set_cards, "No cards found in set {}. Double check your nomenclature, and ensure the input files contain your set!"

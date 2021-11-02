@@ -1,6 +1,7 @@
 from mtga.models.card_set import Pool
 try:
     from mtga.set_data import dynamic
+    print("import dynamic complete.")
     dynamic_sets = []
     all_mtga_abilities = {}
 
