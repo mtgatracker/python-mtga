@@ -66,6 +66,10 @@ def get_win_data_location():
         data_location = _get_data_location_hardcoded()
     return data_location
 
+# To remove Japanese ruby and Alchemy tags
+def del_ruby(s):
+    return re.sub("（.+?）", "", re.sub("<.+?>", "", s))
+
 data_location = get_data_location()
 
 json_filepaths = {"enums": "", "cards": "", "abilities": "", "loc": ""}
@@ -94,6 +98,9 @@ with open(json_filepaths["enums"], "r", encoding="utf-8") as enums_in:
     enums = json.load(enums_in)
 
 listed_cardsets = list(set([card["set"] for card in cards]))
+
+# To generate 'CardDictionary.csv' for ゆかりねっとコネクター NEO
+card_dictionary_csv = []
 
 for set_name in listed_cardsets:
     used_classnames = []
@@ -129,6 +136,12 @@ for set_name in listed_cardsets:
             card_name_class_cased = re.sub('[^0-9a-zA-Z_]', '', card_title)
             card_name_class_cased_suffixed = card_name_class_cased
             card_suffix = 2
+
+            # To generate 'CardDictionary.csv' for ゆかりねっとコネクター NEO
+            card_name = del_ruby(card_title)
+            line = card_name + "," + card_name + "\n"
+            if line not in card_dictionary_csv:
+                card_dictionary_csv.append(line)
 
             while card_name_class_cased_suffixed in used_classnames:
                 card_name_class_cased_suffixed = card_name_class_cased + str(card_suffix)
@@ -235,3 +248,8 @@ for set_name in listed_cardsets:
     card_set_obj = Set(set_name_class_cased, cards=set_card_objs)
     dynamic_set_tuples.append((card_set_obj, all_abilities))
 
+# To generate 'CardDictionary.csv' for ゆかりねっとコネクター NEO
+card_dictionary_csv.sort(reverse=True)
+with open("CardDictionary.csv", "w", encoding="utf-8") as f:
+    for line in card_dictionary_csv:
+        f.write(line)
