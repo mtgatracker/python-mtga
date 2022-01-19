@@ -3,6 +3,7 @@
 
  This file adapted from generate_set_map.py """
 import json
+import locale
 import os
 import re
 import sys
@@ -21,6 +22,17 @@ def _get_data_location_hardcoded():
 
 COLOR_ID_MAP = {1: "W", 2: "U", 3: "B", 4: "R", 5: "G"}
 RARITY_ID_MAP = {0: "Token", 1: "Basic", 2: "Common", 3: "Uncommon", 4: "Rare", 5: "Mythic Rare"}
+ISO_CODE_MAP = {
+    "English": "en-US",
+    "French": "fr-FR",
+    "Italian": "it-IT",
+    "German": "de-DE",
+    "Spanish": "es-ES",
+    "Japanese": "ja-JP",
+    "Portuguese": "pt-BR",
+    "Russian": "ru-RU",
+    "Korean": "ko-KR",
+}
 
 dynamic_set_tuples = []
 
@@ -54,6 +66,10 @@ def get_win_data_location():
         data_location = _get_data_location_hardcoded()
     return data_location
 
+# To remove Japanese ruby and Alchemy tags
+def del_ruby(s):
+    return re.sub("（.+?）", "", re.sub("<.+?>", "", s))
+
 data_location = get_data_location()
 
 json_filepaths = {"enums": "", "cards": "", "abilities": "", "loc": ""}
@@ -83,22 +99,29 @@ with open(json_filepaths["enums"], "r", encoding="utf-8") as enums_in:
 
 listed_cardsets = list(set([card["set"] for card in cards]))
 
+# To generate 'CardDictionary.csv' for ゆかりねっとコネクター NEO
+CARD_DICTIONARY_FILENAME = "CardDictionary.csv"
+card_dictionary_csv = []
+
 for set_name in listed_cardsets:
     used_classnames = []
     set_name_class_cased = re.sub('[^0-9a-zA-Z_]', '', set_name)
     all_abilities = {}
 
+    try:
+        iso_code = ISO_CODE_MAP.get(locale.getlocale()[0].split("_")[0])
+    except:
+        iso_code = ISO_CODE_MAP.get("English")
     loc_map = {}
     try:
-        en = list(filter(lambda x: x["isoCode"] == "ja-JP", loc))[0] # en-US or ja-JP
+        lang = list(filter(lambda x: x["isoCode"] == iso_code, loc))[0]
     except:
-        ## langkeys are null in 11/21 patch???
-        en = loc[0]
-    for obj in en["keys"]:
+        lang = loc[0]
+    for obj in lang["keys"]:
         # if obj["id"] in loc_map.keys():
         #     print("WARNING: overwriting id {} = {} with {}".format(obj["id"], loc_map[obj["id"]], obj["text"]))
         loc_map[obj["id"]] = obj["text"]
-    loc_map = {obj["id"]: obj["text"] for obj in en["keys"]}
+    loc_map = {obj["id"]: obj["text"] for obj in lang["keys"]}
     enum_map = {obj["name"]: {inner_obj["id"]: inner_obj["text"] for inner_obj in obj["values"]} for obj in enums}
     set_cards = [card for card in cards if card["set"].upper() == set_name.upper()]
     assert set_cards, "No cards found in set {}. Double check your nomenclature, and ensure the input files contain your set!"
@@ -114,6 +137,12 @@ for set_name in listed_cardsets:
             card_name_class_cased = re.sub('[^0-9a-zA-Z_]', '', card_title)
             card_name_class_cased_suffixed = card_name_class_cased
             card_suffix = 2
+
+            # To generate 'CardDictionary.csv' for ゆかりねっとコネクター NEO
+            card_name = del_ruby(card_title)
+            line = card_name + "," + card_name + "\n"
+            if line not in card_dictionary_csv:
+                card_dictionary_csv.append(line)
 
             while card_name_class_cased_suffixed in used_classnames:
                 card_name_class_cased_suffixed = card_name_class_cased + str(card_suffix)
@@ -220,3 +249,9 @@ for set_name in listed_cardsets:
     card_set_obj = Set(set_name_class_cased, cards=set_card_objs)
     dynamic_set_tuples.append((card_set_obj, all_abilities))
 
+# To generate 'CardDictionary.csv' for ゆかりねっとコネクター NEO
+card_dictionary_csv.sort(reverse=True)
+with open(CARD_DICTIONARY_FILENAME, "w", encoding="utf-8") as f:
+    for line in card_dictionary_csv:
+        f.write(line)
+    print(os.path.abspath(CARD_DICTIONARY_FILENAME) + " was generated")
