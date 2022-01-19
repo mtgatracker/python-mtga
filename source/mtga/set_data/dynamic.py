@@ -100,6 +100,7 @@ with open(json_filepaths["enums"], "r", encoding="utf-8") as enums_in:
 listed_cardsets = list(set([card["set"] for card in cards]))
 
 # To generate 'CardDictionary.csv' for ゆかりねっとコネクター NEO
+CARD_DICTIONARY_FILENAME = "CardDictionary.csv"
 card_dictionary_csv = []
 
 for set_name in listed_cardsets:
@@ -250,6 +251,7 @@ for set_name in listed_cardsets:
 
 # To generate 'CardDictionary.csv' for ゆかりねっとコネクター NEO
 card_dictionary_csv.sort(reverse=True)
-with open("CardDictionary.csv", "w", encoding="utf-8") as f:
+with open(CARD_DICTIONARY_FILENAME, "w", encoding="utf-8") as f:
     for line in card_dictionary_csv:
         f.write(line)
+    print(os.path.abspath(CARD_DICTIONARY_FILENAME) + " was generated")

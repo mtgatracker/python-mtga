@@ -2,9 +2,9 @@
 Prop3=19,2
 [InternetShortcut]
 IDList=
-URL=http://127.0.0.1:15520/api/input?text=•”L
+URL=http://localhost:15520/api/input?text=•”L
 HotKey=0
 [InternetShortcut.A]
-URL=http://127.0.0.1:15520/api/input?text=•”L
+URL=http://localhost:15520/api/input?text=•”L
 [InternetShortcut.W]
-URL=http://127.0.0.1:15520/api/input?text+AD2e0nMr-
+URL=http://localhost:15520/api/input?text+AD2e0nMr-
