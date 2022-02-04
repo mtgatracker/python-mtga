@@ -13,6 +13,7 @@ try:
         all_mtga_cards = Pool.from_sets("mtga_cards",
                                         sets=[*dynamic_sets],
                                         abilities=all_mtga_abilities)
+
 except:
     print("WARNING! Could not dynamically generate card sets. Do you have Arena installed?")
     from mtga.set_data import xln, dom, rix, m19, ana, grn, rna, war, m20, eld, akh, arenasup, bfz, mi, roe, rtr
@@ -31,4 +32,3 @@ except:
                                       arenasup.ArenaSup, bfz.BattleForZendikar, mi.Mirage, roe.RiseOfEldrazi,
                                       rtr.ReturnToRavnica],
                                 abilities=all_mtga_abilities)
-

@@ -132,15 +132,15 @@ for set_name in listed_cardsets:
     output_lines = []
     set_card_objs = []
     for card in set_cards:
+        # TODO: card_name_snake_casedの日本語対応
         try:
-            card_title = loc_map[card["titleId"]]
+            card_title = del_ruby(loc_map[card["titleId"]])
             card_name_class_cased = re.sub('[^0-9a-zA-Z_]', '', card_title)
             card_name_class_cased_suffixed = card_name_class_cased
             card_suffix = 2
 
             # To generate 'CardDictionary.csv' for ゆかりねっとコネクター NEO
-            card_name = del_ruby(card_title)
-            line = card_name + "," + card_name + "\n"
+            line = card_title + "," + card_title + "\n"
             if line not in card_dictionary_csv:
                 card_dictionary_csv.append(line)
 
@@ -161,7 +161,8 @@ for set_name in listed_cardsets:
             except KeyError:
                 color_identity = []
             try:
-                collectible = card["isCollectible"]
+                #collectible = card["isCollectible"] # "isCollectible" key is not exist.
+                collectible = bool(int(card["collectorMax"]))
             except KeyError:
                 collectible = False
 
@@ -205,6 +206,16 @@ for set_name in listed_cardsets:
             abilities = []
 
             try:
+                is_secondary_card = card["isSecondaryCard"]
+            except KeyError:
+                is_secondary_card = False
+
+            try:
+                is_rebalanced = card["IsRebalanced"]
+            except KeyError:
+                is_rebalanced = False
+
+            try:
                 abilities_raw = card["abilities"]
             except KeyError:
                 abilities_raw = []
@@ -239,7 +250,8 @@ for set_name in listed_cardsets:
             new_card_obj = Card(name=card_name_snake_cased, pretty_name=card_title, cost=cost,
                                 color_identity=color_identity, card_type=card_types, sub_types=sub_types,
                                 abilities=abilities, set_id=set_id, rarity=rarity, collectible=collectible,
-                                set_number=set_number, mtga_id=grp_id)
+                                set_number=set_number, mtga_id=grp_id, 
+                                is_token=is_token, is_secondary_card=is_secondary_card, is_rebalanced=is_rebalanced)
             set_card_objs.append(new_card_obj)
 
         except Exception:

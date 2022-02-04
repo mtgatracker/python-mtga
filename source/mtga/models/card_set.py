@@ -128,7 +128,50 @@ class Pool(object):
             if keyword_clean in card.name:
                 results.append(card)
         return results
+    
+    def get_real_cards(self, name="", pretty_name="", cost=None, color_identity=None, card_type="", sub_types="",
+                 abilities=None, set="", rarity="", collectible=True, set_number=0, mtga_id=0, 
+                 is_token=False, is_secondary_card=False, is_rebalanced=False):
+        results = []
+        for card in self.cards:
+            if name and card.name != name:
+                continue
+            if pretty_name and card.pretty_name != pretty_name:
+                continue
+            if cost and card.cost != cost:
+                continue
+            if color_identity and card.color_identity != color_identity:
+                continue
+            if card_type and card.card_type != card_type:
+                continue
+            if sub_types and card.sub_types != sub_types:
+                continue
+            if abilities and card.abilities != abilities:
+                continue
+            if set and card.set != set:
+                continue
+            if rarity and card.rarity != rarity:
+                continue
+            if card.collectible != collectible:
+                continue
+            if set_number and card.set_number != set_number:
+                continue
+            if mtga_id and card.mtga_id != mtga_id:
+                continue
+            if card.is_token != is_token:
+                continue
+            if card.is_secondary_card != is_secondary_card:
+                continue
+            if card.is_rebalanced != is_rebalanced:
+                continue
 
+            results.append(card)
+        
+        return results
+
+    def open_booster(self, set, seed):
+        # レア/神話レア
+        rarity
 
 class Zone(Pool):
     def __init__(self, pool_name, zone_id=-1):
