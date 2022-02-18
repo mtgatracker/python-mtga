@@ -99,10 +99,6 @@ with open(json_filepaths["enums"], "r", encoding="utf-8") as enums_in:
 
 listed_cardsets = list(set([card["set"] for card in cards]))
 
-# To generate 'CardDictionary.csv' for ゆかりねっとコネクター NEO
-CARD_DICTIONARY_FILENAME = "CardDictionary.csv"
-card_dictionary_csv = []
-
 for set_name in listed_cardsets:
     used_classnames = []
     set_name_class_cased = re.sub('[^0-9a-zA-Z_]', '', set_name)
@@ -138,11 +134,6 @@ for set_name in listed_cardsets:
             card_name_class_cased = re.sub('[^0-9a-zA-Z_]', '', card_title)
             card_name_class_cased_suffixed = card_name_class_cased
             card_suffix = 2
-
-            # To generate 'CardDictionary.csv' for ゆかりねっとコネクター NEO
-            line = card_title + "," + card_title + "\n"
-            if line not in card_dictionary_csv:
-                card_dictionary_csv.append(line)
 
             while card_name_class_cased_suffixed in used_classnames:
                 card_name_class_cased_suffixed = card_name_class_cased + str(card_suffix)
@@ -260,10 +251,3 @@ for set_name in listed_cardsets:
             # raise
     card_set_obj = Set(set_name_class_cased, cards=set_card_objs)
     dynamic_set_tuples.append((card_set_obj, all_abilities))
-
-# To generate 'CardDictionary.csv' for ゆかりねっとコネクター NEO
-card_dictionary_csv.sort(reverse=True)
-with open(CARD_DICTIONARY_FILENAME, "w", encoding="utf-8") as f:
-    for line in card_dictionary_csv:
-        f.write(line)
-    print(os.path.abspath(CARD_DICTIONARY_FILENAME) + " was generated")
