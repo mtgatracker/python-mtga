@@ -169,6 +169,13 @@ for set_name in listed_cardsets:
                 sub_types_ids = []
             sub_types = " ".join([loc_map[loc_id] for loc_id in sub_types_ids])
 
+            # TODO: super_types
+            try:
+                super_types_ids = [enum_map["SuperType"][super_type] for super_type in card["supertypes"]]
+            except KeyError:
+                super_types_ids = []
+            super_types = " ".join([loc_map[loc_id] for loc_id in super_types_ids])
+
             set_id = set_name.upper()
 
             try:
@@ -239,7 +246,7 @@ for set_name in listed_cardsets:
                 all_abilities[aid] = text
 
             new_card_obj = Card(name=card_name_snake_cased, pretty_name=card_title, cost=cost,
-                                color_identity=color_identity, card_type=card_types, sub_types=sub_types,
+                                color_identity=color_identity, card_type=card_types, sub_types=sub_types, super_types=super_types, 
                                 abilities=abilities, set_id=set_id, rarity=rarity, collectible=collectible,
                                 set_number=set_number, mtga_id=grp_id, 
                                 is_token=is_token, is_secondary_card=is_secondary_card, is_rebalanced=is_rebalanced)
