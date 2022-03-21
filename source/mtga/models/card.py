@@ -93,14 +93,14 @@ class Card(object):
     
     @property
     def is_creature_card(self):
-        if "クリーチャー" in self.card_types or "Creature" in self.card_types:
+        if "クリーチャー" in self.card_type or "Creature" in self.card_type:
             return True
         else:
             return False
 
     @property
     def is_land_card(self):
-        if "土地" in self.card_types or "Land" in self.card_types:
+        if "土地" in self.card_type or "Land" in self.card_type:
             return True
         else:
             return False
