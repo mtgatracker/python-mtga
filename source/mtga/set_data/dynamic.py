@@ -27,12 +27,13 @@ dynamic_set_tuples = []
 
 def get_data_location():
     current_os = sys.platform
-    if current_os not in ["darwin", "win32"]:
+    if current_os not in ["darwin", "win32", "linux"]:
         raise
 
     return {
         "darwin": get_darwin_data_location,
         "win32": get_win_data_location,
+        "linux": get_win_data_location,
     }[current_os]()
 
 def get_darwin_data_location():
@@ -121,44 +122,45 @@ for set_name in listed_cardsets:
             used_classnames.append(card_name_class_cased_suffixed)
 
             card_name_snake_cased = re.sub('[^0-9a-zA-Z_]', '', card_title.lower().replace(" ", "_"))
-            cc_raw = card["castingcost"]
+            cc_raw = card.get("castingcost", "0")
             # cc's look like: o2o(U/B)o(U/B)o3oUoB, want to turn it into ["2", "(U/B)"] etc
             cost = [cost_part for cost_part in cc_raw.split("o")[1:] if cost_part != "0"]
-            color_identity = [COLOR_ID_MAP[color_id] for color_id in card["colorIdentity"]]
+            color_identity = [COLOR_ID_MAP[color_id] for color_id in card.get("colorIdentity", [])]
             try:
                 collectible = card["isCollectible"]
             except KeyError:
                 collectible = False
 
-            card_type_ids = [enum_map["CardType"][card_type] for card_type in card["types"]]
+            card_type_ids = [enum_map["CardType"][card_type] for card_type in card.get("types", [])]
             card_types = " ".join([loc_map[loc_id] for loc_id in card_type_ids])
 
-            sub_types_ids = [enum_map["SubType"][sub_type] for sub_type in card["subtypes"]]
+            sub_types_ids = [enum_map["SubType"][sub_type] for sub_type in card.get("subtypes", [])]
             sub_types = " ".join([loc_map[loc_id] for loc_id in sub_types_ids])
 
             set_id = set_name.upper()
+            digital_set_id = card.get("DigitalReleaseSet")
 
-            rarity = RARITY_ID_MAP[card["rarity"]]
+            rarity = RARITY_ID_MAP[card.get("rarity", 0)]
 
-            if card["isToken"]:
+            if card.get("isToken", False):
                 set_number = token_count + 10000
                 token_count += 1
             else:
                 try:
-                    if card["CollectorNumber"].startswith("GR") or card["CollectorNumber"].startswith("GP"):
-                        set_number = int(card["CollectorNumber"][2]) * 1000
+                    if card["collectorNumber"].startswith("GR") or card["collectorNumber"].startswith("GP"):
+                        set_number = int(card["collectorNumber"][2]) * 1000
                     else:
-                        set_number = int(card["CollectorNumber"])
+                        set_number = int(card["collectorNumber"])
                 except ValueError:
                     set_number = card["grpid"]
 
             grp_id = card["grpid"]
             abilities = []
 
-            abilities_raw = card["abilities"]
+            abilities_raw = card.get("abilities", [])
             for ability in abilities_raw:
-                aid = ability["abilityId"]
-                textid = ability["textId"]
+                aid = ability["Id"]
+                textid = ability["TextId"]
                 try:
                     text = loc_map[textid].encode("ascii", errors="ignore").decode()
                 except:
@@ -168,16 +170,34 @@ for set_name in listed_cardsets:
                 abilities.append(aid)
                 all_abilities[aid] = text
 
-            new_card_obj = Card(name=card_name_snake_cased, pretty_name=card_title, cost=cost,
-                                color_identity=color_identity, card_type=card_types, sub_types=sub_types,
-                                abilities=abilities, set_id=set_id, rarity=rarity, collectible=collectible,
-                                set_number=set_number, mtga_id=grp_id)
+            power = card.get("power", 0)
+            toughness = card.get("toughness", 0)
+
+            new_card_obj = Card(
+                name=card_name_snake_cased,
+                pretty_name=card_title,
+                cost=cost,
+                color_identity=color_identity,
+                card_type=card_types,
+                sub_types=sub_types,
+                abilities=abilities,
+                set_id=set_id,
+                digital_set_id=digital_set_id,
+                rarity=rarity,
+                artist=card.get("artistCredit"),
+                collectible=collectible,
+                set_number=set_number,
+                mtga_id=grp_id,
+                power=power,
+                toughness=toughness,
+                styles=set(card.get("knownSupportedStyles", []))
+            )
             set_card_objs.append(new_card_obj)
 
         except Exception:
             print("hit an error on {} / {} / {}".format(card["grpid"], loc_map[card["titleId"]],
-                                                        card["CollectorNumber"]))
-            # raise
+                                                        card["collectorNumber"]))
+            #raise
     card_set_obj = Set(set_name_class_cased, cards=set_card_objs)
     dynamic_set_tuples.append((card_set_obj, all_abilities))
 
