@@ -212,6 +212,11 @@ for set_name in listed_cardsets:
                 is_rebalanced = card["IsRebalanced"]
             except KeyError:
                 is_rebalanced = False
+            
+            try:
+                is_digital_only = card["IsDigitalOnly"]
+            except KeyError:
+                is_digital_only = False
 
             try:
                 abilities_raw = card["abilities"]
@@ -249,7 +254,7 @@ for set_name in listed_cardsets:
                                 color_identity=color_identity, card_type=card_types, sub_types=sub_types, super_types=super_types, 
                                 abilities=abilities, set_id=set_id, rarity=rarity, collectible=collectible,
                                 set_number=set_number, mtga_id=grp_id, 
-                                is_token=is_token, is_secondary_card=is_secondary_card, is_rebalanced=is_rebalanced)
+                                is_token=is_token, is_secondary_card=is_secondary_card, is_rebalanced=is_rebalanced, is_digital_only=is_digital_only)
             set_card_objs.append(new_card_obj)
 
         except Exception:

@@ -10,7 +10,7 @@ class Card(object):
 
     def __init__(self, name="", pretty_name="", cost=None, color_identity=None, card_type="", sub_types="", super_types="",
                  abilities=None, set_id="", rarity="", collectible=True, set_number=-1, mtga_id=-1,
-                 is_token=False, is_secondary_card=False, is_rebalanced=False):
+                 is_token=False, is_secondary_card=False, is_rebalanced=False, is_digital_only=False):
         self.name = name
         self.set = set_id
         self.pretty_name = pretty_name
@@ -33,6 +33,7 @@ class Card(object):
         self.is_token = is_token
         self.is_secondary_card = is_secondary_card
         self.is_rebalanced = is_rebalanced
+        self.is_digital_only = is_digital_only
 
     @property
     def abilities_decoded(self):
