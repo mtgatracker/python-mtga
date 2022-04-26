@@ -99,10 +99,6 @@ with open(json_filepaths["enums"], "r", encoding="utf-8") as enums_in:
 
 listed_cardsets = list(set([card["set"] for card in cards]))
 
-# To generate 'CardDictionary.csv' for ゆかりねっとコネクター NEO
-CARD_DICTIONARY_FILENAME = "CardDictionary.csv"
-card_dictionary_csv = []
-
 for set_name in listed_cardsets:
     used_classnames = []
     set_name_class_cased = re.sub('[^0-9a-zA-Z_]', '', set_name)
@@ -132,17 +128,12 @@ for set_name in listed_cardsets:
     output_lines = []
     set_card_objs = []
     for card in set_cards:
+        # TODO: card_name_snake_casedの日本語対応
         try:
-            card_title = loc_map[card["titleId"]]
+            card_title = del_ruby(loc_map[card["titleId"]])
             card_name_class_cased = re.sub('[^0-9a-zA-Z_]', '', card_title)
             card_name_class_cased_suffixed = card_name_class_cased
             card_suffix = 2
-
-            # To generate 'CardDictionary.csv' for ゆかりねっとコネクター NEO
-            card_name = del_ruby(card_title)
-            line = card_name + "," + card_name + "\n"
-            if line not in card_dictionary_csv:
-                card_dictionary_csv.append(line)
 
             while card_name_class_cased_suffixed in used_classnames:
                 card_name_class_cased_suffixed = card_name_class_cased + str(card_suffix)
@@ -161,7 +152,8 @@ for set_name in listed_cardsets:
             except KeyError:
                 color_identity = []
             try:
-                collectible = card["isCollectible"]
+                #collectible = card["isCollectible"] # "isCollectible" key is not exist.
+                collectible = bool(int(card["collectorMax"]))
             except KeyError:
                 collectible = False
 
@@ -176,6 +168,13 @@ for set_name in listed_cardsets:
             except KeyError:
                 sub_types_ids = []
             sub_types = " ".join([loc_map[loc_id] for loc_id in sub_types_ids])
+
+            # TODO: super_types
+            try:
+                super_types_ids = [enum_map["SuperType"][super_type] for super_type in card["supertypes"]]
+            except KeyError:
+                super_types_ids = []
+            super_types = " ".join([loc_map[loc_id] for loc_id in super_types_ids])
 
             set_id = set_name.upper()
 
@@ -203,6 +202,21 @@ for set_name in listed_cardsets:
 
             grp_id = card["grpid"]
             abilities = []
+
+            try:
+                is_secondary_card = card["isSecondaryCard"]
+            except KeyError:
+                is_secondary_card = False
+
+            try:
+                is_rebalanced = card["IsRebalanced"]
+            except KeyError:
+                is_rebalanced = False
+            
+            try:
+                is_digital_only = card["IsDigitalOnly"]
+            except KeyError:
+                is_digital_only = False
 
             try:
                 abilities_raw = card["abilities"]
@@ -237,9 +251,10 @@ for set_name in listed_cardsets:
                 all_abilities[aid] = text
 
             new_card_obj = Card(name=card_name_snake_cased, pretty_name=card_title, cost=cost,
-                                color_identity=color_identity, card_type=card_types, sub_types=sub_types,
+                                color_identity=color_identity, card_type=card_types, sub_types=sub_types, super_types=super_types, 
                                 abilities=abilities, set_id=set_id, rarity=rarity, collectible=collectible,
-                                set_number=set_number, mtga_id=grp_id)
+                                set_number=set_number, mtga_id=grp_id, 
+                                is_token=is_token, is_secondary_card=is_secondary_card, is_rebalanced=is_rebalanced, is_digital_only=is_digital_only)
             set_card_objs.append(new_card_obj)
 
         except Exception:
@@ -248,10 +263,3 @@ for set_name in listed_cardsets:
             # raise
     card_set_obj = Set(set_name_class_cased, cards=set_card_objs)
     dynamic_set_tuples.append((card_set_obj, all_abilities))
-
-# To generate 'CardDictionary.csv' for ゆかりねっとコネクター NEO
-card_dictionary_csv.sort(reverse=True)
-with open(CARD_DICTIONARY_FILENAME, "w", encoding="utf-8") as f:
-    for line in card_dictionary_csv:
-        f.write(line)
-    print(os.path.abspath(CARD_DICTIONARY_FILENAME) + " was generated")
