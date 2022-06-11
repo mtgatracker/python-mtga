@@ -3,13 +3,13 @@
 
  This file adapted from generate_set_map.py """
 import json
-import locale
 import os
 import re
 import sys
 from pathlib import Path
 from mtga.models.card import Card
 from mtga.models.card_set import Set
+from sqlite2json import sqlite2json
 
 
 def _get_data_location_hardcoded():
@@ -17,22 +17,12 @@ def _get_data_location_hardcoded():
         "ProgramFiles",
         r"C:\Program Files"
     )
-    return os.path.join(root, "Wizards of the Coast", "MTGA", "MTGA_Data", "Downloads", "Data")
+    return os.path.join(root, "Wizards of the Coast", "MTGA", "MTGA_Data", "Downloads", "Raw")
 
 
 COLOR_ID_MAP = {1: "W", 2: "U", 3: "B", 4: "R", 5: "G"}
 RARITY_ID_MAP = {0: "Token", 1: "Basic", 2: "Common", 3: "Uncommon", 4: "Rare", 5: "Mythic Rare"}
-ISO_CODE_MAP = {
-    "English": "en-US",
-    "French": "fr-FR",
-    "Italian": "it-IT",
-    "German": "de-DE",
-    "Spanish": "es-ES",
-    "Japanese": "ja-JP",
-    "Portuguese": "pt-BR",
-    "Russian": "ru-RU",
-    "Korean": "ko-KR",
-}
+
 
 dynamic_set_tuples = []
 
@@ -49,7 +39,7 @@ def get_data_location():
 def get_darwin_data_location():
     return os.path.join(
         os.path.expanduser("~"),
-        "Library/Application Support/com.wizards.mtga/Downloads/Data",
+        "Library/Application Support/com.wizards.mtga/Downloads/Raw",
     )
 
 def get_win_data_location():
@@ -58,7 +48,7 @@ def get_win_data_location():
         registry_connection = ConnectRegistry(None, HKEY_LOCAL_MACHINE)
         reg_path = r"SOFTWARE\Wizards of the Coast\MTGArena"
         registry_key = OpenKey(registry_connection, reg_path)
-        data_location = QueryValueEx(registry_key, "Path")[0] + r"MTGA_Data\Downloads\Data"
+        data_location = QueryValueEx(registry_key, "Path")[0] + r"MTGA_Data\Downloads\Raw"
         print("Found data @ ")
         print(data_location)
     except:
@@ -72,7 +62,7 @@ def del_ruby(s):
 
 data_location = get_data_location()
 
-json_filepaths = {"enums": "", "cards": "", "abilities": "", "loc": ""}
+json_filepaths = {"cards": "", "abilities": "", "CardDatabase": ""}
 
 # A newer file SHOULD be the preference; alpha sort of hashes may be out of order
 # Otherwise it will be necessary to find which is really used
@@ -91,11 +81,7 @@ for filepath in sorted(Path(data_location).iterdir(), key=os.path.getmtime):
 with open(json_filepaths["cards"], "r", encoding="utf-8") as card_in:
     cards = json.load(card_in)
 
-with open(json_filepaths["loc"], "r", encoding="utf-8") as loc_in:
-    loc = json.load(loc_in)
-
-with open(json_filepaths["enums"], "r", encoding="utf-8") as enums_in:
-    enums = json.load(enums_in)
+loc, enums = sqlite2json(json_filepaths["CardDatabase"])
 
 listed_cardsets = list(set([card["set"] for card in cards]))
 
@@ -104,20 +90,7 @@ for set_name in listed_cardsets:
     set_name_class_cased = re.sub('[^0-9a-zA-Z_]', '', set_name)
     all_abilities = {}
 
-    try:
-        iso_code = ISO_CODE_MAP.get(locale.getlocale()[0].split("_")[0])
-    except:
-        iso_code = ISO_CODE_MAP.get("English")
-    loc_map = {}
-    try:
-        lang = list(filter(lambda x: x["isoCode"] == iso_code, loc))[0]
-    except:
-        lang = loc[0]
-    for obj in lang["keys"]:
-        # if obj["id"] in loc_map.keys():
-        #     print("WARNING: overwriting id {} = {} with {}".format(obj["id"], loc_map[obj["id"]], obj["text"]))
-        loc_map[obj["id"]] = obj["text"]
-    loc_map = {obj["id"]: obj["text"] for obj in lang["keys"]}
+    loc_map = {obj["id"]: obj["text"] for obj in loc}
     enum_map = {obj["name"]: {inner_obj["id"]: inner_obj["text"] for inner_obj in obj["values"]} for obj in enums}
     set_cards = [card for card in cards if card["set"].upper() == set_name.upper()]
     assert set_cards, "No cards found in set {}. Double check your nomenclature, and ensure the input files contain your set!"
@@ -224,9 +197,11 @@ for set_name in listed_cardsets:
                 abilities_raw = []
             for ability in abilities_raw:
                 aid = ability["Id"]
-                textid = ability["TextId"]
+                textid = ability.get("TextId")
+                text = ""
                 try:
-                    text = loc_map[textid].encode("ascii", errors="ignore").decode()
+                    if textid:
+                        text = loc_map[textid].encode("ascii", errors="ignore").decode()
                 except:
                     # TODO: there are multiple loc files now?? something weird is up. I don't really feel like trying to
                     # figure this out right now though.
@@ -240,9 +215,11 @@ for set_name in listed_cardsets:
                 hidden_abilities_raw = []
             for ability in hidden_abilities_raw:
                 aid = ability["Id"]
-                textid = ability["TextId"]
+                textid = ability.get("TextId")
+                text = ""
                 try:
-                    text = loc_map[textid].encode("ascii", errors="ignore").decode()
+                    if textid:
+                        text = loc_map[textid].encode("ascii", errors="ignore").decode()
                 except:
                     # TODO: there are multiple loc files now?? something weird is up. I don't really feel like trying to
                     # figure this out right now though.
@@ -260,6 +237,6 @@ for set_name in listed_cardsets:
         except Exception:
             print("hit an error on {} / {} / {}".format(card["grpid"], loc_map[card["titleId"]],
                                                         card["collectorNumber"]))
-            # raise
+            raise
     card_set_obj = Set(set_name_class_cased, cards=set_card_objs)
     dynamic_set_tuples.append((card_set_obj, all_abilities))

@@ -102,8 +102,8 @@ def generate_set_map(loc, cards, enums, set_name):
 
             abilities_raw = card["abilities"]
             for ability in abilities_raw:
-                aid = ability["abilityId"]
-                textid = ability["textId"]
+                aid = ability["Id"]
+                textid = ability["TextId"]
                 text = loc_map[textid].encode("ascii", errors="ignore").decode()
                 abilities.append(aid)
                 all_abilities[aid] = text
