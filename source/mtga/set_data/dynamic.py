@@ -9,7 +9,7 @@ import sys
 from pathlib import Path
 from mtga.models.card import Card
 from mtga.models.card_set import Set
-from sqlite2json import sqlite2json
+from mtga.set_data.sqlite2json import sqlite2json
 
 
 def _get_data_location_hardcoded():
