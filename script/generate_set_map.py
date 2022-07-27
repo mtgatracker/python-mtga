@@ -97,7 +97,7 @@ def generate_set_map(loc, cards, enums, set_name):
                 else:
                     set_number = int(card["collectorNumber"])
 
-            grp_id = card["grpid"]
+            grp_id = card["grpId"]
             abilities = []
 
             abilities_raw = card["abilities"]
@@ -133,7 +133,7 @@ def generate_set_map(loc, cards, enums, set_name):
             output_lines.append(new_card_str)
 
         except Exception:
-            print("hit an error on {} / {} / {}".format(card["grpid"], loc_map[card["titleId"]], card["collectorNumber"]))
+            print("hit an error on {} / {} / {}".format(card["grpId"], loc_map[card["titleId"]], card["collectorNumber"]))
             raise
     header = """
 import sys
