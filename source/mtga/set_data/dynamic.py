@@ -171,9 +171,9 @@ for set_name in listed_cardsets:
                     else:
                         set_number = int(card["collectorNumber"])
                 except ValueError:
-                    set_number = card["grpid"]
+                    set_number = card["grpId"]
 
-            grp_id = card["grpid"]
+            grp_id = card["grpId"]
             abilities = []
 
             try:
@@ -194,10 +194,10 @@ for set_name in listed_cardsets:
             try:
                 abilities_raw = card["abilities"]
             except KeyError:
-                abilities_raw = []
-            for ability in abilities_raw:
-                aid = ability["Id"]
-                textid = ability.get("TextId")
+                abilities_raw = ""
+            for ability in abilities_raw.split(","):
+                aid = ability.split(":")[0]
+                textid = ability.split(":")[1] if len(ability.split(":")) >= 2 else None
                 text = ""
                 try:
                     if textid:
@@ -212,10 +212,10 @@ for set_name in listed_cardsets:
             try:
                 hidden_abilities_raw = card["hiddenAbilities"]
             except KeyError:
-                hidden_abilities_raw = []
-            for ability in hidden_abilities_raw:
-                aid = ability["Id"]
-                textid = ability.get("TextId")
+                hidden_abilities_raw = ""
+            for ability in hidden_abilities_raw.split(","):
+                aid = ability.split(":")[0]
+                textid = ability.split(":")[1] if len(ability.split(":")) >= 2 else None
                 text = ""
                 try:
                     if textid:
@@ -235,7 +235,7 @@ for set_name in listed_cardsets:
             set_card_objs.append(new_card_obj)
 
         except Exception:
-            print("hit an error on {} / {} / {}".format(card["grpid"], loc_map[card["titleId"]],
+            print("hit an error on {} / {} / {}".format(card["grpId"], loc_map[card["titleId"]],
                                                         card["collectorNumber"]))
             raise
     card_set_obj = Set(set_name_class_cased, cards=set_card_objs)
