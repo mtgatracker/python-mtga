@@ -121,7 +121,7 @@ for set_name in listed_cardsets:
             # cc's look like: o2o(U/B)o(U/B)o3oUoB, want to turn it into ["2", "(U/B)"] etc
             cost = [cost_part for cost_part in cc_raw.split("o")[1:] if cost_part != "0"]
             try:
-                color_identity = [COLOR_ID_MAP[color_id] for color_id in card["colorIdentity"]]
+                color_identity = card["colorIdentity"].split(",")
             except KeyError:
                 color_identity = []
             try:
@@ -131,20 +131,20 @@ for set_name in listed_cardsets:
                 collectible = False
 
             try:
-                card_type_ids = [enum_map["CardType"][card_type] for card_type in card["types"]]
+                card_type_ids = [enum_map["CardType"][card_type] for card_type in [int(id) for id in card["types"].split(",")]]
             except KeyError:
                 card_type_ids = []
             card_types = " ".join([loc_map[loc_id] for loc_id in card_type_ids])
 
             try:
-                sub_types_ids = [enum_map["SubType"][sub_type] for sub_type in card["subtypes"]]
+                sub_types_ids = [enum_map["SubType"][card_type] for card_type in [int(id) for id in card["subtypes"].split(",")]]
             except KeyError:
                 sub_types_ids = []
             sub_types = " ".join([loc_map[loc_id] for loc_id in sub_types_ids])
 
             # TODO: super_types
             try:
-                super_types_ids = [enum_map["SuperType"][super_type] for super_type in card["supertypes"]]
+                super_types_ids = [enum_map["SuperType"][card_type] for card_type in [int(id) for id in card["supertypes"].split(",")]]
             except KeyError:
                 super_types_ids = []
             super_types = " ".join([loc_map[loc_id] for loc_id in super_types_ids])

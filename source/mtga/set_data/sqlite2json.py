@@ -78,12 +78,12 @@ def sqlite2json(sqlite_filepath):
 
     return loc, enums
 
-if __name__ == "__main__":
-    from json import dump
-    loc, enums = sqlite2json(r'C:\Program Files\Wizards of the Coast\MTGA\MTGA_Data\Downloads\Raw\Raw_CardDatabase_3fc09d06a61a10dcabcc28369ea62b2b.mtga')
-
-    with open("loc.json", "w", encoding='utf-8') as f:
-        dump(loc, f, indent=2, ensure_ascii=False)
-    
-    with open("enums.json", "w", encoding='utf-8') as f:
-        dump(enums, f, indent=2, ensure_ascii=False)
+#if __name__ == "__main__":
+#    from json import dump
+#    loc, enums = sqlite2json(r'C:\Users\black\OneDrive\ドキュメント\20210811_MTGATracker改修\Raw_CardDatabase_b7147b55738bd011dab14df3c109fbcf.mtga')
+#
+ #   with open("loc.json", "w", encoding='utf-8') as f:
+ #       dump(loc, f, indent=2, ensure_ascii=False)
+ #   
+  #  with open("enums.json", "w", encoding='utf-8') as f:
+   #     dump(enums, f, indent=2, ensure_ascii=False)
