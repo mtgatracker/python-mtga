@@ -105,3 +105,7 @@ venv.bak/
 
 .idea/
 *.url
+abilities.json
+cards.json
+enums.json
+loc.json
