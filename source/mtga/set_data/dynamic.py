@@ -136,24 +136,24 @@ for set_name in listed_cardsets:
             try:
                 #collectible = card["isCollectible"] # "isCollectible" key is not exist.
                 collectible = bool(int(card["CollectorMax"]))
-            except (KeyError, TypeError, AttributeError):
+            except (KeyError, TypeError, AttributeError, ValueError):
                 collectible = False
 
             try:
                 card_type_ids = [enum_map["CardType"][card_type] for card_type in [int(id) for id in card["Types"].split(",")]]
-            except (KeyError, TypeError, AttributeError):
+            except (KeyError, TypeError, AttributeError, ValueError):
                 card_type_ids = []
             card_types = " ".join([loc_map[loc_id] for loc_id in card_type_ids])
 
             try:
                 sub_types_ids = [enum_map["SubType"][card_type] for card_type in [int(id) for id in card["Subtypes"].split(",")]]
-            except (KeyError, TypeError, AttributeError):
+            except (KeyError, TypeError, AttributeError, ValueError):
                 sub_types_ids = []
             sub_types = " ".join([loc_map[loc_id] for loc_id in sub_types_ids])
 
             try:
                 super_types_ids = [enum_map["SuperType"][card_type] for card_type in [int(id) for id in card["Supertypes"].split(",")]]
-            except (KeyError, TypeError, AttributeError):
+            except (KeyError, TypeError, AttributeError, ValueError):
                 super_types_ids = []
             super_types = " ".join([loc_map[loc_id] for loc_id in super_types_ids])
 
