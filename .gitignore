@@ -104,3 +104,8 @@ venv.bak/
 .mypy_cache/
 
 .idea/
+*.url
+abilities.json
+cards.json
+enums.json
+loc.json

@@ -8,8 +8,9 @@ COLORMAP = {
 
 class Card(object):
 
-    def __init__(self, name="", pretty_name="", cost=None, color_identity=None, card_type="", sub_types="",
-                 abilities=None, set_id="", rarity="", collectible=True, set_number=-1, mtga_id=-1):
+    def __init__(self, name="", pretty_name="", cost=None, color_identity=None, card_type="", sub_types="", super_types="",
+                 abilities=None, set_id="", rarity="", collectible=True, set_number=-1, mtga_id=-1,
+                 is_token=False, is_secondary_card=False, is_rebalanced=False, is_digital_only=False):
         self.name = name
         self.set = set_id
         self.pretty_name = pretty_name
@@ -21,6 +22,7 @@ class Card(object):
         self.color_identity = color_identity
         self.card_type = card_type
         self.sub_types = sub_types
+        self.super_types = super_types
         self.set_number = set_number
         self.mtga_id = mtga_id
         self.rarity = rarity
@@ -28,6 +30,10 @@ class Card(object):
         if abilities is None:
             abilities = []
         self.abilities = abilities
+        self.is_token = is_token
+        self.is_secondary_card = is_secondary_card
+        self.is_rebalanced = is_rebalanced
+        self.is_digital_only = is_digital_only
 
     @property
     def abilities_decoded(self):
@@ -80,10 +86,39 @@ class Card(object):
             "color_identity": self.color_identity,
             "card_type": self.card_type,
             "sub_types": self.sub_types,
+            "super_types": self.super_types,
             "rarity": self.rarity,
             "set_number": self.set_number,
             "mtga_id": self.mtga_id
         }
+    
+    @property
+    def is_creature_card(self):
+        if "クリーチャー" in self.card_type or "Creature" in self.card_type:
+            return True
+        else:
+            return False
+
+    @property
+    def is_land_card(self):
+        if "土地" in self.card_type or "Land" in self.card_type:
+            return True
+        else:
+            return False
+
+    @property
+    def is_noncreature_spell_card(self):
+        if not self.is_creature_card and not self.is_land_card:
+            return True
+        else:
+            return False
+
+    @property
+    def is_basic(self):
+        if "基本" in self.super_types or "Basic" in self.super_types:
+            return True
+        else:
+            return False
 
     @classmethod
     def from_dict(cls, obj):
@@ -104,8 +139,8 @@ class Card(object):
 
 class GameCard(Card):
 
-    def __init__(self, name, pretty_name, cost, color_identity, card_type, sub_types, set_id, rarity, set_number, mtga_id, owner_seat_id, game_id=-1):
-        super().__init__(name, pretty_name, cost, color_identity, card_type, sub_types, set_id, rarity, set_number, mtga_id)
+    def __init__(self, name, pretty_name, cost, color_identity, card_type, sub_types, super_types, set_id, rarity, set_number, mtga_id, owner_seat_id, game_id=-1):
+        super().__init__(name, pretty_name, cost, color_identity, card_type, sub_types, super_types, set_id, rarity, set_number, mtga_id)
         self.game_id = game_id
         self.previous_iids = []
         self.owner_seat_id = owner_seat_id
@@ -130,6 +165,7 @@ class GameCard(Card):
         self.cost = new_card.cost
         self.card_type = new_card.card_type
         self.sub_types = new_card.sub_types
+        self.super_types = new_card.super_types
         self.set = new_card.set
         self.set_number = new_card.set_number
         self.mtga_id = new_card.mtga_id

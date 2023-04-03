@@ -81,6 +81,9 @@ def generate_set_map(loc, cards, enums, set_name):
             sub_types_ids = [enum_map["SubType"][sub_type] for sub_type in card["subtypes"]]
             sub_types = " ".join([loc_map[loc_id] for loc_id in sub_types_ids])
 
+            super_types_ids = [enum_map["SuperType"][super_type] for super_type in card["supertypes"]]
+            super_types = " ".join([loc_map[loc_id] for loc_id in super_types_ids])
+
             set_id = set_name.upper()
 
             rarity = RARITY_ID_MAP[card["rarity"]]
@@ -94,22 +97,22 @@ def generate_set_map(loc, cards, enums, set_name):
                 else:
                     set_number = int(card["collectorNumber"])
 
-            grp_id = card["grpid"]
+            grp_id = card["grpId"]
             abilities = []
 
             abilities_raw = card["abilities"]
             for ability in abilities_raw:
-                aid = ability["abilityId"]
-                textid = ability["textId"]
+                aid = ability["Id"]
+                textid = ability["TextId"]
                 text = loc_map[textid].encode("ascii", errors="ignore").decode()
                 abilities.append(aid)
                 all_abilities[aid] = text
             indentation_length = len("{} = Card(".format(card_name_class_cased_suffixed))
-            # params: name,    pretty_name, cost,            color_identity, card_type,  sub_types, set_id, rarity,        set_number, mtga_id
+            # params: name,    pretty_name, cost,            color_identity, card_type,  sub_types, super_types, set_id, rarity,        set_number, mtga_id
             # ex:     "a_b_c", "A B C",     ['3', 'W', 'W'], ['W'],          "Creature", "Angel",  "AKH",   "Mythic Rare", 1,          64801
-            # name, pretty_name, cost, color_identity, card_type, sub_types, set_id, rarity, set_number, mtga_id
+            # name, pretty_name, cost, color_identity, card_type, sub_types, super_types, set_id, rarity, set_number, mtga_id
             new_card_str = '{} = Card(name="{}", pretty_name="{}", cost={},\n' \
-                           '{{}}color_identity={}, card_type="{}", sub_types="{}",\n' \
+                           '{{}}color_identity={}, card_type="{}", sub_types="{}", super_types="{}",\n' \
                            '{{}}abilities={}, set_id="{}", rarity="{}", collectible={}, set_number={},\n' \
                            '{{}}mtga_id={})'.format(
                 card_name_class_cased_suffixed,
@@ -119,6 +122,7 @@ def generate_set_map(loc, cards, enums, set_name):
                 color_identity,
                 card_types,
                 sub_types,
+                super_types,
                 abilities,
                 set_id,
                 rarity,
@@ -129,7 +133,7 @@ def generate_set_map(loc, cards, enums, set_name):
             output_lines.append(new_card_str)
 
         except Exception:
-            print("hit an error on {} / {} / {}".format(card["grpid"], loc_map[card["titleId"]], card["collectorNumber"]))
+            print("hit an error on {} / {} / {}".format(card["grpId"], loc_map[card["titleId"]], card["collectorNumber"]))
             raise
     header = """
 import sys

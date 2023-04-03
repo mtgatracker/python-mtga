@@ -9,6 +9,7 @@ import sys
 from pathlib import Path
 from mtga.models.card import Card
 from mtga.models.card_set import Set
+from mtga.set_data.sqlite2json import sqlite2json
 
 
 def _get_data_location_hardcoded():
@@ -16,11 +17,12 @@ def _get_data_location_hardcoded():
         "ProgramFiles",
         r"C:\Program Files"
     )
-    return os.path.join(root, "Wizards of the Coast", "MTGA", "MTGA_Data", "Downloads", "Data")
+    return os.path.join(root, "Wizards of the Coast", "MTGA", "MTGA_Data", "Downloads", "Raw")
 
 
 COLOR_ID_MAP = {1: "W", 2: "U", 3: "B", 4: "R", 5: "G"}
 RARITY_ID_MAP = {0: "Token", 1: "Basic", 2: "Common", 3: "Uncommon", 4: "Rare", 5: "Mythic Rare"}
+
 
 dynamic_set_tuples = []
 
@@ -37,7 +39,7 @@ def get_data_location():
 def get_darwin_data_location():
     return os.path.join(
         os.path.expanduser("~"),
-        "Library/Application Support/com.wizards.mtga/Downloads/Data",
+        "Library/Application Support/com.wizards.mtga/Downloads/Raw",
     )
 
 def get_win_data_location():
@@ -46,18 +48,21 @@ def get_win_data_location():
         registry_connection = ConnectRegistry(None, HKEY_LOCAL_MACHINE)
         reg_path = r"SOFTWARE\Wizards of the Coast\MTGArena"
         registry_key = OpenKey(registry_connection, reg_path)
-        data_location = QueryValueEx(registry_key, "Path")[0] + r"MTGA_Data\Downloads\Data"
+        data_location = QueryValueEx(registry_key, "Path")[0] + r"MTGA_Data\Downloads\Raw"
         print("Found data @ ")
         print(data_location)
-        print(r"C:\Program Files\Wizards of the Coast\MTGA\MTGA_Data\Downloads\Data")
     except:
         print("Couldn't locate MTGA from registry, falling back to hardcoded path...")
         data_location = _get_data_location_hardcoded()
     return data_location
 
+# To remove Japanese ruby and Alchemy tags
+def del_ruby(s):
+    return re.sub("（.+?）", "", re.sub("<.+?>", "", s))
+
 data_location = get_data_location()
 
-json_filepaths = {"enums": "", "cards": "", "abilities": "", "loc": ""}
+json_filepaths = {"CardDatabase": ""}
 
 # A newer file SHOULD be the preference; alpha sort of hashes may be out of order
 # Otherwise it will be necessary to find which is really used
@@ -73,35 +78,18 @@ for filepath in sorted(Path(data_location).iterdir(), key=os.path.getmtime):
         # print("setting {} to {}".format(key, filename))
         json_filepaths[key] = filepath
 
-with open(json_filepaths["cards"], "r", encoding="utf-8") as card_in:
-    cards = json.load(card_in)
+abilities, cards, loc, enums = sqlite2json(json_filepaths["CardDatabase"])
 
-with open(json_filepaths["loc"], "r", encoding="utf-8") as loc_in:
-    loc = json.load(loc_in)
-
-with open(json_filepaths["enums"], "r", encoding="utf-8") as enums_in:
-    enums = json.load(enums_in)
-
-listed_cardsets = list(set([card["set"] for card in cards]))
+listed_cardsets = list(set([card["ExpansionCode"] for card in cards]))
 
 for set_name in listed_cardsets:
     used_classnames = []
     set_name_class_cased = re.sub('[^0-9a-zA-Z_]', '', set_name)
     all_abilities = {}
 
-    loc_map = {}
-    try:
-        en = list(filter(lambda x: x["langkey"] == "EN", loc))[0]
-    except:
-        ## langkeys are null in 11/21 patch???
-        en = loc[0]
-    for obj in en["keys"]:
-        # if obj["id"] in loc_map.keys():
-        #     print("WARNING: overwriting id {} = {} with {}".format(obj["id"], loc_map[obj["id"]], obj["text"]))
-        loc_map[obj["id"]] = obj["text"]
-    loc_map = {obj["id"]: obj["text"] for obj in en["keys"]}
+    loc_map = {obj["id"]: obj["text"] for obj in loc}
     enum_map = {obj["name"]: {inner_obj["id"]: inner_obj["text"] for inner_obj in obj["values"]} for obj in enums}
-    set_cards = [card for card in cards if card["set"].upper() == set_name.upper()]
+    set_cards = [card for card in cards if card["ExpansionCode"].upper() == set_name.upper()]
     assert set_cards, "No cards found in set {}. Double check your nomenclature, and ensure the input files contain your set!"
 
     token_count = 1
@@ -110,8 +98,12 @@ for set_name in listed_cardsets:
     output_lines = []
     set_card_objs = []
     for card in set_cards:
+        # TODO: card_name_snake_casedの日本語対応
         try:
-            card_title = loc_map[card["titleId"]]
+            if card["TitleId"]:
+                card_title = del_ruby(loc_map[card["TitleId"]])
+            else:
+                card_title = ""
             card_name_class_cased = re.sub('[^0-9a-zA-Z_]', '', card_title)
             card_name_class_cased_suffixed = card_name_class_cased
             card_suffix = 2
@@ -121,64 +113,142 @@ for set_name in listed_cardsets:
                 card_suffix += 1
             used_classnames.append(card_name_class_cased_suffixed)
 
-            card_name_snake_cased = re.sub('[^0-9a-zA-Z_]', '', card_title.lower().replace(" ", "_"))
-            cc_raw = card["castingcost"]
-            # cc's look like: o2o(U/B)o(U/B)o3oUoB, want to turn it into ["2", "(U/B)"] etc
-            cost = [cost_part for cost_part in cc_raw.split("o")[1:] if cost_part != "0"]
-            color_identity = [COLOR_ID_MAP[color_id] for color_id in card["colorIdentity"]]
             try:
-                collectible = card["isCollectible"]
-            except KeyError:
+                card_name_snake_cased = re.sub('[^0-9a-zA-Z_]', '', card_title.lower().replace(" ", "_"))
+            except AttributeError:
+                card_name_snake_cased = ""
+
+            try:
+                cc_raw = card["OldSchoolManaText"]
+            except (KeyError, TypeError, AttributeError):
+                cc_raw = ""
+            
+            # cc's look like: o2o(U/B)o(U/B)o3oUoB, want to turn it into ["2", "(U/B)"] etc
+            try:
+                cost = [cost_part for cost_part in cc_raw.split("o")[1:] if cost_part != "0"]
+            except AttributeError:
+                cost = []
+
+            try:
+                color_identity = card["ColorIdentity"].split(",")
+            except (KeyError, TypeError, AttributeError):
+                color_identity = []
+            try:
+                #collectible = card["isCollectible"] # "isCollectible" key is not exist.
+                collectible = bool(int(card["CollectorMax"]))
+            except (KeyError, TypeError, AttributeError, ValueError):
                 collectible = False
 
-            card_type_ids = [enum_map["CardType"][card_type] for card_type in card["types"]]
+            try:
+                card_type_ids = [enum_map["CardType"][card_type] for card_type in [int(id) for id in card["Types"].split(",")]]
+            except (KeyError, TypeError, AttributeError, ValueError):
+                card_type_ids = []
             card_types = " ".join([loc_map[loc_id] for loc_id in card_type_ids])
 
-            sub_types_ids = [enum_map["SubType"][sub_type] for sub_type in card["subtypes"]]
+            try:
+                sub_types_ids = [enum_map["SubType"][card_type] for card_type in [int(id) for id in card["Subtypes"].split(",")]]
+            except (KeyError, TypeError, AttributeError, ValueError):
+                sub_types_ids = []
             sub_types = " ".join([loc_map[loc_id] for loc_id in sub_types_ids])
+
+            try:
+                super_types_ids = [enum_map["SuperType"][card_type] for card_type in [int(id) for id in card["Supertypes"].split(",")]]
+            except (KeyError, TypeError, AttributeError, ValueError):
+                super_types_ids = []
+            super_types = " ".join([loc_map[loc_id] for loc_id in super_types_ids])
 
             set_id = set_name.upper()
 
-            rarity = RARITY_ID_MAP[card["rarity"]]
-
-            if card["isToken"]:
+            try:
+                rarity = RARITY_ID_MAP[card["Rarity"]]
+            except (KeyError, TypeError, AttributeError):
+                rarity = RARITY_ID_MAP[0]
+            
+            try:
+                is_token = card["IsToken"]
+            except (KeyError, TypeError, AttributeError):
+                is_token = False
+            
+            if is_token:
                 set_number = token_count + 10000
                 token_count += 1
             else:
-                try:
-                    if card["collectorNumber"].startswith("GR") or card["collectorNumber"].startswith("GP"):
-                        set_number = int(card["collectorNumber"][2]) * 1000
-                    else:
-                        set_number = int(card["collectorNumber"])
-                except ValueError:
-                    set_number = card["grpid"]
+                if card["CollectorNumber"]:
+                    try:
+                        if card["CollectorNumber"].startswith("GR") or card["CollectorNumber"].startswith("GP"):
+                            set_number = int(card["CollectorNumber"][2]) * 1000
+                        else:
+                            set_number = int(card["CollectorNumber"])
+                    except ValueError:
+                        set_number = 0
+                else:
+                    set_number = 0
 
-            grp_id = card["grpid"]
-            abilities = []
+            grp_id = card["GrpId"]
+            card_abilities = []
 
-            abilities_raw = card["abilities"]
-            for ability in abilities_raw:
-                aid = ability["abilityId"]
-                textid = ability["textId"]
-                try:
-                    text = loc_map[textid].encode("ascii", errors="ignore").decode()
-                except:
-                    # TODO: there are multiple loc files now?? something weird is up. I don't really feel like trying to
-                    # figure this out right now though.
-                    text = "unknown ability id {} / {}".format(aid, textid)
-                abilities.append(aid)
-                all_abilities[aid] = text
+            try:
+                is_secondary_card = not card["IsPrimaryCard"]
+            except (KeyError, TypeError, AttributeError):
+                is_secondary_card = False
+
+            try:
+                is_rebalanced = card["IsRebalanced"]
+            except (KeyError, TypeError, AttributeError):
+                is_rebalanced = False
+            
+            try:
+                is_digital_only = card["IsDigitalOnly"]
+            except (KeyError, TypeError, AttributeError):
+                is_digital_only = False
+
+            try:
+                abilities_raw = card["AbilityIds"]
+            except (KeyError, TypeError, AttributeError):
+                abilities_raw = []
+            if abilities_raw:
+                for ability in abilities_raw.split(","):
+                    aid = ability.split(":")[0]
+                    textid = ability.split(":")[1] if len(ability.split(":")) >= 2 else None
+                    text = ""
+                    try:
+                        if textid:
+                            text = loc_map[textid].encode("ascii", errors="ignore").decode()
+                    except:
+                        # TODO: there are multiple loc files now?? something weird is up. I don't really feel like trying to
+                        # figure this out right now though.
+                        text = "unknown ability id {} / {}".format(aid, textid)
+                    card_abilities.append(aid)
+                    all_abilities[aid] = text
+
+            try:
+                hidden_abilities_raw = card["HiddenAbilityIds"]
+            except (KeyError, TypeError, AttributeError):
+                hidden_abilities_raw = []
+            if hidden_abilities_raw:
+                for ability in hidden_abilities_raw.split(","):
+                    aid = ability.split(":")[0]
+                    textid = ability.split(":")[1] if len(ability.split(":")) >= 2 else None
+                    text = ""
+                    try:
+                        if textid:
+                            text = loc_map[textid].encode("ascii", errors="ignore").decode()
+                    except:
+                        # TODO: there are multiple loc files now?? something weird is up. I don't really feel like trying to
+                        # figure this out right now though.
+                        text = "unknown ability id {} / {}".format(aid, textid)
+                    card_abilities.append(aid)
+                    all_abilities[aid] = text
 
             new_card_obj = Card(name=card_name_snake_cased, pretty_name=card_title, cost=cost,
-                                color_identity=color_identity, card_type=card_types, sub_types=sub_types,
-                                abilities=abilities, set_id=set_id, rarity=rarity, collectible=collectible,
-                                set_number=set_number, mtga_id=grp_id)
+                                color_identity=color_identity, card_type=card_types, sub_types=sub_types, super_types=super_types, 
+                                abilities=card_abilities, set_id=set_id, rarity=rarity, collectible=collectible,
+                                set_number=set_number, mtga_id=grp_id, 
+                                is_token=is_token, is_secondary_card=is_secondary_card, is_rebalanced=is_rebalanced, is_digital_only=is_digital_only)
             set_card_objs.append(new_card_obj)
 
         except Exception:
-            print("hit an error on {} / {} / {}".format(card["grpid"], loc_map[card["titleId"]],
-                                                        card["collectorNumber"]))
-            # raise
+            print("hit an error on GrpId: {}".format(card["GrpId"]))
+            raise
     card_set_obj = Set(set_name_class_cased, cards=set_card_objs)
     dynamic_set_tuples.append((card_set_obj, all_abilities))
-
